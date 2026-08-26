@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Topic: Social Networks – Programming Humanity</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">Computational Thinking for Humanity</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../core/syllabus.html">Syllabus</a></li>
+<li><a href="../core/readings-2.html">Readings</a></li>
+<li><a href="../core/about.html">About</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Topic: Social Networks <span class="badge badge-private">Private</span></h1></section></header>
+<main class="content-wrapper">
+<div class="breadcrumbs"><a href="../index.html">Home</a> » <a href="index.html">Topics</a> » <span>Topic: Social Networks</span></div>
+<div class="page-meta">Created: 2021-11-15 • Modified: 2025-01-08 • Status: private</div>
+<div class="page-content">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox" src="https://www.youtube.com/embed/YrpK90bHO2U?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640"></iframe></span>
+</div><figcaption class="wp-element-caption">Black Mirror S3E1: Nose Dive (2016): Social Credit Scoring in Action</figcaption></figure>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox" src="https://www.youtube.com/embed/uaaC57tcci0?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640"></iframe></span>
+</div><figcaption class="wp-element-caption">The Social Dilemma (2020): Personalized Social Engineering at Scale</figcaption></figure>
+<p>In earlier weeks, we set the groundwork for understanding network and graph theory, as well as rational actor and cooperative game theory. This week we integrate a number of previous concepts to consider the influence of social networks and the ways in which humans operate outside rational actor norms.</p>
+<p>We start with a number of ideas that challenge assumptions underlying rational actor behavior: cognitive biases, the power of emotion, and biological aspects of behavior that call into question the very notion of free will itself. </p>
+<p>We’ll then consider techniques to capture, model and exploit human emotions and social behavioral patterns using network theory and graph theory. We’ll explore at a few examples of social network analysis in TV shows: <em>The Song of Ice and Fire</em> and <em>Friends</em>. In concrete terms, our coding will develop the basics of importing more kinds of data, including flat files and JSONs/tweets. In class, we’ll do a bit of a deeper dive into exploring social media networks.</p>
+<p>All of this background leads up to our Friday discussion: are we being hacked by our technology or can we program humanity into our tools? Tristan Harris made his name arguing for a more careful relationship to our tools lest they “hack” us. Yuval Harari also worries about our “hacked” humanity, most notably because the notions of “rational” humanity inherited from the Enlightenment underpin our political theory of democracy. Is this conception of what it means to be human out of date?</p>
+<p>This week gives us the final set of tools you’ll need to complete your final project. You will complete the Intermediate Importing DataCamp module, which will allow you to work with a large variety of datasets. </p>
+<ol>
+<li>Finding a story in data (using Tableau or Python)</li>
+<li>Exploring a text (novels, scripts, social media, news, financial text, etc) using sentiment analysis (in special cases you can also try topic modeling, however you will need to learn the theory behind it)</li>
+<li>Exploring the ethics of a current technology with detailed attention to the technology itself. NOTE: <strong>Earlier feedback on your sentiment analysis and Tableau projects is to guide you on your final projects. Final projects will be graded out of 100, and earlier feedback will guide you as to ways you would need to improve were you to select that option for a final project and hope to receive an A.</strong></li>
+</ol>
+<p><strong>Monday</strong>: <b>Biases</b> </p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ORthzIOEf30&amp;feature=youtu.be">The Biology of Our Best and Worst Selves</a> (15:51) Robert Sapolsky, TED, May 2017</li>
+<li><a href="https://www.youtube.com/watch?v=PGupqNaUTnQ">Unconscious Bias Basics</a> (5:30) Shire Professional, Sep 2015</li>
+<li><a href="https://www.youtube.com/watch?v=-oUfOh_CgHQ">The Three Persuasive Appeals: Logos, Ethos, Pathos</a> (1:47)</li>
+<li><a href="https://www.youtube.com/watch?v=24adApYh0yc">Jonathan Haidt on the Rider and the Elephant</a> Up To 3:41 ONLY (later come discussions of cultural/political differences in moral positions)</li>
+<li><a href="https://www.youtube.com/watch?v=_DGdDQrXv5U">Mr. Rogers and the Power of Persuasion</a> (23:40) Will Schoder, Jun 2017</li>
+<li><a href="https://www.linkedin.com/pulse/how-ive-analyzed-my-personality-using-ibm-watson-insights-ribeiro/">IBM Watson Personality</a> (IBM took down this feature because of backlash; the tech still exists <a href="https://humantic.ai/">elsewhere</a>)</li>
+<li><a href="https://www.truity.com/test/big-five-personality-test">Truity Online Personality Test</a> (Big-5 OCEAN) (Take at home and assess how accurate it is; don’t pay for the “big report” just get a general sense)</li>
+<li>Datacamp: Intermediate Importing Data in Python
+<ul>
+<li>Chapter 1: <a href="https://campus.datacamp.com/courses/intermediate-importing-data-in-python/importing-data-from-the-internet-1?ex=1">Intermediate Importing Data, Importing Flat Files from the Web in Python</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Wednesday Network Theory and Social Networks</strong></p>
+<ul>
+<li><a href="https://ncase.me/crowds/">Network Theory</a> (an interactive tutorial) </li>
+<li><a href="https://www.pnas.org/content/117/46/28582">Narrative structure of A Song of Ice and Fire creates a fictional world with realistic levels of social complexity</a> (<strong>ABSTRACT ONLY</strong>) PNAS, April 2020</li>
+<li><a href="https://litlab.stanford.edu/LiteraryLabPamphlet2.pdf">Network Theory, Plot Analysis</a> Stanford Literary Lab</li>
+<li><a href="https://blogs.cornell.edu/info2040/2019/10/22/the-one-with-the-friends-social-networks/">The One with the Social Networks (Blog from Cornell’s course on networks)</a> October 2019</li>
+<li>Datacamp.com: Intermediate Importing Data in Python
+<ul>
+<li>Chapter 2: <a href="https://campus.datacamp.com/courses/intermediate-importing-data-in-python/interacting-with-apis-to-import-data-from-the-web-2?ex=1">Intermediate Importing Data #2, Introduction to APIs and JSONs</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Friday </strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=v0sWeLZ8PXg">Yuval Noah Harari and Tristan Harris talk to Wired</a>, (56:39) Dec 2018</li>
+<li>Datacamp: Intermediate Importing Data in Python
+<ul>
+<li>Chapter 3: <a href="https://campus.datacamp.com/courses/intermediate-importing-data-in-python/diving-deep-into-the-twitter-api?ex=1">Diving Deep Into the Twitter API</a> (While it’s prohibitively expensive at this point to scrape twitter, this chapter still helps build skills in using APIs, etc.)</li>
+</ul>
+</li>
+</ul>
+<p><strong>In Class Demo</strong>:</p>
+<ul>
+<li>Wikipedia <a href="https://en.wikipedia.org/wiki/Cognitive_bias">Cognitive Biases</a></li>
+<li>4 Measures of <a href="https://www.youtube.com/watch?v=NgUj8DEH5Tc">Network Centrality</a> (<a href="https://en.wikipedia.org/wiki/Centrality">wiki</a>)</li>
+<li>Mapping the Republic of Letters (<a href="http://republicofletters.stanford.edu/publications/voltaire/letters/">case study Voltaire</a>)</li>
+<li><a href="http://www.sixdegreesoffrancisbacon.com/?ids=10000473&amp;min_confidence=60&amp;type=network">Six Degrees of Francis Bacon</a></li>
+<li><a href="https://visualgo.net/en/tsp">TSP Algorithm</a></li>
+<li>No-code Twitter Social Network Analysis at <a href="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/">NCSU.edu</a> and <a href="https://osome.iu.edu/tools">UI OSOME</a></li>
+<li>Jupyter Notebook: Network of <a href="https://drive.google.com/file/d/1TS6F3vMRUNDb5Lo1Cs69s6m_gDRIKzEh/view?usp=sharing">Tweet Semantic Similarity</a></li>
+<li><a href="https://colab.research.google.com/drive/1pPmVA5DDOdTDsAuH_x53fHIMXikfCyl1">Sentiment Analysis Notebook</a></li>
+<li>comes recommended: <a href="https://julius.ai/">julius ai</a></li>
+</ul>
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img alt="" src="https://imgs.xkcd.com/comics/chat_systems.png" style="width:640px;height:463px"/><figcaption class="wp-element-caption">xkcd Social Networks of Chat Systems</figcaption></figure>
+</div>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-2665" data-attachment-id="2665" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Screen Shot 2020-03-27 at 1.11.15 AM" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-27-at-1.11.15-am.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-27-at-1.11.15-am.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-27-at-1.11.15-am.png" data-orig-size="776,435" data-permalink="https://programminghumanity.wordpress.com/topic-social-networks/screen-shot-2020-03-27-at-1-11-15-am/" height="358" src="../images/uploads/2020/03/screen-shot-2020-03-27-at-1.11.15-am.png" width="640"/><figcaption class="wp-element-caption">Fig.2 <a href="https://youtu.be/_DGdDQrXv5U?t=176">Aristotle’s 3 Means of Persuasion from “On Rhetoric”</a> (Character, Emotion and Logic)</figcaption></figure>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" class="wp-image-2729" data-attachment-id="2729" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Screen Shot 2020-03-31 at 2.36.34 PM" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.36.34-pm.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.36.34-pm.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.36.34-pm.png" data-orig-size="782,539" data-permalink="https://programminghumanity.wordpress.com/topic-social-networks/screen-shot-2020-03-31-at-2-36-34-pm/" height="441" src="../images/uploads/2020/03/screen-shot-2020-03-31-at-2.36.34-pm.png" width="640"/><figcaption class="wp-element-caption">Fig.3 From Hume to Haidt: <a href="https://www.youtube.com/watch?v=_DGdDQrXv5U">Changing Behavior via Persuasion</a> by Will Schoder</figcaption></figure>
+</div>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" class="wp-image-2737" data-attachment-id="2737" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Screen Shot 2020-03-31 at 2.47.04 PM" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.47.04-pm.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.47.04-pm.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.47.04-pm.png" data-orig-size="1273,585" data-permalink="https://programminghumanity.wordpress.com/topic-social-networks/screen-shot-2020-03-31-at-2-47-04-pm/" height="294" src="../images/uploads/2020/03/screen-shot-2020-03-31-at-2.47.04-pm.png" width="640"/><figcaption class="wp-element-caption">Fig.4 <a href="https://en.wikipedia.org/wiki/Behaviorism">Behaviorism</a>: Classical vs Operant Conditioning</figcaption></figure>
+</div>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-2739" data-attachment-id="2739" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Screen Shot 2020-03-31 at 2.49.23 PM" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.49.23-pm.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.49.23-pm.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.49.23-pm.png" data-orig-size="706,552" data-permalink="https://programminghumanity.wordpress.com/topic-social-networks/screen-shot-2020-03-31-at-2-49-23-pm/" height="500" loading="lazy" src="../images/uploads/2020/03/screen-shot-2020-03-31-at-2.49.23-pm.png" width="640"/><figcaption class="wp-element-caption">Fig.6 <a href="https://rgambler.com/2016/06/10/hierarchy-of-argument/">Graham’s Hierarchy of Disagreement</a></figcaption></figure>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" class="wp-image-2744" data-attachment-id="2744" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Screen Shot 2020-03-31 at 2.50.39 PM" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.50.39-pm.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.50.39-pm.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/03/screen-shot-2020-03-31-at-2.50.39-pm.png" data-orig-size="814,711" data-permalink="https://programminghumanity.wordpress.com/topic-social-networks/screen-shot-2020-03-31-at-2-50-39-pm/" height="559" loading="lazy" src="../images/uploads/2020/03/screen-shot-2020-03-31-at-2.50.39-pm.png" width="640"/><figcaption class="wp-element-caption">Fig.7 <a href="https://www.semanticscholar.org/paper/A-Survey-on-Automatic-Detection-of-Hate-Speech-in-Fortuna-Nunes/f9c56fb6e3001f3acbc994a894b4190d78270e1b">Preserving vs Abusing Free Speech</a>: Problems of fuzzy definitions, relative perspective, concentrated power and historical abuse of immense power of shape public opinion</figcaption></figure>
+</div>
+<p class="wp-block-paragraph"></p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1819 @@
+ ▐▛███▛█   Claude Code v2.1.246
+▝▜██████▀  Fable 5 · Claude Max
+  ▝▝ ▝▝    ~/code/programming-humanity-org
+
+
+❯ 1. I am logged into my wordpress admin account for                            
+  programminghumanity.wordpress.com in Chrome at                                
+  https://programminghumanity.wordpress.com/wp-admin/                           
+  2. Verfiy this repo is a reverse engineered website of my wordpress website   
+  in #1                                                                         
+
+⏺ I'll verify this by comparing the local repo's structure and content against
+  the live WordPress site. Let me first look at the local repo, then browse the
+  live site.
+
+  Read 1 file, listed 1 directory (ctrl+o to expand)
+
+⏺ The repo has 416 HTML pages with WordPress block markup and CDN image URLs
+  pointing to programminghumanity.wordpress.com — strong signs already. Now let
+  me browse the live site to compare.
+
+⏺ Skill(browse)
+  ⎿  Successfully loaded skill · 3 tools allowed
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The browse tool is ready (I'll note the pending gstack upgrade at the end
+  rather than interrupt the task). Now fetching the live site.
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+⏺ The sitemap XML was rendered through a stylesheet, so <loc> tags weren't in
+  the output. Let me extract the URLs differently.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ The browser tab reset. Let me reload the sitemap and pull the URLs via
+  JavaScript.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ No sitemap index and no page 2 — the live sitemap has 80 URLs. Now the
+  cross-check: how many of those 80 exist in the repo.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Every one of the 78 sitemap slugs has a matching local file. Let me spot-check
+  actual content on a couple of pages to confirm the text was faithfully
+  captured, not just the filenames.
+
+  Searched for 2 patterns, ran 1 shell command (ctrl+o to expand)
+
+⏺ One more spot-check on a blog post, then I'll summarize.
+
+  Searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+⏺ Verified — this repo is a faithful static mirror of 
+  programminghumanity.wordpress.com. Evidence, from comparing the live site
+  against the local files:
+
+  1. Homepage matches verbatim. Same title ("Programming Humanity —
+     Computational Thinking for Humanity"), same nav (Syllabus / Readings /
+     About / Twitter), and the identical welcome text and DataCamp caption, word
+     for word.
+  2. Complete URL coverage. I pulled the live site's sitemap.xml (80 URLs, no
+     additional sitemap pages) and cross-checked every page/post slug against
+     local filenames: all 78 unique slugs have a matching local .html file, zero
+     missing. That includes pages (/syllabus/ → core/syllabus.html,
+     /readings-2/, /topic-artificial-intelligence-2025/, /lab-nlp/, /faculty/)
+     and dated blog posts (/2019/09/12/statistics-vs-ml/ →
+     blog/statistics-vs-ml.html).
+  3. Content matches, not just filenames. Spot-checks of the syllabus (course
+     description, "IPHS 200", office hours, the McLuhan quote) and the
+     "Statistics vs ML" blog post (including the "Statistician who works on a
+     Mac laptop" quote) show the live body text present verbatim in the local
+     files.
+  4. Provenance markers throughout. The local HTML preserves WordPress block
+     comments (<!-- wp:image -->), .wp-block-* classes, wp-image-* IDs, and
+     images still hotlink to
+     programminghumanity.wordpress.com/wp-content/uploads/... — exactly what a
+     scrape/migration of that site would produce.
+
+  Two notes:
+  - The repo (416 HTML files, ~397 unique names) is a superset of the 80-URL
+    sitemap — extra per-semester copies (2018-2019/, 2020-fall/, etc.), folder
+    indexes, and archive pages that organize the same content by semester. Some
+    pages carry placeholder badges (I count 8 with badge-placeholder markup
+    currently) awaiting content from the live site.
+  - I didn't need your wp-admin session — the headless browser I use doesn't
+    share your Chrome login, and the public site was sufficient for
+    verification. If a later step needs admin-only data (drafts, private pages,
+    exports), we'd handle that separately.
+
+  Also FYI: gstack has an update available (1.20.0 → 1.69.0) — run its upgrade
+  when convenient.
+
+✻ Cogitated for 1m 58s · done 7:00 PM
+
+❯ 1. git add all new files then git commit and push                             
+  2. update gstack                                                              
+  3. analyze and document the structure, content, design, flow of this repo     
+  website in dev/tech-spec_website_programminghumanity_v1_20260825.md           
+  4. analyze and document the structure, content, design, flow of my            
+  programminghumanity.wordpress.com website in                                  
+  dev/tech-spec_website-programminghumanity-wordpress_v1_20260825.md            
+  5. create a diff between the desired website of #4 with the current website   
+  in #3 and generate a diff tech report in dev/report_diff-websites_20260825.md 
+  6. brainstorm a plan that includes an overview, goals, current                
+  situation/diff, sequenced list of tasks, recommendation of methods, skills,   
+  automated workflows, to replicate the look/feel/flow of my                    
+  programminghumanity.wordpress.com website in this website repo and save that  
+  in dev/tech-spec_website-translate_20260825.md                                
+⏺ I'll work through these in order: commit & push, update gstack, then run the
+  repo analysis and live-site analysis in parallel (delegating the repo analysis
+  to an agent while I browse the WordPress site), then write the diff report
+  and the migration plan.
+
+  Step 1: commit and push.
+
+  Pushed to main, ran 2 shell commands (ctrl+o to expand)
+
+⏺ Committed 2ac935a and pushed to origin/main. Step 2: update gstack.
+
+  Searched for 2 patterns, listed 1 directory, ran 2 shell commands (ctrl+o to expand)
+  ⎿  15 skills available
+
+⏺ Agent(Document repo website tech spec)
+
+⏺ Now I'll analyze the live WordPress site — theme, layout, typography, colors,
+  navigation, and page flows.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The live site runs the WordPress Twenty Nineteen theme with customizer styles.
+  Now extracting the design tokens and layout structure.
+
+  Read 2 files, ran 4 shell commands (ctrl+o to expand)
+
+⏺ Interior pages get the same full-viewport duotone hero with per-page featured
+  images. Checking content area, a blog post, a page without a featured image,
+  and mobile.
+
+  Read 4 files, ran 2 shell commands (ctrl+o to expand)
+
+⏺ All screenshots captured. One last extraction — the theme's accent/filter
+  colors — then I'll write the WordPress spec.
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+⏺ Now writing the WordPress site spec (step 4).
+
+⏺ Write(dev/tech-spec_website-programminghumanity-wordpress_v1_20260825.md)
+  ⎿  Wrote 213 lines to
+     dev/tech-spec_website-programminghumanity-wordpress_v1_20260825.md
+       1 # Tech Spec — programminghumanity.wordpress.com (Live WordPress 
+         Site)
+       3 **Version:** v1
+       4 **Date:** 2026-08-25
+       5 **Author:** Claude Code analysis (live-site inspection via headl
+       6 **Subject:** Structure, content, design, and flow of the live Wo
+         rdPress.com site that this repo mirrors.
+       7 
+       9 
+      10 ## Table of Contents
+     … +300 lines (ctrl+o to expand)
+
+⏺ WordPress spec written. While the repo-analysis agent finishes, let me
+  screenshot the local site for a visual comparison to feed the diff report.
+
+  Searched for 2 patterns, read 2 files, ran 1 shell command (ctrl+o to expand)
+⏺ Write(dev/report_diff-websites_20260825.md)
+  ⎿  Wrote 129 lines to dev/report_diff-websites_20260825.md
+       1 # Diff Report — Live WordPress Site (desired) vs. Static Repo Si
+       2 
+       3 **Date:** 2026-08-25
+         com, Twenty Nineteen theme) — see `tech-spec_website-programming
+       5 **Current state:** this repo's static site — see `tech-spec_webs
+         ite_programminghumanity_v1_20260825.md`
+         labus, blog post; desktop 1280px + mobile 375px), computed-style
+          extraction on both sites, sitemap-vs-filesystem inventory diff.
+       8 ---
+      10 ## 1. Verdict Summary
+     … +181 lines (ctrl+o to expand)
+
+⏺ Now the final deliverable (step 6): the migration/translation plan.
+
+⏺ Write(dev/tech-spec_website-translate_20260825.md)
+  ⎿  Wrote 170 lines to dev/tech-spec_website-translate_20260825.md
+      1 # Plan — Replicating the WordPress Look/Feel/Flow in the Static R
+        epo
+      2 
+      4 **Inputs:**
+      5 - `tech-spec_website_programminghumanity_v1_20260825.md` (current
+         static site)
+      6 - `tech-spec_website-programminghumanity-wordpress_v1_20260825.md
+      7 - `report_diff-websites_20260825.md` (gap analysis)
+      8 
+      9 ---
+     … +253 lines (ctrl+o to expand)
+
+❯ PAUSE all tasks/agents/worktrees while disconnect here on campus, I drive     
+  home and reconnect on my home network                                         
+
+⏺ Pausing now. The only running background work is the repo-spec agent — I'll
+  stop it, then leave you a clean resume point.
+
+⏺ Stop Task
+  ⎿  Analyze the static website repo at /Users/jonc/cod... · stopped
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All paused. Good news: the repo-spec agent had already written its document
+  (26.8K) before I stopped it. Quick completeness check, then I'm done.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Everything is paused. Here's your status for when you reconnect at home:
+
+  Completed
+
+  1. Committed & pushed — 2ac935a "Add migrated static site..." (440 files) is
+     on origin/main.
+  2. gstack updated — 1.20.0 → 1.69.0. Note: it stashed local changes in
+     ~/.claude/skills/gstack; run git stash pop there if you want them back.
+  3. Repo spec — dev/tech-spec_website_programminghumanity_v1_20260825.md (27K)
+     was written by the background agent before I stopped it. It ends in the
+     placeholder-page inventory (104 placeholder pages listed by folder), which
+     may be its final section — worth a skim on resume to confirm the
+     nav/testing/gaps sections are all there.
+  4. WordPress spec —
+     dev/tech-spec_website-programminghumanity-wordpress_v1_20260825.md. Key
+     findings: the live site is stock Twenty Nineteen — serif 22px body / bold
+     sans headings, accent #0073a8, full-viewport per-page featured-image heroes
+     with a grayscale + blue-blend duotone, title overlaid bottom-left, no
+     sidebar, minimal nav (Syllabus/Readings/About).
+  5. Diff report — dev/report_diff-websites_20260825.md. Content parity is
+     complete (78/78 live URLs mirrored); design parity is poor: the repo
+     inverts the typography (serif headings/sans body instead of the reverse),
+     uses one un-filtered hero image everywhere with an invented navy title
+     band, and centers a 700px column where the theme is wide and left-weighted.
+  6. Migration plan — dev/tech-spec_website-translate_20260825.md: 6-phase plan
+     (scrape featured-image map while the WP site is up → CSS re-theme →
+     scripted BeautifulSoup batch transform of all 416 pages → responsive pass →
+     screenshot-vs-live QA loop → placeholder content fill), with recommended
+     skills (/browse for QA, Workflow fan-out per folder, commit-helper).
+
+  Paused / on hold
+
+  - repo-spec agent: stopped (its deliverable was already on disk).
+  - No worktrees, workflows, or cron jobs were active.
+  - The 4 new dev/ docs are uncommitted — left that way since you asked for the
+    commit before they existed; say the word on reconnect and I'll commit them.
+
+  Safe drive — when you're back, natural next steps are: review the four docs,
+  commit them, and kick off Phase 0 of the plan (scraping featured images from
+  the live site while it's still up).
+
+✻ Crunched for 7m 45s · done 7:14 PM
+
+❯ I'm back online at home so proceed                                            
+
+⏺ Welcome back. Proceeding with: (1) verify the repo spec doc is complete, (2)
+  commit the four dev docs, (3) kick off Phase 0 of the plan (capture
+  featured-image map + assets from the live site while it's up).
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ The repo spec is complete — all 8 sections plus appendix; the agent finished
+  before the pause. Committing the docs now.
+
+  Pushed to main, ran 2 shell commands (ctrl+o to expand)
+
+⏺ API works but returns only 41 pages (sitemap has ~60). Fetching posts too,
+  then I'll diff and scrape whatever the API misses.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ Direct slug queries are blocked — I'll scrape the 19 missing pages with the
+  browser instead.
+
+  Ran 1 shell command (ctrl+o to expand)
+⏺ All NONE — let me verify the pipeline isn't broken by testing against the
+  syllabus page, which I know has a featured image.
+
+  Ran 4 shell commands (ctrl+o to expand)
+
+⏺ macOS is showing a Keychain permission dialog (access to "Chrome Safe
+  Storage") — I need you to approve it before I can import the cookies.
+
+⏺ User answered Claude's questions:
+  ⎿  · A macOS Keychain dialog should be on screen asking to allow access to 
+     "Chrome Safe Storage" (needed to import your wordpress.com login cookies 
+     into the headless browser so I can capture the 19 password-protected 
+     pages). Click "Allow" (or "Always Allow"), then tell me to retry. 
+     Alternatively we can skip authenticated capture. → Allowed — retry now
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The import found 0 wordpress.com cookies — possibly a different Chrome
+  profile. Let me try a couple of variations.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ User answered Claude's questions:
+  ⎿  · How should I unlock the 19 password-protected pages (labs + several topic
+     pages) to capture their featured images and content? The page-password 
+     route is simplest: I enter it once in the page's password form and the 
+     whole session is unlocked. → Handoff browser login
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ User answered Claude's questions:
+  ⎿  · Have you finished logging into WordPress.com in the opened browser window
+     (and confirmed topic-ai shows content)? → Done — resume
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ 2.8MB WXR export captured — the complete site (all content including protected
+  pages, passwords, and featured-image links). Parsing it to complete the
+  featured-image map.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Namespace mismatch — let me check the actual WXR version.
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+⏺ The sanitized file is identical in size — checking whether passwords use CDATA
+  formatting.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ CDATA format — fixing the sanitization.
+
+  Ran 1 shell command (ctrl+o to expand)
+⏺ Passwords stripped. Now Phase 0.2 — downloading the 27 unique featured images
+  into images/uploads/, preserving WP paths.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ All images mirrored. Now Phase 0.3 — reference screenshots of the live site (9
+  representative pages, desktop + mobile) into dev/reference/.
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ I have the full picture. Before writing the new CSS and transform script,
+  checking whether the test suite depends on the .hero section I'm about to
+  restructure.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Tests require section.hero with an <h1> — I'll keep that element and move it
+  inside the header. Checking the full required-selector list first.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Tests just need the selectors and vars to exist — my plan keeps them all.
+  Checking how the home page is keyed in the map, then writing the new
+  stylesheet and the batch transform script.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Good — home maps to the tree image. Now the full stylesheet rewrite.
+
+⏺ Write(css/style.css)
+  ⎿  Added 246 lines, removed 98 lines
+      1 -/* Twenty Nineteen-inspired theme for Programming Humanity */   
+      1 +/* Twenty Nineteen-faithful theme for Programming Humanity      
+      2 +   Design tokens measured from programminghumanity.wordpress.com
+        + (2026-08-25):                                                  
+      3 +   serif body 22px/1.8, bold sans headings, primary #0073a8, gra
+        +yscale+blue                                                     
+      4 +   duotone featured-image headers with bottom-left entry title. 
+        +*/                                                              
+      5  
+      6  :root {
+      7    --bg: #fff;
+     ...
+       9    --text-lt: #767676;
+      10    --accent: #0073aa;
+      11    --accent-dk: #005177;
+      12 +  --primary: #0073a8;      /* duotone / hero tint */           
+      13    --border: #e0e0e0;
+      14    --code-bg: #f5f5f5;
+      15    --draft: #ff9800;
+      16    --priv: #e91e63;
+      17    --fh: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "
+          Times New Roman", serif;
+      14 -  --fb: "NonBreakingSpaceOverride", -apple-system, "Segoe UI", 
+         -Roboto, "Helvetica Neue", sans-serif;                          
+      15 -  --mw: 700px;                                                 
+      18 +  --fb: "NonBreakingSpaceOverride", -apple-system, "Segoe UI", 
+         +Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+         +;                                                              
+      19 +  --mw: 640px;             /* text column measure */           
+      20    --mww: 1168px;
+      21 +  --col-left: calc(8.33vw + 28px);  /* left offset of the conte
+         +nt column */                                                   
+      22  }
+      23  
+      24  /* Reset */
+     ...
+      26  
+      27  body {
+      28    margin: 0;
+      24 -  font-family: var(--fb);                                      
+      29 +  font-family: var(--fh);      /* serif reading text (Twenty Ni
+         +neteen) */                                                     
+      30    font-size: 22px;
+      31    line-height: 1.8;
+      32    color: var(--text);
+     ...
+      36  a {
+      37    color: var(--accent);
+      38    text-decoration: underline;
+      39 +  text-decoration-thickness: 2px;                              
+      40 +  text-underline-offset: 2px;                                  
+      41  }
+      42  a:hover {
+      43    color: var(--accent-dk);
+     ...
+       48    height: auto;
+       49  }
+       50  
+       51 +h1, h2, h3, h4, h5, h6 {                                      
+       52 +  font-family: var(--fb);      /* bold sans headings (Twenty N
+          +ineteen) */                                                   
+       53 +  font-weight: 700;                                           
+       54 +  letter-spacing: -0.02em;                                    
+       55 +  line-height: 1.2;                                           
+       56 +}                                                             
+       57 +                                                              
+       58  /* ===================== */
+       59  /*   Site Header         */
+       60  /* ===================== */
+       61  
+       62  .site-header {
+       63    position: relative;
+       50 -  background: #111 url("../images/uploads/tree-3097419_1920.jp
+          -g") center center / cover no-repeat;                          
+       64 +  color: var(--text);                                         
+       65 +  background: var(--bg);                                      
+       66 +  padding: 44px 0 0;                                          
+       67 +}                                                             
+       68 +                                                              
+       69 +/* --- Featured-image variant: full-viewport duotone hero --- 
+          +*/                                                            
+       70 +.site-header.has-featured-image {                             
+       71 +  min-height: 100vh;                                          
+       72 +  display: flex;                                              
+       73 +  flex-direction: column;                                     
+       74 +  justify-content: space-between;                             
+       75    color: #fff;
+       52 -  padding: 66px 2rem;                                         
+       53 -  text-align: center;                                         
+       76 +  background: #000e14;                                        
+       77 +  padding: 66px 0 88px;                                       
+       78 +  overflow: hidden;                                           
+       79  }
+       80  
+       56 -.site-header::before {                                        
+       57 -  content: "";                                                
+       81 +.featured-media {                                             
+       82    position: absolute;
+       83    inset: 0;
+       60 -  background: rgba(0, 0, 0, 0.5);                             
+       84    z-index: 0;
+       85  }
+       86 +.featured-media img {                                         
+       87 +  width: 100%;                                                
+       88 +  height: 100%;                                               
+       89 +  object-fit: cover;                                          
+       90 +  filter: grayscale(100%);                                    
+       91 +  opacity: 0.85;                                              
+       92 +}                                                             
+       93 +/* blue duotone: multiply tints highlights toward primary, kee
+          +ps shadows dark */                                            
+       94 +.featured-media::after {                                      
+       95 +  content: "";                                                
+       96 +  position: absolute;                                         
+       97 +  inset: 0;                                                   
+       98 +  background: var(--primary);                                 
+       99 +  mix-blend-mode: multiply;                                   
+      100 +  opacity: 0.9;                                               
+      101 +}                                                             
+      102  
+      103  .header-inner {
+      104    position: relative;
+      105    z-index: 1;
+      106 +  margin: 0 0 0 var(--col-left);                              
+      107    max-width: var(--mww);
+       68 -  margin: 0 auto;                                             
+      108 +  padding-right: 2rem;                                        
+      109 +  text-align: left;                                           
+      110  }
+      111  
+      112 +/* Branding: "Site Title — Tagline" on one line */            
+      113 +.site-branding {                                              
+      114 +  display: flex;                                              
+      115 +  flex-wrap: wrap;                                            
+      116 +  align-items: baseline;                                      
+      117 +  column-gap: 0.75rem;                                        
+      118 +}                                                             
+      119  .site-title {
+       72 -  font-family: var(--fh);                                     
+       73 -  font-size: 2.4rem;                                          
+       74 -  font-weight: 700;                                           
+       75 -  margin: 0 0 0.25rem;                                        
+      120 +  font-family: var(--fb);                                     
+      121 +  font-size: 24.75px;                                         
+      122 +  font-weight: 400;                                           
+      123 +  letter-spacing: -0.02em;                                    
+      124 +  margin: 0;                                                  
+      125    line-height: 1.2;
+      126  }
+       78 -                                                              
+      127  .site-title a {
+       80 -  color: #fff;                                                
+      128 +  color: inherit;                                             
+      129    text-decoration: none;
+      130  }
+      131  .site-title a:hover {
+      132 +  color: inherit;                                             
+      133    text-decoration: none;
+       85 -  color: #fff;                                                
+      134  }
+       87 -                                                              
+      135 +.site-sep {                                                   
+      136 +  font-family: var(--fh);                                     
+      137 +  font-size: 24.75px;                                         
+      138 +}                                                             
+      139 +.site-description,                                            
+      140  .site-title .tagline {
+       89 -  display: block;                                             
+       90 -  font-size: 1rem;                                            
+       91 -  font-style: italic;                                         
+      141 +  font-family: var(--fh);                                     
+      142 +  font-size: 24.75px;                                         
+      143    font-weight: 400;
+       93 -  opacity: 0.85;                                              
+       94 -  margin-top: 0.25rem;                                        
+      144 +  font-style: normal;                                         
+      145 +  letter-spacing: -0.01em;                                    
+      146 +  margin: 0;                                                  
+      147 +  line-height: 1.25;                                          
+      148 +  opacity: 1;                                                 
+      149  }
+      150 +.site-header.no-featured-image .site-description,             
+      151 +.site-header.no-featured-image .site-title .tagline {         
+      152 +  color: var(--text-lt);                                      
+      153 +}                                                             
+      154  
+      155  /* Navigation */
+      156  .main-nav {
+       99 -  margin-top: 1.5rem;                                         
+      157 +  margin-top: 0.6rem;                                         
+      158  }
+      159  .main-nav ul {
+      160    list-style: none;
+     ...
+      162    padding: 0;
+      163    display: flex;
+      164    flex-wrap: wrap;
+      107 -  justify-content: center;                                    
+      108 -  gap: 0.25rem;                                               
+      165 +  justify-content: flex-start;                                
+      166 +  column-gap: 1.5rem;                                         
+      167  }
+      168  .main-nav li a {
+      111 -  color: #fff;                                                
+      169 +  color: inherit;                                             
+      170    font-family: var(--fb);
+      171    font-weight: 700;
+      114 -  font-size: 0.72727rem;                                      
+      115 -  text-transform: uppercase;                                  
+      116 -  letter-spacing: 0.05em;                                     
+      117 -  padding: 0.5rem 0.75rem;                                    
+      172 +  font-size: 24.75px;                                         
+      173 +  letter-spacing: -0.02em;                                    
+      174 +  text-transform: none;                                       
+      175 +  padding: 0;                                                 
+      176    text-decoration: none;
+      119 -  transition: opacity 0.15s;                                  
+      177  }
+      121 -.main-nav li a:hover {                                        
+      178 +.main-nav li a:hover,                                         
+      179 +.main-nav li a.active {                                       
+      180    text-decoration: underline;
+      181 +  text-decoration-thickness: 2px;                             
+      182 +  text-underline-offset: 4px;                                 
+      183 +  color: inherit;                                             
+      184    background: none;
+      124 -  color: #fff;                                                
+      185  }
+      126 -.main-nav li a.active {                                       
+      127 -  text-decoration: underline;                                 
+      186 +.site-header.no-featured-image .main-nav li a {               
+      187 +  color: var(--accent);                                       
+      188  }
+      189  
+      190  .social-nav {
+      131 -  margin-top: 0.75rem;                                        
+      191 +  margin-top: 1.4rem;                                         
+      192  }
+      193  .social-nav a {
+      134 -  color: #fff;                                                
+      135 -  font-size: 0.85rem;                                         
+      194 +  color: inherit;                                             
+      195 +  font-family: var(--fb);                                     
+      196 +  font-size: 16px;                                            
+      197    text-decoration: none;
+      198  }
+      199  .social-nav a:hover {
+     ...
+      201  }
+      202  
+      203  /* ===================== */
+      143 -/*   Hero Section        */                                   
+      204 +/*   Hero / entry title  */                                   
+      205  /* ===================== */
+      206  
+      207 +/* On featured-image pages the hero sits at the bottom-left of
+          + the image;                                                   
+      208 +   on plain pages it flows in the document with a gray dash. *
+          +/                                                             
+      209  .hero {
+      147 -  background: #1a1a2e;                                        
+      148 -  color: #fff;                                                
+      149 -  padding: 3rem 2rem;                                         
+      210 +  position: relative;                                         
+      211 +  z-index: 1;                                                 
+      212 +  background: none;                                           
+      213 +  color: inherit;                                             
+      214 +  padding: 0;                                                 
+      215 +  margin: 3rem 0 0 var(--col-left);                           
+      216 +  max-width: calc(var(--mw) + 4rem);                          
+      217 +  padding-right: 2rem;                                        
+      218  }
+      151 -                                                              
+      219  .hero h1 {
+      153 -  font-family: var(--fh);                                     
+      154 -  font-size: 2.25rem;                                         
+      220 +  font-family: var(--fb);                                     
+      221 +  font-size: 49.5px;                                          
+      222    font-weight: 700;
+      156 -  margin: 0;                                                  
+      157 -  max-width: var(--mw);                                       
+      158 -  margin-left: auto;                                          
+      159 -  margin-right: auto;                                         
+      223 +  letter-spacing: -0.02em;                                    
+      224    line-height: 1.2;
+      225 +  margin: 0;                                                  
+      226 +  max-width: none;                                            
+      227  }
+      228 +.hero h1::before {                                            
+      229 +  content: "";                                                
+      230 +  display: block;                                             
+      231 +  width: 2.2em;                                               
+      232 +  height: 2px;                                                
+      233 +  margin-bottom: 1rem;                                        
+      234 +  background: currentColor;                                   
+      235 +}                                                             
+      236 +.site-header.no-featured-image .hero {                        
+      237 +  margin-top: 4rem;                                           
+      238 +  margin-bottom: 0.5rem;                                      
+      239 +}                                                             
+      240 +.site-header.no-featured-image .hero h1::before {             
+      241 +  background: var(--text-lt);                                 
+      242 +}                                                             
+      243  
+      244  /* ===================== */
+      245  /*   Content             */
+      246  /* ===================== */
+      247  
+      248  .content-wrapper {
+      168 -  max-width: var(--mw);                                       
+      169 -  margin: 0 auto;                                             
+      170 -  padding: 3rem 2rem 4rem;                                    
+      249 +  max-width: calc(var(--mw) + 4rem);                          
+      250 +  margin: 0 0 0 var(--col-left);                              
+      251 +  padding: 2.5rem 2rem 4rem 0;                                
+      252  }
+      253  
+      173 -/* Breadcrumbs */                                             
+      254 +/* Breadcrumbs (repo addition — quiet) */                     
+      255  .breadcrumbs {
+      175 -  font-size: 0.72727rem;                                      
+      256 +  font-family: var(--fb);                                     
+      257 +  font-size: 15px;                                            
+      258    color: var(--text-lt);
+      177 -  margin-bottom: 1.5rem;                                      
+      259 +  margin-bottom: 1.25rem;                                     
+      260    padding-bottom: 0.5rem;
+      261  }
+      262  .breadcrumbs a {
+      263    color: var(--accent);
+      264 +  text-decoration-thickness: 1px;                             
+      265  }
+      266  
+      184 -/* Page meta */                                               
+      267 +/* Page meta (repo addition — quiet) */                       
+      268  .page-meta {
+      186 -  font-size: 0.72727rem;                                      
+      269 +  font-family: var(--fb);                                     
+      270 +  font-size: 15px;                                            
+      271    color: var(--text-lt);
+      272    margin-bottom: 2rem;
+      273  }
+      274  
+      275 +/* Blog entry meta (author / date row) */                     
+      276 +.entry-meta {                                                 
+      277 +  font-family: var(--fb);                                     
+      278 +  font-size: 16px;                                            
+      279 +  color: var(--text-lt);                                      
+      280 +  margin: 0 0 1.5rem;                                         
+      281 +  display: flex;                                              
+      282 +  flex-wrap: wrap;                                            
+      283 +  gap: 1.25rem;                                               
+      284 +}                                                             
+      285 +.entry-meta a { color: var(--accent); }                       
+      286 +                                                              
+      287 +/* Category footer + prev/next (blog) */                      
+      288 +.entry-footer {                                               
+      289 +  font-family: var(--fb);                                     
+      290 +  font-size: 16px;                                            
+      291 +  color: var(--text-lt);                                      
+      292 +  border-top: 1px solid var(--border);                        
+      293 +  margin-top: 3rem;                                           
+      294 +  padding-top: 1rem;                                          
+      295 +}                                                             
+      296 +.post-nav {                                                   
+      297 +  font-family: var(--fb);                                     
+      298 +  font-size: 18px;                                            
+      299 +  margin-top: 2rem;                                           
+      300 +  display: flex;                                              
+      301 +  justify-content: space-between;                             
+      302 +  gap: 2rem;                                                  
+      303 +}                                                             
+      304 +.share-links {                                                
+      305 +  font-family: var(--fb);                                     
+      306 +  font-size: 15px;                                            
+      307 +  margin-top: 2.5rem;                                         
+      308 +  color: var(--text-lt);                                      
+      309 +}                                                             
+      310 +.share-links a { margin-right: 1rem; }                        
+      311 +                                                              
+      312  /* Page content typography */
+      313  .page-content h1,
+      314  .page-content h2,
+      315  .page-content h3,
+      316  .page-content h4 {
+      196 -  font-family: var(--fh);                                     
+      317 +  font-family: var(--fb);                                     
+      318    color: var(--text);
+      319    margin-top: 2rem;
+      320    margin-bottom: 0.8rem;
+      200 -  line-height: 1.3;                                           
+      321 +  line-height: 1.2;                                           
+      322  }
+      323  
+      203 -.page-content h2 {                                            
+      204 -  font-size: 1.8rem;                                          
+      205 -}                                                             
+      324 +.page-content h2 { font-size: 36px; }                         
+      325 +.page-content h3 { font-size: 28px; }                         
+      326 +.page-content h4 { font-size: 22px; }                         
+      327  
+      207 -.page-content h3 {                                            
+      208 -  font-size: 1.4rem;                                          
+      209 -}                                                             
+      210 -                                                              
+      211 -.page-content h4 {                                            
+      212 -  font-size: 1.125rem;                                        
+      213 -}                                                             
+      214 -                                                              
+      328  .page-content p {
+      329    margin: 1.5rem 0;
+      330  }
+      331  
+      332  .page-content blockquote {
+      220 -  border-left: 4px solid var(--accent);                       
+      333 +  border-left: 2px solid var(--accent);                       
+      334    margin: 1.5rem 0;
+      222 -  padding: 0 0 0 1rem;                                        
+      335 +  padding: 0 0 0 1.5rem;                                      
+      336    font-style: italic;
+      224 -  font-size: 1.125em;                                         
+      337 +  font-size: 1em;                                             
+      338    color: var(--text);
+      339  }
+      340  
+      341  .page-content pre,
+      342  .page-content code {
+      343    background: var(--code-bg);
+      231 -  font-size: 0.85em;                                          
+      344 +  font-size: 0.8em;                                           
+      345    border-radius: 3px;
+      346  }
+      347  .page-content pre {
+     ...
+      369    border: none;
+      370    border-top: 2px solid var(--border);
+      371    margin: 2rem 0;
+      372 +  width: 2.2em;                                               
+      373 +  margin-left: 0;                                             
+      374  }
+      375  
+      376  .page-content table {
+      377    width: 100%;
+      378    border-collapse: collapse;
+      379    margin: 1.5rem 0;
+      265 -  font-size: 0.9em;                                           
+      380 +  font-size: 0.8em;                                           
+      381 +  font-family: var(--fb);                                     
+      382  }
+      383  .page-content th,
+      384  .page-content td {
+     ...
+      387    text-align: left;
+      388  }
+      389  .page-content th {
+      274 -  background: #f5f5f5;                                        
+      390 +  background: var(--code-bg);                                 
+      391    font-weight: 700;
+      392  }
+      393  
+      394  .page-content figure {
+      279 -  margin: 1.5rem 0;                                           
+      395 +  margin: 2rem 0;                                             
+      396  }
+      397  .page-content figcaption {
+      282 -  font-size: 0.72727rem;                                      
+      398 +  font-family: var(--fb);                                     
+      399 +  font-size: 16px;                                            
+      400    color: var(--text-lt);
+      284 -  font-style: italic;                                         
+      401 +  font-style: normal;                                         
+      402 +  text-align: center;                                         
+      403    margin-top: 0.5rem;
+      404    line-height: 1.6;
+      405  }
+     ...
+      410  
+      411  .badge {
+      412    display: inline-block;
+      413 +  font-family: var(--fb);                                     
+      414    padding: 0.15rem 0.5rem;
+      415    border-radius: 3px;
+      297 -  font-size: 0.6rem;                                          
+      416 +  font-size: 12px;                                            
+      417    font-weight: 700;
+      418    text-transform: uppercase;
+      419    letter-spacing: 0.5px;
+     ...
+      435  
+      436  /* Placeholder notice */
+      437  .placeholder-notice {
+      438 +  font-family: var(--fb);                                     
+      439    background: #fff3e0;
+      440    border: 2px dashed var(--draft);
+      441    padding: 1.5rem;
+     ...
+      456    margin-bottom: 2.5rem;
+      457  }
+      458  .section h2 {
+      339 -  font-family: var(--fh);                                     
+      459 +  font-family: var(--fb);                                     
+      460    color: var(--text);
+      341 -  font-size: 1.6rem;                                          
+      461 +  font-size: 32px;                                            
+      462  }
+      463  
+      464  .item-list {
+     ...
+      483  /* ===================== */
+      484  
+      485  .wp-block-image {
+      366 -  margin: 1.5rem 0;                                           
+      486 +  margin: 2rem 0;                                             
+      487  }
+      488  .wp-block-separator {
+      489    border: none;
+      370 -  border-top: 2px solid var(--border);                        
+      490 +  border-top: 2px solid var(--text);                          
+      491 +  width: 2.2em;                                               
+      492    margin: 2rem 0;
+      493 +  margin-left: 0;                                             
+      494  }
+      495  
+      496  /* ===================== */
+     ...
+      498  /* ===================== */
+      499  
+      500  .site-footer {
+      379 -  border-top: 1px solid var(--border);                        
+      501 +  border-top: none;                                           
+      502    background: var(--bg);
+      503    color: var(--text-lt);
+      382 -  padding: 2rem;                                              
+      383 -  text-align: center;                                         
+      384 -  font-size: 0.72727rem;                                      
+      504 +  font-family: var(--fb);                                     
+      505 +  padding: 2rem 2rem 2rem var(--col-left);                    
+      506 +  text-align: left;                                           
+      507 +  font-size: 16px;                                            
+      508  }
+      509  .site-footer a {
+      510    color: var(--accent);
+     ...
+      514  /*   Responsive          */
+      515  /* ===================== */
+      516  
+      517 +@media (max-width: 1024px) {                                  
+      518 +  :root {                                                     
+      519 +    --col-left: calc(4vw + 16px);                             
+      520 +  }                                                           
+      521 +}                                                             
+      522 +                                                              
+      523  @media (max-width: 768px) {
+      524    body {
+      525      font-size: 18px;
+      526    }
+      527  
+      399 -  .site-header {                                              
+      400 -    padding: 40px 1rem;                                       
+      528 +  :root {                                                     
+      529 +    --col-left: 1rem;                                         
+      530    }
+      531  
+      403 -  .site-title {                                               
+      404 -    font-size: 1.6rem;                                        
+      532 +  /* Live-site mobile behavior: hero collapses to a solid prim
+          +ary block */                                                  
+      533 +  .site-header.has-featured-image {                           
+      534 +    background: var(--primary);                               
+      535 +    padding: 44px 0 56px;                                     
+      536    }
+      537 +  .featured-media {                                           
+      538 +    display: none;                                            
+      539 +  }                                                           
+      540  
+      407 -  .hero {                                                     
+      408 -    padding: 2rem 1rem;                                       
+      541 +  .site-header {                                              
+      542 +    padding-top: 32px;                                        
+      543    }
+      544 +                                                              
+      545 +  .site-title,                                                
+      546 +  .site-sep,                                                  
+      547 +  .site-description,                                          
+      548 +  .site-title .tagline,                                       
+      549 +  .main-nav li a {                                            
+      550 +    font-size: 20px;                                          
+      551 +  }                                                           
+      552 +                                                              
+      553    .hero h1 {
+      411 -    font-size: 1.8rem;                                        
+      554 +    font-size: 34px;                                          
+      555    }
+      556  
+      557    .content-wrapper {
+      415 -    padding: 2rem 1rem;                                       
+      558 +    padding: 2rem 1rem 3rem 0;                                
+      559    }
+      560  
+      561    .columns {
+      562      column-count: 1;
+      563    }
+      564 +                                                              
+      565 +  .post-nav {                                                 
+      566 +    flex-direction: column;                                   
+      567 +    gap: 0.5rem;                                              
+      568 +  }                                                           
+      569  }
+
+⏺ Now the batch transform script.
+
+⏺ Write(dev/scripts/retheme.py)
+  ⎿  Wrote 119 lines to dev/scripts/retheme.py
+       1 #!/usr/bin/env python3
+         r structure.
+       3 
+       4 For every page:
+       6   dev/data/featured-images.json with a featured image) or `no-fe
+         atured-image`
+         nder
+       8   images/uploads/) for image pages
+       9 - restructure branding to the one-line "Site Title — Tagline" pa
+      10 - move `section.hero` (entry title) inside the header
+     … +125 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+  ⎿  Found 1 new diagnostic issue in 1 file (ctrl+o to expand)
+
+⏺ All 416 pages transformed (60 with featured-image heroes, 356 white variant,
+  none skipped). Visual check against the live references.
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ Very close to the live look already. The duotone is a bit brighter than the
+  live site's — dimming the image layer, then checking the content area and a
+  white-variant page.
+
+⏺ Update(css/style.css)
+  ⎿  Added 1 line, removed 1 line
+      88    height: 100%;
+      89    object-fit: cover;
+      90    filter: grayscale(100%);
+      91 -  opacity: 0.85;                                               
+      91 +  opacity: 0.65;                                               
+      92  }
+      93  /* blue duotone: multiply tints highlights toward primary, keep
+          s shadows dark */
+      94  .featured-media::after {
+
+  Read 3 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ The re-theme is landing well — hero, typography, and white-variant all match
+  the live design closely. Running the test suite to catch regressions.
+
+  Ran 2 shell commands (ctrl+o to expand)
+⏺ Write(dev/scripts/blogmeta.py)
+  ⎿  Wrote 182 lines to dev/scripts/blogmeta.py
+       1 #!/usr/bin/env python3
+       3 
+       4 Using dev/data/wxr-meta.json (from the WordPress export):
+       5 - blog posts get an `.entry-meta` row (author + date), an `.entr
+       6   ("Posted in <categories>"), and prev/next `.post-nav` links ac
+         ross the
+       8 - every page/post that exists on the live site gets a `.share-li
+         nks` row
+       9   (X + Facebook share intents pointing at the live URL)
+         xcerpt,
+     … +195 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+  ⎿  Found 2 new diagnostic issues in 1 file (ctrl+o to expand)
+
+⏺ Adding styles for the new post-preview listing, then verifying.
+
+⏺ Update(css/style.css)
+  ⎿  Added 27 lines
+      404    line-height: 1.6;
+      405  }
+      406  
+      407 +/* Blog index: live-style post previews */                    
+      408 +.post-preview {                                               
+      409 +  margin-bottom: 3rem;                                        
+      410 +}                                                             
+      411 +.post-preview h2 {                                            
+      412 +  font-size: 36px;                                            
+      413 +  margin: 0 0 0.25rem;                                        
+      414 +}                                                             
+      415 +.post-preview h2 a {                                          
+      416 +  color: var(--text);                                         
+      417 +  text-decoration: none;                                      
+      418 +}                                                             
+      419 +.post-preview h2 a:hover {                                    
+      420 +  color: var(--accent);                                       
+      421 +  text-decoration: underline;                                 
+      422 +}                                                             
+      423 +.post-preview .entry-meta {                                   
+      424 +  margin-bottom: 0.75rem;                                     
+      425 +}                                                             
+      426 +.post-preview p {                                             
+      427 +  margin: 0;                                                  
+      428 +}                                                             
+      429 +.other-blog-pages {                                           
+      430 +  border-top: 1px solid var(--border);                        
+      431 +  padding-top: 2rem;                                          
+      432 +}                                                             
+      433 +                                                              
+      434  /* ===================== */
+      435  /*   Badges              */
+      436  /* ===================== */
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ Blog post meta and index now match the live style. One redundancy: posts show
+  both the old "Created:" line and the new meta row — removing the old line on
+  posts.
+
+  Read 1 file, ran 3 shell commands (ctrl+o to expand)
+
+⏺ The mobile hero matches the live site's solid-blue collapse exactly. Phases
+  0–2 are done and all 90 tests pass. Here's where things stand:
+
+  Completed this session
+
+  Phase 0 — capture (live site as source of truth)
+  - dev/data/featured-images.json — 79 published entries incl. all 19
+    password-protected pages (via your browser-login handoff → full wp-admin WXR
+    export)
+  - dev/data/wxr-meta.json — author/date/categories/excerpts for all 145 slugs
+  - dev/data/site-export_sanitized_20260825.xml — full content export, passwords
+    stripped (raw copy kept locally but gitignored)
+  - 27 hero images mirrored to images/uploads/ (7.9M); 18 live reference
+    screenshots in dev/reference/
+
+  Phase 1 — CSS re-theme (css/style.css rewritten)
+  - Typography un-inverted: serif 22px/1.8 body, bold sans headings — matching
+    measured live values
+  - Full-viewport duotone hero (grayscale + #0073a8 multiply blend), branding
+    one-line "Title — Tagline", title bottom-left with white dash; plain-white
+    header variant; left-weighted content column; mobile solid-blue hero
+
+  Phase 2 — batch transforms (scripts checked into dev/scripts/)
+  - retheme.py: all 416 pages restructured — 60 with per-page featured heroes,
+    356 white variant
+  - blogmeta.py: 21 posts got meta rows + category footers + prev/next nav; 83
+    pages got share links (pointing at their live URLs); blog/index.html rebuilt
+    as a live-style preview list of the 19 published posts
+
+  Side-by-side with the live references, home/syllabus/blog now read as the same
+  site. Everything is uncommitted per your trunk rules — want me to commit and 
+  push this checkpoint?
+
+  Remaining (from the plan, whenever you want them): populating the 104
+  placeholder pages from the sanitized export, mirroring body images off the WP
+  CDN, and a fine-tuning pass against the reference screenshots (minor
+  duotone/spacing nudges).
+
+✻ Churned for 12m 2s · done 8:26 PM
+
+※ recap: Re-theming this static site to match your live WordPress site: capture, CSS re-theme, and batch transforms are done, all 90 tests pass, work is uncommitted. Next action: your go-ahead to commit and push this checkpoint. (disable recaps in /config)
+
+❯ git commit and push                                                           
+
+  Pushed to main (ctrl+o to expand)
+
+⏺ Committed and pushed — 2f40ca4 (467 files) is on origin/main. Quick safety
+  check that the raw export with passwords stayed out:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Hmm — dev/data/ shows nothing tracked, which would mean the data files were
+  excluded too. Checking what's actually in the commit:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The confusing output was just cwd being tests/. Checking the raw-export
+  exclusion from the repo root:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All confirmed clean:
+
+  - 2f40ca4 pushed to origin/main — 467 files: the CSS re-theme, all 416
+    transformed pages, both transform scripts, mirrored hero images, reference
+    screenshots, and the data files.
+  - Committed data: featured-images.json, wxr-meta.json, and the sanitized
+    export (passwords blanked).
+  - Excluded as intended: site-export_raw_20260825.xml (contains post passwords)
+    is caught by the .gitignore rule and stays local only.
+
+  The repo now mirrors the live site's look and feel through Phase 2. When you
+  want to continue: populating the 104 placeholder pages from the sanitized
+  export is the biggest remaining win, followed by mirroring body images off the
+  WP.com CDN.
+
+✻ Brewed for 35s · done 8:53 PM
+
+❯ 1. standup a local webserver and serve the root of this redesigned website    
+  (give the URL) for a visual test locally                                      
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+⏺ The server is up and serving the redesigned site from the repo root (index and
+  stylesheet both return 200).
+
+  Open: http://localhost:8080/
+
+  Good pages to eyeball for the redesign:
+  - http://localhost:8080/ — duotone tree hero, full viewport
+  - http://localhost:8080/core/syllabus.html — per-page hero (train tracks) +
+    serif/sans typography
+  - http://localhost:8080/blog/index.html — live-style post previews
+  - http://localhost:8080/blog/statistics-vs-ml.html — white header variant +
+    post meta/prev-next
+
+  It's running in the background (bind 127.0.0.1, port 8080), so it stays up
+  while we work — tell me when you want it stopped. Note the body images still
+  hotlink to the WP.com CDN, so those need your network to render; only the 27
+  hero images are served locally.
+
+✻ Crunched for 16s · done 8:54 PM
+
+❯ proceed with Remaining (from the plan, whenever you want them): populating    
+  the 104 placeholder pages from the sanitized export, mirroring body images    
+  off the WP CDN, and a fine-tuning pass against the reference screenshots      
+  (minor duotone/spacing nudges).                                               
+
+⏺ Proceeding with the three remaining work items: placeholder population,
+  body-image mirroring, and visual fine-tuning. Starting by matching the
+  placeholder pages against the export's content.
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The 104 stubs aren't marked with placeholder classes — they're pages whose
+  whole body is a boilerplate paragraph. Detecting them by content pattern
+  instead.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Only 4 of 104 stubs match export slugs — the stub pages may not exist on the
+  live site at all. Verifying against both the export and the live site:
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ 289 CDN images across three hosts (including
+  humanityandtechnology.files.wordpress.com, a related site). Downloading all of
+  them, then rewriting page references.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All 288 images mirrored (46M), zero failures. Now rewriting page references to
+  the local copies.
+
+  Searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+⏺ One straggler with a unicode-mangled filename — handling it directly.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ No remote images remain. Now task 3: fine-tuning against the live references.
+  Capturing fresh local screenshots via the running server for side-by-side
+  comparison.
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ Update(css/style.css)
+  ⎿  Added 1 line, removed 3 lines
+       88    height: 100%;
+       89    object-fit: cover;
+       90    filter: grayscale(100%);
+       91 -  opacity: 0.65;                                              
+       91  }
+       93 -/* blue duotone: multiply tints highlights toward primary, kee
+          -ps shadows dark */                                            
+       92 +/* blue duotone: multiply keeps shadows black, tints highlight
+          +s toward primary */                                           
+       93  .featured-media::after {
+       94    content: "";
+       95    position: absolute;
+       96    inset: 0;
+       97    background: var(--primary);
+       98    mix-blend-mode: multiply;
+      100 -  opacity: 0.9;                                               
+       99  }
+      100  
+      101  .header-inner {
+
+⏺ Update(css/style.css)
+  ⎿  Added 1 line, removed 1 line
+      396    font-family: var(--fb);
+      397    font-size: 16px;
+      398    color: var(--text-lt);
+      399 -  font-style: normal;                                         
+      399 +  font-style: italic;                                         
+      400    text-align: center;
+      401    margin-top: 0.5rem;
+      402    line-height: 1.6;
+
+⏺ Update(css/style.css)
+  ⎿  Added 29 lines, removed 3 lines
+      302  .share-links {
+      303    font-family: var(--fb);
+      304    font-size: 15px;
+      305 -  margin-top: 2.5rem;                                         
+      306 -  color: var(--text-lt);                                      
+      305 +  margin-top: 3rem;                                           
+      306 +  color: var(--text);                                         
+      307  }
+      308 -.share-links a { margin-right: 1rem; }                        
+      308 +.share-links > span {                                         
+      309 +  display: block;                                             
+      310 +  font-weight: 700;                                           
+      311 +  font-size: 18px;                                            
+      312 +  margin-bottom: 0.6rem;                                      
+      313 +}                                                             
+      314 +.share-links > span::before {                                 
+      315 +  content: "";                                                
+      316 +  display: block;                                             
+      317 +  width: 1em;                                                 
+      318 +  height: 1px;                                                
+      319 +  background: var(--text);                                    
+      320 +  margin-bottom: 1rem;                                        
+      321 +}                                                             
+      322 +.share-links a {                                              
+      323 +  display: inline-block;                                      
+      324 +  margin-right: 0.5rem;                                       
+      325 +  padding: 0.2rem 0.8rem;                                     
+      326 +  border: 1px solid var(--border);                            
+      327 +  border-radius: 3px;                                         
+      328 +  color: var(--text);                                         
+      329 +  text-decoration: none;                                      
+      330 +}                                                             
+      331 +.share-links a:hover {                                        
+      332 +  border-color: var(--text-lt);                               
+      333 +  color: var(--text);                                         
+      334 +}                                                             
+      335  
+      336  /* Page content typography */
+      337  .page-content h1,
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ The hero looks unchanged — checking whether the browser is serving a cached
+  stylesheet.
+
+  Ran 4 shell commands (ctrl+o to expand)
+
+⏺ The server serves the new CSS but the browser's heuristic cache is holding the
+  old copy. Forcing a hard reload:
+
+  Read 3 files, ran 4 shell commands (ctrl+o to expand)
+⏺ All three remaining items are done. Summary:
+
+  1. Placeholder pages — important finding, no action taken. The 104 stub pages
+  cannot be populated from WordPress: I checked every stub slug against the
+  complete WXR export (145 entries including drafts and protected pages) and the
+  live site — 100 of 104 have no corresponding WordPress content at all (404 on
+  the live site, absent from the export). They were invented during the
+  original migration, as per-class anchors for sessions that only exist as line
+  items inside semester hub pages. The 4 near-matches (syllabus-2, syllabus-3,
+  syllabus-ai-2019, readings-2023) would just duplicate the current
+  syllabus/readings into archive folders, which seemed wrong to do silently.
+  Your options, whenever you decide: leave them as stubs, delete them and
+  de-list from indexes, or seed each from its semester hub page's session
+  listing.
+
+  2. Body images mirrored — complete. 289 CDN images downloaded (zero failures,
+  images/uploads/ now 46M, preserving WP paths, plus an
+  ext/humanityandtechnology/ subfolder for a related site's files). 428 <img>
+  tags across 114 pages rewritten to local paths, 311 CDN srcset attributes
+  dropped. Zero remote WordPress images remain — the site is now fully
+  self-hosted except intentional share/external links.
+
+  3. Fine-tuning — done. Three nudges from the reference comparison: the duotone
+  is now a pure multiply blend (deep black shadows, rich navy — matches the
+  live capture much more closely than the earlier washed version), figure
+  captions are italic per live styling, and share links render as the live-style
+  "Share this:" label with bordered chip buttons (also added to the home page,
+  which the earlier pass had skipped). All 90 tests still pass, no console
+  errors.
+
+  One note for your visual test: your own browser may cache the old stylesheet
+  the same way my headless one did — hard-refresh (Cmd+Shift+R) at
+  http://localhost:8080/ if the hero looks washed out.
+
+  Everything is uncommitted — say the word and I'll commit and push this
+  checkpoint.
+
+✻ Brewed for 5m 55s · done 9:02 PM
+
+※ recap: We're restyling the static repo site to match your live WordPress theme; image mirroring and visual fine-tuning are done, all tests pass. Next action: your go-ahead to commit and push this checkpoint. (disable recaps in /config)
+
+❯ commit and push                                                               
+
+  Pushed to main (ctrl+o to expand)
+
+⏺ Committed and pushed — 1ff3c43 (363 files: the 249 mirrored images, 114
+  rewritten pages, and the CSS fine-tuning) is on origin/main.
+
+  The local server is still running at http://localhost:8080/ for your visual
+  test (hard-refresh with Cmd+Shift+R to bust the stylesheet cache). The site is
+  now fully self-contained — every image serves locally, so it renders complete
+  even offline or if the WordPress site ever goes away.
+
+  Open decision whenever you're ready: what to do with the 104 stub pages (leave
+  as-is, delete + de-list, or seed from the semester hub pages' session
+  listings).
+
+✻ Cogitated for 17s · done 9:06 PM
+
+※ recap: Re-theming this static site to match your live WordPress design: all phases done, committed and pushed (1ff3c43), site fully self-hosted at localhost:8080. Next: decide how to handle the 104 stub pages with no WordPress source content. (disable recaps in /config)
+
+❯ 1. what are the 104 stub pages? are the older pages? Mostly empty pages? are  
+  they linked to any of the core website pages or in any other way              
+  discoverable? give some examples.                                             
+  2. what do you recommend to do with the stub pages and why?                   
+
+⏺ Let me pull the details to answer precisely.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ 1. What the 104 stubs are
+
+  They're per-class-session pages created during the original WordPress→static
+  migration, spread across the seven semester folders (2018-2019: 8, 2019-fall:
+  22, 2021: 24, 2022-spring: 14, 2023: 6, 2025-spring: 16, 2026-spring: 14).
+  None exist in core/, blog/, labs/, or topics/.
+
+  Content: essentially empty. Each contains only a two-sentence boilerplate,
+  e.g. 2021/introduction-to-ai-2021.html:
+
+  ▎ "This lecture is part of the 2021 semester of Programming Humanity. For the 
+  ▎ complete course outline, readings, and resources, see the Readings page."
+
+  Age: they span all eras (2018–2026), so not just old pages — even the current
+  2026-spring folder has 14.
+
+  Discoverable: yes, twice over — each is linked from its semester's index.html
+  item list and from archive.html. So a visitor browsing "2021 (31 items)"
+  clicks "Introduction to AI" and lands on a dead-end boilerplate page.
+
+  Provenance: they never existed as pages on WordPress. I verified every slug
+  against the complete wp-admin export (which includes drafts, private, and
+  password-protected content) and the live site (all 404). The titles were
+  evidently harvested from class-schedule listings inside the semester hub pages
+  (like the protected topic-ai "Topic: Artificial Intelligence (2021)"), where
+  each session is a line item — often linking out to Google Slides — not a page.
+
+  Examples by flavor:
+  - Real session titles: 2021/building-brains-with-artificial-neurons.html,
+    2022-spring/xai-and-ethics-2022.html,
+    2025-spring/machine-learning-introduction-spring-2025.html
+  - Obvious migration debris: 2026-spring/test-1.html,
+    2026-spring/test-14-16.html, 2025-spring/dup-future-trends-ai-2019.html,
+    2023/creating-reality-with-gans-and-vits-2023-old.html,
+    2023/reinforcement-learning-and-the-future-of-ai-orig-2023.html
+
+  2. Recommendation: delete the files, keep the titles
+
+  Delete all 104 pages, de-link them from the folder indexes and archive.html, 
+  but keep the session titles in the indexes as plain (unlinked) text.
+  Reasoning:
+
+  - The dead ends are the real problem. Every stub is two clicks from the
+    homepage and delivers nothing. That's worse UX than not having the page — it
+    erodes trust in every other link.
+  - There's nothing to wait for. The usual reason to keep stubs is "content is
+    coming." Here I've verified the content doesn't exist anywhere in WordPress,
+    so "populate later from the live site" is off the table permanently.
+  - But the titles are genuinely valuable — they're the per-semester course
+    outline (which sessions were taught, in what order). Deleting them entirely
+    would lose real information the live site keeps inside its hub pages.
+    Rendering them as unlinked list items (styled gray, like a schedule)
+    preserves that at zero UX cost.
+  - Handle the debris separately: the ~7 junk names (test-1, test-14-16, dup-*,
+    *-old, *-orig, plus syllabus-2/syllabus-3 which are stray duplicates) should
+    be dropped from the listings entirely, not kept as titles — they were never
+    sessions.
+  - Practical side effects are safe: page count drops 416→312, still comfortably
+    above the test suite's 200-page minimum, though the e2e "target file
+    coverage" test may enumerate some stub filenames — I'd update that list in
+    the same pass.
+
+  The one alternative worth naming: seeding each stub from its semester hub
+  page's session line (a sentence or two plus the Slides link, now recoverable
+  since we have the protected hub content in the export). It keeps the pages
+  alive, but 24 sessions sharing a 6KB hub page means most would still be
+  near-empty — a thin veneer over the same dead end. I'd only do this for
+  semesters where the hub actually has per-session detail.
+
+  Want me to do the delete + de-link pass (with the titles preserved as unlinked
+  schedule items)?
+
+✻ Worked for 43s · done 9:13 PM
+
+❯ 1. use the test Chrome browser that is logged in as admin to crawl over each  
+  of the pages from the list in                                                 
+  https://programminghumanity.wordpress.com/wp-admin/edit.php?post_type=page to 
+  create a reference doc of all pages including (a) each page title, URL,       
+  password, content size, creation date, last update date, etc. (b) cluster     
+  pages by year and fall (e.g. 2026fall) (c) organize all pages into working    
+  websites with rooted in /archive/{YYYYsem}/{root-website-dir}, (d) map out    
+  the linkd from each archive/{YYYYsem}/{root-website-dir} homepage to all      
+  supporting webpages (usually by weekly assignments) (e) test/debug/crawl/fix  
+  any deadlinks or unconnected webpages (prune or save somewhere),              
+  2. create a copy of the most recent archived website with the home root dir   
+  in ~/code/programming-humanity-org/website and relable all the webpages to be 
+  "2026fall", "(Fall 2026)" or "Fall 2026" as is appropriate (iteratively       
+  test/debug/fix this Fall 2026 home root website as it will be our newest live 
+  website)                                                                      
+  3. create a dev/manual_website-deploy-netlify_20260825.md document that is a  
+  complete, concise, concrete/actionable, and well-structured manual with       
+  detailed step-by-step instructions to create a new web host on netlify and    
+  create a GitHub action to deploy the ~/code/programming-humanity-org/website/ 
+  subdir containing the "Fall 2026" website to this netlify host each time the  
+  Github.com/jon-chun/programming-humanity-org/website/ subdir in this repo is  
+  updated/pushed                                                                
+  4. git commit and push                                                        
+
+⏺ This is a big multi-part job. Plan: (1) verify the authenticated browser
+  session still works and crawl the admin page list, merging with the WXR export
+  for a complete inventory; (2) cluster by semester and build the
+  /archive/{YYYYsem}/ sites; (3) link-map and dead-link testing; (4) build the
+  Fall 2026 website/ root; (5) the Netlify manual; (6) commit/push. Starting
+  with the session check.
+
+  Ran 7 shell commands (ctrl+o to expand)
+
+⏺ The current Readings page shows zero internal links — checking its raw content
+  to see how it references the weekly pages.
+
+  Ran 1 shell command (ctrl+o to expand)
+⏺ The Readings page is just an outline — no links to weekly pages. Checking the
+  "Topics" hub and the actual link structure:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Write(dev/scripts/build_archives.py)
+  ⎿  Wrote 316 lines to dev/scripts/build_archives.py
+       1 #!/usr/bin/env python3
+         /{YYYYsem}/.
+       3 
+         ll WordPress
+         rom that
+       6 semester's root pages (readings/syllabus/topics hubs), unioned w
+       7 slug/title-classified pages. The current semester (2025fall) add
+         itionally
+       9 
+         variant,
+     … +350 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All six archives built (162 pages, zero missing images). Now the link checker
+  (task e):
+
+⏺ Write(dev/scripts/check_links.py)
+  ⎿  Wrote 61 lines to dev/scripts/check_links.py
+       1 #!/usr/bin/env python3
+         ite.
+       3 
+         ite) and
+         . Absolute
+       6 http(s) links are listed separately (not fetched) unless they po
+       7 programminghumanity.wordpress.com, which are flagged as leftover
+         s.
+       9 Run:  uv run --with beautifulsoup4 python dev/scripts/check_link
+      10 """
+     … +60 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+  ⎿  Found 1 new diagnostic issue in 1 file (ctrl+o to expand)
+
+⏺ Update(dev/scripts/build_archives.py)
+  ⎿  Added 16 lines, removed 5 lines
+      213  
+      214  
+      215  def rewrite_links(content, sem, members, missing_imgs):
+      216 +    # author-only edit/admin links: unwrap the anchor, keep it
+          +s text                                                        
+      217 +    content = re.sub(                                         
+      218 +        r'<a\s[^>]*href="https?://programminghumanity\.wordpre
+          +ss\.com/wp-(?:admin|login)[^"]*"[^>]*>(.*?)</a>',             
+      219 +        r"\1", content, flags=re.S)                           
+      220 +                                                              
+      221      def repl_href(m):
+      217 -        url, path = m.group(0), m.group(1).rstrip("/")        
+      222 +        url, raw = m.group(0), m.group(1)                     
+      223 +        # split off query (dropped) and fragment (kept)       
+      224 +        frag = ""                                             
+      225 +        if "#" in raw:                                        
+      226 +            raw, frag = raw.split("#", 1)                     
+      227 +            frag = "#" + frag                                 
+      228 +        path = raw.split("?")[0].rstrip("/")                  
+      229          if not path:
+      219 -            return 'href="index.html"'                        
+      230 +            return f'href="index.html{frag}"'                 
+      231          if re.match(r"20\d\d/\d\d/\d\d/", path):
+      232              slug = path.split("/")[-1]
+      233              if (ROOT / "blog" / f"{slug}.html").is_file():
+      223 -                return f'href="../../blog/{slug}.html"'       
+      234 +                return f'href="../../blog/{slug}.html{frag}"' 
+      235              return url
+      236          slug = path.split("/")[-1]
+      237          if slug in members[sem]:
+      227 -            return f'href="{slug}.html"'                      
+      238 +            return f'href="{slug}.html{frag}"'                
+      239          rp = repo_path_for(slug)
+      240          if rp:
+      230 -            return f'href="../../{rp}"'                       
+      241 +            return f'href="../../{rp}{frag}"'                 
+      242          return url
+      243      content = re.sub(r'href="https?://programminghumanity\.wor
+           dpress\.com/([^"]*)"', repl_href, content)
+      244  
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Archives are clean — 0 broken refs, 0 leftovers. Quick visual check, then
+  building the Fall 2026 site.
+
+  Read 2 files, ran 1 shell command (ctrl+o to expand)
+
+⏺ Archives render beautifully — the recovered private pages show full content
+  with local images. Now task 2: the Fall 2026 site. Checking the 2025fall page
+  set for slug cleanups first:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Write(dev/scripts/build_website.py)
+  ⎿  Wrote 276 lines to dev/scripts/build_website.py
+       1 #!/usr/bin/env python3
+       3 
+       4 Page set: the most recent version of each course topic (variants
+       5 theme, latest wp:post_modified wins), plus syllabus, readings (h
+       6 about, and anything they link (BFS closure over WXR pages). Year
+         /semester
+         ained
+       8 (own css/ and images/) so website/ can be deployed alone to Netl
+       9 
+         ite.py
+     … +309 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ 20 pages built cleanly. Downloading the 4 missing featured images and
+  re-running:
+
+  Read 2 files, ran 2 shell commands (ctrl+o to expand)
+
+⏺ The Fall 2026 homepage is live-quality: duotone hero, and all 14 weekly topics
+  in the outline are now linked to their pages. Spot-checking a topic page and
+  the relabeling:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ One gap: bare trailing years in titles ("…Artificial Intelligence 2025").
+  Adding a title-specific relabel rule:
+
+⏺ Update(dev/scripts/build_website.py)
+  ⎿  Added 9 lines
+      113      return text
+      114  
+      115  
+      116 +def relabel_title(title):                                     
+      117 +    """Titles also get bare trailing semester years normalized
+          +."""                                                          
+      118 +    title = relabel(title)                                    
+      119 +    title = re.sub(r"\s*\(?(?:Spring|Fall)?\s*20(?:19|20|21|22
+          +|23|25)\)?\s*$", "", title).rstrip()                          
+      120 +    if f"({SEM})" not in title:                               
+      121 +        title += f" ({SEM})"                                  
+      122 +    return title                                              
+      123 +                                                              
+      124 +                                                              
+      125  PAGE_TMPL = """<!DOCTYPE html>
+      126  <html lang="en">
+      127  <head>
+
+⏺ Update(dev/scripts/build_website.py)  ⎿  Added 1 line, removed 1 line
+      223      for slug, stem in out_name.items():
+      224          e = items[slug]
+      225          body = localize_media(rewrite(relabel(wpautop(e["conte
+           nt"]))))
+      226 -        title = relabel(e["title"])                           
+      226 +        title = relabel_title(e["title"]) if stem.startswith("
+          +topic-") or stem in ("syllabus", "readings") else relabel(e["t
+          +itle"])                                                       
+      227          variant, media = "no-featured-image", ""
+      228          feat = e.get("featured")
+      229          if feat:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All clean. Now the reference documents — first the full inventory doc (task
+  1a) with its gitignored full-detail CSV:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Now the Netlify deployment manual (task 3):
+
+⏺ Write(dev/manual_website-deploy-netlify_20260825.md)
+  ⎿  Wrote 163 lines to dev/manual_website-deploy-netlify_20260825.md
+       1 # Manual — Deploy `website/` (Fall 2026) to Netlify via GitHub A
+       2 
+       3 **Date:** 2026-08-25
+       5 `github.com/jon-chun/programming-humanity-org` automatically dep
+         loys the
+         tlify host.
+       7 **Time required:** ~15 minutes one-time setup.
+       9 The `website/` directory is a pure static site (no build step, o
+         wn `css/` and
+         hing to compile.
+     … +196 lines (ctrl+o to expand)
+
+⏺ Final verification across the whole repo, then commit:
+
+  Searched for 1 pattern, read 1 file, listed 1 directory, ran 3 shell commands (ctrl+o to expand)
+
+⏺ Patching the tests to treat archive/ and website/ as standalone sites (exempt
+  from main-site consistency checks, still covered by structure checks):
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Update(tests/test_e2e_site.py)
+  ⎿  Added 8 lines
+       5  
+       6  SITE_ROOT = Path(__file__).parent.parent
+       7  
+       8 +# archive/ (per-semester frozen sites) and website/ (standalone
+         + Fall 2026                                                     
+       9 +# deploy) are separate sites by design: different nav, titles, 
+         +no breadcrumbs.                                                
+      10 +STANDALONE_DIRS = {"archive", "website"}                       
+      11  
+      12 +                                                               
+      13 +def in_standalone(f):                                          
+      14 +    return f.relative_to(SITE_ROOT).parts[0] in STANDALONE_DIRS
+      15 +                                                               
+      16 +                                                               
+      17  # -------------------------------------------------------------
+          --------------
+      18  # Required files and directories
+      19  # -------------------------------------------------------------
+          --------------
+
+⏺ Update(tests/test_e2e_site.py)
+  ⎿  Added 2 lines
+      144          expected = {"Syllabus", "Readings", "About"}
+      145          failures = []
+      146          for f in subfolder_html_files:
+      147 +            if in_standalone(f):                              
+      148 +                continue                                      
+      149              soup = BeautifulSoup(f.read_text(), "lxml")
+      150              nav = soup.select_one("nav.main-nav")
+      151              if not nav:
+
+⏺ Update(tests/test_e2e_site.py)
+  ⎿  Added 2 lines
+      210          """Non-index pages inside subfolders should have .brea
+           dcrumbs."""
+      211          failures = []
+      212          for f in subfolder_non_index_files:
+      213 +            if in_standalone(f):                              
+      214 +                continue                                      
+      215              soup = BeautifulSoup(f.read_text(), "lxml")
+      216              if not soup.select_one(".breadcrumbs"):
+      217                  failures.append(str(f.relative_to(site_root)))
+
+  Searched for 1 pattern (ctrl+o to expand)
+  ⎿  Found 2 new diagnostic issues in 1 file (ctrl+o to expand)
+
+⏺ Update(tests/test_unit_html_structure.py)
+  ⎿  Added 7 lines, removed 1 line
+      47          assert not failures, f"Pages with missing or empty <tit
+          le>: {failures}"
+      48  
+      49      def test_all_titles_end_with_programming_humanity(self, par
+          sed_pages):
+      50 -        """Every <title> must end with 'Programming Humanity'."
+         -""                                                             
+      50 +        """Every main-site <title> must end with 'Programming H
+         +umanity'.                                                      
+      51 +                                                               
+      52 +        archive/ and website/ are standalone sites with their o
+         +wn suffixes                                                    
+      53 +        ("... Archive", "... (Fall 2026)") and are exempt.     
+      54 +        """                                                    
+      55          failures = []
+      56          for path, _, soup in parsed_pages:
+      57 +            if path.relative_to(SITE_ROOT).parts[0] in ("archiv
+         +e", "website"):                                                
+      58 +                continue                                       
+      59              if soup.title and soup.title.string:
+      60                  title = soup.title.string.strip()
+      61                  if not title.endswith("Programming Humanity"):
+
+  Ran 1 shell command (ctrl+o to expand)
+  ⎿  Found 5 new diagnostic issues in 1 file (ctrl+o to expand)
+
+⏺ All 90 tests pass. Task 4: commit and push.
+
+  Pushed to main (ctrl+o to expand)
+
+⏺ All four tasks are complete and pushed as 8c48c50. Summary:
+
+  1. Page inventory & archives — One note upfront: the browser's admin session
+  had expired (the earlier cache-busting restart dropped it), but re-login
+  wasn't needed — the wp-admin WXR export we captured earlier contains
+  everything the admin page list shows, plus more. From it:
+  - dev/report_wordpress-pages-inventory_20260825.md — all 283 items (150 pages,
+    133 posts) with title, URL, status, protection, content size,
+    created/modified dates, and semester cluster. Passwords are masked there;
+    the full CSV with passwords is local-only
+    (dev/data/pages-inventory-full.csv, gitignored).
+  - Clustering — six reconstructable semesters: 2019spring, 2020spring,
+    2020fall, 2021spring, 2022spring, 2025fall. (Fall 2019's AI course isn't in
+    this WordPress site at all, and there's no 2026 content — the most recent
+    real course is Fall 2025.)
+  - archive/{YYYYsem}/ — six self-contained themed sites, 162 pages, built by
+    dev/scripts/build_archives.py. Membership comes from crawling each
+    semester's readings/syllabus hub links (the weekly-assignment structure),
+    unioned with slug classification. This recovered the 62 private pages —
+    complete frozen course sites invisible on the live web.
+  - dev/report_archive-link-maps_20260825.md — per-semester homepage→weekly-page
+    link maps; unlinked pages were saved and flagged on each archive index
+    rather than pruned.
+  - Dead links: zero. dev/scripts/check_links.py verifies 0 broken internal refs
+    and 0 leftover WordPress URLs (editor preview links were resolved to their
+    real pages; author-only wp-admin edit links unwrapped).
+
+  2. Fall 2026 site — website/ (20 pages, dev/scripts/build_website.py): topic
+  variants deduped to the most-recently-updated version per theme, everything
+  relabeled "(Fall 2026)", and the homepage's 14-topic outline now links
+  directly to each weekly page. It's fully self-contained (own css/ and images/)
+  specifically so it can deploy alone. Verified in-browser: duotone hero,
+  "Programming Humanity — Fall 2026", zero broken refs/images. Preview at
+  http://localhost:8080/website/
+
+  3. Netlify manual — dev/manual_website-deploy-netlify_20260825.md: site
+  creation (UI + CLI paths), token/secrets setup, the complete GitHub Actions
+  YAML (deploys only on website/** pushes), verification steps, and
+  troubleshooting. I deliberately didn't commit the workflow file itself — add
+  it after the secrets exist, or every push shows a failing check.
+
+  4. Committed & pushed — 261 files; all 90 tests pass (the three main-site
+  consistency tests now correctly treat archive/ and website/ as separate
+  sites).
+
+  ⚠️ One thing to be aware of: the archives publish content that was private or 
+  password-protected on WordPress (old semester pages, lab pages) into your
+  public GitHub repo. That's what the task called for, but if any of it should
+  stay restricted, say so and I'll prune those pages from archive/.
+
+✻ Crunched for 12m 12s · done 9:37 PM

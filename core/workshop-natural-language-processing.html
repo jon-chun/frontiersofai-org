@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Workshop: Natural Language Processing – Programming Humanity</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">Computational Thinking for Humanity</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../core/syllabus.html">Syllabus</a></li>
+<li><a href="../core/readings-2.html">Readings</a></li>
+<li><a href="../core/about.html">About</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Workshop: Natural Language Processing</h1></section></header>
+<main class="content-wrapper">
+<div class="breadcrumbs"><a href="../index.html">Home</a> » <a href="index.html">Core</a> » <span>Workshop: Natural Language Processing</span></div>
+<div class="page-meta">Created: 2019-04-13</div>
+<div class="page-content">
+<p class="wp-block-paragraph"><strong>Sentiment Analysis with Syuzhet (<a href="https://cran.r-project.org/web/packages/syuzhet/index.html">R-CRAN</a>):</strong></p>
+<ul class="wp-block-list"><li>Prof Xiao/Tucker: <a href="https://drive.google.com/drive/folders/1l4Zw6b1vfsLiFtu1trMLXsi_W0yIxuFb?usp=sharing">Story of the Stone</a> by Cao Xinque</li><li>Prof Matz/Delaney: <a href="https://drive.google.com/open?id=1fZH1HUf-UJI4ooAN7EGfq-EwGbRNOehV">Great Expectations</a> by Charles Dickens</li><li>Prof Ablovatsky/Delaney: <a href="https://drive.google.com/open?id=1b1qPabG_7Pca35-KxnIv3Ir4ysGbgIjb">UNC Slave Narratives</a> by WPA</li><li></li><li>Prof Hartnett/Seth: Cancioneros by Santillana</li><li>Prof Suazo/Emily: <a href="https://drive.google.com/open?id=1ZeE2oXUImG4XwLDOYk1SspxeTU391qt_">Atala</a> by Chateaubriand</li><li>Prof Maldonado/Michael: <a href="https://drive.google.com/drive/folders/1uPRY4QVPzfS5hnYLLWgtnv0JX1T2LV88?usp=sharing">Isle of Eden</a> by Duggan</li></ul>
+<p class="wp-block-paragraph"><strong>Topic Modeling with Gensim and pyLDAvis:</strong></p>
+<ul class="wp-block-list"><li><a href="https://drive.google.com/open?id=19wAIgnQxYkQ4Ui32fALIfgWkqaqqZYEt">Story of the Stone Topic Modeling</a></li><li><a href="https://colab.research.google.com/drive/1eDNCsVWLBS_DCtk3KyznUmS2saPGkGFd">Great Expectations Topic Modeling</a></li><li><a href="https://colab.research.google.com/drive/1WJuHF5GmRVez0r3THvJlr6GvxbV_NnM_"></a><a href="https://drive.google.com/open?id=1WJuHF5GmRVez0r3THvJlr6GvxbV_NnM_">UNC Slave Narratives Topic Modeling</a> </li><li></li><li><a href="https://drive.google.com/open?id=1_PoOsJbpd1JzbrTjE7Rk3dFq-Ot8LhqH">Cancioneros Topic Modeling</a></li><li><a href="https://drive.google.com/open?id=1Q9CVvFCVHk9zeCkwj38qsSBnHmlPt8Os">Atala Topic Modeling</a></li><li><a href="https://drive.google.com/open?id=1Y2ei3tMJfzSbLBrsshgv1wkfIBinLoX_">Isle of Eden Topic Modeling</a></li></ul>
+<p class="wp-block-paragraph"><strong>Word Embeddings:</strong></p>
+<p class="wp-block-paragraph">These must be done locally due to the large size of the language models.  Typically:</p>
+<ol class="wp-block-list"><li>conda create -n py37nlp python=3.7</li><li>source activate py37nlp</li><li>conda install -c conda-forge spacy gensim</li><li>python -m spacy download en_core_web_sm</li><li>python -m spacy download es_core_news_sm</li><li>jupyter notebook</li><li>load and run these notebooks locally</li></ol>
+<p class="wp-block-paragraph">Example Game of Thrones word embeddings and semantic similarity</p>
+<ul class="wp-block-list"><li><a href="https://drive.google.com/open?id=1kTQ_vJc0nTtptiEIvZJWDvB51ZF7I2Gg">Story of the Stone Word Embedding</a></li><li><a href="https://drive.google.com/open?id=18fptS52oo1i_I18ivU9pKSaRFd4AWwf3">Great Expectations Word Embedding</a></li><li><a href="https://drive.google.com/open?id=1bEXxDtws81dgmIyEvPELpxSmcBZXB6wQ">UNC Slave Narratives Word Embedding</a> </li><li></li><li><a href="https://drive.google.com/open?id=14AIjzzlDzPu8m8snZdolULOQ-vt5_tf2">Cancioneros Word Embedding</a> (* Spanish)</li><li><a href="https://drive.google.com/open?id=1Y_1HJj2Neh_fkjUbcYBv7O-x4o0RLTqr">Atala Word Embedding</a></li><li><a href="https://drive.google.com/open?id=1JOvTGPN5Ah21doH8tsBCvVetmU0hPuX7">Isle of Eden Word Embedding</a><a href="https://drive.google.com/open?id=1Y2ei3tMJfzSbLBrsshgv1wkfIBinLoX_"></a></li></ul>
+<p class="wp-block-paragraph">With FastText:</p>
+<ol class="wp-block-list"><li>fds</li><li><a href="https://fasttext.cc/docs/en/support.html">Build</a> fastText </li><li><a href="https://fasttext.cc/docs/en/unsupervised-tutorial.html">Word Representations Tutorial</a></li></ol>
+<div class="share-links"><span>Share this: </span><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fprogramminghumanity.wordpress.com%2Fworkshop-natural-language-processing%2F" rel="noopener" target="_blank">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprogramminghumanity.wordpress.com%2Fworkshop-natural-language-processing%2F" rel="noopener" target="_blank">Facebook</a></div></div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity</p>
+</footer>
+</body>
+</html>

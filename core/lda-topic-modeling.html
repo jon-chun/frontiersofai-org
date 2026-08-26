@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>LDA Topic Modeling – Programming Humanity</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">Computational Thinking for Humanity</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../core/syllabus.html">Syllabus</a></li>
+<li><a href="../core/readings-2.html">Readings</a></li>
+<li><a href="../core/about.html">About</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>LDA Topic Modeling</h1></section></header>
+<main class="content-wrapper">
+<div class="breadcrumbs"><a href="../index.html">Home</a> » <a href="index.html">Core</a> » <span>LDA Topic Modeling</span></div>
+<div class="page-meta">Created: 2019-01-29</div>
+<div class="page-content">
+<figure class="wp-block-image"><img alt="" class="wp-image-700" data-attachment-id="700" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="screen-shot-2019-01-29-at-4.48.02-pm" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.48.02-pm.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.48.02-pm.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.48.02-pm.png" data-orig-size="1088,599" data-permalink="https://programminghumanity.wordpress.com/screen-shot-2019-01-29-at-4-48-02-pm/" height="599" src="../images/uploads/2019/01/screen-shot-2019-01-29-at-4.48.02-pm.png" width="1088"/></figure>
+<p class="wp-block-paragraph">This is one of the three main Machine Learning techniques we’ll be teaching in our upcoming NLP Workshop for Researchers in the Humanities at Kenyon College.  Here are two great videos that lay out a good, relatively non-mathy introduction to LDA Topic Modeling along with the a full analytic pipeline.  It also helps with the example is an intuitive and visually appealing example like Issuu.com.</p>
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox" src="https://www.youtube.com/embed/3mHy4OSyRf0?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640"></iframe></span>
+</div></figure>
+<p class="wp-block-paragraph">First, is a great video by Andrius Knispelis who made an amazing presentation connecting the his application (recommendation engine) at which his data analytic pipeline and various engineering decisions.  This is based upon his work at a Danish magazine digitization sharing website Issuu.com.</p>
+<figure class="wp-block-image"><img alt="" class="wp-image-699" data-attachment-id="699" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="screen-shot-2019-01-29-at-4.56.20-pm-1" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.56.20-pm-1.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.56.20-pm-1.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/screen-shot-2019-01-29-at-4.56.20-pm-1.png" data-orig-size="1079,604" data-permalink="https://programminghumanity.wordpress.com/screen-shot-2019-01-29-at-4-56-20-pm-1/" height="604" src="../images/uploads/2019/01/screen-shot-2019-01-29-at-4.56.20-pm-1.png" width="1079"/></figure>
+<p class="wp-block-paragraph">In summary, his decision points in the process were:</p>
+<ol class="wp-block-list"><li>Which topic modeling library to use (gensim)</li><li>Find a big corpus to train the LDA model on (Wikipedia 12GB)</li><li>Filter out Wikipedia smaller articles (&lt; 200 words)</li><li>Filter out Wikipedia pseudo-articles (namespaces starting with meta keywords like Wikipedia, Category, File, Portal, Template, MediaWiki, User, Help, Book, Draft)</li><li>Sort all words in remaining dataset and filter out high (appears &gt; 10% articles) and low (appears &lt; 20 articles) frequency words</li><li>Apply standard NLP preprocessing/filtering including: very short/long words, stop words (incl general, proper nouns for people/places), lemmatization, POS, etc.</li><li>Filter out all but the top n words (where 50,000 &lt; n &lt; 100,000) to create first input (a list of words in plain text file wordids.txt)</li><li>Use wordids.txt and original documents to create a TF/IDF matrix (tfidf.mm)</li><li>Feed the word list (wordids.txt) and the TF/IDF matrix into the LDA algorithm to discover the best fit for LDA model parameters given our corpus including the two that characterize the word over topics distribution and the topics over document distribution.</li></ol>
+<figure class="wp-block-image"><img alt="" class="wp-image-702" data-attachment-id="702" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="lda_algo_fwd_bkwd" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_fwd_bkwd.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_fwd_bkwd.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_fwd_bkwd.png" data-orig-size="951,602" data-permalink="https://programminghumanity.wordpress.com/lda_algo_fwd_bkwd/" height="602" src="../images/uploads/2019/01/lda_algo_fwd_bkwd.png" width="951"/></figure>
+<figure class="wp-block-image"><img alt="" class="wp-image-701" data-attachment-id="701" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="lda_algo_create_model" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_create_model.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_create_model.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/lda_algo_create_model.png" data-orig-size="1433,705" data-permalink="https://programminghumanity.wordpress.com/lda_algo_create_model/" height="705" loading="lazy" src="../images/uploads/2019/01/lda_algo_create_model.png" width="1433"/></figure>
+<p class="wp-block-paragraph"></p>
+<div class="share-links"><span>Share this: </span><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fprogramminghumanity.wordpress.com%2Flda-topic-modeling%2F" rel="noopener" target="_blank">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprogramminghumanity.wordpress.com%2Flda-topic-modeling%2F" rel="noopener" target="_blank">Facebook</a></div></div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity</p>
+</footer>
+</body>
+</html>

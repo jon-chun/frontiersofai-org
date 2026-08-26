@@ -1,0 +1,807 @@
+[
+  {
+    "staticPath": "2018-2019/assignments.html",
+    "slug": "assignments",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/course-schedule.html",
+    "slug": "course-schedule",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/exercises.html",
+    "slug": "exercises",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/nlp-tools.html",
+    "slug": "nlp-tools",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/posters-fall-2019.html",
+    "slug": "posters-fall-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/posters.html",
+    "slug": "posters",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/quantitative-reasoning.html",
+    "slug": "quantitative-reasoning",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/sample-exercises.html",
+    "slug": "sample-exercises",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2018-2019/syllabus.html",
+    "slug": "syllabus",
+    "wpUrl": "https://programminghumanity.wordpress.com/syllabus/",
+    "wpStatus": "Published",
+    "matched": true
+  },
+  {
+    "staticPath": "2018-2019/topics.html",
+    "slug": "topics",
+    "wpUrl": "https://programminghumanity.wordpress.com/topics/",
+    "wpStatus": "Published",
+    "matched": true
+  },
+  {
+    "staticPath": "2019-fall/ai-evolution-and-neuroscience.html",
+    "slug": "ai-evolution-and-neuroscience",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/ai-topics-fall-2019.html",
+    "slug": "ai-topics-fall-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/building-brains-ai-2019.html",
+    "slug": "building-brains-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/composing-ai-2019.html",
+    "slug": "composing-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/consolidation-ai-2019.html",
+    "slug": "consolidation-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/data-patterns-ai-2019.html",
+    "slug": "data-patterns-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/data-visualization-ai-2019.html",
+    "slug": "data-visualization-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/data-wrangling-ai-2019.html",
+    "slug": "data-wrangling-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/future-trends-ai-2019.html",
+    "slug": "future-trends-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/gofai-ai-2019.html",
+    "slug": "gofai-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/learning-ai-2019.html",
+    "slug": "learning-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/machine-learning-ai-2019.html",
+    "slug": "machine-learning-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/machine-learning-part-b-ai-2019.html",
+    "slug": "machine-learning-part-b-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/nlp-a-ai-2019.html",
+    "slug": "nlp-a-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/nlp-ai-2019.html",
+    "slug": "nlp-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/nlp-b-ai-2019.html",
+    "slug": "nlp-b-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/probability-ai-2019.html",
+    "slug": "probability-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/programming-ai-2019.html",
+    "slug": "programming-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/reading-ai-2019.html",
+    "slug": "reading-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/seeing-ai-2019.html",
+    "slug": "seeing-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/syllabus-ai-2019.html",
+    "slug": "syllabus-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2019-fall/w2-lab-data-wrangling.html",
+    "slug": "w2-lab-data-wrangling",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/0-readings-2021.html",
+    "slug": "0-readings-2021",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/3-measuring-models-2021.html",
+    "slug": "3-measuring-models-2021",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/4-xai-and-ethics-2021.html",
+    "slug": "4-xai-and-ethics-2021",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/ai-actors-and-evolution.html",
+    "slug": "ai-actors-and-evolution",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/attention-transformers.html",
+    "slug": "attention-transformers",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/building-brains-with-artificial-neurons.html",
+    "slug": "building-brains-with-artificial-neurons",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/classifying-text-and-language.html",
+    "slug": "classifying-text-and-language",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/composing-music-with-rnns-2.html",
+    "slug": "composing-music-with-rnns-2",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/composing-music-with-rnns.html",
+    "slug": "composing-music-with-rnns",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/creating-new-realities-with-gans.html",
+    "slug": "creating-new-realities-with-gans",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/creating-reality-with-gans.html",
+    "slug": "creating-reality-with-gans",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/future-directions.html",
+    "slug": "future-directions",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/introduction-to-ai-2021.html",
+    "slug": "introduction-to-ai-2021",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/keras-a-framework-for-dnn.html",
+    "slug": "keras-a-framework-for-dnn",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/machine-learning-and-training-a-model.html",
+    "slug": "machine-learning-and-training-a-model",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/machine-learning-introduction.html",
+    "slug": "machine-learning-introduction",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/machines-learning-emotions-2021.html",
+    "slug": "machines-learning-emotions-2021",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/maching-reading.html",
+    "slug": "maching-reading",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/programming.html",
+    "slug": "programming",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/readings-2.html",
+    "slug": "readings-2",
+    "wpUrl": "https://programminghumanity.wordpress.com/readings-2/",
+    "wpStatus": "Published",
+    "matched": true
+  },
+  {
+    "staticPath": "2021/recap-and-future.html",
+    "slug": "recap-and-future",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/seeing-the-world-with-cnns-2.html",
+    "slug": "seeing-the-world-with-cnns-2",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/seeing-the-world-with-cnns.html",
+    "slug": "seeing-the-world-with-cnns",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/the-map-of-machine-learning.html",
+    "slug": "the-map-of-machine-learning",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/transforming-intelligence.html",
+    "slug": "transforming-intelligence",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2021/xai-ai-and-ethics.html",
+    "slug": "xai-ai-and-ethics",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/a-deeper-dive-into-neural-nets-2022.html",
+    "slug": "a-deeper-dive-into-neural-nets-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/building-brains-with-artificial-neurons-2022.html",
+    "slug": "building-brains-with-artificial-neurons-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/classifying-art-and-emotion-2022.html",
+    "slug": "classifying-art-and-emotion-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/classifying-text-and-language-2022.html",
+    "slug": "classifying-text-and-language-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/composing-music-with-rnns-2022.html",
+    "slug": "composing-music-with-rnns-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/creating-reality-with-gans-and-vits-2022.html",
+    "slug": "creating-reality-with-gans-and-vits-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/introduction-to-ai-spr-2022.html",
+    "slug": "introduction-to-ai-spr-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/machine-learning-continued-2022.html",
+    "slug": "machine-learning-continued-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/machine-learning-introduction-2022.html",
+    "slug": "machine-learning-introduction-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/machine-reading-2022.html",
+    "slug": "machine-reading-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/reinforcement-learning-and-the-future-of-ai-2022.html",
+    "slug": "reinforcement-learning-and-the-future-of-ai-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/seeing-the-world-with-cnns-2022.html",
+    "slug": "seeing-the-world-with-cnns-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/transforming-intelligence-2022.html",
+    "slug": "transforming-intelligence-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2022-spring/xai-and-ethics-2022.html",
+    "slug": "xai-and-ethics-2022",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/creating-reality-with-gans-and-vits-2023-old.html",
+    "slug": "creating-reality-with-gans-and-vits-2023-old",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/introduction-to-ai-2023fall.html",
+    "slug": "introduction-to-ai-2023fall",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/readings-2023.html",
+    "slug": "readings-2023",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/reinforcement-learning-and-the-future-of-ai-orig-2023.html",
+    "slug": "reinforcement-learning-and-the-future-of-ai-orig-2023",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/syllabus-3.html",
+    "slug": "syllabus-3",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2023/transforming-intelligence-2023-old.html",
+    "slug": "transforming-intelligence-2023-old",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/agi-spring-2025.html",
+    "slug": "agi-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/ai-engineering-spring-2025.html",
+    "slug": "ai-engineering-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/building-brains-with-artificial-neurons-spring-2025.html",
+    "slug": "building-brains-with-artificial-neurons-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/classifying-art-and-emotion-spring-2025.html",
+    "slug": "classifying-art-and-emotion-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/classifying-text-and-language-spring-2025.html",
+    "slug": "classifying-text-and-language-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/classifying-text-art-emotion-spring-2025.html",
+    "slug": "classifying-text-art-emotion-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/creating-reality-with-gans-vae-diffusion-and-vit-models-spring-2025.html",
+    "slug": "creating-reality-with-gans-vae-diffusion-and-vit-models-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/dup-future-trends-ai-2019.html",
+    "slug": "dup-future-trends-ai-2019",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/machine-learning-continued-spring-2025.html",
+    "slug": "machine-learning-continued-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/machine-learning-introduction-2022-2.html",
+    "slug": "machine-learning-introduction-2022-2",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/machine-learning-introduction-spring-2025.html",
+    "slug": "machine-learning-introduction-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/reinforcement-learning-and-the-future-of-ai-orig-spring-2025.html",
+    "slug": "reinforcement-learning-and-the-future-of-ai-orig-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/seeing-the-world-with-cnns-spring-2025.html",
+    "slug": "seeing-the-world-with-cnns-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/temporal-ai-rnn-spring-2025.html",
+    "slug": "temporal-ai-rnn-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/transforming-intelligence-spring-2025.html",
+    "slug": "transforming-intelligence-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2025-spring/xai-and-ethics-spring-2025.html",
+    "slug": "xai-and-ethics-spring-2025",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/a-deeper-dive-and-sequential-anns-spring-2026.html",
+    "slug": "a-deeper-dive-and-sequential-anns-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/a-deeper-dive-into-neural-nets-2026.html",
+    "slug": "a-deeper-dive-into-neural-nets-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/ap-comparative-gov-2026-constitutional-terms.html",
+    "slug": "ap-comparative-gov-2026-constitutional-terms",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/building-brains-with-artificial-neurons-2.html",
+    "slug": "building-brains-with-artificial-neurons-2",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/building-brains-with-artificial-neurons-spring-2026.html",
+    "slug": "building-brains-with-artificial-neurons-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/classifying-art-emotion-spring-2026.html",
+    "slug": "classifying-art-emotion-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/machine-learning-continued-spring-2026.html",
+    "slug": "machine-learning-continued-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/machine-learning-introduction-spring-2026.html",
+    "slug": "machine-learning-introduction-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/readings.html",
+    "slug": "readings",
+    "wpUrl": "https://programminghumanity.wordpress.com/readings/",
+    "wpStatus": "Published",
+    "matched": true
+  },
+  {
+    "staticPath": "2026-spring/syllabus-2.html",
+    "slug": "syllabus-2",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/temporal-ai-spring-2026.html",
+    "slug": "temporal-ai-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/test-1.html",
+    "slug": "test-1",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/test-14-16.html",
+    "slug": "test-14-16",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/their-eyes-were-watching-ch17-20.html",
+    "slug": "their-eyes-were-watching-ch17-20",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "2026-spring/xai-and-ethics-spring-2026.html",
+    "slug": "xai-and-ethics-spring-2026",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/classproject.html",
+    "slug": "classproject",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/dh-colabnet.html",
+    "slug": "dh-colabnet",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/osu-humcog-2020.html",
+    "slug": "osu-humcog-2020",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/plan.html",
+    "slug": "plan",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/project-week.html",
+    "slug": "project-week",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  },
+  {
+    "staticPath": "core/resources.html",
+    "slug": "resources",
+    "wpUrl": null,
+    "wpStatus": null,
+    "matched": false
+  }
+]

@@ -1,0 +1,1353 @@
+{
+ "": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-11-14 17:26:59",
+  "excerpt": "The first Computer Science diploma was granted at Cambridge University in 1953 and the first CS Department in the US was formed in 1962 at Purdue University. Until relatively recently programming was a discipline anchored in and designed primarily to train students in Engineering, Maths\u2026",
+  "status": "draft",
+  "title": "Programming for Digital Humanities",
+  "type": "post"
+ },
+ "about": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2018-01-04 19:19:21",
+  "excerpt": "Programming Humanity More about the course This course was designed by Jon Chun along with Katherine Elkins in 2016. Since then hundreds of students have taken the course and gone on to work in a variety of fields. Many of their projects can be found\u2026",
+  "status": "publish",
+  "title": "About",
+  "type": "page"
+ },
+ "advice-to-graduates": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-28 20:38:27",
+  "excerpt": "With graduation season is winding down, I came across an item that deserves to be memorialized in blog post form. The Knowledge Project podcast is occasionally exceptional and this podcast featuring Thomas Tull titled ' Following Intellectual Curiosity \" is one such episode. It's not\u2026",
+  "status": "publish",
+  "title": "Advice to Graduates",
+  "type": "post"
+ },
+ "ai-matures-beyond-computer-science": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-07-27 06:57:56",
+  "excerpt": "The University of Oxford is the latest world-class university to launch a major initiative to synthesize the study of AI with the Liberal Arts and broader scope of humanity's concerns. https://www.youtube.com/watch?v=5JVFKrgmr-8 This announcement was preceded by Stanford's launch this spring 2019 of their Institute for\u2026",
+  "status": "publish",
+  "title": "AI Matures beyond Computer Science",
+  "type": "post"
+ },
+ "ai-poker-faceless": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-08-13 07:43:27",
+  "excerpt": "https://www.youtube.com/watch?v=u90TbxK7VEA Poker AI systems provide an interesting contrast between how humans traditionally deal with imperfect information game scenarios and how AI does. Over the past two years it's been impressive watching card-playing AIs ( CMU/Libratus , DeepMind/Hanabi , and now Facebook/Pluribus ) evolve to learn\u2026",
+  "status": "publish",
+  "title": "AIs without a Face",
+  "type": "post"
+ },
+ "ap-us-history-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-05-15 16:54:28",
+  "excerpt": "Overview Summary of all Key Terms by Period and Theme By Period Period 1: 1491-1607 Period 2: 1607-1754 Period 3: 1754-1800 Period 4: 1800-1848 Period 5: 1844-1877 Period 6: 1865-1898 Period 7: 1890-1945 Period 8: 1945-1980 Reference: AP Periods and Themes (p.28 onward)",
+  "status": "publish",
+  "title": "AP US History (2020)",
+  "type": "page"
+ },
+ "arbitraging-on-human-capital": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-25 19:39:07",
+  "excerpt": "https://www.youtube.com/watch?v=J8fT-ebe3Fo Hollywood's Version of Extreme Talent Scouting and the Modern Redemption Story One of the major transformations I've witnessed over the last several decades is how technology has been able to assist in creating incredibly efficient markets in everything. Since the 1980s of nearly everything\u2026",
+  "status": "publish",
+  "title": "Arbitraging on Human Capital",
+  "type": "post"
+ },
+ "artificial-artificial-intelligence": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-03-11 20:19:57",
+  "excerpt": "With the hype around AI and Machine Learning there is bandwagon effect that a lot of AI startup, products and projects are more \"Artificial\" than \"Artificial Intelligence\". For example, libraries like XGBoost and LightGBM dominate Kaggle data science competitions using numerical datasets. In addition, the\u2026",
+  "status": "publish",
+  "title": "\"Artificial\" Artificial Intelligence",
+  "type": "post"
+ },
+ "best-jupyter-notebooks-for-ml-in-python": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-09-05 15:27:54",
+  "excerpt": "Index: A Gallery of Interesting Notebooks by Jupyter DS Cheatsheets by FavioVazquez (7/2019) Awesome Jupyter by markusschanta (8/2019) Python Programming: Python Exercises by iitmcvg (2/2017) Whirlwind Tour of Python by Jake Vanderplas (8/2017) Learn Python 3 by jerry-git (10/2018) Python Tutorials by mGalarnyk (8/2019) Exploratory\u2026",
+  "status": "publish",
+  "title": "Best Jupyter Notebooks for ML in Python",
+  "type": "post"
+ },
+ "blog": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-10 06:35:27",
+  "excerpt": "Coming Soon...",
+  "status": "publish",
+  "title": "Blog",
+  "type": "page"
+ },
+ "class-1-intro-and-overview": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-08-30 14:01:43",
+  "excerpt": "A. Informal Introductions B. AI Quiz in Groups of Two Future of Humanity Institute: Oxford Future AI Progress Questionnaire ( before you submit , print out to PDF and email chunj@kenyon.edu, elkinsk@kenyon.edu and yourself a copy) Future of Life Institute / Max Tegmark Life 3.o\u2026",
+  "status": "publish",
+  "title": "Class #1: Intro and Overview",
+  "type": "page"
+ },
+ "contact": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2018-01-04 19:19:20",
+  "excerpt": "This is a contact page with some basic contact information and a contact form. [contact-form][contact-field label=\"Name\" type=\"name\" required=\"1\"/][contact-field label=\"Email\" type=\"email\" required=\"1\"/][contact-field label=\"Website\" type=\"url\"/][contact-field label=\"Comment\" type=\"textarea\" required=\"1\"/][/contact-form]",
+  "status": "publish",
+  "title": "Contact",
+  "type": "page"
+ },
+ "designing-programming-languages": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-01-23 22:34:33",
+  "excerpt": "\u201cA programming language cannot be derived from first principles alone. Language design is applied psychology\u2014the computer program is the ultimate human-computer interface. Sometimes you have to try a design out and see how people interact with it and iterate based on that real-world feedback.\u201d -\u2026",
+  "status": "publish",
+  "title": "Designing Programming Languages",
+  "type": "post"
+ },
+ "dh-colab": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-11 18:10:55",
+  "excerpt": "Introduction Coming soon... Click to follow me to the DHColabNet Website",
+  "status": "publish",
+  "title": "DH ColabNet",
+  "type": "page"
+ },
+ "digital-humanities-research-fellow": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-11 18:09:46",
+  "excerpt": "2019 Spring This year marks the first iteration of selecting students for our Digital Humanities Research Fellowship funded by the National Endowment of the Humanities through the NEH Distinguished Teaching Professorship. This represents a unique opportunity for both faculty and students to empower traditional humanities\u2026",
+  "status": "publish",
+  "title": "Digital Humanities Research Fellow",
+  "type": "page"
+ },
+ "econometrics-the-dismal-science": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-23 23:23:17",
+  "excerpt": "Update (6/3/2018): 'Market Prediction' in this post embeds the concept of 'Market Timing'. General predictions without precise values tied to exact timeframes are more tractable but difficult to build a profitable trading firm upon. As the 2008 asset bubble and subsequent financial crisis illustrated: '\u2026",
+  "status": "publish",
+  "title": "Econometrics: The Dismal Science",
+  "type": "post"
+ },
+ "exponential-family-of-distributions": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-02-07 06:51:57",
+  "excerpt": "Fig 9.6 From Statistical Rethinking by Richard McElreath A great diagram to show how members of the exponential family of distributions are dynamically related by generative processes that can convert one distribution to another. Here are some great visualizations that help to teach these distributions:\u2026",
+  "status": "private",
+  "title": "Exponential Family of Distributions",
+  "type": "post"
+ },
+ "faculty": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-10 20:28:20",
+  "excerpt": "THE PEOPLE Jon Chun Jon Chun has degrees in electrical engineering, computer science and biomedical engineering with a focus on cognitive science from UC Berkeley and UT Austin. As a post-graduate American Heart Research Fellow, he conducted and published research in both gene therapy and\u2026",
+  "status": "publish",
+  "title": "Faculty",
+  "type": "page"
+ },
+ "first-blog-post": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2018-01-04 19:19:19",
+  "excerpt": "Welcome to the blog for the third iteration of our course titled 'Programming Humanity' in the Spring of 2019 at Kenyon College. In this course we take a serious approach to studying both the theoretical as well as practical foundations of Computational Thinking as applied\u2026",
+  "status": "publish",
+  "title": "Computational Thinking for Humans",
+  "type": "post"
+ },
+ "gender-imbalance-and-perceptions-of-ability": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-06-27 23:40:20",
+  "excerpt": "Here is an interesting chart I've seen repeatedly in my recent research into the current trends in Computer Science education. I find this graph particularly interesting since I've studied, worked and researched at both ends of the spectrum of so-called \"hard\" (CS, Engineering, Physics) and\u2026",
+  "status": "publish",
+  "title": "STEM Gender Imbalance and Perceptions of Ability",
+  "type": "post"
+ },
+ "home": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-06 21:09:03",
+  "excerpt": "Welcome to Programming Humanity Will we program humanity into our technology, or will our technology program us? We bridge the gap between technology and the humanities by providing an intellectual framework of core concepts across disparate disciplines. Beginning with data and culminating with Artificial Intelligence,\u2026",
+  "status": "publish",
+  "title": "Home",
+  "type": "page"
+ },
+ "how-mathematical-is-computer-science": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-03-08 20:02:45",
+  "excerpt": "tl;dr: This depends up0n the Computer Scientists and the problem domain they work in. It also depends upon your definition of ' maths '. In general, not very much high-level math is explicitly used in the majority of traditional programming jobs although basic statistical skills\u2026",
+  "status": "publish",
+  "title": "How Mathematical is Computer Science?",
+  "type": "post"
+ },
+ "lab-algorithms": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-18 07:55:46",
+  "excerpt": "Theory of Computation: Models of computation in CS primarily rest upon the ideas of Turing Machines and Lambda Calculus. Imperative programming paradigms like Procedural and Object-Oriented programming largely trace their lineage to the Turing Machine. The Turing Machine model of computation consists of a global\u2026",
+  "status": "publish",
+  "title": "Lab: Algorithms",
+  "type": "page"
+ },
+ "lab-algorithms-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-15 21:39:34",
+  "excerpt": "Theory of Computation: Models of computation in CS primarily rest upon the ideas of Turing Machines and Lambda Calculus. Imperative programming paradigms like Procedural and Object-Oriented programming largely trace their lineage to the Turing Machine. The Turing Machine model of computation consists of a global\u2026",
+  "status": "publish",
+  "title": "Lab: Algorithms (2019)",
+  "type": "page"
+ },
+ "lab-artificial-intelligence": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-04-26 14:33:48",
+  "excerpt": "Applications: Face2face by NiessnerLab.org (CVPR 2016) Deep Fakes: USAToday ( politicians ) and Nicolas Cage as Lois Lane and Friends and 007 and Honorable Mention to Jennifer Buscemi ( DeepFakesLab and general explanation with details and tutorials ) (~2017-2018) Watson Text to Speech by IBM\u2026",
+  "status": "publish",
+  "title": "Lab: Artificial Intelligence",
+  "type": "page"
+ },
+ "lab-bioinformatics": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-04-24 14:34:55",
+  "excerpt": "Links: An Introduction to Applied Bioinformatics Online Mendelian Inheritance in Man ( OMIN ) National Library of Medicine ( NCBI ) Biopython ( Install & Tutorial ) / Bioconductor File Formats UC Santa Cruz Genome Institute BioBuilder Lab 2017 iGem Runner-up William & Mary Team\u2026",
+  "status": "publish",
+  "title": "Lab: Bioinformatics",
+  "type": "page"
+ },
+ "lab-data": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-16 14:27:37",
+  "excerpt": "Getting Data: Google Dataset Search Scraping Websites Scanning / OCR Sensors Create Exploring/Cleaning Data: Google Dataset Explorer Kaggle Datasets OpenRefine PyJanitor Library Open Python Environments: nbViewer: Wes McKinney, Python for Data Analysis (Ch 7 Data Cleaning and Prep) Google Colab: data access/storage options Kaggle Data\u2026",
+  "status": "publish",
+  "title": "Lab: Data",
+  "type": "page"
+ },
+ "lab-data-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-12 21:58:30",
+  "excerpt": "Network of Datasets ( DatascienceCentral.com ) Datasets: Github Awesome Public Datasets Tableau datasets (curated and cleaned) Nate Silvers' 538 Dataset Repo (curated datasets used in their Data Journalism projects) Google Dataset Explorer ( Google Toolbox ) Kaggle Datasets Python: How to Learn Python Cheatsheet in\u2026",
+  "status": "publish",
+  "title": "Lab: Data + Algorithms + Viz",
+  "type": "page"
+ },
+ "lab-data-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-14 17:52:24",
+  "excerpt": "Getting Data: Google Dataset Search Scraping Websites Scanning / OCR Sensors Create Exploring/Cleaning Data: Google Dataset Explorer Kaggle Datasets OpenRefine PyJanitor Library Open Python Environments: nbViewer: Wes McKinney, Python for Data Analysis (Ch 7 Data Cleaning and Prep) Google Colab: data access/storage options Kaggle Data\u2026",
+  "status": "private",
+  "title": "Lab: Data 2019",
+  "type": "page"
+ },
+ "lab-data-analytics": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-03-27 15:00:50",
+  "excerpt": "Links for our lab: Scikit-Learn Flowchart : Choose the right Estimator Linear Regression with Seaborn visualization Classification of Iris Types in Introduction to Scikit-Learn (correction) from sklearn.cross_validation -> from sklearn.model_selection import traintest_split (correction) from sklearn.mixture.GMM -> from sklearn.mixture.GaussianMixture K-means Clustering : Stanford CS Hierarchal Clustering\u2026",
+  "status": "publish",
+  "title": "Lab: Data Analytics",
+  "type": "page"
+ },
+ "lab-models": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-04-03 14:06:08",
+  "excerpt": "Super Models today: Logistic Regression with TPOT TensorFlow Resources: Models Google AutoML and DataRobot FSM: Vending Machine and Elevator Markov Chains",
+  "status": "publish",
+  "title": "Lab: Models",
+  "type": "page"
+ },
+ "lab-nlp": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-03-20 15:20:30",
+  "excerpt": "RegEx and Three NLP approaches: Voyant-Tools.org and The Great Gatsby RegEx: Flow Diagram and Finite State Machine AllenNLP online demos Grammar rules: Nearley Parser Playground (sic) Statistical ML: word2vec exploration in 3D ( Google word2vec ) Topic Modeling: pyLDAviz Demo Data Wrangling/Textual Analytics using popular\u2026",
+  "status": "publish",
+  "title": "Lab: NLP",
+  "type": "page"
+ },
+ "lab-nlp-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-02-27 16:36:39",
+  "excerpt": "NLP Workshop (13Apr2019) Resources Visualizations: word2vec exploration in 3D Facebook MT Project MUSE by aligning word embeddings Word Embeddings Benchmarks GLoVE from Stanford AllenNLP ELMo repo AllenNLP online demos Until now, we've largely been dealing directly with numerical data. While we can Today we want\u2026",
+  "status": "private",
+  "title": "Lab: NLP (2019)",
+  "type": "page"
+ },
+ "lab-nlp-2019-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-03-18 22:27:21",
+  "excerpt": "NLP Workshop (13Apr2019) Resources Visualizations: word2vec exploration in 3D Facebook MT Project MUSE by aligning word embeddings Word Embeddings Benchmarks GLoVE from Stanford AllenNLP ELMo repo AllenNLP online demos Until now, we've largely been dealing directly with numerical data. While we can Today we want\u2026",
+  "status": "private",
+  "title": "Lab: NLP (2019)",
+  "type": "page"
+ },
+ "lab-probability": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-02-15 18:01:08",
+  "excerpt": "Theory of Computation: Visualgo.net: TSP and Bubble Sort Algorithm-Visualizer.org (Visualization + Code) Algomation.com (Visualization + Code) Problem-Solving with Algorithms and Data Structures ( Ch.2 Analysis ) Design Patterns on PythonAnywhere.com Pythons: PyPy Open Programming Environments: Jupyter Notebooks : Google Colab: (storage) Kaggle (Wes McKinney, Data\u2026",
+  "status": "publish",
+  "title": "Lab: Probability",
+  "type": "page"
+ },
+ "lab-programming": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-02-09 14:56:07",
+  "excerpt": "UNIX Shell: (install iterm, brew and brew install mtr) Software Carpentry UNIX in Jupyter Colab Linux Sysadmin Basics by Linode Networking : (install tor and chrome extension) MacOS/UNIX Commands ( Option 2 ) Privacy, Cookies and Data Exhaust (Browser, Google) Web Server and HTTP Traffic\u2026",
+  "status": "publish",
+  "title": "Lab: Networks + Databases",
+  "type": "page"
+ },
+ "lab-programming-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-02-01 21:54:11",
+  "excerpt": "Theory of Computation: Visualgo.net: TSP and Bubble Sort Algorithm-Visualizer.org (Visualization + Code) Algomation.com (Visualization + Code) Problem-Solving with Algorithms and Data Structures ( Ch.2 Analysis ) Design Patterns on PythonAnywhere.com Pythons: PyPy Open Programming Environments: Jupyter Notebooks : Google Colab: (storage) Kaggle (Wes McKinney, Data\u2026",
+  "status": "private",
+  "title": "Lab: Programming (2019)",
+  "type": "page"
+ },
+ "lab-social-networks": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-04-08 14:42:45",
+  "excerpt": "NOTE: This is a repost of the Lab for our week on NLP with a few additions. Until now, we've largely been dealing directly with numerical data. While we can Today we want to quickly cover the following fundamentals of Natural Language Processing including: Web\u2026",
+  "status": "publish",
+  "title": "Lab: Social Networks",
+  "type": "page"
+ },
+ "lab-visualization": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-28 18:16:16",
+  "excerpt": "This week will be studying best (and worst) practices of data visualizations and interactive visual storytelling through data. We'll be exploring and critiquing a wide range of visualization and storytelling from data journalism and the Digital Humanities. Laptop Configuration: Please register for a free account\u2026",
+  "status": "publish",
+  "title": "Lab: Visualization",
+  "type": "page"
+ },
+ "laptop-setup": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-13 19:34:38",
+  "excerpt": "Here is a list of local client software and remote cloud applications/resources that we will potentially explore in our class. It is recommended that students their own laptops to mirror the course lab laptops so they will have a fully configured and working personal laptop\u2026",
+  "status": "publish",
+  "title": "Laptop Setup",
+  "type": "page"
+ },
+ "lda-topic-modeling": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-29 22:13:31",
+  "excerpt": "This is one of the three main Machine Learning techniques we'll be teaching in our upcoming NLP Workshop for Researchers in the Humanities at Kenyon College. Here are two great videos that lay out a good, relatively non-mathy introduction to LDA Topic Modeling along with\u2026",
+  "status": "publish",
+  "title": "LDA Topic Modeling",
+  "type": "page"
+ },
+ "learn-python-and-programming": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-01 18:11:01",
+  "excerpt": "As our semester wraps up and summer approaches I was asked for recommendations to study Python/programming over the summer. Python has become the de facto lingua franca of computational approaches across many fields including CS Education, Data Analytics, Machine Learning, Deep Learning, Robotics, DevOps, etc.\u2026",
+  "status": "publish",
+  "title": "Learn Python and Programming",
+  "type": "post"
+ },
+ "logo-design": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-02-07 19:59:03",
+  "excerpt": "We are visual animals living in an age of information and sensory overload. This makes creating a memorable logo all the more important for effective and memorable communication. Plus, design work like this gives me a creative break from reading about Bayesian Graph Models and\u2026",
+  "status": "publish",
+  "title": "Logo Design",
+  "type": "post"
+ },
+ "papers": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-12 19:44:38",
+  "excerpt": "AI for the Humanities Integrated Program for Humane Studies Summary of Fall 2017 Final Projects A Dramaturgical Perspective on the Turing Test - Henry Nash Quantifying the Capabilities of Musical AIs - Gordon Loveland III An Interview with First Amendment Lawyer and Professor Patrick Kabat\u2026",
+  "status": "publish",
+  "title": "Papers",
+  "type": "page"
+ },
+ "posters-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-05-16 00:31:35",
+  "excerpt": "IPHS 300 AI for the Humanities Integrated Program for Humane Studies Summary of Spring 2019 Final Posters (Descriptions and Links Below). NB : With the addition of QR status to this course in 2019, all course projects have been converted to quantitative posters format. Previous\u2026",
+  "status": "publish",
+  "title": "Posters: Spring 2019",
+  "type": "page"
+ },
+ "posters-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-01-19 20:41:11",
+  "excerpt": "IPHS 300 AI for the Humanities Integrated Program for Humane Studies Summary of Fall 2020 Final Posters (Descriptions and Links Below). Quantifying the Rising \"Blue Wave\": The Five Metro Areas that Determined the 2020 U.S. Presidential Election by Jake Davidson Optimizing Voting Locations in Knox\u2026",
+  "status": "publish",
+  "title": "Posters: Fall 2020",
+  "type": "page"
+ },
+ "posters-spring-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-06-12 19:04:19",
+  "excerpt": "IPHS 300 AI for the Humanities Integrated Program for Humane Studies Summary of Spring 2020 Final Posters (Descriptions and Links Below). Writing the Next American Hit: Using GPT-2 to Explore the Possibility of Creating Successful AI-Generated Song Lyrics [Evaluating song lyrics generated by the GPT-2\u2026",
+  "status": "publish",
+  "title": "Posters: Spring 2020",
+  "type": "page"
+ },
+ "programmable-materials": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-01-26 05:36:32",
+  "excerpt": "As an example of the expanding universe of programmable intelligence we talked about this week, here is one of many potential examples of 'programmable' materials. https://www.youtube.com/watch?v=1yXKGAbyFIg&feature=youtu.be",
+  "status": "publish",
+  "title": "Programmable Materials",
+  "type": "post"
+ },
+ "programming-advice-for-stem-students": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-13 17:59:54",
+  "excerpt": "The Physics, Math and other STEM majors in our classes have a unique set of backgrounds, interests and relationships to the technologies and theories we study. For programming, there is a particular theoretical mindset that meshes well with emerging trends in Computer Science. It deserves\u2026",
+  "status": "publish",
+  "title": "Programming Advice for STEM Students",
+  "type": "post"
+ },
+ "projects": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-06 20:30:06",
+  "excerpt": "This top of this page shows an archive of our Digital Humanities course projects. The bottom of this page gives outlines of our current course Mini-Projects as well as the main DH Semester Project. IPHS200 Programming Humanity Fall 2020 Posters Spring 2020 Posters Spring 2019\u2026",
+  "status": "publish",
+  "title": "Projects",
+  "type": "page"
+ },
+ "projects-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-03-21 18:40:06",
+  "excerpt": "IPHS200 Programming Humanity Spring 2019 Posters/Papers : Programming Humanity Fall 2017 Papers: Programming Humanity IPHS300 AI for the Humanities Fall 2019 Posters/Papers : AI for the Humanities Fall 2018 Posters: AI for the Humanities Due Dates for Class Project and 3 Miniprojects Friday, Jan 31st\u2026",
+  "status": "private",
+  "title": "Projects (2019)",
+  "type": "page"
+ },
+ "projects-2020-spr": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-10-14 16:55:13",
+  "excerpt": "IPHS200 Programming Humanity Spring 2020 Posters Spring 2019 Posters/Papers Fall 2017 Papers IPHS300 AI for the Humanities Fall 2019 Posters/Papers Fall 2018 Posters Due Dates for Class Project and 3 Miniprojects Friday, Feb 9th, 2020 : Data Visualization Miniproject (7% of grade) Friday, Mar 23rd,\u2026",
+  "status": "publish",
+  "title": "Projects (2020 Spr)",
+  "type": "page"
+ },
+ "readings": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-06 20:44:54",
+  "excerpt": "The class assignments consist of material from a diverse range of sources in a variety of formats including written articles, texts, videos and podcasts. Voyager Golden Record (1977) Week One: Data (August 28, 30, Sep 1) Lecture: Can Data Model Our Humanity? This week's readings\u2026",
+  "status": "publish",
+  "title": "Readings (2019)",
+  "type": "page"
+ },
+ "readings-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-13 15:21:50",
+  "excerpt": "Programming Humanity credit Topics Covered in Programming Humanity: Data: Are We Data? Processing: Brains and Computers, Algorithms and Consciousness Output: Storytelling Visualized, Persuasion and Deception Networks Languages: Artificial and Natural Ro/bots: Automating Humanity Quantifying Uncertainty: Bayes and Probability Databases: The Surveillance State Natural Language: Finding\u2026",
+  "status": "publish",
+  "title": "Readings",
+  "type": "page"
+ },
+ "readings-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 15:32:36",
+  "excerpt": "Topics Covered in Spring 2020 Programming Humanity course: Data - Matter, Information and Perception Algorithms - Atomic Cognition Visualizations - Visual Storytelling DUE Sat, Feb 9th Visualization Mini Project Networks - Interconnecting Humanity Programming - Language as the BrainOS Probability - Imputing Emotions Databases -\u2026",
+  "status": "private",
+  "title": "Readings (2020 Spring)",
+  "type": "page"
+ },
+ "readings-2021": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2022-08-25 13:50:52",
+  "excerpt": "Programming Humanity credit Topics Covered in Programming Humanity: Matter and Information - Are We Data? The Brain and Computers - Cognition and Consciousness Storytelling Visualized - Persuasion and Deception Interconnecting Humanity - Network Effects The Language of Thought - Programming Aesthetics Ro/Bots - Automating Humanity\u2026",
+  "status": "publish",
+  "title": "Readings (2021)",
+  "type": "page"
+ },
+ "readings-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:12:19",
+  "excerpt": "Programming Humanity credit Topics Covered in Programming Humanity: Data - Are We Data? The Brain and Computers - Cognition and Consciousness Storytelling Visualized - Persuasion and Deception Interconnecting Humanity - Network Effects The Language of Thought - Programming Aesthetics Ro/Bots - Automating Humanity Quantifying Uncertainty\u2026",
+  "status": "publish",
+  "title": "Readings (2022)",
+  "type": "page"
+ },
+ "readings-3": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2022-01-23 18:20:33",
+  "excerpt": "Fall 2020 Programming Humanity credit Topics Covered in Fall 2021 Programming Humanity course: Matter and Information - Are We Data? The Brain and Computers - Cognition and Consciousness Storytelling Visualized - Persuasion and Deception Interconnecting Humanity - Network Effects The Language of Thought - Programming\u2026",
+  "status": "private",
+  "title": "Readings (2022 Fall)",
+  "type": "page"
+ },
+ "readings-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-08-25 11:39:15",
+  "excerpt": "Fall 2020 Programming Humanity credit Topics Covered in Spring 2020 Programming Humanity course: Data - Matter, Perception and Memory Algorithms - Atomic Cognition Visualizations - Visual Storytelling DUE Tue, Sep 29th (6pm EST) Visualization Mini Project ( Description ) Networks - Interconnecting Humanity ( Mini-Project\u2026",
+  "status": "private",
+  "title": "Readings (Fall 2020)",
+  "type": "page"
+ },
+ "references-data": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-11 07:32:57",
+  "excerpt": "https://www.wired.com/2012/06/a-random-walk-with-pi/ (pi) Data https://medium.com/engagement-lab-emerson-college/launching-the-data-culture-project-59076c514c04 http://mediaecology.dartmouth.edu/wp/ (Specialized repositories) http://www.statsmodels.org/stable/tsa.html (Time series) https://otexts.org/fpp2/prediction-intervals.html (Time Series) https://github.com/RJT1990/pyflux/blob/master/docs/source/index.rst https://datastudio.google.com/navigation/reporting (Tools) https://datascience-school.com/blog/google-data-studio-in-10-minutes-step-by-step-guide/ https://www.metabase.com/docs/latest/operations-guide/running-metabase-on-docker.html",
+  "status": "publish",
+  "title": "References - Data",
+  "type": "page"
+ },
+ "reinforcement-learning-and-great-communication": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-27 23:53:07",
+  "excerpt": "Deep Reinforcement Learning was arguably the single hottest area of AI that I taught last semester in our 'AI for Humanists' course. I am always on the look out for comprehensive, concise and illuminating material on our course topics. For difficult topics like Deep RL\u2026",
+  "status": "publish",
+  "title": "Reinforcement Learning and Communicating Complexity",
+  "type": "page"
+ },
+ "statistics-vs-ml": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-09-12 20:08:39",
+  "excerpt": "A Machine Learning expert is a Statistician who works on a Mac laptop in a cafe in SF earning 30% more - anon Before I taught the first iteration of our \"AI for the Humanities\" course a colleague asked \"Isn't that just statistics?\" There wasn't\u2026",
+  "status": "publish",
+  "title": "Statistics vs ML",
+  "type": "post"
+ },
+ "syllabus": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-06 17:11:35",
+  "excerpt": "IPHS 200 Programming Humanity TR 1:10-2:30 & 2:40-4:00 Prof. Elkins with guest Prof. Chun Office Hours: Professor Elkins: Tuesday & Thursday 4-5, Thursday 11-12 or by appointment \u201cWe become what we behold. We shape our tools and then our tools shape us\u201d \u2013 Fr. John\u2026",
+  "status": "publish",
+  "title": "Syllabus",
+  "type": "page"
+ },
+ "syllabus-2019-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-30 20:08:30",
+  "excerpt": "IPHS 200 Programming Humanity Computational Thinking for Humanity Spring 2020 MWF 11:10-12pm (In person class) TuTh 11:10-12:30pm (Virtual class) Prof. Chun and Prof. Elkins Office Hours: Professor Chun Timberlake 3 Wednesday 12-2 and by appointment at chunj@kenyon.edu Professor Elkins Timberlake 1 Wednesday 12-2, Thursday 12-1,\u2026",
+  "status": "private",
+  "title": "Syllabus (2019 Spring)",
+  "type": "page"
+ },
+ "syllabus-2021": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2022-08-25 13:42:34",
+  "excerpt": "IPHS 200 Programming Humanity Office Hours: Professor Chun MWF 12:10-1 and by appointment Professor Elkins MWF 12:10-1, Tuesday 12:00-1:10 and by appointment at elkinsk@kenyon.edu \u201cWe become what we behold. We shape our tools and then our tools shape us\u201d \u2013 Fr. John Culkin/Marshall McLuhan Course\u2026",
+  "status": "publish",
+  "title": "Syllabus (2021)",
+  "type": "page"
+ },
+ "syllabus-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:10:39",
+  "excerpt": "IPHS 200 Programming Humanity Data Humanities for the Information Age MWF 10:10-11 or MWF 11:10-12 Prof. Chun and Prof. Elkins Office Hours: Professor Chun Professor Chun MWF 1:10-2:10 Or by appointment Professor Elkins TR 1:00-2:00 F 1-2 Or by appointment \u201cWe become what we behold.\u2026",
+  "status": "publish",
+  "title": "Syllabus (2022)",
+  "type": "page"
+ },
+ "synthetic-biology-igem": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-04-23 16:35:00",
+  "excerpt": "Our Programming Humanity course concludes with introductions to several high-level technologies and computational approaches in areas poised to significantly impact humanity: Robotics, Bioinformatics and Artificial Intelligence. Each of these areas is a vast discipline unto itself with ethical consequences ranging from potential widespread automation/unemployment and\u2026",
+  "status": "publish",
+  "title": "Synthetic Biology: iGem",
+  "type": "post"
+ },
+ "tesla-and-the-decarbonization-of-transportation": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2020-01-29 08:32:00",
+  "excerpt": "While I love technology, I've never been anything that could be called a 'car' person. To me, cars are largely a necessary utility and convenience. They are terrible financially with the fastest depreciation of any major asset one buys over a lifetime. In the last\u2026",
+  "status": "private",
+  "title": "Tesla and the Decarbonization of Transportation",
+  "type": "post"
+ },
+ "the-future-of-computer-science": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-07-02 15:49:20",
+  "excerpt": "https://www.youtube.com/watch?v=8qrriKcwvlY From the 1980s one-hit wonder Timbuck 3 By all present indicators the future of Computer Science looks bright. CS majors/minors have doubled/tripled over the last decade, introductory CS courses are at record levels contending for the most popular courses at even top institutions (Harvard,\u2026",
+  "status": "publish",
+  "title": "The Future of Computer Science",
+  "type": "post"
+ },
+ "the-history-of-ai-for-the-humanities": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-05-28 05:53:22",
+  "excerpt": "Generic Gartner Hype Cycle The analyst industry produces commentary, forecasts, and conferences for interested parties like investment firms and large corporate customers. In the tech industry, they act as a quasi-independent outsourced competitive analysis / high-level R&D resource. Fortune 500, government agencies and other large\u2026",
+  "status": "private",
+  "title": "The History of AI for the Humanities",
+  "type": "post"
+ },
+ "think-like-a-computer-scientist": {
+  "author": "jonchun",
+  "categories": [
+   "Uncategorized"
+  ],
+  "date": "2019-01-24 19:02:09",
+  "excerpt": "Allen B. Downey is one of the most prolific, generous and multi-talented professors teaching undergraduate computer science today. He does a good job here as Defender of the Faith on behalf of Bayesian statistics . Today I got access to his newest book titled \"\u2026",
+  "status": "publish",
+  "title": "Think Like a Computer Scientist",
+  "type": "post"
+ },
+ "topic-ai": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 16:54:05",
+  "excerpt": "https://www.youtube.com/watch?v=Kbsi0KOunj8 ( CAUTION: Movie Spoiler ) Passing the Turing Test (2014 Ex Machina) Week Fourteen: Artificial Intelligence Before our final project, we'll look at what some speculate may be humankind's ' last great invention ': Artificial Intelligence (AI). Neuroscience provides the only model of advanced\u2026",
+  "status": "publish",
+  "title": "Topic: Artificial Intelligence (2021)",
+  "type": "page"
+ },
+ "topic-algorithms": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 15:58:56",
+  "excerpt": "Last week we explored the many facets of data--in other words, our \"input,\" both for humans (perception and memory) or computers (bits/bytes, sampling, compression). This week, we look at processing that data, again comparing computers and humans. We begin by exploring the long history of\u2026",
+  "status": "publish",
+  "title": "Processing",
+  "type": "page"
+ },
+ "topic-algorithms-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-13 18:08:40",
+  "excerpt": "ALGORITHMS / Cognitive Science & Neuroscience M Class: Programming Paradigms, Algorithms and Complexity W Lab: Multi-Paradigm Programming F Discussion: Intelligence, Computational Matter and Data Determinism This week we study how Computer Science represents and implements thought in code. We'll study this with examples of specific\u2026",
+  "status": "publish",
+  "title": "Topic: Algorithms (2019)",
+  "type": "page"
+ },
+ "topic-algorithms-2019-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-15 21:41:06",
+  "excerpt": "This week we study how Computer Science represents and implements cognition in code. We'll study this with examples of specific algorithms (e.g. search, sort) and general programming patterns (e.g. recursion). More generally, we'll explore organizing computational thought through the lens of several different programming paradigms.\u2026",
+  "status": "publish",
+  "title": "Topic: Algorithms (2019)",
+  "type": "page"
+ },
+ "topic-algorithms-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 15:37:59",
+  "excerpt": "This week we study how Computer Science represents and implements one familiar aspect of cognition (algorithmic thinking) in code. We'll study this with examples of specific algorithms (e.g. sort) and a general pattern of computation (e.g. recursion). More generally, we'll introduce the Object-Orientated Programming (OOP)\u2026",
+  "status": "private",
+  "title": "Topic: Algorithms (2020 Spring)",
+  "type": "page"
+ },
+ "topic-algorithms-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-08-29 23:41:06",
+  "excerpt": "This week we learn about the origins of computer science dating back to Aristotle and influenced by the fields of both logic and linguistics. We'll also explore the connections that are being made between human cognition and and computers. Is human cognitive processing algorithmic? In\u2026",
+  "status": "publish",
+  "title": "Topic: Algorithms (Fall 2020)",
+  "type": "page"
+ },
+ "topic-analytics": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:23:15",
+  "excerpt": "https://www.youtube.com/watch?v=KWPhV6PUr9o Moneyball (2011) Data Science - Bias and Fairness M Class: Clustering Algorithms and scikit-learn Pipeline W Lab: Linear Regression, Decision Trees and Confusion Matrix F Discussion: Bias and Fairness in Data and Models This week we'll explore the science of constructing statistical models that\u2026",
+  "status": "publish",
+  "title": "Topic: Data Science",
+  "type": "page"
+ },
+ "topic-artificial-intelligence": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-11-16 21:38:13",
+  "excerpt": "https://youtu.be/E4SSU29Arj0 TED Talks 2023: Stealing Fire From the Gods (2012 Prometheus) In this, our final week, we look at what some speculate may be humanity's last great invention: Artificial Intelligence (AI). We'll see how AI has rapidly grown to be a central focus in academia,\u2026",
+  "status": "private",
+  "title": "Topic: Artificial Intelligence",
+  "type": "page"
+ },
+ "topic-artificial-intelligence-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-04-18 04:43:01",
+  "excerpt": "https://youtu.be/E4SSU29Arj0 Stealing Fire From the Gods (Prometheus 2012) Week Fourteen Apr 29, May 1, 3 Artificial Intelligence, Neuroscience and Consciousness M Class: Artificial Intelligence and Neuroscience W Lab: Deep Neural Nets with Keras/TensorFlow F Discussion: Artificial General Intelligence: Promises and Perils In this, our final\u2026",
+  "status": "private",
+  "title": "Topic: Artificial Intelligence (2019)",
+  "type": "page"
+ },
+ "topic-artificial-intelligence-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:59:05",
+  "excerpt": "https://youtu.be/E4SSU29Arj0 TED Talks 2023: Stealing Fire From the Gods (2012 Prometheus) Week Fourteen Apr 29, May 1, 3 Artificial Intelligence, Neuroscience and Consciousness Monday : Artificial Intelligence and Neuroscience Wednesday : Deep Neural Nets with Keras/TensorFlow Friday : Artificial General Intelligence: Promises and Perils (Optional)\u2026",
+  "status": "private",
+  "title": "Topic: Artificial Intelligence (2020 Spring)",
+  "type": "page"
+ },
+ "topic-artificial-intelligence-2025": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2025-12-04 12:50:00",
+  "excerpt": "https://youtu.be/E4SSU29Arj0 TED Talks 2023: Stealing Fire From the Gods (2012 Prometheus) In this, our final week, we look at what some speculate may be humanity's last great invention: Artificial Intelligence (AI). We'll see how AI has rapidly grown to be a central focus in academia,\u2026",
+  "status": "publish",
+  "title": "Topic: Artificial Intelligence 2025",
+  "type": "page"
+ },
+ "topic-bioinformatics": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:28:13",
+  "excerpt": "https://www.youtube.com/watch?v=43gAIBzXzsw Engineering Irreversible Inequality (Gattaca 1997) Bioinformatics - Hacking Human Biology with Big Data and Computational Models In our penultimate week we explore a computational interpretation of biology as an information processing system. We'll understand why a computational model of cellular life is, in terms\u2026",
+  "status": "publish",
+  "title": "Topic: Bioinformatics",
+  "type": "page"
+ },
+ "topic-bioinformatics-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-11-10 17:52:41",
+  "excerpt": "https://www.youtube.com/watch?v=LR4xK5ti-jA Prenatal Consultation becomes an Engineering Design Meeting (Gattaca 1997) https://www.youtube.com/watch?v=hBA0AH-LSbo Parabiosis : Life-extension Vampires and their Blood Boys (2017 HBO Silicon Valley) If we view humans from a computational perspective, we can see living cells as information processing systems that execute DNA code to\u2026",
+  "status": "publish",
+  "title": "Topic: Evolving Life",
+  "type": "page"
+ },
+ "topic-bioinformatics-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-04-12 19:35:36",
+  "excerpt": "https://www.youtube.com/watch?v=LR4xK5ti-jA Bioinformatics - Genetics and Molecular Biology M Class: Computational Biology, Molecular Biology and Genetics W Lab: Drug Discovery and Designer Proteins F Discussion: Eugenics, Transhumanism and Immortality In our second week on Algorithms we noted the computational perspective of living cells as information processing\u2026",
+  "status": "publish",
+  "title": "Topic: Bioinformatics (2019)",
+  "type": "page"
+ },
+ "topic-bioinformatics-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:58:00",
+  "excerpt": "https://www.youtube.com/watch?v=LR4xK5ti-jA Prenatal Consultation becomes an Engineering Design Meeting (Gattaca 1997) The Hidden Side of Clinical Trials (13:00) Sile Lane, TEDxMadrid, Sep 2016 Why the Drugs You Take Don't Work & What We're Doing About It (19:14) Dr. Jeffrey Balser, TED, Jul 2016 (Pharmacogenomics and Pre-emptive\u2026",
+  "status": "private",
+  "title": "Topic: Bioinformatics (2020 Spring)",
+  "type": "page"
+ },
+ "topic-data": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 15:54:26",
+  "excerpt": "Data, especially Big Data, has been called the \"new oil.\" This is why data, along with an intimate understanding of its forms, is the topic of our first week. We begin by exploring how humans and computers encode data differently. Humans encode data by using\u2026",
+  "status": "private",
+  "title": "Topic: Data",
+  "type": "page"
+ },
+ "topic-data-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 15:35:39",
+  "excerpt": "Data, especially Big Data, is the foundation and fuel upon which many of the technologies like AI and Bioinformatics are revolutionizing society. This is why data and and an intimate understanding of it forms the introductory foundation of our course that covers algorithms to analytics\u2026",
+  "status": "private",
+  "title": "Topic: Data (Fall 2021)",
+  "type": "page"
+ },
+ "topic-data-2021": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2022-08-25 13:54:21",
+  "excerpt": "Data, especially Big Data, has been called the \"new oil.\" This is why data, along with an intimate understanding of its forms, is the introduction to our course. We begin by exploring how humans and computers encode data differently. Philosophers have long debated whether there\u2026",
+  "status": "publish",
+  "title": "Topic: Data (2021)",
+  "type": "page"
+ },
+ "topic-data-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:15:44",
+  "excerpt": "Data, especially Big Data, has been called the \"new oil.\" This is why data, along with an intimate understanding of its forms, is the topic for our first week. We begin by exploring how humans and computers encode data differently. Humans encode data by using\u2026",
+  "status": "publish",
+  "title": "Topic: Data (2022)",
+  "type": "page"
+ },
+ "topic-data-analytics-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-03-31 17:42:22",
+  "excerpt": "Data Analytics - Criminal Justice M Class: Decision Tree Ensembles and Analytics Pipeline W Lab: Kaggle and RapidMiner F Discussion: Data: The New Oil or a Civil Right, Free Markets and Regulation This week we'll explore the science of constructing models that use data to\u2026",
+  "status": "private",
+  "title": "Topic: Data Science (2019)",
+  "type": "page"
+ },
+ "topic-data-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-08-26 17:00:40",
+  "excerpt": "Data, especially Big Data, is the foundation and fuel upon which many of the technologies like AI and Bioinformatics are revolutionizing society. This is why data and and an intimate understanding of it forms the introductory foundation of our course that covers algorithms to analytics\u2026",
+  "status": "private",
+  "title": "Topic: Data (Fall 2020)",
+  "type": "page"
+ },
+ "topic-data-fall-2020-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-08-26 17:10:58",
+  "excerpt": "Data, especially Big Data, is the foundation and fuel upon which many of the technologies like AI and Bioinformatics are revolutionizing society. This is why data and and an intimate understanding of it forms the introductory foundation of our course that covers algorithms to analytics\u2026",
+  "status": "publish",
+  "title": "Topic: Data (Fall 2020)",
+  "type": "page"
+ },
+ "topic-data-science-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:53:08",
+  "excerpt": "https://www.youtube.com/watch?v=KWPhV6PUr9o Moneyball (2011) Data Science - Bias and Fairness M Class: Clustering Algorithms and scikit-learn Pipeline W Lab: Linear Regression, Decision Trees and Confusion Matrix F Discussion: Bias and Fairness in Data and Models This week we'll explore the science of constructing models that use\u2026",
+  "status": "private",
+  "title": "Topic: Data Science (2020 Spring)",
+  "type": "page"
+ },
+ "topic-data-spring-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-12 21:59:33",
+  "excerpt": "DATA - Philosophy, Neuroscience and Physics M Intro: Course Overview, Perception, Data, Information and Encodings W Class/Lab: (Un)Structured Data , Types and Structures F Lab/Disc: Perception, Information Entropy, The Limits of Data Monday Intro/Class: (No advanced readings first day): Introductions Overview : Course Philosophy, Syllabus\u2026",
+  "status": "private",
+  "title": "Topic: Data (Spring 2019)",
+  "type": "page"
+ },
+ "topic-databases": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2025-10-16 14:34:00",
+  "excerpt": "https://www.youtube.com/watch?v=xrrAwGzQO_U Facebook is my Bitch (3:02) 2016 film 'Snowden' Databases - The New Surveillance State Data has been called the new oil. In only a single generation, oil, gas and auto companies have been displaced by Silicon Valley companies--which collect vast amounts of data--as America's\u2026",
+  "status": "private",
+  "title": "Topic: Databases",
+  "type": "page"
+ },
+ "topic-databases-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:41:32",
+  "excerpt": "https://www.youtube.com/watch?v=xrrAwGzQO_U Facebook is my Bitch (3:02) 2016 film 'Snowden' Databases - Legal Studies M Class: Databases and Big Data W Lab: RegEx, SQL, and REST/GraphQL F Discussion: The Surveillance State: Privacy vs Security, China vs The West https://www.youtube.com/watch?v=SERgxZeoIjU Data Visualization (2:00) 2016 film 'Snowden' Data\u2026",
+  "status": "private",
+  "title": "Topic: Databases (2020 Spring)",
+  "type": "page"
+ },
+ "topic-databases-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-10-04 16:25:31",
+  "excerpt": "https://www.youtube.com/watch?v=xrrAwGzQO_U Facebook is my Bitch (3:02) 2016 film 'Snowden' https://www.youtube.com/watch?v=SERgxZeoIjU Data Visualization (2:00) 2016 film 'Snowden' Data - Storage/Retrieval, Owenership/Valuation and Privacy/Surveillance Data has been called the new oil. In one generation, oil, gas and auto companies have been displaced by Silicon Valley companies as\u2026",
+  "status": "private",
+  "title": "Topic: Databases (Fall 2020)",
+  "type": "page"
+ },
+ "topic-models": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:28:58",
+  "excerpt": "Not these types of models... (Zoolander 2001) https://www.youtube.com/watch?v=KWPhV6PUr9o These models... \"It's about getting things down to one number.\" (Moneyball 2011) Models Perhaps the most important thing to remember about models is the saying by George Box: \"All models are wrong. Some models are useful.\" All\u2026",
+  "status": "private",
+  "title": "Topic: Models",
+  "type": "page"
+ },
+ "topic-models-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2025-10-30 12:13:00",
+  "excerpt": "Not these types of models... (Zoolander 2001) https://www.youtube.com/watch?v=KWPhV6PUr9o These models... \"It's about getting things down to one number.\" (Moneyball 2011) Models Perhaps the most important thing to remember about models is the saying by George Box: \"All models are wrong. Some models are useful.\" All\u2026",
+  "status": "private",
+  "title": "Topic: Models",
+  "type": "page"
+ },
+ "topic-models-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-03-11 13:00:57",
+  "excerpt": "Modeling - Economics, Environmental Studies and Cognitive Science M Class: Models and Game Theory W Lab: Probabilistic Models, Economic and Climate Models F Discussion: Global Warming, Public Policy and Economic Inequality We've crammed a lot of relatively dense technical material into the last two weeks\u2026",
+  "status": "private",
+  "title": "Topic: Models (2019)",
+  "type": "page"
+ },
+ "topic-models-2020-fall": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-10-21 16:09:29",
+  "excerpt": "Not these types of models... (Zoolander 2001) https://www.youtube.com/watch?v=KWPhV6PUr9o These models... \"It's about getting things down to one number.\" (Moneyball 2011) Models - Distilling data to understand, predict and change the world In our reading this week, you learn that in Jane Austen's time, it was\u2026",
+  "status": "private",
+  "title": "Topic: Models (2020 Fall)",
+  "type": "page"
+ },
+ "topic-models-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:54:28",
+  "excerpt": "Not these types of models... (Zoolander 2001) Modeling - Multi-Model Thinking, Genetic Algorithms, Game Theory, Bayesian Probabilistic Thinking, Epidemiology SIR Model and Climate Models, Diverse Experts on Managing the Coronavirus Pandemic Monday : Multi-Model Thinking, Genetic Algorithms, Game Theory and Revisiting Bayesian Probabilistic Thinking Wednesday\u2026",
+  "status": "private",
+  "title": "Topic: Models (2020 Spring)",
+  "type": "page"
+ },
+ "topic-natural-language-processing-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-02-28 14:59:41",
+  "excerpt": "Natural Language Processing - Literary Studies M Class: IR and NLP Techniques W Lab: Various NLP Libraries F Discussion: Humanism and Posthumanism Of all the kinds of data we look at, unstructured text is one of the most interesting and challenging. From web sites, social\u2026",
+  "status": "private",
+  "title": "Topic: Natural Language Processing (2019)",
+  "type": "page"
+ },
+ "topic-natural-language-processing-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:46:15",
+  "excerpt": "https://www.youtube.com/watch?v=Qd8zT1YAUcku0026amp;t=6s Arrival (4:47) 2016 Natural Language Processing - Literary Studies M Class: IR and NLP Techniques W Lab: Various NLP Libraries F Discussion: Humanism and Posthumanism Of all the kinds of data we look at, unstructured text is one of the most interesting and challenging.\u2026",
+  "status": "private",
+  "title": "Topic: Natural Language Processing (2020 Spring)",
+  "type": "page"
+ },
+ "topic-natural-language-processing-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-10-08 10:55:46",
+  "excerpt": "https://www.youtube.com/watch?v=2ZksQd2fC6Yu0026amp;t=97s Syntax (Abbott) != Semantics (Costello) = Comedic Gold Natural Language Processing--Bringing Structure to Text and Extracting Emotions Of all the kinds of data we look at, unstructured text is one of the most interesting and challenging. From web sites to social media, research papers\u2026",
+  "status": "private",
+  "title": "Topic: Natural Language Processing (Fall 2020)",
+  "type": "page"
+ },
+ "topic-networks": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 15:59:20",
+  "excerpt": "https://www.youtube.com/watch?v=XZmGGAbHqa0 Inside a Google Data Center Nodes and Networks of Computation In previous weeks, we studied the three main components of a traditional stand-alone computer system: Input (Data) -> Processing (Algorithms) -> Output (Visualizations). This week, we focus on how this single physical computer (a\u2026",
+  "status": "publish",
+  "title": "Topic: Networks",
+  "type": "page"
+ },
+ "topic-networks-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-29 18:59:15",
+  "excerpt": "Networks - Political Science M Class: OS and Networks W Lab: UNIX, Internet Protocols, APIs, PKI, Bitcoin/Blockchain, StuxNet Malware F Discussion: Hacking and Augustine Just Cyberwar In the first three weeks we studied prototypical examples of the three main components of a computing system: Input(Data)\u2026",
+  "status": "private",
+  "title": "Topic: Networks (2019)",
+  "type": "page"
+ },
+ "topic-networks-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:33:32",
+  "excerpt": "https://www.youtube.com/watch?v=XZmGGAbHqa0 Inside a Google Data Center Networks - Political Science M Class: OS and Networks W Lab: UNIX, Internet Protocols, APIs, PKI, Bitcoin/Blockchain, StuxNet Malware F Discussion: Hacking and Just War Theory In the first three weeks we studied the three main components of a\u2026",
+  "status": "private",
+  "title": "Topic: Networks (2020 Spring)",
+  "type": "page"
+ },
+ "topic-networks-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:19:11",
+  "excerpt": "https://www.youtube.com/watch?v=XZmGGAbHqa0 Inside a Google Data Center Nodes and Networks of Computation In previous weeks we studied the three main components of a traditional stand-alone computer system: Input (Data) -> Processing (Algorithms) -> Output (Visualizations). This week, we focus on how this single physical computer (a\u2026",
+  "status": "private",
+  "title": "Topic: Networks (2022)",
+  "type": "page"
+ },
+ "topic-networks-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-09-10 12:06:02",
+  "excerpt": "https://www.youtube.com/watch?v=XZmGGAbHqa0 Inside a Google Data Center Units, Nodes and Networks of Computation In the first three weeks we studied the three main components of a stand-alone computer system: Input (Data) -> Processing (Algorithms) -> Output (Visualizations). This week, we'll combine these three concepts into a\u2026",
+  "status": "private",
+  "title": "Topic: Networks (Fall 2020)",
+  "type": "page"
+ },
+ "topic-nlp": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:22:25",
+  "excerpt": "https://youtu.be/2ZksQd2fC6Y IF [Syntax (Abbott) != Semantics (Costello)] THEN [Comedic Gold] ( extended version with outfield, pitcher & catcher - Spring 1945) Natural Language Processing Of all the kinds of data we look at, unstructured text is one of the most interesting and challenging. From web\u2026",
+  "status": "private",
+  "title": "Topic: Natural Language Processing",
+  "type": "page"
+ },
+ "topic-probability": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 16:16:12",
+  "excerpt": "https://youtu.be/NNWEWFWtJ1Q?t=1303 (21:43-26:00) Rounders (1998) Texas no Hold'em Poker Scene The Bayesian statistician Bruno de Finetti (1906\u20131985) began his book on probability theory with the declaration: \u201cPROBABILITY DOES NOT EXIST.\u201d The capitals appeared in the original, so I imagine de Finetti wanted us to shout this\u2026",
+  "status": "private",
+  "title": "Topic: Quantifying Uncertainty",
+  "type": "page"
+ },
+ "topic-probability-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:39:52",
+  "excerpt": "Risk-Themed Unknown-Unknowns made famous by Donald Rumsfeld (2002 Iraq War) Know Thyself via augmented Johari Window Probabilistic Programming - Medicine M Class: Bayesian Models and Causality W Lab: Bayesian Belief Networks with PyMC3 F Discussion: Affective AI and Fairness, Accountability and Trust The Bayesian statistician\u2026",
+  "status": "private",
+  "title": "Topic: Probability (2020 Spring)",
+  "type": "page"
+ },
+ "topic-probability-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-09-30 15:26:54",
+  "excerpt": "Risk-Themed Unknown-Unknowns made famous by Donald Rumsfeld (2002 Iraq War) Decisions in the Face of Uncertainty: Probabilistic Thinking, Causality and Belief Networks The Bayesian statistician Bruno de Finetti (1906\u20131985) began his book on probability theory with the declaration: \u201cPROBABILITY DOES NOT EXIST\u201d The capitals appeared\u2026",
+  "status": "private",
+  "title": "Topic: Probability (Fall 2020)",
+  "type": "page"
+ },
+ "topic-programming": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 16:02:15",
+  "excerpt": "The Infinite Loop for Programmers This week we study artificial (programming) languages and compare them to natural languages (English, Spanish, etc.). Borrowing from cognitive science and the philosophy of language, we'll see important ways language and thought influence and shape each other. In earlier weeks\u2026",
+  "status": "publish",
+  "title": "Topic: Languages (Artificial and Natural)",
+  "type": "page"
+ },
+ "topic-programming-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-02-06 16:33:22",
+  "excerpt": "Programming Paradig ms - Music & Maths M Class: Evolution and Paradigms in Programming W Lab: Encoding, Visualizing and Processing Sound F Discussion: Aesthetics and Computational Creativity We use this week to catch our breath and ground ourselves by focusing on practical programming skills in\u2026",
+  "status": "private",
+  "title": "Topic: Programming (2019)",
+  "type": "page"
+ },
+ "topic-programming-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:35:11",
+  "excerpt": "https://www.youtube.com/watch?v=m1drR3oaVGc The Brain Science of Storytelling (5:56) Jan 2014 Programming Paradig ms - Language and Thought M Class: Evolution and Paradigms in Programming W Lab: Parsing Natural and Artificial Grammars F Discussion: Philosophy of Language This week we study programming computation from the perspective of\u2026",
+  "status": "private",
+  "title": "Topic: Programming (2020 Spring)",
+  "type": "page"
+ },
+ "topic-programming-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:17:05",
+  "excerpt": "The Infinite Loop for Programmers Languages: Artificial and Natural This week we study artificial (programming) languages and compare them to natural languages (for us, English). Borrowing from cognitive science and the philosophy of language, we'll see important ways language and thought influence and shape each\u2026",
+  "status": "private",
+  "title": "Topic: Programming (2022)",
+  "type": "page"
+ },
+ "topic-programming-2022-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:19:31",
+  "excerpt": "The Infinite Loop for Programmers Languages: Artificial and Natural This week we study artificial (programming) languages and compare them to natural languages (for us, English). Borrowing from cognitive science and the philosophy of language, we'll see important ways language and thought influence and shape each\u2026",
+  "status": "private",
+  "title": "Topic: Programming (2022)",
+  "type": "page"
+ },
+ "topic-programming-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-09-16 14:04:45",
+  "excerpt": "The Infinite Loop for Programmers Programming, Language and Thought This week we study artificial (programming) languages and compare them to natural languages (e.g. English). Borrowing from cognitive science and the philosophy of language, we'll see important ways language and thought influence and shape each other.\u2026",
+  "status": "private",
+  "title": "Topic: Programming (Fall 2020)",
+  "type": "page"
+ },
+ "topic-ro-bots": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2025-09-29 20:35:24",
+  "excerpt": "Ro/Bots: UBI, LAWS, and Moral Machines While the original Industrial Revolution automated simple manual labor, we are in what is called The Fourth Industrial Revolution . This uses Data+AI+Robotics to increasingly take over both largely physical tasks (e.g. driving on highways and automated killing on\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots",
+  "type": "page"
+ },
+ "topic-ro-bots-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-04-12 16:19:47",
+  "excerpt": "https://www.youtube.com/watch?v=qgJs7uluwlU Robots, Bots and Automation - Engineering M Class: Robotics, Automation and Lethal Autonomous Weapons (LAWs) W Lab: Ro/Botics F Discussion: Automation & LAWs: A Peaceful Life of Leisure or a Dystopian Nightmare This week we begin the study of increasingly more complex and interconnected\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots (2019)",
+  "type": "page"
+ },
+ "topic-ro-bots-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:56:37",
+  "excerpt": "https://youtu.be/VK0Wtjh3HVA (Optional Follow-up) Dr. Katz discusses Coronavirus strategies from a Public Health perspective with empathy (addresses the situation in NYC @13:45 and Dr. Wittkowski @ 40:00) (Optional) Updates on Covid-19 News Related to our Course : Will Coronavirus Change Our Attitudes To Death? Quite the\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots (2020 Spring)",
+  "type": "page"
+ },
+ "topic-ro-bots-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:19:55",
+  "excerpt": "https://youtu.be/qgJs7uluwlU \"I can carry out directives that my human counterparts might find... distressing... or unethical.\" - David8 (Prometheus 2012) Ro/Bots: UBI, LAWS, and Moral Machines *NOTE* Please check Moodle and email by the end of break if you encounter any issues. If Moodle indicates you\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots (2022)",
+  "type": "page"
+ },
+ "topic-ro-bots-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-09-24 17:15:44",
+  "excerpt": "https://youtu.be/qgJs7uluwlU \"I can carry out directives that my human counterparts might find... distressing... or unethical.\" - David8 (Prometheus 2012) Ro/Bots: What can't be automated soon?Ethics: UBI, LAWS, and Moral Machines Code: No new coding assignment--collect and clean your Tweets for miniproject #2! The theme of\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots (2020 Fall)",
+  "type": "page"
+ },
+ "topic-robots": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:26:56",
+  "excerpt": "Ro/Bots: UBI, LAWS, and Moral Machines This week: First, we finish up discussions of natural versus artificial languages. Then we move on to robots. While the original Industrial Revolution automated simple manual labor, we are in what is called The Fourth Industrial Revolution . This\u2026",
+  "status": "private",
+  "title": "Topic: Ro/bots",
+  "type": "page"
+ },
+ "topic-simulations": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-11-06 13:10:00",
+  "excerpt": "https://www.youtube.com/watch?v=7TG7xZpkK8c Hang the DJ. - (Spoiler Alert) Optimize Partner Search via 1k Tinder Simulations (Black Mirror,2017) Simulations Over half a century of Moore's Law has enabled powerful new computational approaches. These can create and run simulations of complex models on massive datasets. Unlike models in\u2026",
+  "status": "publish",
+  "title": "Topic: Simulations",
+  "type": "page"
+ },
+ "topic-social-networks": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 17:35:15",
+  "excerpt": "https://www.youtube.com/watch?v=aMuBngVO6QE Engineering profit from \"what drives life\" as Social Animals (The Social Network 2010) Networking Social Animals, Hijacking Instinctual Drives and Amplifying Cognitive Biases Aristotle said \u201cMan is by nature a social animal...Society is something that precedes the individual. Anyone who either cannot lead the\u2026",
+  "status": "publish",
+  "title": "Topic: Social Networks",
+  "type": "page"
+ },
+ "topic-social-networks-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-11-15 10:41:35",
+  "excerpt": "https://www.youtube.com/watch?v=YrpK90bHO2U Black Mirror S3E1: Nose Dive (2016): Social Credit Scoring in Action https://www.youtube.com/watch?v=uaaC57tcci0 The Social Dilemma (2020): Personalized Social Engineering at Scale In earlier weeks, we set the groundwork for understanding network and graph theory, as well as rational actor and cooperative game theory. This\u2026",
+  "status": "private",
+  "title": "Topic: Social Networks",
+  "type": "page"
+ },
+ "topic-social-networks-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-03-11 13:07:07",
+  "excerpt": "Social Networks - Social Psychology M Class: Cognitive Biases and Cognitive Science W Lab: Graph Theory and Social Networks F Discussion: Weaponizing Social Media and Programmable Humans NOTE : Quiz results suggest some students are having problems making it through the readings. This balance of\u2026",
+  "status": "private",
+  "title": "Topic: Social Networks (2019)",
+  "type": "page"
+ },
+ "topic-social-networks-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 20:50:00",
+  "excerpt": "Social Networks - Social Psychology M Class: Cognitive Biases and Cognitive Science W Lab: Graph Theory and Social Networks F Discussion: Weaponizing Social Media and Programmable Humans This week we begin by examining cognitive biases, persuasion techniques and psychological aspects of human cognition. We'll view\u2026",
+  "status": "private",
+  "title": "Topic: Social Networks (2020 Spring)",
+  "type": "page"
+ },
+ "topic-social-networks-2025": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2025-11-19 14:23:19",
+  "excerpt": "https://www.youtube.com/watch?v=YrpK90bHO2U Black Mirror S3E1: Nose Dive (2016): Social Credit Scoring in Action https://www.youtube.com/watch?v=uaaC57tcci0 The Social Dilemma (2020): Personalized Social Engineering at Scale In earlier weeks, we set the groundwork for understanding network and graph theory, as well as rational actor and cooperative game theory. This\u2026",
+  "status": "publish",
+  "title": "Topic: Social Networks 2025",
+  "type": "page"
+ },
+ "topic-the-brain-and-computers-cognition-and-consciousness-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:18:17",
+  "excerpt": "Last week we explored the many facets of data. This week, we look at algorithms and how we can process that data. We begin by exploring the long history of attempts to describe, systematize and automate cognition. The origins of computer science can be said\u2026",
+  "status": "private",
+  "title": "Topic: The Brain and Computers: Cognition and Consciousness (2022)",
+  "type": "page"
+ },
+ "topic-visualizations": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-09 15:59:10",
+  "excerpt": "Visualizing Data and Data-Driven Narratives After a lightning introduction to the history, philosophy and theory behind computer science, we move on to the output of data in a visualization. We start with the basics: the beauty of information as well as the pitfalls of poor\u2026",
+  "status": "private",
+  "title": "Topic: Output",
+  "type": "page"
+ },
+ "topic-visualizations-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-24 19:31:43",
+  "excerpt": "Data Driven Journalism Visualizations - Studio Art M Class: Storytelling with Visualizations W Lab: Python Viz Libraries and Tableau Public F Discussion: Lying with Stats/Viz, Data Journalism and Trust For the first time this semester we have no readings with code this week. Instead, we'll\u2026",
+  "status": "private",
+  "title": "Topic: Visualizations (2019)",
+  "type": "page"
+ },
+ "topic-visualizations-2020-spring": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-08-29 15:41:06",
+  "excerpt": "Visualizations - Studio Art M Class: Storytelling with Visualizations W Lab: Tableau Public F Discussion: Journalism, Fake News, Censorship and Trust For the first time this semester, this week we have no readings with code. Instead, we'll work with the most popular commercial data visualization\u2026",
+  "status": "private",
+  "title": "Topic: Visualizations (2020 Spring)",
+  "type": "page"
+ },
+ "topic-visualizations-2022": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2024-08-28 16:17:48",
+  "excerpt": "Visualizing Data and Data-Driven Narratives [For those interested in applications of last week's consciousness discussion to the humanities here's an optional excerpt from Professor Elkins' most recent book: Proust In Search of Lost Time (Oxford UP, August 2022). NOTE: Seminar room assignments are for the\u2026",
+  "status": "private",
+  "title": "Topic: Visualizations (2022)",
+  "type": "page"
+ },
+ "topic-visualizations-fall-2020": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2021-09-02 17:51:27",
+  "excerpt": "Visualizing Data and Data-Driven Narratives After a lightening introduction to the history, philosophy and theory behind computer science, our course now moves onto more practical topics. This week we'll work with the most popular commercial data visualization software package called Tableau. This will lay the\u2026",
+  "status": "private",
+  "title": "Topic: Visualizations (Fall 2020)",
+  "type": "page"
+ },
+ "topics": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-10 20:27:41",
+  "excerpt": "Topics Covered in Spring 2020 Programming Humanity course: Data - Matter, Information and Perception Algorithms - Synthesized Thought Visualizations - Storytelling Visualized DUE Sat, Feb 9th Visualization Mini Project Networks - Interconnecting Humanity Programming - Computational Aesthetics Probability - Imputing Emotions Databases - The Surveillance\u2026",
+  "status": "publish",
+  "title": "Topics",
+  "type": "page"
+ },
+ "topics-2019": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-12 21:56:06",
+  "excerpt": "Topics Covered in Spring 2019 Programming Humanity course: Data - Matter, Information and Perception Algorithms - Synthesized Thought Visualizations - Storytelling Visualized DUE Sat, Feb 9th Visualization Mini Project Networks - Interconnecting Humanity Programming - Computational Aesthetics Probability - Imputing Emotions Databases - The Surveillance\u2026",
+  "status": "private",
+  "title": "Topics  (2019)",
+  "type": "page"
+ },
+ "topics-2019-2": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2020-01-13 06:54:24",
+  "excerpt": "Topics Covered in Spring 2019 Programming Humanity course: Data - Matter, Information and Perception Algorithms - Synthesized Thought Visualizations - Storytelling Visualized DUE Sat, Feb 9th Visualization Mini Project Networks - Interconnecting Humanity Programming - Computational Aesthetics Probability - Imputing Emotions Databases - The Surveillance\u2026",
+  "status": "private",
+  "title": "Topics - 2019",
+  "type": "page"
+ },
+ "why-study-quant-finance": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-07-18 23:11:10",
+  "excerpt": "https://www.youtube.com/watch?v=ptd4XicBUnY Good overview but I've met Physicists would would disagree I highly recommend anyone interested in Computer Science, Data Science or AI to at least causally follow the world of FinTech and Quantitative Finance. Even if you are not interested in the world of finance\u2026",
+  "status": "publish",
+  "title": "Why Study Quant Finance?",
+  "type": "page"
+ },
+ "workshop-natural-language-processing": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-04-13 04:20:22",
+  "excerpt": "Sentiment Analysis with Syuzhet ( R-CRAN ): Prof Xiao/Tucker: Story of the Stone by Cao Xinque Prof Matz/Delaney: Great Expectations by Charles Dickens Prof Ablovatsky/Delaney: UNC Slave Narratives by WPA Prof Hartnett/Seth: Cancioneros by Santillana Prof Suazo/Emily: Atala by Chateaubriand Prof Maldonado/Michael: Isle of Eden\u2026",
+  "status": "publish",
+  "title": "Workshop: Natural Language Processing",
+  "type": "page"
+ },
+ "workshop-python": {
+  "author": "jonchun",
+  "categories": [],
+  "date": "2019-01-27 23:42:59",
+  "excerpt": "Best Way to Start https://www.dataquest.io/blog/learn-python-the-right-way/ Python 2 vs 3 (CPython vs PyPy) https://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html Python 2 Tutorial https://www.codecademy.com/ (alt datacamp.com) Python Code Visualizations Memory/Execution http://pythontutor.com/ AST + Memory https://vpyast.appspot.com/ Pythonic Way PIP8/Google https://www.pythonanywhere.com/ Python Style Guide https://realpython.com/python-pep8/ OOPS and API Design Data Science / Pandas https://jakevdp.github.io/PythonDataScienceHandbook/\u2026",
+  "status": "private",
+  "title": "Workshop: Python",
+  "type": "page"
+ }
+}

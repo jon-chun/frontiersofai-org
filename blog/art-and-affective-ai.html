@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Art and Affective AI – Programming Humanity</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">Computational Thinking for Humanity</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../core/syllabus.html">Syllabus</a></li>
+<li><a href="../core/readings-2.html">Readings</a></li>
+<li><a href="../core/about.html">About</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Art and Affective AI <span class="badge badge-draft">Draft</span></h1></section></header>
+
+<main class="content-wrapper">
+<div class="breadcrumbs"><a href="../index.html">Home</a> » <a href="index.html">Blog</a> » <span>Art and Affective AI</span></div>
+<div class="page-meta">Created: 2019-02-28 • Status: draft</div>
+<div class="page-content">
+<!-- wp:paragraph -->
+<p>https://learning.oreilly.com/library/view/practical-machine-learning/9781484241493/html/471189_1_En_1_Chapter.xhtml</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Have idea for two of my studio art students for an affective AI art project here at Kenyon College.  Would need access to a good facial and other emotional detection API from multiple Arduino/Camera setups.  Interactive art install where viewers inter/react to art that in turns reacts in an emotional conversation.  Any info on access or reference configs like this would be greatly appreciated.   </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Basically, there would be an arduino/camera setup position behind each kinetic/dynamic digital art display to capture body/face images of the viewers (e.g.  https://www.hackster.io/WolfxPac/face-tracking-using-arduino-b35b6b).  The arduinos would be scripted to periodically upload their body/face images to a central mac laptop that would do any further image preprocessing before sending them upto your API using a Flask-REST(or GraphQL) server (e.g. modified https://github.com/bradtraversy/flask_sqlalchemy_rest or https://github.com/alexisrolland/flask-graphene-sqlalchemy/wiki/Flask-Graphene-SQLAlchemy-Tutorial).  </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>The response from your servers would be used to both dynamically adjust/select the next mutations in each art piece to create an emotional dialog between each art piece and the viewer(s).  Data is going to be collected on both patrons and art piece and used to train shallow neural networks (e.g. Keras/tf) to learn narratives on each art/patron emotional interaction.  A large visualization will give a realtime evolving summary of the current emotional narrative being created across all the art pieces/patrons.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Any help you can provide in terms of access to your API &amp; costs, reference implementations for configurations similar to the one I outline above, etc would be greatly appreciated.  I think our project could serve as a compelling example in your marketing collateral just how deep affective ai can reach into human psyche and create a deeper dialog with the world.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>You can read about my courses at https://www.kenyon.edu/digital-humanities/courses/ and https://aiforthehumanities.wordpress.com/topics/ </p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Hi Sabahat Nadeem,If you go with a software that is out of the box you may not be able to edit it. It sounds like you want this for your thesis, so you will most likely have to introduce some novelty to the system. All of the items mentioned here are generally open source and free. A good baseline system would be to:1. Extract the faces with Viola and Jones (out of the box from OpenCV)2. Align the faces with ASM (available as iBug tracker)3. Extract some features using the ASM points or local binary patterns (download from Google)4. Then apply a machine learning algorithm. (WEKA)There is a plethora of publicly available data to get started. EDIT: Data sets are JAFFE, CK+, MMI, MPLAB's GenkiGood luck,Albert Cruz, Ph.D.</p>
+<!-- /wp:paragraph -->
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity</p>
+</footer>
+</body>
+</html>

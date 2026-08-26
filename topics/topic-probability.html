@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Topic: Quantifying Uncertainty – Programming Humanity</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">Computational Thinking for Humanity</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../core/syllabus.html">Syllabus</a></li>
+<li><a href="../core/readings-2.html">Readings</a></li>
+<li><a href="../core/about.html">About</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Topic: Quantifying Uncertainty <span class="badge badge-private">Private</span></h1></section></header>
+<main class="content-wrapper">
+<div class="breadcrumbs"><a href="../index.html">Home</a> » <a href="index.html">Topics</a> » <span>Topic: Quantifying Uncertainty</span></div>
+<div class="page-meta">Created: 2019-01-09 • Modified: 2025-11-17 • Status: private</div>
+<div class="page-content">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox" src="https://www.youtube.com/embed/NNWEWFWtJ1Q?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;start=1303&amp;wmode=transparent" style="border:0;" width="640"></iframe></span>
+</div><figcaption class="wp-element-caption">(21:43-26:00) Rounders (1998) Texas no Hold’em Poker Scene</figcaption></figure>
+<blockquote>
+<p>The Bayesian statistician Bruno de Finetti (1906–1985) began his book on probability theory with the declaration: “PROBABILITY DOES NOT EXIST.” The capitals appeared in the original, so I imagine de Finetti wanted us to shout this statement.<span class="annotator-hl"> What he meant is that probability is a device for describing uncertainty from the perspective of an observer with limited knowledge; it has no objective reality</span>. </p>
+<p>– Richard McElreath in “<a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking</a>“</p>
+</blockquote>
+<p>Making optimal decisions in the face of uncertainty is the focus of this week. Statistics and probabilistic thinking can help us identify the faulty reasoning, bias, and uncertainty inherent in most real-world decisions. Still, if we’re not careful, even statistics can yield pitfalls, as we’ll see with examples like Simpson’s Paradox and a phenomenon called “p-hacking.” You’ve probably also heard the famous adage that correlation doesn’t imply causation, but did you know that sometimes it can? In fact, correlation is a necessary precondition for every causal relationship. Knowing when and how correlation is related to causation is crucial.</p>
+<p>Typically, we think of computation as deterministic (i.e. True/False or fixed point solutions) and statistics as frequentist (i.e. probabilities derived from long-run frequencies of events with fixed underlying variables). But this week we explore the more complex worlds of probabilistic programming and Bayesian statistics. These both yield more nuanced models of reality by allowing us to weigh prior knowledge and to update probabilities as new information arises. These programmatic and statistical paradigms also map more naturally to our human understanding of uncertainty, risk, and decision-making.</p>
+<p>The larger goal, of course, is to better assess our present and more accurately predict future outcomes to optimize decision-making. This motivates a review of common errors in which statistical thinking can mislead, a deep dive into causation, and a consideration of ways to incorporate Bayesian thinking into our analyses. The current “Replication Crisis ” further complicates a simple deferral to experts or a naive trust in science. The good news is that recent investigations into what makes a “superforecaster” mean that everyone can become better forecasters and decision-makers even in the face of incomplete information.</p>
+<p><b>Tuesday:</b> <strong>Probability, Probabilistic Programming, and Questions of Causality</strong></p>
+<ul>
+<li><a href="https://seeing-theory.brown.edu/">Seeing Theory (Chp 1-2)</a>, Brown University 2018 </li>
+<li><a href="https://www.youtube.com/watch?v=ATaMq62fXno">An Intro to Probabilistic Programming with Uber’s Pyro</a>, Siraj Raval (8:10, NOTE minutes 5:30-7:40 has some content that will only make sense to those who have already taken the AI course, just follow along as best you can) Nov 2017</li>
+<li><a href="https://www.youtube.com/watch?v=8B271L3NtAw">The Danger of Mixing up Causality and Correlation</a>, Ionica Smeets, TEDxDelft (5:56) Nov 2012</li>
+<li><a href="https://www.youtube.com/watch?v=HUti6vGctQM">Correlation CAN Imply Causation</a>, Physics Minute (<strong>ONLY </strong>0:00-3:00 til ad) Aug 2017 </li>
+<li><a href="https://www.youtube.com/watch?v=iMbcMMe0D_Y">Footnote (1:25) to above video</a></li>
+<li><a href="https://www.youtube.com/watch?v=P_ykeBfd5ds">Causality</a> (10:44) Systems Innovations, Sep 2016</li>
+<li><a href="https://cassandraxia.com/cogbiases/">Adventures in Cognitive Biases (Note: you must update beliefs on the left upper corner to finish)</a></li>
+<li>Datacamp, Intermediate Python
+<ul>
+<li>Chapter 1: <a href="https://campus.datacamp.com/courses/intermediate-python/matplotlib?ex=1">Matplotlib</a></li>
+<li>Chapter 2: <a href="https://campus.datacamp.com/courses/intermediate-python/dictionaries-pandas?ex=1">Dictionaries and Pandas</a></li>
+<li>(More advanced coders can substitute out this course on Bayesian: <a href="https://app.datacamp.com/learn/courses/bayesian-data-analysis-in-python">Bayesian Data Analysis in Python</a>)</li>
+</ul>
+</li>
+<li>Test Your Understanding
+<ul>
+<li>Keyword: stochastic (and its opposite, deterministic). How does probabilistic programming “build in” prior knowledge by assuming certain underlying distributions?</li>
+<li>What are examples when people incorrectly infer causation from correlation? What factors do allow you to infer causation? What is the difference between linear and non-linear causality?</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li style="list-style-type: none"> </li>
+</ul>
+<p><strong>Thursday: Bayes Theorem &amp; How Easy it is to be Wrong, and How to (Better) Predict the Future</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=BrK7X_XlGB8">A Visual Guide to Bayesian Theory</a> (11:24) Julia Galef, Jul 2015</li>
+<li><a href="https://www.youtube.com/watch?v=HZGCoVF3YvM">Bayes Theorem</a> (15:45) 3Blue1Brown, Dec 2019</li>
+<li><a href="https://seeing-theory.brown.edu/">Seeing Theory (Chp 5 ONLY)</a></li>
+<li><a href="https://youtu.be/kqSzLo9fenk?t=2">A Friendly Introduction to Bayes Theorem and Hidden Markov Models</a>, Luis Serrano (0:00-20:00 <strong>ONLY</strong>) Mar 2018</li>
+<li><a href="https://www.youtube.com/watch?v=cFv5DvrLDCg">Your Brain is not a Bayes Net</a>, Julia Galef (8:57) Mar 2016 </li>
+<li><a href="https://www.youtube.com/watch?v=bVG2OQp6jEQ">This is How Easy it is to Lie with Statistics</a> (18:30) Zac Star, Feb 2019</li>
+<li><a href="https://www.youtube.com/watch?v=t-Ci3FosqZs">How SIMPSON’S PARADOX Explains Weird COVID-19 Statistics</a> (8:00)</li>
+<li><a href="https://www.youtube.com/watch?v=ioxWuCd-mn0">You’re Wrong About More Than You Think</a> (New title, same video with this link, 23:00) Zac Star, Jun 2019</li>
+<li><a href="https://www.youtube.com/watch?v=42QuXLucH3Q">Is Most Published Research Wrong?</a> (12:00) Veritasium, Aug 2016</li>
+<li>The Good Judgement Project: <span style="font-weight: 400">Brier Score: </span><a href="https://aiimpacts.org/evidence-on-good-forecasting-practices-from-the-good-judgment-project-an-accompanying-blog-post/"><span style="font-weight: 400">Factors, Relations and Weights</span></a> </li>
+<li>Datacamp Intermediate Python
+<ul>
+<li><a href="https://campus.datacamp.com/courses/intermediate-python/logic-control-flow-and-filtering?ex=1">Chapter 3: Logic, Control and Filtering</a></li>
+</ul>
+</li>
+<li>Test Your Understanding
+<ul>
+<li>What is base rate neglect? Prior versus posterior?</li>
+<li>How is our thinking not like a Bayes net? What is an orphaned belief? </li>
+<li>What are common mistakes we make: confirmation bias, availability bias, etc?</li>
+<li>What is Simpson’s Paradox?</li>
+<li>What is p-hacking, and what are others reasons most published research wrong?</li>
+<li>What key elements help people become superforecasters?</li>
+</ul>
+</li>
+</ul>
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-2304" data-attachment-id="2304" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="unknown_unknowns_matrix" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/unknown_unknowns_matrix.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/unknown_unknowns_matrix.png?w=296" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/unknown_unknowns_matrix.png" data-orig-size="828,839" data-permalink="https://programminghumanity.wordpress.com/topic-probability/unknown_unknowns_matrix/" height="648" src="../images/uploads/2020/02/unknown_unknowns_matrix.png" style="width:633px;height:642px" width="640"/><figcaption class="wp-element-caption"> Risk-Themed <a href="https://en.wikipedia.org/wiki/Johari_window">Unknown-Unknowns</a> made famous by Donald Rumsfeld (2002 Iraq War)</figcaption></figure>
+</div>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" class="wp-image-3569" data-attachment-id="3569" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="correlation" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/correlation.png?w=459" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/correlation.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/correlation.png" data-orig-size="459,185" data-permalink="https://programminghumanity.wordpress.com/topic-probability/correlation/" height="185" src="../images/uploads/2020/10/correlation.png" width="459"/></figure>
+</div>
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-3582" data-attachment-id="3582" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="img_truck_correlation_causation" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/img_truck_correlation_causation.jpg?w=249" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/img_truck_correlation_causation.jpg?w=249" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/10/img_truck_correlation_causation.jpg" data-orig-size="249,202" data-permalink="https://programminghumanity.wordpress.com/topic-probability/img_truck_correlation_causation/" height="202" src="../images/uploads/2020/10/img_truck_correlation_causation.jpg" style="width:561px;height:455px" width="249"/></figure>
+</div>
+<p class="wp-block-paragraph"><strong>Reference</strong>s:</p>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" class="wp-image-2360" data-attachment-id="2360" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="classical_v_Bayes_list" data-large-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/classical_v_bayes_list.png?w=640" data-medium-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/classical_v_bayes_list.png?w=300" data-orig-file="https://programminghumanity.wordpress.com/wp-content/uploads/2020/02/classical_v_bayes_list.png" data-orig-size="668,354" data-permalink="https://programminghumanity.wordpress.com/topic-probability/classical_v_bayes_list/" height="339" loading="lazy" src="../images/uploads/2020/02/classical_v_bayes_list.png" width="640"/><figcaption class="wp-element-caption"><a href="https://medium.com/@rathi.ankit/bayesian-statistics-for-data-science-45397ec79c94">Classical Frequentists Statistics vs Bayesian Statistics</a> (Medium)</figcaption></figure>
+</div>
+<p class="wp-block-paragraph"><em>“The strongest predictor of rising into the ranks of superforecasters is perpetual beta – the degree to which one is committed to <strong>belief updating and self-improvement</strong>. It is roughly <strong>three times as powerful</strong> a predictor as its closest rival, intelligence.” – Philip E. </em>Tetlock<em> and Dan Gardner</em></p>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img alt="" src="https://cdn.substack.com/image/fetch/c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0626eed7-2d93-47bc-8c09-d963c4fc2a73_1340x1076"/><figcaption class="wp-element-caption">Portrait of an Artist as a Superforecaster</figcaption></figure>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity</p>
+</footer>
+</body>
+</html>

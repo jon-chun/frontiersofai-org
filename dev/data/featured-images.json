@@ -1,0 +1,634 @@
+{
+ "about": {
+  "date": "2018-01-04 19:19:21",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/gorilla-61136_1280.jpg",
+  "protected": false,
+  "title": "About",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/about/"
+ },
+ "advice-to-graduates": {
+  "date": "2019-05-28 20:38:27",
+  "featured_image": null,
+  "protected": false,
+  "title": "Advice to Graduates",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/05/28/advice-to-graduates/"
+ },
+ "ai-matures-beyond-computer-science": {
+  "date": "2019-07-27 06:57:56",
+  "featured_image": null,
+  "protected": false,
+  "title": "AI Matures beyond Computer Science",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/07/27/ai-matures-beyond-computer-science/"
+ },
+ "ai-poker-faceless": {
+  "date": "2019-08-13 07:43:27",
+  "featured_image": null,
+  "protected": false,
+  "title": "AIs without a Face",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/08/13/ai-poker-faceless/"
+ },
+ "ap-us-history-2020": {
+  "date": "2020-05-15 16:54:28",
+  "featured_image": null,
+  "protected": false,
+  "title": "AP US History (2020)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/ap-us-history-2020/"
+ },
+ "arbitraging-on-human-capital": {
+  "date": "2019-05-25 19:39:07",
+  "featured_image": null,
+  "protected": false,
+  "title": "Arbitraging on Human Capital",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/05/25/arbitraging-on-human-capital/"
+ },
+ "artificial-artificial-intelligence": {
+  "date": "2019-03-11 20:19:57",
+  "featured_image": null,
+  "protected": false,
+  "title": "\"Artificial\" Artificial Intelligence",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/03/11/artificial-artificial-intelligence/"
+ },
+ "best-jupyter-notebooks-for-ml-in-python": {
+  "date": "2019-09-05 15:27:54",
+  "featured_image": null,
+  "protected": false,
+  "title": "Best Jupyter Notebooks for ML in Python",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/09/05/best-jupyter-notebooks-for-ml-in-python/"
+ },
+ "blog": {
+  "date": "2019-01-10 06:35:27",
+  "featured_image": null,
+  "protected": false,
+  "title": "Blog",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/blog/"
+ },
+ "class-1-intro-and-overview": {
+  "date": "2019-08-30 14:01:43",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/02/vanessa-bumbeers-117971-unsplash_sm-e1551372339312.jpg",
+  "protected": false,
+  "title": "Class #1: Intro and Overview",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/class-1-intro-and-overview/"
+ },
+ "contact": {
+  "date": "2018-01-04 19:19:20",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2018/01/person-smartphone-office-table.jpeg",
+  "protected": false,
+  "title": "Contact",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/contact/"
+ },
+ "designing-programming-languages": {
+  "date": "2019-01-23 22:34:33",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Designing Programming Languages",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/01/23/designing-programming-languages/"
+ },
+ "dh-colab": {
+  "date": "2019-01-11 18:10:55",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/hans-reniers-746177-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "DH ColabNet",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/dh-colab/"
+ },
+ "digital-humanities-research-fellow": {
+  "date": "2019-01-11 18:09:46",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/nathan-dumlao-572049-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Digital Humanities Research Fellow",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/digital-humanities-research-fellow/"
+ },
+ "econometrics-the-dismal-science": {
+  "date": "2019-05-23 23:23:17",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/05/dollar_pyramid.jpg",
+  "protected": false,
+  "title": "Econometrics: The Dismal Science",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/05/23/econometrics-the-dismal-science/"
+ },
+ "faculty": {
+  "date": "2019-01-10 20:28:20",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/gorilla-61136_1280.jpg",
+  "protected": false,
+  "title": "Faculty",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/faculty/"
+ },
+ "first-blog-post": {
+  "date": "2018-01-04 19:19:19",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2018/01/joshua-sortino-79033-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Computational Thinking for Humans",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2018/01/04/first-blog-post/"
+ },
+ "gender-imbalance-and-perceptions-of-ability": {
+  "date": "2019-06-27 23:40:20",
+  "featured_image": null,
+  "protected": false,
+  "title": "STEM Gender Imbalance and Perceptions of Ability",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/06/27/gender-imbalance-and-perceptions-of-ability/"
+ },
+ "home": {
+  "date": "2019-01-06 21:09:03",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/tree-3097419_1920.jpg",
+  "protected": false,
+  "title": "Home",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/home/"
+ },
+ "how-mathematical-is-computer-science": {
+  "date": "2019-03-08 20:02:45",
+  "featured_image": null,
+  "protected": false,
+  "title": "How Mathematical is Computer Science?",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/03/08/how-mathematical-is-computer-science/"
+ },
+ "lab-algorithms": {
+  "date": "2019-01-18 07:55:46",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Algorithms",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-algorithms/"
+ },
+ "lab-algorithms-2019": {
+  "date": "2020-01-15 21:39:34",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Lab: Algorithms (2019)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-algorithms-2019/"
+ },
+ "lab-artificial-intelligence": {
+  "date": "2019-04-26 14:33:48",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/marc-olivier-jodoin-239619-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Lab: Artificial Intelligence",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-artificial-intelligence/"
+ },
+ "lab-bioinformatics": {
+  "date": "2019-04-24 14:34:55",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Bioinformatics",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-bioinformatics/"
+ },
+ "lab-data": {
+  "date": "2019-01-16 14:27:37",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/nick-hillier-339049-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Lab: Data",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-data/"
+ },
+ "lab-data-2": {
+  "date": "2020-01-12 21:58:30",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/nick-hillier-339049-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Data + Algorithms + Viz",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-data-2/"
+ },
+ "lab-data-analytics": {
+  "date": "2019-03-27 15:00:50",
+  "featured_image": null,
+  "protected": true,
+  "title": "Lab: Data Analytics",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-data-analytics/"
+ },
+ "lab-models": {
+  "date": "2019-04-03 14:06:08",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Lab: Models",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-models/"
+ },
+ "lab-nlp": {
+  "date": "2019-03-20 15:20:30",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Lab: NLP",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-nlp/"
+ },
+ "lab-probability": {
+  "date": "2019-02-15 18:01:08",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Probability",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-probability/"
+ },
+ "lab-programming": {
+  "date": "2019-02-09 14:56:07",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Networks + Databases",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-programming/"
+ },
+ "lab-social-networks": {
+  "date": "2019-04-08 14:42:45",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Lab: Social Networks",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-social-networks/"
+ },
+ "lab-visualization": {
+  "date": "2019-01-28 18:16:16",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/aliyah-jamous-1058056-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Lab: Visualization",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lab-visualization/"
+ },
+ "laptop-setup": {
+  "date": "2019-01-13 19:34:38",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/calum-lewis-391366-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Laptop Setup",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/laptop-setup/"
+ },
+ "lda-topic-modeling": {
+  "date": "2019-01-29 22:13:31",
+  "featured_image": null,
+  "protected": false,
+  "title": "LDA Topic Modeling",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/lda-topic-modeling/"
+ },
+ "learn-python-and-programming": {
+  "date": "2019-05-01 18:11:01",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/christopher-robin-ebbinghaus-681475-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Learn Python and Programming",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/05/01/learn-python-and-programming/"
+ },
+ "logo-design": {
+  "date": "2019-02-07 19:59:03",
+  "featured_image": null,
+  "protected": false,
+  "title": "Logo Design",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/02/07/logo-design/"
+ },
+ "papers": {
+  "date": "2019-01-12 19:44:38",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/samuel-zeller-686441-unsplash.jpg",
+  "protected": false,
+  "title": "Papers",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/papers/"
+ },
+ "posters-2019": {
+  "date": "2019-05-16 00:31:35",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/samuel-zeller-686441-unsplash.jpg",
+  "protected": false,
+  "title": "Posters: Spring 2019",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/posters-2019/"
+ },
+ "posters-fall-2020": {
+  "date": "2021-01-19 20:41:11",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/samuel-zeller-686441-unsplash.jpg",
+  "protected": false,
+  "title": "Posters: Fall 2020",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/posters-fall-2020/"
+ },
+ "posters-spring-2020": {
+  "date": "2020-06-12 19:04:19",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/samuel-zeller-686441-unsplash.jpg",
+  "protected": false,
+  "title": "Posters: Spring 2020",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/posters-spring-2020/"
+ },
+ "programmable-materials": {
+  "date": "2019-01-26 05:36:32",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/freestocks-org-126848-unsplash-sm.jpg",
+  "protected": false,
+  "title": "Programmable Materials",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/01/26/programmable-materials/"
+ },
+ "programming-advice-for-stem-students": {
+  "date": "2019-05-13 17:59:54",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/christopher-robin-ebbinghaus-681475-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Programming Advice for STEM Students",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/05/13/programming-advice-for-stem-students/"
+ },
+ "projects": {
+  "date": "2019-01-06 20:30:06",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/building-768815_1920.jpg",
+  "protected": false,
+  "title": "Projects",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/projects/"
+ },
+ "projects-2020-spr": {
+  "date": "2020-10-14 16:55:13",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/building-768815_1920.jpg",
+  "protected": false,
+  "title": "Projects (2020 Spr)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/projects-2020-spr/"
+ },
+ "readings": {
+  "date": "2019-01-06 20:44:54",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/book-1659717_1920.jpg",
+  "protected": false,
+  "title": "Readings (2019)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/readings/"
+ },
+ "readings-2": {
+  "date": "2020-01-13 15:21:50",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/alvaro-pinot-502465-unsplash-sm-1.jpg",
+  "protected": false,
+  "title": "Readings",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/readings-2/"
+ },
+ "readings-2021": {
+  "date": "2022-08-25 13:50:52",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/alvaro-pinot-502465-unsplash-sm-1.jpg",
+  "protected": true,
+  "title": "Readings (2021)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/readings-2021/"
+ },
+ "readings-2022": {
+  "date": "2024-08-28 16:12:19",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/alvaro-pinot-502465-unsplash-sm-1.jpg",
+  "protected": false,
+  "title": "Readings (2022)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/readings-2022/"
+ },
+ "references-data": {
+  "date": "2019-01-11 07:32:57",
+  "featured_image": null,
+  "protected": false,
+  "title": "References - Data",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/references-data/"
+ },
+ "reinforcement-learning-and-great-communication": {
+  "date": "2019-01-27 23:53:07",
+  "featured_image": null,
+  "protected": false,
+  "title": "Reinforcement Learning and Communicating Complexity",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/reinforcement-learning-and-great-communication/"
+ },
+ "statistics-vs-ml": {
+  "date": "2019-09-12 20:08:39",
+  "featured_image": null,
+  "protected": false,
+  "title": "Statistics vs ML",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/09/12/statistics-vs-ml/"
+ },
+ "syllabus": {
+  "date": "2019-01-06 17:11:35",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/gleise-3859796_1920.jpg",
+  "protected": false,
+  "title": "Syllabus",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/syllabus/"
+ },
+ "syllabus-2021": {
+  "date": "2022-08-25 13:42:34",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/gleise-3859796_1920.jpg",
+  "protected": false,
+  "title": "Syllabus (2021)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/syllabus-2021/"
+ },
+ "syllabus-2022": {
+  "date": "2024-08-28 16:10:39",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/gleise-3859796_1920.jpg",
+  "protected": false,
+  "title": "Syllabus (2022)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/syllabus-2022/"
+ },
+ "synthetic-biology-igem": {
+  "date": "2019-04-23 16:35:00",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/04/test_tube_trey_pipet.jpg",
+  "protected": false,
+  "title": "Synthetic Biology: iGem",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/04/23/synthetic-biology-igem/"
+ },
+ "the-future-of-computer-science": {
+  "date": "2019-07-02 15:49:20",
+  "featured_image": null,
+  "protected": false,
+  "title": "The Future of Computer Science",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/07/02/the-future-of-computer-science/"
+ },
+ "think-like-a-computer-scientist": {
+  "date": "2019-01-24 19:02:09",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/think_julia_cover.jpg",
+  "protected": false,
+  "title": "Think Like a Computer Scientist",
+  "type": "post",
+  "url": "https://programminghumanity.wordpress.com/2019/01/24/think-like-a-computer-scientist/"
+ },
+ "topic-ai": {
+  "date": "2019-01-09 16:54:05",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/marc-olivier-jodoin-239619-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Artificial Intelligence (2021)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-ai/"
+ },
+ "topic-algorithms": {
+  "date": "2019-01-09 15:58:56",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/malcolm-lightbody-1081282-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Processing",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-algorithms/"
+ },
+ "topic-algorithms-2019": {
+  "date": "2020-01-13 18:08:40",
+  "featured_image": null,
+  "protected": false,
+  "title": "Topic: Algorithms (2019)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-algorithms-2019/"
+ },
+ "topic-algorithms-2019-2": {
+  "date": "2020-01-15 21:41:06",
+  "featured_image": null,
+  "protected": false,
+  "title": "Topic: Algorithms (2019)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-algorithms-2019-2/"
+ },
+ "topic-algorithms-fall-2020": {
+  "date": "2021-08-29 23:41:06",
+  "featured_image": null,
+  "protected": true,
+  "title": "Topic: Algorithms (Fall 2020)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-algorithms-fall-2020/"
+ },
+ "topic-analytics": {
+  "date": "2019-01-09 17:23:15",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/markus-spiske-484245-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Data Science",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-analytics/"
+ },
+ "topic-artificial-intelligence-2025": {
+  "date": "2025-12-04 12:50:00",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/marc-olivier-jodoin-239619-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Artificial Intelligence 2025",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-artificial-intelligence-2025/"
+ },
+ "topic-bioinformatics": {
+  "date": "2019-01-09 17:28:13",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/chuttersnap-146799-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Bioinformatics",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-bioinformatics/"
+ },
+ "topic-bioinformatics-2": {
+  "date": "2021-11-10 17:52:41",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/chuttersnap-146799-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Evolving Life",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-bioinformatics-2/"
+ },
+ "topic-bioinformatics-2019": {
+  "date": "2020-04-12 19:35:36",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/chuttersnap-146799-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Bioinformatics (2019)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-bioinformatics-2019/"
+ },
+ "topic-data-2021": {
+  "date": "2022-08-25 13:54:21",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/nick-hillier-339049-unsplash_sm.jpg",
+  "protected": true,
+  "title": "Topic: Data (2021)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-data-2021/"
+ },
+ "topic-data-2022": {
+  "date": "2024-08-28 16:15:44",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/nick-hillier-339049-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Topic: Data (2022)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-data-2022/"
+ },
+ "topic-data-fall-2020-2": {
+  "date": "2021-08-26 17:10:58",
+  "featured_image": null,
+  "protected": false,
+  "title": "Topic: Data (Fall 2020)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-data-fall-2020-2/"
+ },
+ "topic-networks": {
+  "date": "2019-01-09 15:59:20",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/john-barkiple-539580-unsplash_sm.jpg",
+  "protected": false,
+  "title": "Topic: Networks",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-networks/"
+ },
+ "topic-programming": {
+  "date": "2019-01-09 16:02:15",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/christopher-robin-ebbinghaus-681475-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Topic: Languages (Artificial and Natural)",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-programming/"
+ },
+ "topic-simulations": {
+  "date": "2021-11-06 13:10:00",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/randy-fath-720441-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Simulations",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-simulations/"
+ },
+ "topic-social-networks": {
+  "date": "2019-01-09 17:35:15",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/rawpixel-974549-unsplash_sm.jpeg",
+  "protected": false,
+  "title": "Topic: Social Networks",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-social-networks/"
+ },
+ "topic-social-networks-2025": {
+  "date": "2025-11-19 14:23:19",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/rawpixel-974549-unsplash_sm.jpeg",
+  "protected": true,
+  "title": "Topic: Social Networks 2025",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topic-social-networks-2025/"
+ },
+ "topics": {
+  "date": "2019-01-10 20:27:41",
+  "featured_image": "https://programminghumanity.wordpress.com/wp-content/uploads/2019/01/alvaro-pinot-502465-unsplash-sm-1.jpg",
+  "protected": false,
+  "title": "Topics",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/topics/"
+ },
+ "why-study-quant-finance": {
+  "date": "2019-07-18 23:11:10",
+  "featured_image": null,
+  "protected": false,
+  "title": "Why Study Quant Finance?",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/why-study-quant-finance/"
+ },
+ "workshop-natural-language-processing": {
+  "date": "2019-04-13 04:20:22",
+  "featured_image": null,
+  "protected": false,
+  "title": "Workshop: Natural Language Processing",
+  "type": "page",
+  "url": "https://programminghumanity.wordpress.com/workshop-natural-language-processing/"
+ }
+}

@@ -1,0 +1,1674 @@
+{
+  "summary": {
+    "total_draft_candidates": 158,
+    "total_unmatched_placeholders": 111,
+    "confident_matches": 4,
+    "needs_review": 11,
+    "unmatched_drafts_remaining": 154,
+    "unmatched_placeholders_remaining": 107
+  },
+  "confident_matches": [
+    {
+      "match_type": "normalized",
+      "wp_slug": "preview-1957",
+      "wp_title": "Posters: Spring 2019",
+      "wp_status": "Draft",
+      "generated_slug": "posters-spring-2019",
+      "static_path": "2018-2019/posters-fall-2019.html",
+      "placeholder_slug": "posters-fall-2019",
+      "confidence": 0.95
+    },
+    {
+      "match_type": "normalized",
+      "wp_slug": "preview-942",
+      "wp_title": "Research Resources",
+      "wp_status": "Draft",
+      "generated_slug": "research-resources",
+      "static_path": "core/resources.html",
+      "placeholder_slug": "resources",
+      "confidence": 0.95
+    },
+    {
+      "match_type": "normalized",
+      "wp_slug": "readings-2021",
+      "wp_title": "Readings (2021)",
+      "wp_status": "Password protected",
+      "generated_slug": "readings-2021",
+      "static_path": "2021/0-readings-2021.html",
+      "placeholder_slug": "0-readings-2021",
+      "confidence": 0.95
+    },
+    {
+      "match_type": "fuzzy_high",
+      "wp_slug": "lab-probability",
+      "wp_title": "Lab: Probability",
+      "wp_status": "Password protected",
+      "generated_slug": "lab-probability",
+      "static_path": "2019-fall/probability-ai-2019.html",
+      "placeholder_slug": "probability-ai-2019",
+      "confidence": 0.88
+    }
+  ],
+  "needs_review": [
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-1675",
+      "wp_title": "Software Engineering",
+      "wp_status": "Draft",
+      "generated_slug": "software-engineering",
+      "static_path": "2025-spring/ai-engineering-spring-2025.html",
+      "placeholder_slug": "ai-engineering-spring-2025",
+      "confidence": 0.765
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-941",
+      "wp_title": "Cleaning Data",
+      "wp_status": "Draft",
+      "generated_slug": "cleaning-data",
+      "static_path": "2019-fall/learning-ai-2019.html",
+      "placeholder_slug": "learning-ai-2019",
+      "confidence": 0.75
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-1593",
+      "wp_title": "Trends in AI \u2013 2019",
+      "wp_status": "Draft",
+      "generated_slug": "trends-in-ai-2019",
+      "static_path": "2019-fall/reading-ai-2019.html",
+      "placeholder_slug": "reading-ai-2019",
+      "confidence": 0.727
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-178",
+      "wp_title": "Python Exercises",
+      "wp_status": "Draft",
+      "generated_slug": "python-exercises",
+      "static_path": "2018-2019/exercises.html",
+      "placeholder_slug": "exercises",
+      "confidence": 0.72
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-83",
+      "wp_title": "Research Tools",
+      "wp_status": "Draft",
+      "generated_slug": "research-tools",
+      "static_path": "2018-2019/nlp-tools.html",
+      "placeholder_slug": "nlp-tools",
+      "confidence": 0.714
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-1810",
+      "wp_title": "God\u2019s Programming Language",
+      "wp_status": "Draft",
+      "generated_slug": "gods-programming-language",
+      "static_path": "2019-fall/programming-ai-2019.html",
+      "placeholder_slug": "programming-ai-2019",
+      "confidence": 0.667
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-929",
+      "wp_title": "Reengineering Engineering",
+      "wp_status": "Draft",
+      "generated_slug": "reengineering-engineering",
+      "static_path": "2025-spring/ai-engineering-spring-2025.html",
+      "placeholder_slug": "ai-engineering-spring-2025",
+      "confidence": 0.667
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "lab-artificial-intelligence",
+      "wp_title": "Lab: Artificial Intelligence",
+      "wp_status": "Password protected",
+      "generated_slug": "lab-artificial-intelligence",
+      "static_path": "2021/transforming-intelligence.html",
+      "placeholder_slug": "transforming-intelligence",
+      "confidence": 0.667
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "topic-ai",
+      "wp_title": "Topic: Artificial Intelligence (2021)",
+      "wp_status": "Password protected",
+      "generated_slug": "topic-artificial-intelligence-2021",
+      "static_path": "2021/transforming-intelligence.html",
+      "placeholder_slug": "transforming-intelligence",
+      "confidence": 0.667
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "topic-artificial-intelligence-2025",
+      "wp_title": "Topic: Artificial Intelligence 2025",
+      "wp_status": "Password protected",
+      "generated_slug": "topic-artificial-intelligence-2025",
+      "static_path": "2021/transforming-intelligence.html",
+      "placeholder_slug": "transforming-intelligence",
+      "confidence": 0.667
+    },
+    {
+      "match_type": "needs_review",
+      "wp_slug": "preview-1456",
+      "wp_title": "Projects: Programming Humanity Spring 2019",
+      "wp_status": "Draft",
+      "generated_slug": "projects-programminghumanity-spring-2019",
+      "static_path": "2019-fall/programming-ai-2019.html",
+      "placeholder_slug": "programming-ai-2019",
+      "confidence": 0.651
+    }
+  ],
+  "unmatched_drafts": [
+    {
+      "title": "A Computer Science Curriculum for Humanity",
+      "generated_slug": "a-computer-science-curriculum-for-humanity",
+      "wp_slug": "preview-1032",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1032&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "A Correct, Performant and Simple Programming Language",
+      "generated_slug": "a-correct-performant-and-simple-programming-language",
+      "wp_slug": "preview-1526",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1526&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "AI for Humanity",
+      "generated_slug": "ai-for-humanity",
+      "wp_slug": "preview-1435",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=1435&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "AI for the Humanities Textbooks",
+      "generated_slug": "ai-for-the-humanities-textbooks",
+      "wp_slug": "preview-1602",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1602&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "AI vs Statistical ML",
+      "generated_slug": "ai-vs-statistical-ml",
+      "wp_slug": "preview-896",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=896&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "AI/ML Frameworks",
+      "generated_slug": "aiml-frameworks",
+      "wp_slug": "preview-903",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=903&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "API Design",
+      "generated_slug": "api-design",
+      "wp_slug": "preview-904",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=904&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Academic Papers Review",
+      "generated_slug": "academic-papers-review",
+      "wp_slug": "preview-1787",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1787&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Affective AI Resources",
+      "generated_slug": "affective-ai-resources",
+      "wp_slug": "preview-900",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=900&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Anonymizing Data",
+      "generated_slug": "anonymizing-data",
+      "wp_slug": "preview-935",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=935&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Art and Affective AI",
+      "generated_slug": "art-and-affective-ai",
+      "wp_slug": "preview-901",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=901&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Bad CTO by Design or Culture",
+      "generated_slug": "bad-cto-by-design-or-culture",
+      "wp_slug": "preview-1714",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1714&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Bridging the Gulf Between the Humanities and STEM",
+      "generated_slug": "bridging-the-gulf-between-the-humanities-and-stem",
+      "wp_slug": "preview-927",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=927&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Can You Be Self-Taught",
+      "generated_slug": "can-you-be-self-taught",
+      "wp_slug": "preview-1614",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1614&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Causality",
+      "generated_slug": "causality",
+      "wp_slug": "preview-1738",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1738&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Cleaning Data",
+      "generated_slug": "cleaning-data",
+      "wp_slug": "preview-941",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=941&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Collaboration Across Disciplines: Humanities + Tech",
+      "generated_slug": "collaboration-across-disciplines-humanities-tech",
+      "wp_slug": "preview-1042",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1042&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Complexity Science",
+      "generated_slug": "complexity-science",
+      "wp_slug": "preview-1432",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1432&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Computational Humanities",
+      "generated_slug": "computational-humanities",
+      "wp_slug": "preview-1395",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1395&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Computational Humanities Learning Objectives",
+      "generated_slug": "computational-humanities-learning-objectives",
+      "wp_slug": "preview-1517",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1517&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Computer Science for the Rest of Us",
+      "generated_slug": "computer-science-for-the-rest-of-us",
+      "wp_slug": "preview-1571",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1571&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Computer Science is Becoming Bimodal",
+      "generated_slug": "computer-science-is-becoming-bimodal",
+      "wp_slug": "preview-1041",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1041&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Critical Thinking",
+      "generated_slug": "critical-thinking",
+      "wp_slug": "preview-1633",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1633&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Cross Pollinating Ideas",
+      "generated_slug": "cross-pollinating-ideas",
+      "wp_slug": "preview-1740",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1740&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "DIY Computational Studies",
+      "generated_slug": "diy-computational-studies",
+      "wp_slug": "preview-1343",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1343&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Data Infrastructure",
+      "generated_slug": "data-infrastructure",
+      "wp_slug": "preview-921",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=921&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Databases",
+      "generated_slug": "databases",
+      "wp_slug": "preview-908",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=908&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Databases, REST and GraphQL",
+      "generated_slug": "databases-rest-and-graphql",
+      "wp_slug": "preview-893",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=893&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "DeepFakes and Fake News",
+      "generated_slug": "deepfakes-and-fake-news",
+      "wp_slug": "preview-1798",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1798&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Digital Humanities Bootcamp",
+      "generated_slug": "digital-humanities-bootcamp",
+      "wp_slug": "preview-1411",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1411&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Digital Humanities: What is It?",
+      "generated_slug": "digital-humanities-what-is-it",
+      "wp_slug": "preview-1398",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1398&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Django Web Server",
+      "generated_slug": "django-web-server",
+      "wp_slug": "preview-913",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=913&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Doc2Vec Exploration",
+      "generated_slug": "doc2vec-exploration",
+      "wp_slug": "preview-1033",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1033&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Docker",
+      "generated_slug": "docker",
+      "wp_slug": "preview-956",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=956&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Elixir Programming Language",
+      "generated_slug": "elixir-programming-language",
+      "wp_slug": "preview-909",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=909&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Excellence in Undergrad Teaching",
+      "generated_slug": "excellence-in-undergrad-teaching",
+      "wp_slug": "preview-745",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=745&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Explainability vs Knowledge vs Doability",
+      "generated_slug": "explainability-vs-knowledge-vs-doability",
+      "wp_slug": "preview-1558",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1558&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Functional Programming and Category Theory",
+      "generated_slug": "functional-programming-and-category-theory",
+      "wp_slug": "preview-1016",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1016&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Gaming, AI and DeepFakes",
+      "generated_slug": "gaming-ai-and-deepfakes",
+      "wp_slug": "preview-1421",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1421&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Generational Shifts in Privacy",
+      "generated_slug": "generational-shifts-in-privacy",
+      "wp_slug": "preview-923",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=923&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Get out of the Bubble",
+      "generated_slug": "get-out-of-the-bubble",
+      "wp_slug": "preview-1623",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1623&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Getting Unique Data",
+      "generated_slug": "getting-unique-data",
+      "wp_slug": "preview-1631",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1631&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Goals: Summer 2019",
+      "generated_slug": "goals-summer-2019",
+      "wp_slug": "preview-1444",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1444&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "God\u2019s Programming Language",
+      "generated_slug": "gods-programming-language",
+      "wp_slug": "preview-1810",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1810&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Goodhart\u2019s Law \u2013 College Admissions Edition",
+      "generated_slug": "goodharts-law-college-admissions-edition",
+      "wp_slug": "preview-1680",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1680&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Hacking Humanity",
+      "generated_slug": "hacking-humanity",
+      "wp_slug": "preview-1747",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1747&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "How Digital Humanities is Different from Computer Science",
+      "generated_slug": "how-digital-humanities-is-different-from-computer-science",
+      "wp_slug": "preview-1405",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1405&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "How Much Math?",
+      "generated_slug": "how-much-math",
+      "wp_slug": "preview-1670",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1670&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "How to Learn",
+      "generated_slug": "how-to-learn",
+      "wp_slug": "preview-1619",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1619&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "How to Think More Creatively and Clearly",
+      "generated_slug": "how-to-think-more-creatively-and-clearly",
+      "wp_slug": "preview-1590",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1590&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "In Perpetual Ignorance",
+      "generated_slug": "in-perpetual-ignorance",
+      "wp_slug": "preview-1668",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=1668&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "In Perpetual Ignorance",
+      "generated_slug": "in-perpetual-ignorance",
+      "wp_slug": "preview-1674",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1674&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Information Wants to be Free",
+      "generated_slug": "information-wants-to-be-free",
+      "wp_slug": "preview-1776",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1776&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Innovation from Ideas",
+      "generated_slug": "innovation-from-ideas",
+      "wp_slug": "preview-925",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=925&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Interdisciplinary Studies",
+      "generated_slug": "interdisciplinary-studies",
+      "wp_slug": "preview-914",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=914&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Introducing Bayesian Thinking and Probabilistic Programming",
+      "generated_slug": "introducing-bayesian-thinking-and-probabilistic-programming",
+      "wp_slug": "preview-1617",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1617&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Lab: Algorithms",
+      "generated_slug": "lab-algorithms",
+      "wp_slug": "lab-algorithms",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-algorithms/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Artificial Intelligence",
+      "generated_slug": "lab-artificial-intelligence",
+      "wp_slug": "lab-artificial-intelligence",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-artificial-intelligence/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Bioinformatics",
+      "generated_slug": "lab-bioinformatics",
+      "wp_slug": "lab-bioinformatics",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-bioinformatics/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Data + Algorithms + Viz",
+      "generated_slug": "lab-data-algorithms-viz",
+      "wp_slug": "lab-data-2",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-data-2/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Data Analytics",
+      "generated_slug": "lab-data-analytics",
+      "wp_slug": "lab-data-analytics",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-data-analytics/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Networks + Databases",
+      "generated_slug": "lab-networks-databases",
+      "wp_slug": "lab-programming",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-programming/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Lab: Social Networks",
+      "generated_slug": "lab-social-networks",
+      "wp_slug": "lab-social-networks",
+      "viewUrl": "https://programminghumanity.wordpress.com/lab-social-networks/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Leadership and Teaching",
+      "generated_slug": "leadership-and-teaching",
+      "wp_slug": "preview-744",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=744&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Learning Bayesian Analysis",
+      "generated_slug": "learning-bayesian-analysis",
+      "wp_slug": "preview-1687",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1687&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Learning Computer Science Online",
+      "generated_slug": "learning-computer-science-online",
+      "wp_slug": "preview-1488",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1488&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Level 5 Self-Driving Cars",
+      "generated_slug": "level-5-self-driving-cars",
+      "wp_slug": "preview-1704",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1704&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Live Coding",
+      "generated_slug": "live-coding",
+      "wp_slug": "preview-934",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=934&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "MVC Frameworks",
+      "generated_slug": "mvc-frameworks",
+      "wp_slug": "preview-905",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=905&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Manage ~ Teacher ~ Parent",
+      "generated_slug": "manage-teacher-parent",
+      "wp_slug": "preview-919",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=919&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Medical Applications of AI",
+      "generated_slug": "medical-applications-of-ai",
+      "wp_slug": "preview-1038",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1038&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Models as Hypotheses",
+      "generated_slug": "models-as-hypotheses",
+      "wp_slug": "preview-1764",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1764&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Multilevel Models and Analysis",
+      "generated_slug": "multilevel-models-and-analysis",
+      "wp_slug": "preview-894",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=894&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "NLP Attention Mechanisms",
+      "generated_slug": "nlp-attention-mechanisms",
+      "wp_slug": "preview-1037",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1037&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "NLP HPSG",
+      "generated_slug": "nlp-hpsg",
+      "wp_slug": "preview-101",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=101&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "NLP Scripts",
+      "generated_slug": "nlp-scripts",
+      "wp_slug": "preview-97",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=97&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "NLP Topic Modeling",
+      "generated_slug": "nlp-topic-modeling",
+      "wp_slug": "preview-99",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=99&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "NLP with Gensim",
+      "generated_slug": "nlp-with-gensim",
+      "wp_slug": "preview-1039",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1039&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Nerdification of Society",
+      "generated_slug": "nerdification-of-society",
+      "wp_slug": "preview-1574",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=1574&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Network Theory",
+      "generated_slug": "network-theory",
+      "wp_slug": "preview-1433",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1433&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Phoenix Web Framework",
+      "generated_slug": "phoenix-web-framework",
+      "wp_slug": "preview-955",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=955&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Playing with BERT",
+      "generated_slug": "playing-with-bert",
+      "wp_slug": "preview-1036",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1036&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Predicting the Future",
+      "generated_slug": "predicting-the-future",
+      "wp_slug": "preview-1677",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1677&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Predicting the Future",
+      "generated_slug": "predicting-the-future",
+      "wp_slug": "preview-1541",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1541&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Programming for Digital Humanities",
+      "generated_slug": "programming-for-digital-humanities",
+      "wp_slug": "preview-1870",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1870&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Projects: Programming Humanity Spring 2019",
+      "generated_slug": "projects-programminghumanity-spring-2019",
+      "wp_slug": "preview-1456",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=1456&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Python Conferences",
+      "generated_slug": "python-conferences",
+      "wp_slug": "preview-911",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=911&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Python Exercises",
+      "generated_slug": "python-exercises",
+      "wp_slug": "preview-178",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=178&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Quadfurcation of Computer Science",
+      "generated_slug": "quadfurcation-of-computer-science",
+      "wp_slug": "preview-799",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=799&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Quant Finance and Quantopian",
+      "generated_slug": "quant-finance-and-quantopian",
+      "wp_slug": "preview-895",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=895&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Reengineering Engineering",
+      "generated_slug": "reengineering-engineering",
+      "wp_slug": "preview-929",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=929&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Reference: Models",
+      "generated_slug": "reference-models",
+      "wp_slug": "preview-159",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=159&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "RegEx",
+      "generated_slug": "regex",
+      "wp_slug": "preview-75",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=75&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "RegEx Regular Expressions",
+      "generated_slug": "regex-regular-expressions",
+      "wp_slug": "preview-936",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=936&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Reproducible Data Science",
+      "generated_slug": "reproducible-data-science",
+      "wp_slug": "preview-1640",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1640&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research Tools",
+      "generated_slug": "research-tools",
+      "wp_slug": "preview-83",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=83&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Algorithmic Trading",
+      "generated_slug": "research-algorithmic-trading",
+      "wp_slug": "preview-91",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=91&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Bayes Intro",
+      "generated_slug": "research-bayes-intro",
+      "wp_slug": "preview-161",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=161&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Bayes PGM",
+      "generated_slug": "research-bayes-pgm",
+      "wp_slug": "preview-93",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=93&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Causality",
+      "generated_slug": "research-causality",
+      "wp_slug": "preview-77",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=77&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Changepoint",
+      "generated_slug": "research-changepoint",
+      "wp_slug": "preview-103",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=103&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Climate",
+      "generated_slug": "research-climate",
+      "wp_slug": "preview-244",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=244&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Compilers",
+      "generated_slug": "research-compilers",
+      "wp_slug": "preview-79",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=79&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Computational Biology",
+      "generated_slug": "research-computational-biology",
+      "wp_slug": "preview-81",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=81&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Datasets",
+      "generated_slug": "research-datasets",
+      "wp_slug": "preview-71",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=71&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Docker Containers",
+      "generated_slug": "research-docker-containers",
+      "wp_slug": "preview-89",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=89&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Hacking",
+      "generated_slug": "research-hacking",
+      "wp_slug": "preview-65",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=65&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Research: Networks",
+      "generated_slug": "research-networks",
+      "wp_slug": "preview-67",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=67&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "SQL",
+      "generated_slug": "sql",
+      "wp_slug": "preview-73",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=73&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "SQL",
+      "generated_slug": "sql",
+      "wp_slug": "preview-939",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=939&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Science as a new Religion",
+      "generated_slug": "science-as-a-new-religion",
+      "wp_slug": "preview-1591",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1591&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Scientific Intolerance",
+      "generated_slug": "scientific-intolerance",
+      "wp_slug": "preview-1336",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1336&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Sexbots",
+      "generated_slug": "sexbots",
+      "wp_slug": "preview-1762",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1762&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Simple Linear Models",
+      "generated_slug": "simple-linear-models",
+      "wp_slug": "preview-1286",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1286&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Software Engineering",
+      "generated_slug": "software-engineering",
+      "wp_slug": "preview-1675",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1675&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Structural Equation Modeling",
+      "generated_slug": "structural-equation-modeling",
+      "wp_slug": "preview-912",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=912&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Talent Arbitrage",
+      "generated_slug": "talent-arbitrage",
+      "wp_slug": "preview-917",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=917&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Teaching AI \u2013 Opening Day",
+      "generated_slug": "teaching-ai-opening-day",
+      "wp_slug": "preview-1815",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1815&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Teaching Technology to a Diverse Audience",
+      "generated_slug": "teaching-technology-to-a-diverse-audience",
+      "wp_slug": "preview-1447",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1447&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Tech News",
+      "generated_slug": "tech-news",
+      "wp_slug": "preview-944",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=944&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Technology and Democracy",
+      "generated_slug": "technology-and-democracy",
+      "wp_slug": "preview-1813",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1813&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Textbooks",
+      "generated_slug": "textbooks",
+      "wp_slug": "preview-954",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=954&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The AI and Neuroscience Connection",
+      "generated_slug": "the-ai-and-neuroscience-connection",
+      "wp_slug": "preview-1592",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1592&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Best Undergrad Major for Learning Computer Science",
+      "generated_slug": "the-best-undergrad-major-for-learning-computer-science",
+      "wp_slug": "preview-1573",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=1573&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Cold Start Curiosity Problem",
+      "generated_slug": "the-cold-start-curiosity-problem",
+      "wp_slug": "preview-1804",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1804&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Economics of Digital Art",
+      "generated_slug": "the-economics-of-digital-art",
+      "wp_slug": "preview-1482",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1482&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Magic of Statistics",
+      "generated_slug": "the-magic-of-statistics",
+      "wp_slug": "preview-1034",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1034&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Statistics Map is not the Territory",
+      "generated_slug": "the-statistics-map-is-not-the-territory",
+      "wp_slug": "preview-1690",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1690&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The Technical Interview for Programmers in SV and Wall Street",
+      "generated_slug": "the-technical-interview-for-programmers-in-sv-and-wall-street",
+      "wp_slug": "preview-1861",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1861&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The World\u2019s First AI Course for the Humanities",
+      "generated_slug": "the-worlds-first-ai-course-for-the-humanities",
+      "wp_slug": "preview-1030",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1030&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "The World\u2019s First AI Course for the Humanities?",
+      "generated_slug": "the-worlds-first-ai-course-for-the-humanities",
+      "wp_slug": "preview-1031",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1031&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Time Series",
+      "generated_slug": "time-series",
+      "wp_slug": "preview-85",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=85&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Time Series",
+      "generated_slug": "time-series",
+      "wp_slug": "preview-892",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=892&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Timing is (Almost) Everything",
+      "generated_slug": "timing-is-almost-everything",
+      "wp_slug": "preview-1733",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1733&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Topic: Algorithms (Fall 2020)",
+      "generated_slug": "topic-algorithms-fall-2020",
+      "wp_slug": "topic-algorithms-fall-2020",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-algorithms-fall-2020/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Artificial Intelligence (2021)",
+      "generated_slug": "topic-artificial-intelligence-2021",
+      "wp_slug": "topic-ai",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-ai/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Artificial Intelligence 2025",
+      "generated_slug": "topic-artificial-intelligence-2025",
+      "wp_slug": "topic-artificial-intelligence-2025",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-artificial-intelligence-2025/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Bioinformatics",
+      "generated_slug": "topic-bioinformatics",
+      "wp_slug": "topic-bioinformatics",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-bioinformatics/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Bioinformatics (2019)",
+      "generated_slug": "topic-bioinformatics-2019",
+      "wp_slug": "topic-bioinformatics-2019",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-bioinformatics-2019/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Data (2021)",
+      "generated_slug": "topic-data-2021",
+      "wp_slug": "topic-data-2021",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-data-2021/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Data Science",
+      "generated_slug": "topic-data-science",
+      "wp_slug": "topic-analytics",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-analytics/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Evolving Life",
+      "generated_slug": "topic-evolving-life",
+      "wp_slug": "topic-bioinformatics-2",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-bioinformatics-2/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Simulations",
+      "generated_slug": "topic-simulations",
+      "wp_slug": "topic-simulations",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-simulations/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Topic: Social Networks 2025",
+      "generated_slug": "topic-social-networks-2025",
+      "wp_slug": "topic-social-networks-2025",
+      "viewUrl": "https://programminghumanity.wordpress.com/topic-social-networks-2025/",
+      "status": "Password protected"
+    },
+    {
+      "title": "Trends in AI \u2013 2019",
+      "generated_slug": "trends-in-ai-2019",
+      "wp_slug": "preview-1593",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1593&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Tutorials",
+      "generated_slug": "tutorials",
+      "wp_slug": "preview-938",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=938&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Twitter Bot",
+      "generated_slug": "twitter-bot",
+      "wp_slug": "preview-95",
+      "viewUrl": "https://programminghumanity.wordpress.com/?page_id=95&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "UX Design",
+      "generated_slug": "ux-design",
+      "wp_slug": "preview-1629",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1629&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Understanding Complexity via Composition",
+      "generated_slug": "understanding-complexity-via-composition",
+      "wp_slug": "preview-1728",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1728&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Unrolling the Ball of AI",
+      "generated_slug": "unrolling-the-ball-of-ai",
+      "wp_slug": "preview-1717",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1717&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Visualizing Concepts",
+      "generated_slug": "visualizing-concepts",
+      "wp_slug": "preview-943",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=943&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Web Scraping Techniques",
+      "generated_slug": "web-scraping-techniques",
+      "wp_slug": "preview-1052",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1052&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Why Computer Science is Bifurcating into Math and Computational Thinking",
+      "generated_slug": "why-computer-science-is-bifurcating-into-math-and-computational-thinking",
+      "wp_slug": "preview-1560",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1560&preview=true",
+      "status": "Draft"
+    },
+    {
+      "title": "Why God Uses Functional Programming",
+      "generated_slug": "why-god-uses-functional-programming",
+      "wp_slug": "preview-1017",
+      "viewUrl": "https://programminghumanity.wordpress.com/?p=1017&preview=true",
+      "status": "Draft"
+    }
+  ],
+  "unmatched_placeholders": [
+    {
+      "slug": "3-measuring-models-2021",
+      "static_path": "2021/3-measuring-models-2021.html"
+    },
+    {
+      "slug": "4-xai-and-ethics-2021",
+      "static_path": "2021/4-xai-and-ethics-2021.html"
+    },
+    {
+      "slug": "a-deeper-dive-and-sequential-anns-spring-2026",
+      "static_path": "2026-spring/a-deeper-dive-and-sequential-anns-spring-2026.html"
+    },
+    {
+      "slug": "a-deeper-dive-into-neural-nets-2022",
+      "static_path": "2022-spring/a-deeper-dive-into-neural-nets-2022.html"
+    },
+    {
+      "slug": "a-deeper-dive-into-neural-nets-2026",
+      "static_path": "2026-spring/a-deeper-dive-into-neural-nets-2026.html"
+    },
+    {
+      "slug": "agi-spring-2025",
+      "static_path": "2025-spring/agi-spring-2025.html"
+    },
+    {
+      "slug": "ai-actors-and-evolution",
+      "static_path": "2021/ai-actors-and-evolution.html"
+    },
+    {
+      "slug": "ai-engineering-spring-2025",
+      "static_path": "2025-spring/ai-engineering-spring-2025.html"
+    },
+    {
+      "slug": "ai-evolution-and-neuroscience",
+      "static_path": "2019-fall/ai-evolution-and-neuroscience.html"
+    },
+    {
+      "slug": "ai-topics-fall-2019",
+      "static_path": "2019-fall/ai-topics-fall-2019.html"
+    },
+    {
+      "slug": "ap-comparative-gov-2026-constitutional-terms",
+      "static_path": "2026-spring/ap-comparative-gov-2026-constitutional-terms.html"
+    },
+    {
+      "slug": "assignments",
+      "static_path": "2018-2019/assignments.html"
+    },
+    {
+      "slug": "attention-transformers",
+      "static_path": "2021/attention-transformers.html"
+    },
+    {
+      "slug": "building-brains-ai-2019",
+      "static_path": "2019-fall/building-brains-ai-2019.html"
+    },
+    {
+      "slug": "building-brains-with-artificial-neurons",
+      "static_path": "2021/building-brains-with-artificial-neurons.html"
+    },
+    {
+      "slug": "building-brains-with-artificial-neurons-2",
+      "static_path": "2026-spring/building-brains-with-artificial-neurons-2.html"
+    },
+    {
+      "slug": "building-brains-with-artificial-neurons-2022",
+      "static_path": "2022-spring/building-brains-with-artificial-neurons-2022.html"
+    },
+    {
+      "slug": "building-brains-with-artificial-neurons-spring-2025",
+      "static_path": "2025-spring/building-brains-with-artificial-neurons-spring-2025.html"
+    },
+    {
+      "slug": "building-brains-with-artificial-neurons-spring-2026",
+      "static_path": "2026-spring/building-brains-with-artificial-neurons-spring-2026.html"
+    },
+    {
+      "slug": "classifying-art-and-emotion-2022",
+      "static_path": "2022-spring/classifying-art-and-emotion-2022.html"
+    },
+    {
+      "slug": "classifying-art-and-emotion-spring-2025",
+      "static_path": "2025-spring/classifying-art-and-emotion-spring-2025.html"
+    },
+    {
+      "slug": "classifying-art-emotion-spring-2026",
+      "static_path": "2026-spring/classifying-art-emotion-spring-2026.html"
+    },
+    {
+      "slug": "classifying-text-and-language",
+      "static_path": "2021/classifying-text-and-language.html"
+    },
+    {
+      "slug": "classifying-text-and-language-2022",
+      "static_path": "2022-spring/classifying-text-and-language-2022.html"
+    },
+    {
+      "slug": "classifying-text-and-language-spring-2025",
+      "static_path": "2025-spring/classifying-text-and-language-spring-2025.html"
+    },
+    {
+      "slug": "classifying-text-art-emotion-spring-2025",
+      "static_path": "2025-spring/classifying-text-art-emotion-spring-2025.html"
+    },
+    {
+      "slug": "classproject",
+      "static_path": "core/classproject.html"
+    },
+    {
+      "slug": "composing-ai-2019",
+      "static_path": "2019-fall/composing-ai-2019.html"
+    },
+    {
+      "slug": "composing-music-with-rnns",
+      "static_path": "2021/composing-music-with-rnns.html"
+    },
+    {
+      "slug": "composing-music-with-rnns-2",
+      "static_path": "2021/composing-music-with-rnns-2.html"
+    },
+    {
+      "slug": "composing-music-with-rnns-2022",
+      "static_path": "2022-spring/composing-music-with-rnns-2022.html"
+    },
+    {
+      "slug": "consolidation-ai-2019",
+      "static_path": "2019-fall/consolidation-ai-2019.html"
+    },
+    {
+      "slug": "course-schedule",
+      "static_path": "2018-2019/course-schedule.html"
+    },
+    {
+      "slug": "creating-new-realities-with-gans",
+      "static_path": "2021/creating-new-realities-with-gans.html"
+    },
+    {
+      "slug": "creating-reality-with-gans",
+      "static_path": "2021/creating-reality-with-gans.html"
+    },
+    {
+      "slug": "creating-reality-with-gans-and-vits-2022",
+      "static_path": "2022-spring/creating-reality-with-gans-and-vits-2022.html"
+    },
+    {
+      "slug": "creating-reality-with-gans-and-vits-2023-old",
+      "static_path": "2023/creating-reality-with-gans-and-vits-2023-old.html"
+    },
+    {
+      "slug": "creating-reality-with-gans-vae-diffusion-and-vit-models-spring-2025",
+      "static_path": "2025-spring/creating-reality-with-gans-vae-diffusion-and-vit-models-spring-2025.html"
+    },
+    {
+      "slug": "data-patterns-ai-2019",
+      "static_path": "2019-fall/data-patterns-ai-2019.html"
+    },
+    {
+      "slug": "data-visualization-ai-2019",
+      "static_path": "2019-fall/data-visualization-ai-2019.html"
+    },
+    {
+      "slug": "data-wrangling-ai-2019",
+      "static_path": "2019-fall/data-wrangling-ai-2019.html"
+    },
+    {
+      "slug": "dh-colabnet",
+      "static_path": "core/dh-colabnet.html"
+    },
+    {
+      "slug": "dup-future-trends-ai-2019",
+      "static_path": "2025-spring/dup-future-trends-ai-2019.html"
+    },
+    {
+      "slug": "exercises",
+      "static_path": "2018-2019/exercises.html"
+    },
+    {
+      "slug": "future-directions",
+      "static_path": "2021/future-directions.html"
+    },
+    {
+      "slug": "future-trends-ai-2019",
+      "static_path": "2019-fall/future-trends-ai-2019.html"
+    },
+    {
+      "slug": "gofai-ai-2019",
+      "static_path": "2019-fall/gofai-ai-2019.html"
+    },
+    {
+      "slug": "introduction-to-ai-2021",
+      "static_path": "2021/introduction-to-ai-2021.html"
+    },
+    {
+      "slug": "introduction-to-ai-2023fall",
+      "static_path": "2023/introduction-to-ai-2023fall.html"
+    },
+    {
+      "slug": "introduction-to-ai-spr-2022",
+      "static_path": "2022-spring/introduction-to-ai-spr-2022.html"
+    },
+    {
+      "slug": "keras-a-framework-for-dnn",
+      "static_path": "2021/keras-a-framework-for-dnn.html"
+    },
+    {
+      "slug": "learning-ai-2019",
+      "static_path": "2019-fall/learning-ai-2019.html"
+    },
+    {
+      "slug": "machine-learning-ai-2019",
+      "static_path": "2019-fall/machine-learning-ai-2019.html"
+    },
+    {
+      "slug": "machine-learning-and-training-a-model",
+      "static_path": "2021/machine-learning-and-training-a-model.html"
+    },
+    {
+      "slug": "machine-learning-continued-2022",
+      "static_path": "2022-spring/machine-learning-continued-2022.html"
+    },
+    {
+      "slug": "machine-learning-continued-spring-2025",
+      "static_path": "2025-spring/machine-learning-continued-spring-2025.html"
+    },
+    {
+      "slug": "machine-learning-continued-spring-2026",
+      "static_path": "2026-spring/machine-learning-continued-spring-2026.html"
+    },
+    {
+      "slug": "machine-learning-introduction",
+      "static_path": "2021/machine-learning-introduction.html"
+    },
+    {
+      "slug": "machine-learning-introduction-2022",
+      "static_path": "2022-spring/machine-learning-introduction-2022.html"
+    },
+    {
+      "slug": "machine-learning-introduction-2022-2",
+      "static_path": "2025-spring/machine-learning-introduction-2022-2.html"
+    },
+    {
+      "slug": "machine-learning-introduction-spring-2025",
+      "static_path": "2025-spring/machine-learning-introduction-spring-2025.html"
+    },
+    {
+      "slug": "machine-learning-introduction-spring-2026",
+      "static_path": "2026-spring/machine-learning-introduction-spring-2026.html"
+    },
+    {
+      "slug": "machine-learning-part-b-ai-2019",
+      "static_path": "2019-fall/machine-learning-part-b-ai-2019.html"
+    },
+    {
+      "slug": "machine-reading-2022",
+      "static_path": "2022-spring/machine-reading-2022.html"
+    },
+    {
+      "slug": "machines-learning-emotions-2021",
+      "static_path": "2021/machines-learning-emotions-2021.html"
+    },
+    {
+      "slug": "maching-reading",
+      "static_path": "2021/maching-reading.html"
+    },
+    {
+      "slug": "nlp-a-ai-2019",
+      "static_path": "2019-fall/nlp-a-ai-2019.html"
+    },
+    {
+      "slug": "nlp-ai-2019",
+      "static_path": "2019-fall/nlp-ai-2019.html"
+    },
+    {
+      "slug": "nlp-b-ai-2019",
+      "static_path": "2019-fall/nlp-b-ai-2019.html"
+    },
+    {
+      "slug": "nlp-tools",
+      "static_path": "2018-2019/nlp-tools.html"
+    },
+    {
+      "slug": "osu-humcog-2020",
+      "static_path": "core/osu-humcog-2020.html"
+    },
+    {
+      "slug": "plan",
+      "static_path": "core/plan.html"
+    },
+    {
+      "slug": "posters",
+      "static_path": "2018-2019/posters.html"
+    },
+    {
+      "slug": "programming",
+      "static_path": "2021/programming.html"
+    },
+    {
+      "slug": "programming-ai-2019",
+      "static_path": "2019-fall/programming-ai-2019.html"
+    },
+    {
+      "slug": "project-week",
+      "static_path": "core/project-week.html"
+    },
+    {
+      "slug": "quantitative-reasoning",
+      "static_path": "2018-2019/quantitative-reasoning.html"
+    },
+    {
+      "slug": "reading-ai-2019",
+      "static_path": "2019-fall/reading-ai-2019.html"
+    },
+    {
+      "slug": "readings-2023",
+      "static_path": "2023/readings-2023.html"
+    },
+    {
+      "slug": "recap-and-future",
+      "static_path": "2021/recap-and-future.html"
+    },
+    {
+      "slug": "reinforcement-learning-and-the-future-of-ai-2022",
+      "static_path": "2022-spring/reinforcement-learning-and-the-future-of-ai-2022.html"
+    },
+    {
+      "slug": "reinforcement-learning-and-the-future-of-ai-orig-2023",
+      "static_path": "2023/reinforcement-learning-and-the-future-of-ai-orig-2023.html"
+    },
+    {
+      "slug": "reinforcement-learning-and-the-future-of-ai-orig-spring-2025",
+      "static_path": "2025-spring/reinforcement-learning-and-the-future-of-ai-orig-spring-2025.html"
+    },
+    {
+      "slug": "sample-exercises",
+      "static_path": "2018-2019/sample-exercises.html"
+    },
+    {
+      "slug": "seeing-ai-2019",
+      "static_path": "2019-fall/seeing-ai-2019.html"
+    },
+    {
+      "slug": "seeing-the-world-with-cnns",
+      "static_path": "2021/seeing-the-world-with-cnns.html"
+    },
+    {
+      "slug": "seeing-the-world-with-cnns-2",
+      "static_path": "2021/seeing-the-world-with-cnns-2.html"
+    },
+    {
+      "slug": "seeing-the-world-with-cnns-2022",
+      "static_path": "2022-spring/seeing-the-world-with-cnns-2022.html"
+    },
+    {
+      "slug": "seeing-the-world-with-cnns-spring-2025",
+      "static_path": "2025-spring/seeing-the-world-with-cnns-spring-2025.html"
+    },
+    {
+      "slug": "syllabus-2",
+      "static_path": "2026-spring/syllabus-2.html"
+    },
+    {
+      "slug": "syllabus-3",
+      "static_path": "2023/syllabus-3.html"
+    },
+    {
+      "slug": "syllabus-ai-2019",
+      "static_path": "2019-fall/syllabus-ai-2019.html"
+    },
+    {
+      "slug": "temporal-ai-rnn-spring-2025",
+      "static_path": "2025-spring/temporal-ai-rnn-spring-2025.html"
+    },
+    {
+      "slug": "temporal-ai-spring-2026",
+      "static_path": "2026-spring/temporal-ai-spring-2026.html"
+    },
+    {
+      "slug": "test-1",
+      "static_path": "2026-spring/test-1.html"
+    },
+    {
+      "slug": "test-14-16",
+      "static_path": "2026-spring/test-14-16.html"
+    },
+    {
+      "slug": "the-map-of-machine-learning",
+      "static_path": "2021/the-map-of-machine-learning.html"
+    },
+    {
+      "slug": "their-eyes-were-watching-ch17-20",
+      "static_path": "2026-spring/their-eyes-were-watching-ch17-20.html"
+    },
+    {
+      "slug": "transforming-intelligence",
+      "static_path": "2021/transforming-intelligence.html"
+    },
+    {
+      "slug": "transforming-intelligence-2022",
+      "static_path": "2022-spring/transforming-intelligence-2022.html"
+    },
+    {
+      "slug": "transforming-intelligence-2023-old",
+      "static_path": "2023/transforming-intelligence-2023-old.html"
+    },
+    {
+      "slug": "transforming-intelligence-spring-2025",
+      "static_path": "2025-spring/transforming-intelligence-spring-2025.html"
+    },
+    {
+      "slug": "w2-lab-data-wrangling",
+      "static_path": "2019-fall/w2-lab-data-wrangling.html"
+    },
+    {
+      "slug": "xai-ai-and-ethics",
+      "static_path": "2021/xai-ai-and-ethics.html"
+    },
+    {
+      "slug": "xai-and-ethics-2022",
+      "static_path": "2022-spring/xai-and-ethics-2022.html"
+    },
+    {
+      "slug": "xai-and-ethics-spring-2025",
+      "static_path": "2025-spring/xai-and-ethics-spring-2025.html"
+    },
+    {
+      "slug": "xai-and-ethics-spring-2026",
+      "static_path": "2026-spring/xai-and-ethics-spring-2026.html"
+    }
+  ]
+}
