@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week X: Title – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week X: Title</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-x-title">Week X: Title</h1>
+<p>As AI models like GPT have become more powerful, they've also become more accessible through APIs with a growing number of features we'll use in the coming like function calling, fine-tuning, and caching. This week, we'll explore the basics of using Python to interact with the OpenAI API, enabling us to harness the power of large language models in our own future applications.</p>
+<h1 id="miniproject-1-build-a-chatbot">==========[ Miniproject #1: Build a Chatbot ]==========</h1>
+<p><strong>DUE:</strong> Sunday, September 21th at 12 midnight EST</p>
+<p>Based upon a domain of expertise you have, create a chatbot with a destinctive persona. Use the complex/well-structured prompt examples you've seen to implement your chatbot using the OpenAI API in Colab Jupyter notebook. You will also use AI to develop a scoring rubric and use it to evalute the 'quality' of your persona prompt. Here are are the project goals:</p>
+<ul>
+<li>Use the 'system' prompt to give your chatbot a descriptive and specialized 'persona' (e.g. a historical famous person, a main or marginal character from fiction, a Jungian Therapist with particular quirks, etc.)</li>
+<li>Save and submit your metaprompt history used to iterate and refine your prompt (use ChatGPT Exporter Browser Plug-In)</li>
+<li>Create a comprehensive and non-trivial chacter prompt including exertise, personality, backstory, etc.</li>
+<li>Use the OpenAI API and accumulate the conversation history</li>
+<li>Explore other Prompt Engineering strategies (e.g. In-Context-Learning, Chain of Thoughts, etc.)</li>
+<li>(Optional) Use gradio for the UI/UX</li>
+<li>(Optional) Extend your chatbot with features like multimodal input (e.g. voice, images)</li>
+<li>In your personal github.com repo, create a folder 'iphs391fall2026-miniproject1-chatbot' and upload your code there as either a Colab notebook or *.py code files for testing, verification and grading. </li>
+</ul>
+<p>NOTE: Beware using older code examples. OpenAI API announced a major change from the previous .chat() endpoint to a more unified .complete() endpoint. If you are using older code snippets, cookbooks, or tutorials, update the OpenAI API calls to use .complete() rather than .chat() endpoints. <a href="./openai_api_changes2024.html">Read this</a> for details of these API changes.</p>
+<h2 id="mp1-resources-persona-prompts">MP#1 Resources: Persona Prompts</h2>
+<ul>
+<li>Character and Leaked System Prompts</li>
+<li><a href="https://github.com/asgeirtj/system_prompts_leaks/blob/main/xAI/grok-personas.md">Github: (xAI Spicy Lover) asgeirtj/system_prompts_leaks (19.7k)</a></li>
+<li><a href="https://github.com/elder-plinius/CL4R1T4S">Github: (General): elder-plinius/CL4R1T4S (9.9k)</a></li>
+<li><a href="https://github.com/dontriskit/awesome-ai-system-prompts">Github: (General): dontriskit/awesome-ai-system-prompts (3.8k)</a></li>
+<li><a href="https://character.ai/">Character.ai</a></li>
+<li><a href="https://www.reddit.com/r/CharacterAI/">r/CharacterAI</a></li>
+<li><a href="https://docs.chub.ai/docs">(Optional) NSFW Spicy Content at Chub.ai</a></li>
+<li><a href="https://notebooklm.google/">Google NotebookLM</a></li>
+</ul>
+<h2 id="mp1-grading-prompt-complexity-subtlty-creativity-and-effectiveness">MP#1 Grading: Prompt complexity, subtlty, creativity, and effectiveness</h2>
+<ul>
+<li><a href="https://help.openai.com/en/articles/8554397-creating-a-gpt">(No Code) OpenAI GPTs</a></li>
+<li><a href="https://support.google.com/gemini/answer/15235603?hl=en">(No Code) Google Gems</a></li>
+<li><a href="https://colab.research.google.com/">(OpenAI API) Jupyter Colab</a></li>
+<li>Turn in:<ol>
+<li>Meta/Prompts used to iterative develop Persona Prompt</li>
+<li>Traces of best 10x dialog and 1-2pg writeup on insights/discoveries</li>
+<li>Scoring Rubric with evaluation of your Persona Prompt</li>
+</ol>
+</li>
+</ul>
+<h1 id="follow-ups">==========[ Follow-Ups ]==========</h1>
+<h3 id="signup-and-installs">Signup and Installs</h3>
+<ul>
+<li>AI Research Presentations</li>
+<li>
+<p><a href="">Signup List</a></p>
+</li>
+<li>
+<p>OpenAI</p>
+</li>
+<li><a href="https://auth.openai.com/log-in-or-create-account">(Signup) OpenAI Pro Subscription: $20/mo</a></li>
+<li>
+<p><a href="https://platform.openai.com/settings/organization/billing/overview">(logon first) OpenAI API: Pay $10 in API Credits</a></p>
+</li>
+<li>
+<p>New Development Setup</p>
+</li>
+<li>Create new code repo at Github., then click green [ &lt;&gt; Code ] button and copy <HTTPS link></li>
+<li>Open iTerm2 then 'cd ./code'</li>
+<li>Copy Remote Github.com repo to local laptop with 'git clone <HTTPS link>'</li>
+<li>'cd <repo subdir>'</li>
+<li>Setup virtual environment with 'uv venv --python=3.11'</li>
+<li>Activate virtual enviornment with 'source .venv/bin/source'</li>
+<li>Open VSCode 'code .'</li>
+</ul>
+<h1 id="new-reading-assignments">==========[ New Reading Assignments ]==========</h1>
+<h2 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h2>
+<ul>
+<li><a href="https://digitaleconomy.stanford.edu/wp-content/uploads/2025/08/Canaries_BrynjolfssonChandarChen.pdf">(Use AI ~10mins) Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence by Erik Brynjolfsson et al. (26 Aug 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CRraHg4Ks_g">(Watch in full) Demis Hassabis On The Future of Work in the Age of AI (20:10) (Jul 2025)</a></li>
+</ul>
+<h3 id="reflections">Reflections</h3>
+<p>(in class)</p>
+<h3 id="ai-newscurrent-events">AI News/Current Events</h3>
+<ul>
+<li><a href="https://www.wheresyoured.at/the-haters-gui/">(AI ~10m) The Hater's Guide To The AI Bubble by Zitron (21 Jul 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=nG2ry5eUX14">AI Skepticism is CANCELLED (10:47) (12 Sep 2025)</a></li>
+</ul>
+<h2 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h2>
+<h3 id="prompts-as-code">Prompts as Code</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eNiHiZoDmHo">(GPT5 Structured Prompts): This one prompt makes GPT-5 INSANE (16:37) (8 Sep 2025)</a></li>
+<li><a href="https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide">OpenAI Cookbook (GPT5)</a></li>
+<li>
+<p><a href="https://platform.openai.com/chat/edit?optimize=true">OpenAI Prompt Optimizer</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=b9WDcFsKixo">POML: A 5-Minute Guide (4:49) (Jun 2025)</a></p>
+</li>
+<li><a href="https://www.youtube.com/watch?v=tfOwh6YCY8M">(MS Structured Prompts): Microsoft's Secret Tool for PERFECT AI Prompts (7:25) (6 Sep 2025)</a></li>
+<li><a href="https://github.com/microsoft/poml">MS Prompt Orchestration Markup Language (POML) Github</a></li>
+</ul>
+<h3 id="coding-exercises">Coding Exercises</h3>
+<ul>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/lesson/jtmdv/chatbot">Deeplearning.ai: ChatGPT Prompt Engineering for Developers</a></p>
+</li>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/functions-tools-agents-langchain">Deeplearning.ai: Functions, Tools and Agents with LangChain</a></p>
+</li>
+</ul>
+<h1 id="in-class">==========[ In Class ]==========</h1>
+<h2 id="goals">Goals:</h2>
+<ul>
+<li>Recent and future impacts of AI on Employment and the Future of Work</li>
+<li>More in-depth prompt engineering</li>
+<li>More OpenAI API coding</li>
+<li>Lighter readings to accomodate Mini-Project #1: Chatbots</li>
+<li>Leveraing AI to accelerate and deepen learning</li>
+<li>
+<p>Contrasting and resolving apparently contradictory AI research</p>
+</li>
+<li>
+<p>Local IDE Setup: Crash course</p>
+</li>
+<li>Visual (VSCode) + Roo + ClI</li>
+<li>Command Line Interface (CLI) </li>
+<li>AI Development (Gemini CLI)</li>
+<li>OpenAI API Review</li>
+<li>Colab Ollama API</li>
+<li>Advanced Prompt Engineering:</li>
+<li>Templates</li>
+<li>OpenAI GPT5</li>
+<li>Structured Markup Langauge: POML</li>
+<li>Optimization: DSPy</li>
+<li>AI Pair Programming</li>
+<li>Autocomplete</li>
+<li>Agents (copilot)</li>
+<li>Frameworks (Roo Code)</li>
+<li>CLI (Gemini or Claude Code)</li>
+<li>Mini-Project #1: Chat</li>
+<li>System Prompt/Personas</li>
+<li>Reverse engineer Character.ai</li>
+</ul>
+<h2 id="news">News</h2>
+<ul>
+<li><a href="https://www.wheresyoured.at/the-haters-gui/">(AI ~10m) The Hater's Guide To The AI Bubble by Zitron (21 Jul 2025)</a></li>
+<li><a href="https://news.ycombinator.com/item?id=44645391">ynews</a></li>
+</ul>
+<h2 id="ai-research"><strong>AI Research</strong></h2>
+<p>Use AI to analyze these papers, explore the apparent contradictions and resolutions of the results in each. Come to class ready to engage the deep concepts and impact of these 2 papers (~20mins with AI):
+* <a href="https://www.arxiv.org/abs/2509.04475">ParaThinker: Native Parallel Thinking as a New Paradigm to Scale LLM Test-time Compute Hao Wen et al. (30 Aug 2025)</a>
+* <a href="https://arxiv.org/abs/2509.05396">Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate by Andrea Wynn et al. (5 Sep 2025)</a></p>
+<h2 id="ai-model-access">AI Model Access</h2>
+<ul>
+<li>Web Chat Interfaces (human-machine)</li>
+<li>Playgrounds and Sandboxes</li>
+<li><a href="https://platform.openai.com/playground/">OpenAI Playground</a></li>
+<li><a href="https://aistudio.google.com/prompts/new_chat">AIStudio</a></li>
+<li>Application Programming Interfaces (Remote and Local APIs) (machine-machine)</li>
+<li><a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI API</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs">Google Gemini API</a></li>
+<li><a href="https://docs.anthropic.com/en/home">Anthropic API</a></li>
+</ul>
+<h2 id="structured-prompt-engineering">Structured Prompt Engineering</h2>
+<ul>
+<li><strong>GPT5 Structured Prompts</strong></li>
+<li><a href="https://chatgpt.com/c/68c31dcf-256c-832f-bf97-67e059ae13fd">Download</a></li>
+<li>
+<p><a href="https://chatgpt.com/c/68c31dcf-256c-832f-bf97-67e059ae13fd">Unzip</a></p>
+</li>
+<li>
+<p><strong>POML</strong></p>
+</li>
+<li><a href="https://github.com/jon-chun/poml-examples">jon-chun/poml-examples</a></li>
+</ul>
+<h2 id="local-ollama-api">Local Ollama API</h2>
+<ul>
+<li><a href="https://colab.research.google.com/drive/1gP92JYg7ZKxH76Fo_yi4eAWFndT8tITA?usp=sharing">Local Ollama API + LangExtract</a></li>
+</ul>
+<h2 id="spec-driven-development-join-optimization-of-resumejob">Spec Driven Development: Join Optimization of Resume+Job</h2>
+<ul>
+<li><a href="https://www.perplexity.ai/search/any-foss-ai-models-libraries-f-4TWRrdq6TPqpudLEaxmbvw">Perplexity Lit Search</a></li>
+<li><a href="https://github.com/AmruthPillai/Reactive-Resume">Github: Reactive-Resume (32.9k)</a><ul>
+<li><a href="https://www.google.com/search?q=format+for+a+reactive+resume+in+json&amp;oq=format+for+a+reactive+resume+in+json&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDg1MzlqMGoxqAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8">Google AI Search: Reactive Resume</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/srbhr/Resume-Matcher">Github: Resume-Matcher (23.1k)</a></li>
+<li><a href="https://github.com/olyaiy/resume-lm">Github: Resume-LM (135)</a></li>
+<li><a href="https://github.com/Mahmud0808/ResumeAI">Github: ResumeAI (93)</a></li>
+<li><a href="https://arxiv.org/pdf/2402.06221">Arxiv: ResumeFlow: An LLM-facilitated Pipeline for Personalized Resume Generation and Refinemen by Zinjad et al. (8 May 2024)</a></li>
+<li><a href="https://aistudio.google.com/prompts/1GHoQXbDo9TP-JUNkV0yqMJh1HGkczphM?save=true">AIStudio Gemini 2.5 Pro</a></li>
+<li><a href="https://drive.google.com/file/d/1fjH4TJSeiA-6QNrTJKYiv6A20QSqRHjF/view?usp=sharing">PDF</a></li>
+<li><a href="https://chatgpt.com/share/68c1b334-600c-800c-ad2a-43306504d178">GPT5 Decomposition/Context Engineering</a></li>
+</ul>
+<h2 id="old-code-analyzing-existing-codebase">(Old Code) Analyzing Existing Codebase</h2>
+<ul>
+<li><a href="https://github.com/coderamp-labs/gitingest">Distill: GitIngest for Prompt-Friendly extract of Git Repo</a></li>
+<li>"https://github.com/bmad-code-org/BMAD-METHOD/" -&gt; "https://gitingest.com/bmad-code-org/BMAD-METHOD/"</li>
+</ul>
+<h2 id="new-code-ai-project-setup-rulebooks-and-prompts">(New Code) AI Project Setup: Rulebooks and Prompts</h2>
+<ul>
+<li><a href="https://github.com/botingw/rulebook-ai">Cross Model Consistency: botingw/rulebook-ai (328)</a></li>
+<li><a href="https://notes.switchdimension.com/AI-Dev-Project-Setup-Prompts-18fb5b07a94380758bd6e92baa5e8c98">Project Setup: AI Dev Project Setup Prompts</a></li>
+<li><a href="https://www.youtube.com/watch?v=JVwkyYtZNzQ">MAD: Claude Code + Codex CLI + Gemini CLI = ?? (15:30) (8 Sep 2025)</a></li>
+<li><a href="https://github.com/just-every">Github: General and Focused Tools</a></li>
+<li><a href="https://github.com/just-every/code">Github: Browser integration, multi-agents, theming, and reasoning control. Orchestrate agents from OpenAI, Claude, Gemini or any provider (1.1k)</a></li>
+</ul>
+<h2 id="best-implementation-bmad-as-of-aug-2025">Best Implementation: BMAD (as of Aug 2025)</h2>
+<p><strong>SIMPLIER</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=cniTWVMGD08">How Vibe Coding Goes PRO (24:55) (Jul 2025)</a></li>
+<li><a href="https://github.com/eyaltoledano/claude-task-master">eyaltoledano/claude-task-master</a><ul>
+<li><a href="https://www.task-master.dev/">Task-master</a></li>
+<li>PRD -&gt; Tasks -&gt; Subtasks -&gt; Build (-&gt; QA/Test -&gt; Iteration Loop)</li>
+</ul>
+</li>
+<li><a href="https://github.com/snarktank/ai-dev-tasks">snarktank/ai-dev-tasks (light)</a></li>
+</ul>
+<p><strong>COMPLEX</strong></p>
+<ul>
+<li><a href="https://github.com/bmad-code-org/BMAD-METHOD">bmad-code-org/BMAD-METHOD</a></li>
+<li><a href="https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/user-guide.md">BMAD User Guide</a></li>
+<li>"npx create-next-app@latest ."</li>
+<li>create ./docs (copy )</li>
+<li>
+<p>"lets proceed to the PM step with our product brief to create the PRD"</p>
+</li>
+<li>
+<p>OPTION 0: Create a GPT or Gemini Gem</p>
+</li>
+<li>Prompt: "Follow the web agent bundle instructions and assume the role of the BMAD Orchestrator - do not break character"</li>
+<li>Upload: <a href="https://github.com/bmad-code-org/BMAD-METHOD/blob/main/dist/teams/team-fullstack.txt">team-fullstack.txt</a></li>
+<li>OPTION 1: Using Web Chat</li>
+<li><a href="https://github.com/bmad-code-org/BMAD-METHOD/blob/main/dist/teams/team-fullstack.txt">team-fullstack.txt</a></li>
+<li>PROMPT #1: "Your critical operating instructions are attached, do not break this assigned character"</li>
+<li>PROMPT #2: "*brainstorm"</li>
+<li>PROMPT ...: Iterate Q/A until output "(project-name)_brainstorm.md"</li>
+<li>PROMPT #4: "*pm" (product manager)</li>
+<li>PROMPT #5: "*create-doc" product requirement doc output "(project-name)_prd.md"</li>
+<li>PROMPT ...: Iterate over 5 stages of prd</li>
+<li>PROMPT #7: "<em>architect" \n </em>create-doc-architect" architect mode output "(project-name)_architecture.md"</li>
+<li>Install BMAD</li>
+<li>create ./docs/architecture/ and add "(project-name)_architecture.md"</li>
+<li>create ./docs/prd/ and add "(project-name)_prd.md"</li>
+<li>Agent #1: Product Owner "@po.mdc"<ul>
+<li>give the *shard-doc docs/prd.md docs/prd</li>
+<li>give the *shard-doc docs/architecture.md docs/architecture</li>
+</ul>
+</li>
+<li>Agent #2: Scrum Master "@sm.mdc \n *draft"</li>
+<li>create epics (e.g. 4 epics with 4 stories/epic = 16 total)</li>
+<li>validate each story and change ##Status\n "Draft" -&gt; "Approved" (Story status)</li>
+<li>Agent #3: Developer Agent "dev.mdc"<ul>
+<li>tell which story to implement (each story is broken down into tasks/substasks)</li>
+<li>once story is complete, Story status "Approved" -&gt; "Ready for Review"</li>
+</ul>
+</li>
+<li>Agent #4: Quality Assurance Agent "qa.mdc \n *review"<ul>
+<li>once QA is good, Story status "Ready for Review" -&gt; "Done"</li>
+</ul>
+</li>
+<li>OPTION 2: Using Claude Code, Cursor, VSCode, etc.</li>
+<li>Install by running "npx bmad-method install" for each project<ul>
+<li>Give project full path</li>
+<li>"Install BMad Agile Core System (v4.29.0) .bmad-core" (sets up ./.bmad-core/)</li>
+<li>(Y) Shard PRD into multiple docs</li>
+<li>(Y) Shard architecture docs into multiple docs</li>
+<li>(select multiple) IDEs (Roo Code, Gemini CLI, Claude Code, Cursor, etc)</li>
+<li>(N) Include prebuilt web bundles </li>
+<li>All rule files should appear under the corresponding subdir (e.g. ./.claude, ./.cursor, etc)</li>
+</ul>
+</li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

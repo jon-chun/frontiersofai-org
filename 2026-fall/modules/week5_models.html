@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 5: LangChain and Models – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 5: LangChain and Models</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-5-langchain-and-models">Week 5: LangChain and Models</h1>
+<p>This week we build upon last weeks introduction to embeddings. We extend and embed our embedding knowledge by contextualizing them within both the practical industry domain of benchmarks as well as the theoretical domain of AI research. Along the way, we further develop our understanding of agentic frameworks using LangChain in our coding exercises.</p>
+<h1 id="mini-project-1-custom-chatbot-due-this-sunday-aug-28-2025-midnight">==========[ Mini-Project #1 Custom Chatbot (Due This Sunday, Aug 28, 2025 @midnight) ]==========</h1>
+<p>Email me a link to your github or GDrive folder with all your project materials. If you have a private repo/folder, share it with jon-chun (github) and/or jonchun2000@gmail.com (Google).</p>
+<h1 id="arxivorg-research-paper-5-min-presentation">==========[ ArXiv.org Research Paper 5 min Presentation ]==========</h1>
+<h2 id="schedule">Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/1</td>
+<td>Abhigya</td>
+</tr>
+<tr>
+<td>10/8</td>
+<td>Gwen</td>
+</tr>
+<tr>
+<td>10/15</td>
+<td>Peter</td>
+</tr>
+<tr>
+<td>10/22</td>
+<td>Tiffanie</td>
+</tr>
+<tr>
+<td>10/29</td>
+<td>Anna</td>
+</tr>
+<tr>
+<td>11/5</td>
+<td>Kirill</td>
+</tr>
+<tr>
+<td>11/12</td>
+<td>Wisdom, Godwin</td>
+</tr>
+<tr>
+<td>11/19</td>
+<td>Ann-Duncan, Adrian</td>
+</tr>
+</tbody>
+</table>
+<h1 id="quiz-week-5">Quiz: Week 5</h1>
+<h1 id="mini-projects">Mini-Projects:</h1>
+<h2 id="mini-project-1-chatbot-due-this-sunday-sep-28th-at-midnight">Mini-Project #1: Chatbot (Due this Sunday, Sep 28th at midnight)</h2>
+<ul>
+<li><a href="https://github.com/jon-chun/GenAI-Multi-Agent-Networks-and-Digital-Twins/blob/main/modules/miniproject1_instructions_persona-chatbot-and-benchmark.md">MP#1 Chatbot Instructions</a></li>
+</ul>
+<h2 id="mini-project-2-embedding-research-upcoming">Mini-Project #2: Embedding Research (Upcoming)</h2>
+<p>Miniproject #2 will have you create a 3 novel dataset of 100 test sets each (2-3 sentences for similarity classification/ranking along with accompanying explanatory reasoning) across diverse domains. Do not proceed beyond the brainstorming and identification of the top 5 possible domains you could serve as a domain expert as defined below. In our next class on Oct 1st, we will coordinate among everyone's lists to optimize the final individual and collective assignments. For now, just read the following descriptions and brainstorm (with AI) at least 5 domain-specific areas where you can contribute special expertise/insights.</p>
+<h2 id="1-pick-5-candidate-domains-now-well-choose-your-best-3">1) Pick 5 candidate domains now; we’ll choose your best 3</h2>
+<p>Bring <strong>five</strong> domain ideas to class; we will select <strong>three</strong> for you to actually build.<br />
+<strong>Functional definition of domain expertise (flexible, human-centric):</strong> you can reliably spot <strong>edge cases</strong> and <strong>rank similarity</strong> of domain texts <strong>better than most people</strong> because of your background (major, language/culture, work, clubs, lived experience, community ties, etc.). You don’t need formal credentials.</p>
+<p><strong>Examples to spark ideas (non-exhaustive)</strong></p>
+<ul>
+<li>Academic genres (methods sections, critique notes, problem-set solutions)</li>
+<li>Bureaucratic language (visa instructions, campus policy, financial-aid emails)</li>
+<li>Niche hobbies/subcultures (climbing trip reports, K-pop fan posts, tabletop RPG rules clarifications)</li>
+<li>Technical writing (lab safety notes, API docs snippets, commit messages)</li>
+<li>Creative forms (poetry lines, workshop feedback, indie music reviews)</li>
+<li>Health/fitness (training logs, diet tips, PT exercise instructions)</li>
+<li>Multilingual/dialectal (code-switching chat, regional idioms, transliterated content)</li>
+<li>Journalism/register shifts (wire headlines vs. feature ledes)</li>
+<li>Civic/legal plain-language explanations (de-identified)</li>
+</ul>
+<p>We’ll coordinate across the class to avoid redundancy and to maximize coverage.</p>
+<h2 id="2-what-similar-vs-different-means-use-these-axes-creatively">2) What “similar” vs. “different” means (use these axes creatively)</h2>
+<p>You’ll <strong>label pairs</strong> and <strong>label triplet sentences relative to an anchor</strong>. Drop the fuzzy <em>neutral</em> category.</p>
+<p>Think in <strong>dimensions</strong>; use them to invent <strong>edge cases</strong>:</p>
+<ul>
+<li><strong>Semantic</strong>: same meaning despite wording changes (true paraphrase) vs. opposite/irrelevant meanings.<ul>
+<li><em>Trick:</em> negation (“must” vs. “must not”), quantifiers (“some” vs. “all”).</li>
+</ul>
+</li>
+<li><strong>Topical</strong>: same subject but different <strong>claim</strong> or <strong>stance</strong> is often <strong>different</strong> semantically (topic ≠ meaning).</li>
+<li><strong>Lexical</strong>: shared keywords but divergent meaning (false friends, polysemy) vs. low overlap but same meaning (deep paraphrase).</li>
+<li><strong>Stylistic/Register</strong>: formal vs. informal; academic vs. chatty; sarcasm/irony. Style can mask or mimic semantics.</li>
+<li><strong>Pragmatic/Contextual</strong>: implied intents, politeness strategies, presuppositions.</li>
+<li><strong>World knowledge</strong>: allusions, culture-specific references, inside jokes.</li>
+<li><strong>Temporal/Numerical/Logical</strong>: tense shifts, date/price/unit changes; conditionals versus factual statements.</li>
+</ul>
+<p><strong>Goal:</strong> at least half of your hard items should hinge on <strong>subtle distinctions</strong> that confuse non-experts and today’s AIs.</p>
+<h1 id="new-reading-assignments">==========[ New Reading Assignments ]==========</h1>
+<h2 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h2>
+<h2 id="ai-newscurrent-events">AI News/Current Events</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vfhszRuMA8Y">How AI WIPES Out Capitalism Emad Mostaque (21:12) (21 Sep 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1yu2n426Iig">5000 Agent Teams at Citi (9:15) (25 Sep 2025)</a></li>
+</ul>
+<h2 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h2>
+<h3 id="ai-research-papers">AI Research Papers</h3>
+<ul>
+<li><a href="https://www.bardram.net/wp-content/uploads/2017/12/Writing.Paper_.pdf">Writing a (Computer Science) Paper by Bardman (2007)</a></li>
+<li><a href="https://github.com/hzwer/WritingAIPaper">Writing AI Conference Papers: A Handbook for Beginners</a></li>
+</ul>
+<h3 id="embedding-benchmarks-and-leaderboards">Embedding Benchmarks and Leaderboards</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2210.07316">(Use AI ~15min) MTEB: Massive Text Embedding Benchmark by Muennighoff et al. (13 Oct 2022)</a></li>
+<li><a href="https://arxiv.org/pdf/2502.13595">(Use AI ~10min) MMTEB: Massive Multilingual Text Embedding Benchmark by Enevoldsen et al. (19 Feb 2025)</a></li>
+</ul>
+<h3 id="models">Models</h3>
+<ul>
+<li><a href="https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct">Qwen3-Omni3-30B-A3B-Instruct</a></li>
+</ul>
+<h3 id="ai-code-prompts">AI Code Prompts</h3>
+<ul>
+<li><a href="https://cookbook.openai.com/examples/gpt-5-codex_prompting_guide">GPT-5-Codex Prompting Guide by Leo</a></li>
+<li><a href="https://www.reddit.com/r/ClaudeAI/comments/1kivv0w/the_ultimate_vibe_coding_guide/">The Ultimate Vibe Coding Guide by PhraseProfessional54 (Apr 2025)</a></li>
+</ul>
+<h3 id="coding-claude-code">Coding: Claude Code</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jWlAvdR8HG0">Full Tutorial: 20 Tips to Master Claude Code in 35 Minutes (Build a Real App) (35:03) (24 Sep 2025)</a></li>
+<li><a href="https://creatoreconomy.so/p/20-tips-to-master-claude-code-in-35-min-build-an-app">Blog</a></li>
+<li><a href="https://github.com/jon-chun/ai-conferences-and-events">Repo chunj</a><pre><code>Goal: Build a family activity finder while covering 20 tips to master Claude Code and tool
+
+**Planning and project setup**
+1. Use plan motte before coding
+2. Ask Claude to explore solutions with you
+3. Follow the spec → to do → code process
+4. Use output styles to learn while building
+5. Use Claude.md to bootstrap project understanding
+6. Use Claude.md to add your personal preferences
+
+**Core coding workflows**
+7. Use voice to give Claude context fast
+8. Get your app running as soon as possible
+9. Press Escape if Claude to safely stop and redirect Claude
+10. Add version control with Github integration
+11. Set up permissions to let Claude work more autonomously
+12. Follow spec → to do → code with each milestone
+13. Clear context strategically with /clear and /compact
+
+**Debugging issues**
+14. Ask Claude to "think ultra hard" or "why do you think this happened" to debug gnarly bugs
+15. Give specific feedback, attach images, and browser console logs to help Claude debug issues
+
+**Slash commands, sub-agents, and hooks**
+16. Create custom slash commands for repeated workflows
+17. Build specialized subagents for focused work
+18. Set up hooks to trigger specific behavior
+
+**MCP servers and parallel Claude agents**
+19. Install MCP servers for specialized capabilities
+20. Run multiple Claude sessions in parallel for faster development
+</code></pre>
+</li>
+</ul>
+<h3 id="coding-exercises">Coding Exercises</h3>
+<ul>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/langchain/lesson/u9olq/introduction">Deeplearning.ai: LangChain for LLM Application Development</a></p>
+</li>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/langchain-chat-with-your-data/lesson/snupv/introduction">Deeplearning.ai: LangChain Chat with Your Data</a></p>
+</li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

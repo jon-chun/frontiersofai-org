@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>OpenAI API 2024 Changes – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>OpenAI API 2024 Changes</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="openai-api-2024-changes">OpenAI API 2024 Changes</h1>
+<h1 id="changes-to-the-openai-api-2023-2024">Changes to the OpenAI API 2023-2024</h1>
+<p>In 2024, OpenAI made significant updates to its API, shifting from the previous <code>.chat</code> endpoint to a more unified <code>.complete</code> endpoint. This change streamlined interactions and enhanced flexibility in how developers interact with the API.</p>
+<p>Here’s a breakdown of the key changes between the <code>.chat</code> and <code>.complete</code> endpoints:</p>
+<h3 id="1-unified-endpoint">1. <strong>Unified Endpoint:</strong></h3>
+<ul>
+<li><strong>Old:</strong> The <code>.chat</code> endpoint was specifically designed for conversational tasks, where users would submit a series of messages in a dialogue format.</li>
+<li><strong>New:</strong> The <code>.complete</code> endpoint now handles both chat-based and general text completion tasks, making it a one-stop solution for diverse text generation needs.</li>
+</ul>
+<h3 id="2-task-flexibility">2. <strong>Task Flexibility:</strong></h3>
+<ul>
+<li><strong>Old (<code>.chat</code>):</strong> Primarily focused on multi-turn conversations. Each request had to follow a structured format with <code>role</code> and <code>content</code> (e.g., system, user, assistant).</li>
+<li><strong>New (<code>.complete</code>):</strong> Supports not just dialogue but any kind of text completion, including code generation, summarization, and open-ended text completions. While it still supports chat interactions, it is no longer restricted to conversation-style inputs.</li>
+</ul>
+<h3 id="3-simplified-input-format">3. <strong>Simplified Input Format:</strong></h3>
+<ul>
+<li><strong>Old:</strong> Developers needed to provide a list of messages, each with a specific role (<code>user</code>, <code>assistant</code>, <code>system</code>).</li>
+<li><strong>New:</strong> The <code>.complete</code> endpoint accepts a simpler input format. You can provide either a chat-like list of messages or just a single prompt for tasks like completion or generation.</li>
+</ul>
+<h3 id="4-improved-response-control">4. <strong>Improved Response Control:</strong></h3>
+<ul>
+<li>The <code>.complete</code> endpoint provides better control over the structure and format of responses. You can now specify whether you want a single answer, multiple completions, or even how the response should be formatted.</li>
+</ul>
+<h3 id="5-advanced-use-cases">5. <strong>Advanced Use Cases:</strong></h3>
+<ul>
+<li>The <code>.complete</code> endpoint is optimized for a variety of advanced tasks beyond conversation. It allows for greater flexibility in handling tasks like:<ul>
+<li><strong>Code generation and debugging</strong></li>
+<li><strong>Creative writing and story generation</strong></li>
+<li><strong>Summarization</strong></li>
+<li><strong>Custom instruction following</strong> </li>
+</ul>
+</li>
+</ul>
+<p>The <code>.chat</code> endpoint was more limited in scope, mainly focusing on conversation and response generation in dialogue settings.</p>
+<h3 id="6-broader-model-access">6. <strong>Broader Model Access:</strong></h3>
+<ul>
+<li>With the <code>.complete</code> endpoint, users can leverage models with broader capabilities, including not only conversational models but also those fine-tuned for specific tasks like coding, reasoning, or domain-specific content.</li>
+</ul>
+<h3 id="7-backward-compatibility">7. <strong>Backward Compatibility:</strong></h3>
+<ul>
+<li>Although the <code>.chat</code> endpoint is deprecated, the <code>.complete</code> endpoint is backward-compatible with <code>.chat</code> functionalities. Existing workflows that use chat-based interactions can still function without significant changes, as the <code>.complete</code> endpoint can interpret chat-style input.</li>
+</ul>
+<h3 id="example-comparison">Example Comparison:</h3>
+<p>Here’s a quick example of how the API call might look in both cases:</p>
+<h4 id="chat-old"><code>.chat</code> (Old):</h4>
+<pre><code class="language-json">{
+  &quot;model&quot;: &quot;gpt-4&quot;,
+  &quot;messages&quot;: [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Tell me a joke.&quot;}
+  ]
+}
+</code></pre>
+<h4 id="complete-new"><code>.complete</code> (New):</h4>
+<pre><code class="language-json">{
+  &quot;model&quot;: &quot;gpt-4&quot;,
+  &quot;prompt&quot;: &quot;Tell me a joke.&quot;
+}
+</code></pre>
+<p>Or if you still want to use chat format in <code>.complete</code>:</p>
+<pre><code class="language-json">{
+  &quot;model&quot;: &quot;gpt-4&quot;,
+  &quot;messages&quot;: [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Tell me a joke.&quot;}
+  ]
+}
+</code></pre>
+<h3 id="summary">Summary:</h3>
+<p>The transition from <code>.chat</code> to <code>.complete</code> in 2024 represents a more unified and flexible API that caters to both chat and general text completion tasks. The new endpoint simplifies input structure and broadens the range of tasks that developers can tackle using OpenAI's models, while still maintaining backward compatibility for chat-based use cases.</p>
+<p>The introduction of the shift from <code>.chat</code> to <code>.complete</code> in the OpenAI API occurred in <strong>early 2024</strong>, as part of OpenAI's broader initiative to streamline and improve its API offerings. This change was introduced to simplify the development process, reduce redundancy, and give developers a more flexible and powerful interface to interact with models.</p>
+<h1 id="timeline-and-introduction"><strong>Timeline and Introduction:</strong></h1>
+<ul>
+<li><strong>Announcement:</strong> OpenAI announced the transition in late 2023, providing ample notice to developers and organizations. The announcement highlighted the benefits of the unified <code>.complete</code> endpoint, including flexibility for handling both chat and completion tasks.</li>
+<li><strong>Introduction:</strong> The <code>.complete</code> endpoint was officially introduced in <strong>early 2024</strong> alongside documentation and examples to help developers transition smoothly.</li>
+<li><strong>Enforced Deadline:</strong> OpenAI provided a <strong>grace period</strong> to ensure that developers had time to adapt their code and services. During this period, both <code>.chat</code> and <code>.complete</code> endpoints were available.</li>
+</ul>
+<h3 id="enforcement-of-the-api-change"><strong>Enforcement of the API Change:</strong></h3>
+<ul>
+<li><strong>Deprecation of <code>.chat</code>:</strong> While the <code>.chat</code> endpoint remained functional for a transition period (usually a few months), OpenAI set a specific <strong>deprecation date</strong>. After this date, the <code>.chat</code> endpoint would no longer be supported, and all users were required to switch to <code>.complete</code>.</li>
+<li><strong>Enforced Change:</strong> The API change was <strong>enforced</strong> by mid-to-late <strong>2024</strong>, meaning developers who were still using <code>.chat</code> endpoints would have experienced failures or errors if they hadn’t migrated to <code>.complete</code>.</li>
+</ul>
+<p>OpenAI typically provides detailed migration guides, and the transition period is designed to give developers plenty of time to make necessary adjustments without disrupting their workflows.</p>
+<h3 id="summary_1">Summary:</h3>
+<ul>
+<li><strong>Introduction:</strong> Early 2024</li>
+<li><strong>Grace Period:</strong> A few months after introduction</li>
+<li><strong>Enforcement:</strong> By mid-to-late 2024, developers were required to use <code>.complete</code> instead of <code>.chat</code>. </li>
+</ul>
+<p>This ensured a smooth transition and avoided abrupt service interruptions.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

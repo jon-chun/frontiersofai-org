@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 3: ChatBots – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 3: ChatBots</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-3-chatbots">Week 3: ChatBots</h1>
+<p>As AI models like GPT have become more powerful, they've also become more accessible through APIs. This week, we'll explore the basics of using Python to interact with the OpenAI API, enabling us to harness the power of large language models in our own applications.</p>
+<h2 id="key-questions-to-consider">Key Questions to Consider:</h2>
+<ol>
+<li>How does API access to AI models democratize AI development?</li>
+<li>What are the ethical considerations when using AI models through APIs?</li>
+<li>How can we ensure responsible use of AI APIs in application development?</li>
+<li>What are the limitations of current AI APIs, and how might they evolve in the future?</li>
+<li>How does prompt engineering affect the output of AI models accessed through APIs?</li>
+<li>What are the potential risks of relying too heavily on AI-generated content in applications?</li>
+<li>How might the widespread use of AI APIs impact job markets and skill requirements in tech?</li>
+<li>What role does data privacy play when using AI APIs, and how can we protect user information?</li>
+<li>How can we balance the benefits of AI APIs with the need for transparency and explainability?</li>
+<li>What are the long-term implications of integrating AI APIs into critical systems and decision-making processes?</li>
+</ol>
+<h2 id="reading-assignments">Reading Assignments:</h2>
+<h3 id="required-cloud-sign-ups-and-laptop-setups">Required Cloud Sign-Ups and Laptop Setups</h3>
+<p>Follow-the instructions as best you can to setup remote AI cloud services and configure your local laptop. DO NOT generate an API key yet - we'll do this in class with safeguards to prevent excess billings. Bring any questions/problems to class and we'll fix it during our break.</p>
+<p><a href="../modules/signups_setups.html">Setup Instructions</a></p>
+<h3 id="ai-newscurrent-events">AI News/Current Events</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=7c3t5jAg0v4">GPT-5 SOON, AI-to-AI Payments Using Crypto, xAI GPU Cluster is Live, 1,000 Agent Simulation (23:52) Aug 5, 2024</a></li>
+</ul>
+<h3 id="embeddings">Embeddings</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NiQ_9xwS4v8">Complete OpenAI's API ChatGPT Tutorial - [Become A Prompt Engineer in 15 Minutes] (14:21) Mar 2024</a></li>
+<li><a href="https://www.youtube.com/watch?v=iwYtzPJELkk&amp;t=10s">Getting Started with the OpenAI Playground (7:03) May 2024</a> </li>
+<li><a href="https://www.promptingguide.ai/applications/finetuning-gpt4o">Prompt Engineering Guide Manual: Read "Introduction" and "Techniques"</a></li>
+</ul>
+<h3 id="api">API</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=w55C8cLWz74">Python Chatbot Tutorial | Using OpenAI API to Create a Smart Chatbot (5:36) Jul 2024</a>  and <a href="https://github.com/debeshm/Python-ChatGPT/blob/main/chatbot.py">Github repo</a></li>
+</ul>
+<h3 id="focus-on-these-concepts">Focus on These Concepts:</h3>
+<ul>
+<li>Understanding API basics and RESTful architecture (covered in class)</li>
+<li>OpenAI API authentication and rate limits (rate limits in class)</li>
+<li>Basic prompt engineering techniques</li>
+<li>Ethical considerations in AI API usage</li>
+<li>Handling API responses and error handling (in class)</li>
+<li>Best practices for integrating AI APIs into applications</li>
+<li>The role of AI APIs in modern software development (in class)</li>
+<li>Advanced prompt engineering techniques</li>
+<li>prompt engineering and API integrationq</li>
+<li>Group activity: Designing prompts for specific use cases</li>
+<li>Understanding the broader impact of AI APIs on the tech industry</li>
+<li>Future developments in AI API technology and accessibility</li>
+</ul>
+<h1 id="warning">WARNING:</h1>
+<p>BE VERY CAREFUL WITH PAID API SERVICE like OpenAI - costs can run up quickly with excessive use and coding errors. Set-up safe maximum usage limits $5-10 that you can bump up over the course of the semester.</p>
+<p>Remember to review the API usage guidelines and rate limits to ensure responsible use of the OpenAI API. If you have any questions or encounter issues, please ask in class or contact the instructor via email.</p>
+<h1 id="in-class">In Class:</h1>
+<h2 id="motivation">Motivation</h2>
+<pre><code>* [Xiaomi EV Factory](https://www.youtube.com/watch?v=yezR-mH12xs)
+* [STORM: FREE AI TOOL by STANFORD can convert TOPICS to LONG ARTICLES (Perplexity Pages Alternative)](https://www.youtube.com/watch?v=rg4Xcul2Kh0&amp;t=190s)
+* [The State of Generative AI in the Enterprise Moving from potential to performance](https://www2.deloitte.com/us/en/pages/consulting/articles/state-of-generative-ai-in-enterprise.html)
+</code></pre>
+<h2 id="bookeeeping">Bookeeeping</h2>
+<pre><code>* Sign-ups:
+    * OpenAI
+    * Google Colab
+    * Daily.dev
+* Quizes and Grading
+* Moodle and Course Management
+* Miniproject #1 Project Demo
+</code></pre>
+<h2 id="concepts">Concepts</h2>
+<pre><code>* Background Concepts:
+  * Virtual Environments vs Virtual Machines vs the Cloud
+  * Google Colab Jupyter notebooks
+  * ChatGPT vs OpenAI API
+  * Delimiters: ###, """,```,---,&lt;tag&gt;&lt;/tag&gt;, etc.
+  * Formats: JSON, JSONL, XML/HTML, CSV, etc.
+  * API and RESTful Services: Authentication
+  * Python f-strings, \quote, \EOL continuation, etc.
+  * Prompt Injections, Jailbreaking, Security
+  * Structured Output
+  * Synchophancy: Provide Null/SC
+  * OpenAI "response" object: methods and attributes
+* OpenAI
+  * [OpenAI Developer Platform, API and Models](https://platform.openai.com/docs/models)
+  * [OpenAI Forum Help](https://community.openai.com/c/prompting/8)
+  * [OpenAI Playground]()
+
+
+* Prompt Engineering
+  * Problems with LLMs:
+    * Hallucination
+    * Factual inaccuracies
+    * Sycophancy/excessive agreeableness
+    * Bias and unfairness
+    * Lack of causal reasoning
+    * Inconsistency across responses
+    * Struggle with complex logical reasoning
+    * Limited context window
+    * Overconfidence in incorrect answers
+    * Difficulty with mathematical calculations
+  * Prompt techniques that can aggrevate these issues:
+    * Vague or ambiguous prompts
+    * Prompts that encourage speculation
+    * Leading questions that introduce bias
+    * Requests for definitive answers on uncertain topics
+    * Prompts that anthropomorphize the AI
+    * Encouraging the model to go beyond its training
+    * Asking for responses in areas where the model lacks expertise
+  * Prompt techniques that can mitigate these issues:
+    * Specific, clear prompts
+    * Requesting sources or reasoning
+    * Asking the model to consider multiple perspectives
+    * Prompting for uncertainty when appropriate
+    * Breaking complex tasks into smaller steps
+    * Requesting the model to "think step-by-step"
+    * Fact-checking important claims
+    * Using few-shot prompting with accurate examples
+    * Explicitly asking the model to avoid speculation
+    * Reminding the model of its limitations
+</code></pre>
+<h2 id="hands-on">Hands-On</h2>
+<pre><code>* AI Analyst
+  * [Gardner AI Hype Cycle 2024](https://www.gartner.com/doc/reprints?id=1-2HV4V5W2&amp;ct=240617&amp;st=sb)
+  * [Process Trends](https://www.researchgate.net/publication/270218416_Business_Process_Trends/figures?lo=1)
+  * [Years to AGI](https://www.reddit.com/r/OpenAI/comments/191qk1d/ark_invest_predicts_agi_will_be_achieved_until/)
+* Transformer Architecture
+    * [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+
+* Prompt Engineering
+    * [OpenAI Playground](https://platform.openai.com/playground/chat)
+    * [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+    * [Claude System Prompt](https://docs.anthropic.com/en/release-notes/system-prompts#july-12th-2024)
+    * [Google Gemini](https://ai.google.dev/gemini-api/prompts)
+    * [Google Prompts](https://aistudio.google.com/app/prompts/new_chat)
+    * [Google GEMs](https://gemini.google.com/u/0/gems/view)
+* Laptop Setup
+    * Python
+    * Github
+    * VSCode
+    * VSCode Extensions (AI code assistants)
+* Colab
+    * Setup and Test with [Ollama with Llama 3.1](https://colab.research.google.com/drive/1WCsHuRedSztAFDa-3bRpnPuSX9KiLdto?usp=sharing)
+* Prompt Engineering
+    * [DAIR.ai Prompt Engineering Guide](https://www.promptingguide.ai/)
+    * [Jailbreaks](https://jailbreaks.org/)
+</code></pre>
+<h2 id="in-class-programming-task">In-Class Programming Task:</h2>
+<p>Create a Python script that uses the OpenAI API to generate a short story based on user input. The script should:</p>
+<ol>
+<li>Prompt the user for a genre, setting, and main character</li>
+<li>Use these inputs to craft an appropriate prompt for the OpenAI API</li>
+<li>Make an API call to generate a short story</li>
+<li>Display the generated story to the user</li>
+<li>Implement error handling for API failures or rate limit issues</li>
+</ol>
+<p>Submit your code and a brief report discussing your experience, challenges faced, and potential ethical considerations of your application.</p>
+<h1 id="api_1">API</h1>
+<h1 id="cloud">Cloud</h1>
+<ul>
+<li><a href="">Model Hardware Requirements</a></li>
+</ul>
+<h1 id="tokenization-and-costs">Tokenization and Costs</h1>
+<ul>
+<li><a href="">Tiktoken</a></li>
+<li><a href="https://unstract.com/tools/llm-token-counter/">Unstract LLM Token Counter</a></li>
+<li><a href="">Cost Estimator</a></li>
+<li><a href="">OpenAI Images</a></li>
+</ul>
+<h1 id="structured-output">Structured Output</h1>
+<ul>
+<li><a href="https://openai.com/index/introducing-structured-outputs-in-the-api/">OpenAI Structured Output</a></li>
+<li><a href="https://python.useinstructor.com/">Instructor</a></li>
+<li><a href="https://github.com/instructor-ai/instructor">Instructor Github</a></li>
+<li><a href="https://github.com/outlines-dev/outlines">Outlines-dev</a></li>
+</ul>
+<h1 id="functions">Functions</h1>
+<h1 id="in-class_1">In-Class</h1>
+<h1 id="concepts_1">Concepts</h1>
+<h2 id="llm-overview">LLM Overview</h2>
+<pre><code>* LLM Life cycle: Pre-Training, SFT, Alignment (RLHF, DPO, etc.)
+* Training Datasets
+* Metrics and Benchmarks
+</code></pre>
+<h2 id="llm-models">LLM - Models</h2>
+<pre><code>* ChatGPT vs GPT4-o API
+* Model Selection
+* Tokenizations and Pricing
+* Performance
+</code></pre>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

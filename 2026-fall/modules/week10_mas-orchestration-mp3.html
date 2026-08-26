@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 10: MAS, Orchestration, and Technical Writing of IT Project Proposal – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 10: MAS, Orchestration, and Technical Writing of IT Project Proposal</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-10-mas-orchestration-and-technical-writing-of-it-project-proposal">Week 10: MAS, Orchestration, and Technical Writing of IT Project Proposal</h1>
+<p>This week we'll read more indepth on LangChain, LangGraph and LangSmith. We'll also explore various ways to create multi-agent systems (MAS) and orchestrate multiple agents for coding in particular or any task in general. We'll weight the pros/cons of custom MAS vs full-featured off-the-shelf MAS like those from LangChain, CrewAI, and other leading frameworks. Finally, we'll sketch out the Mini-Project #3 in writing a formal IT Project Proposal.</p>
+<h2 id="arxivorg-research-paper-5-min-presentation">===[ ArXiv.org Research Paper 5 min Presentation ]===</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11/5</td>
+<td>Kirill</td>
+</tr>
+<tr>
+<td>11/12</td>
+<td>Wisdom, Godwin</td>
+</tr>
+<tr>
+<td>11/19</td>
+<td>Ann-Duncan, Adrian</td>
+</tr>
+<tr>
+<td>12/3</td>
+<td>Murathan, Eli</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quiz-week-8">Quiz: Week 8</h2>
+<h2 id="presentation-kirill">Presentation: Kirill</h2>
+<h2 id="mini-project-3-rag-in-a-real-world-implementation">Mini-Project #3: RAG in A Real-World Implementation</h2>
+<p>FIRST WATCH: 
+* <a href="https://www.youtube.com/watch?v=oageL-1I0GE">LightRAG: A More Efficient Solution than GraphRAG for RAG Systems? (19:48) (2024)</a></p>
+<p>ASSIGNMENT for next class Nov 5th: 
+* Come to class with a pitch for your RAG MP#3 topic including domain, dataset, focus (tech &amp; user) deliverables, paper outline, architecture, and misc details (scalability, robustness, edge cases, security, etc). </p>
+<p>TIP: There are a LOT OF READINGS that you should selectively and deftly use AI to analyze, summarize and do personalized interactive Q&amp;A to QUICKLY grok the big picture at your own comfort level. After an initial quick high-level review, look ahead at that  a level where you can discuss in class. </p>
+<ul>
+<li>
+<p>Review RAG and GraphRAG Readings from Previous Weeks and/or especially:</p>
+</li>
+<li>
+<p>(RAG SURVEY) <a href="https://www.firecrawl.dev/blog/best-open-source-rag-frameworks#decision-table-for-choosing-the-right-rag-framework">15 Best Open-Source RAG Frameworks in 2025 by Bex Tuychiev (8 Apr 2025)</a></p>
+</li>
+<li>(WHY GRAPHS)<a href="https://www.microsoft.com/en-us/research/blog/graphrag-new-tool-for-complex-data-discovery-now-on-github/">GraphRAG: New tool for complex data discovery now on GitHub by Edge et al. (2 Jul 2025)</a></li>
+<li>(GRAPH RAG) <a href="https://github.com/HKUDS/LightRAG">LightRAG</a><ul>
+<li><a href="https://www.kaggle.com/code/ksmooi/lightrag-implementation-with-huggingface-models">(Kaggle) LightRAG Implementation With HuggingFace Models (9mos)</a></li>
+</ul>
+</li>
+<li>(GRAPH RAG SURVEY) <a href="https://dev.to/yigit-konur/the-ai-native-graphdb-graphrag-graph-memory-landscape-market-catalog-2198">The AI-Native GraphDB + GraphRAG + Graph Memory Landscape &amp; Market Catalog by Konur (26 Oct 2025)</a></li>
+<li>(GRAPH RAG RESOURCES) <a href="https://github.com/DEEP-PolyU/Awesome-GraphRAG">Awesome-GraphRAG (GraphRAG Survey) (1.7k) (27 Oct 2025)</a></li>
+<li>
+<p>(BENCHMARK) <a href="https://github.com/GraphRAG-Bench/GraphRAG-Benchmark">GraphRAG (LightRAG) Benchmark (29 Oct 2025)</a></p>
+<ul>
+<li><a href="https://arxiv.org/abs/2506.05690">(ArXiv) When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation by Xiang et al. (7 Oct 2025)</a></li>
+</ul>
+</li>
+<li>
+<p>Review this custom tech report skeleton and overview document I designed to complete and submit as your final workpiece for this Mini-Project #2 on a real-world RAG analysis, implementation and documentation.</p>
+</li>
+<li><a href="../code/tech-reports/overview_and_rubric.html">Overview and Rubric</a></li>
+<li><a href="../code/tech-reports/student_report_skeleton.html">CAPB Report Outline</a> &lt;-- COMPLETE and SUBMIT for MP#3</li>
+</ul>
+<h1 id="mp3-workflow">MP#3 Workflow</h1>
+<ul>
+<li>Review/Read these RAG/GraphRAG related resources and what we covered in class </li>
+<li>Pick a corpus that you are familiar with and justifies creating a RAG system </li>
+<li>Identify specific use case/deployments as explained in class</li>
+<li>
+<p>Complete the "CAPB Report" for your dataset/use-cases per the outline given above</p>
+</li>
+<li>
+<p>[OPTIONAL] Peruse/Search these Awesome resources for specific ideas, implemention, testing, security, etc. best practices:
+  TIP: Again, use our RAG-related class readings, discussions, and demos to leverage AI in an informed and efficient way:</p>
+</li>
+<li><a href="https://github.com/Danielskry/Awesome-RAG">Awesome Retrieval Augmented Generation (RAG) (777) (5 days)</a></li>
+<li><a href="https://github.com/noworneverev/Awesome-RAG">Awesome RAG Outline (30) (10 months)</a></li>
+<li><a href="https://github.com/frutik/Awesome-RAG">Awesome RAG (356) (1 Month)</a></li>
+<li><a href="https://github.com/DEEP-PolyU/Awesome-GraphRAG">Awesome GraphRAG (1.7k) (3 days)</a></li>
+<li><a href="https://github.com/YHPeter/Awesome-RAG-Evaluation">Awesome RAG Evaluation (179) (6 months)</a></li>
+<li><a href="https://github.com/DavidZWZ/Awesome-RAG-Reasoning">Awesome-RAG-Reasoning (337) (3 months)</a></li>
+<li><a href="https://github.com/Arstanley/Awesome-Trustworthy-RAG">Awesome Trustworthy RAG (85) (3 months)</a></li>
+<li><a href="https://github.com/jxzhangjhu/Awesome-LLM-RAG">Awesome RAG Paper (1.3k) (8 months)</a></li>
+<li><a href="https://github.com/coree/awesome-rag">Awesome RAG Papers (324) (8 months)</a></li>
+<li>[OPTIONAL] If you have time/interest:</li>
+<li>Search the literature at perplexity.ai, semanticscholar.com, or scholar.google.com for new variations/improvements on the traditional RAG architecture to go deeper or look up some of the RAG research papers listed in the above Awesome list.</li>
+<li>Search github.com for repos, library repositories, and other sources of FOSS software implementations. </li>
+<li>Use AI to research various RAG architectures, refinements, and implementation details (e.g. similarity algorithms, segmentation strategies, vector DB, benchmarking, monitoring, etc).</li>
+</ul>
+<h2 id="new-reading-assignments">===[ New Reading Assignments ]===</h2>
+<h3 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gPYjWmJz_bA">AI Is 96% Cheaper. You Can't Compete. (26:32) (28 Oct 2025)</a></li>
+<li><a href="https://www.arxiv.org/abs/2510.22780">(ArXiv) How Do AI Agents Do Human Work? Comparing AI and Human Workflows Across Diverse Occupations by Wang et al. (26 Oct 2025)</a></li>
+</ul>
+<h3 id="ai-newscurrent-events"><strong>[AI News/Current Events]</strong></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=cDzEP0yB-Kw">Federal Judges Caught Using ChatGPT (22:38) (28 Oct 2025)</a></li>
+</ul>
+<h3 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h3>
+<h4 id="langsmith">LangSmith</h4>
+<ul>
+<li><a href="https://docs.langchain.com/langsmith/create-account-api-key?_gl=1*sqj3dn*_gcl_au*MTM3MDk3NzI2Ni4xNzU4MjkwMDMz*_ga*NjMyNzg3MTY0LjE3NjE1NzMxODc.*_ga_47WX3HKKY2*czE3NjE1NzMxODckbzEkZzEkdDE3NjE1NzYwNDAkajYwJGwwJGgw">LangSmith: Create an API Key</a></li>
+</ul>
+<h4 id="langchain-10">LangChain 1.0</h4>
+<ul>
+<li><a href="https://blog.langchain.com/building-langgraph/">Building LangGraph: Designing an Agent Runtime from first principles (4 Sep 2025)</a></li>
+<li><a href="https://blog.langchain.com/how-to-turn-claude-code-into-a-domain-specific-coding-agent/">How to turn Claude Code into a domain specific coding agent (11 Sep 2025)</a></li>
+<li><a href="https://blog.langchain.com/langchain-langgraph-1dot0/">LangChain and LangGraph Agent Frameworks Reach v1.0 Milestones (22 Oct 2025)</a></li>
+<li><a href="https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/">Agent Frameworks, Runtimes, and Harnesses- oh my! (25 Oct 2025)</a></li>
+<li><a href="https://docs.langchain.com/oss/python/releases/langchain-v1">(Updated Ver 1.0) LangChain Docs</a></li>
+</ul>
+<h4 id="mas-orchestration">MAS Orchestration</h4>
+<ul>
+<li><a href="https://github.com/humanlayer/humanlayer?ref=dailydev">(Github) Human Layer</a></li>
+<li>CodeLayer is an open source IDE that lets you orchestrate AI coding agents.</li>
+<li>It comes with battle-tested workflows that enable AI to solve hard problems in large, complex codebases.</li>
+<li>Built on Claude Code. Open source. Scale from your laptop to your entire team</li>
+</ul>
+<h2 id="coding">===[ Coding ]===</h2>
+<h3 id="langchain-langgraph">LangChain &amp; LangGraph</h3>
+<ul>
+<li>
+<p><a href="https://academy.langchain.com/courses/langchain-essentials-python">LangChain Academy: Quickstart: LangChain Essentials - Python</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=nyKvyRrpbyY">How to apply context engineering (23:19) (Aug 2025)</a></p>
+</li>
+<li><a href="https://docs.google.com/presentation/d/16aaXLu40GugY-kOpqDU4e-S0hD1FmHcNyF0rRRnb1OU/edit?slide=id.p#slide=id.p">(Slides) How to Fix your Context</a></li>
+<li><a href="https://docs.langchain.com/langsmith/home">LangSmith Docs</a></li>
+<li>(REVIEW IN-CLASS) <a href="https://github.com/langchain-ai/deep-agents-from-scratch">Deep Agents from Scratch (Colab)</a></li>
+<li><a href="https://github.com/langchain-ai/how_to_fix_your_context">How to Fix Your Context</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

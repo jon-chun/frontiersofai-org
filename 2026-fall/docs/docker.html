@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>DOCS: Docker – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>DOCS: Docker</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="docs-docker">DOCS: Docker</h1>
+<h2 id="docker-yaml">Docker YAML</h2>
+<ul>
+<li><a href="https://github.com/technovangelist/videoprojects/blob/main/2024-10-25-n8ninstall/docker-compose.yml"></a></li>
+</ul>
+<h2 id="docker-desktop-vs-docker-ce">Docker Desktop vs Docker CE</h2>
+<p>Grok (23 Mar 2025) https://grok.com/share/bGVnYWN5_d5fc5c1d-3305-4961-a3dd-097612fe445c</p>
+<p>Below are the revised step-by-step instructions for setting up an n8n Docker container with the MCP Client node on Ubuntu 22.04 using Docker CE. The original instructions were written for Docker Desktop, but since Docker Desktop was buggy on Ubuntu 22.04 and ignored GPUs, these instructions have been adapted for Docker CE, which is better suited for this environment. The setup focuses on running the n8n container, configuring the MCP Client node, and ensuring compatibility with Docker CE.</p>
+<hr />
+<h3 id="revised-setup-instructions-for-n8n-with-docker-ce-on-ubuntu-2204">Revised Setup Instructions for n8n with Docker CE on Ubuntu 22.04</h3>
+<h4 id="prerequisites">Prerequisites</h4>
+<p>Before starting, ensure that Docker CE and <code>docker-compose</code> are installed on your Ubuntu 22.04 system. Your <code>docker info</code> output confirms that Docker Engine - Community (version 28.0.2) and the <code>compose</code> plugin (version 2.34.0) are already installed, so you’re ready to proceed. Additionally, your system has NVIDIA GPUs (RTX 3090s) with the NVIDIA driver and CUDA installed, but since n8n and the MCP Client node don’t require GPU support, no GPU-specific configuration is needed here.</p>
+<hr />
+<h3 id="step-by-step-instructions">Step-by-Step Instructions</h3>
+<h4 id="1-create-a-docker-composeyml-file">1. Create a <code>docker-compose.yml</code> File</h4>
+<p>To run the n8n container with Docker CE, use <code>docker-compose</code> to define the service. Create a file named <code>docker-compose.yml</code> in your working directory with the following content:</p>
+<pre><code class="language-yaml">version: '3'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    environment:
+      - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+      # Optional: Add MCP_ prefixed environment variables for MCP servers if desired
+      # - MCP_BRAVE_API_KEY=your-brave-api-key
+      # - MCP_OPENAI_API_KEY=your-openai-key
+      # - MCP_SERPER_API_KEY=your-serper-key
+      # - MCP_WEATHER_API_KEY=your-weather-api-key
+    ports:
+      - &quot;5678:5678&quot;
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+</code></pre>
+<p><strong>Explanation:</strong>
+- <strong>Image</strong>: Uses the official <code>n8nio/n8n</code> image.
+- <strong>Environment Variables</strong>: 
+  - <code>N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true</code> is mandatory to enable the MCP Client node as a tool in AI Agents.
+  - Optionally, add <code>MCP_</code> prefixed variables (e.g., <code>MCP_BRAVE_API_KEY</code>) to pass environment variables to MCP servers globally. Alternatively, you can set these in the n8n credentials UI for better security (see Step 5).
+- <strong>Ports</strong>: Maps port 5678 on the host to 5678 in the container, allowing access to n8n’s web interface.
+- <strong>Volumes</strong>: Mounts <code>~/.n8n</code> from your home directory to persist n8n configuration and workflows.</p>
+<p>Unlike Docker Desktop, which has a GUI for configuration, Docker CE relies on this file and CLI commands.</p>
+<h4 id="2-start-the-n8n-container">2. Start the n8n Container</h4>
+<p>Navigate to the directory containing your <code>docker-compose.yml</code> file and run:</p>
+<pre><code class="language-bash">docker-compose up -d
+</code></pre>
+<ul>
+<li>The <code>-d</code> flag runs the container in detached mode (in the background).</li>
+<li>This command pulls the n8n image (if not already present) and starts the container.</li>
+</ul>
+<p>Verify the container is running:</p>
+<pre><code class="language-bash">docker ps
+</code></pre>
+<p>You should see the n8n container listed with port 5678 mapped.</p>
+<h4 id="3-access-the-n8n-web-interface">3. Access the n8n Web Interface</h4>
+<p>Open your browser and navigate to:</p>
+<pre><code>http://localhost:5678
+</code></pre>
+<p>Follow the on-screen prompts to set up your n8n instance (e.g., creating an admin user). This step is identical to the Docker Desktop setup, as the web interface is container-driven.</p>
+<h4 id="4-install-the-mcp-client-community-node-if-necessary">4. Install the MCP Client Community Node (If Necessary)</h4>
+<p>The MCP Client node is a community node and may not be pre-installed. In the n8n web interface:
+- Go to <strong>Settings &gt; Community Nodes</strong>.
+- Search for <code>@n8n/n8n-nodes-mcp-client</code> (or similar, based on the official name in the n8n community nodes documentation).
+- Install it if it’s not already available.</p>
+<p>Refer to the <a href="https://docs.n8n.io/integrations/community-nodes/">n8n community nodes documentation</a> for detailed instructions if needed.</p>
+<h4 id="5-configure-mcp-client-credentials">5. Configure MCP Client Credentials</h4>
+<p>The MCP Client node supports two connection types: <strong>Command-line Based Transport (STDIO)</strong> and <strong>Server-Sent Events (SSE)</strong>. Below are instructions for both, tailored for Docker CE.</p>
+<h5 id="option-a-command-line-based-transport-stdio">Option A: Command-line Based Transport (STDIO)</h5>
+<p>This is the simpler and recommended approach for most setups, as it runs MCP servers as subprocesses within the n8n container.</p>
+<ol>
+<li>In n8n, add an <strong>MCP Client</strong> node to a workflow.</li>
+<li>Configure credentials:
+   - <strong>Credential Type</strong>: Select “MCP Client (STDIO) API”.
+   - <strong>Command</strong>: <code>npx</code>
+   - <strong>Arguments</strong>: <code>-y @modelcontextprotocol/server-brave-search</code> (example for Brave Search; adjust for other servers like <code>@modelcontextprotocol/server-openai</code>).
+   - <strong>Environment Variables</strong>: Add required variables, e.g., <code>BRAVE_API_KEY=your-api-key</code>. Separate multiple variables with newlines or commas.</li>
+<li>Save the credentials.</li>
+</ol>
+<p><strong>Note</strong>: The n8n container includes Node.js and npm, so <code>npx</code> will download and run the specified MCP server package automatically when the node executes.</p>
+<h5 id="option-b-server-sent-events-sse-transport">Option B: Server-Sent Events (SSE) Transport</h5>
+<p>Use this if you’re running an MCP server separately (e.g., on the host or another container). Since Docker CE runs on Linux, <code>localhost</code> inside the container refers to the container itself, not the host, unlike Docker Desktop.</p>
+<ol>
+<li><strong>Start an MCP Server</strong> (example on the host):
+   <code>bash
+   npx @modelcontextprotocol/server-example-sse</code>
+   This runs on port 3001 by default.</li>
+<li><strong>Determine the Host IP</strong>:
+   - Find your host’s IP (e.g., <code>192.168.1.100</code>) using:
+     <code>bash
+     ip addr show</code>
+     Look for the IP under your network interface (e.g., <code>eth0</code> or <code>wlan0</code>).
+   - Alternatively, inspect the Docker bridge network gateway:
+     <code>bash
+     docker network inspect bridge</code>
+     Use the <code>Gateway</code> IP (e.g., <code>172.17.0.1</code>).</li>
+<li><strong>Configure Credentials in n8n</strong>:
+   - Add an MCP Client node and set <strong>Connection Type</strong> to “Server-Sent Events (SSE)”.
+   - <strong>Credential Type</strong>: Select “MCP Client (SSE) API”.
+   - <strong>SSE URL</strong>: Set to <code>http://&lt;host-ip&gt;:3001/sse</code> (e.g., <code>http://192.168.1.100:3001/sse</code> or <code>http://172.17.0.1:3001/sse</code>).
+   - Add headers or additional variables if required by your server.</li>
+<li>Save the credentials.</li>
+</ol>
+<p><strong>Important</strong>: Unlike Docker Desktop, which provides <code>host.docker.internal</code> to access the host, Docker CE on Linux requires the host IP or a custom network setup.</p>
+<h4 id="6-create-workflows-with-the-mcp-client-node">6. Create Workflows with the MCP Client Node</h4>
+<ul>
+<li>Add an MCP Client node to a workflow.</li>
+<li>Select your configured credentials.</li>
+<li>Choose an operation (e.g., “List Tools” to explore available tools, or “Execute Tool” with parameters like <code>{"query": "latest AI news"}</code> for Brave Search).</li>
+<li>Execute the workflow and review the output.</li>
+</ul>
+<p>For an AI Agent workflow:
+- Add an <strong>AI Agent</strong> node.
+- Enable the MCP Client node as a tool (possible because <code>N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true</code> is set).
+- Configure multiple MCP Client nodes with different credentials for multi-server setups.</p>
+<h4 id="7-test-and-refine">7. Test and Refine</h4>
+<p>Run your workflows to ensure the MCP servers execute correctly. If using SSE, verify connectivity to the external server. Adjust environment variables or credentials as needed.</p>
+<hr />
+<h3 id="key-differences-from-docker-desktop">Key Differences from Docker Desktop</h3>
+<ul>
+<li><strong>Installation</strong>: No GUI-based Docker Desktop installation; use Docker CE and <code>docker-compose</code> via CLI.</li>
+<li><strong>Environment Variables</strong>: Set in <code>docker-compose.yml</code> instead of a <code>.env</code> file in the desktop app directory or GUI settings.</li>
+<li><strong>SSE Transport</strong>: Requires host IP or network configuration instead of <code>host.docker.internal</code>.</li>
+<li><strong>GPU Support</strong>: Not needed for n8n or MCP Client, so no NVIDIA runtime configuration is included (unlike GPU-dependent workloads).</li>
+</ul>
+<hr />
+<h3 id="example-multi-server-setup-with-ai-agent">Example: Multi-Server Setup with AI Agent</h3>
+<p>Here’s a complete <code>docker-compose.yml</code> for a multi-server setup:</p>
+<pre><code class="language-yaml">version: '3'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    environment:
+      - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+      - MCP_BRAVE_API_KEY=your-brave-api-key
+      - MCP_OPENAI_API_KEY=your-openai-key
+      - MCP_SERPER_API_KEY=your-serper-key
+      - MCP_WEATHER_API_KEY=your-weather-api-key
+    ports:
+      - &quot;5678:5678&quot;
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+</code></pre>
+<ul>
+<li>Start with <code>docker-compose up -d</code>.</li>
+<li>Configure credentials for each MCP server (e.g., Brave Search, OpenAI) using the STDIO transport.</li>
+<li>Build an AI Agent workflow leveraging multiple tools.</li>
+</ul>
+<hr />
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ul>
+<li><strong>Container Won’t Start</strong>: Check logs with <code>docker-compose logs n8n</code>.</li>
+<li><strong>MCP Server Errors</strong>: Ensure environment variables are set correctly in credentials or <code>docker-compose.yml</code>.</li>
+<li><strong>SSE Connection Issues</strong>: Verify the host IP and port are accessible from the container (e.g., <code>curl http://&lt;host-ip&gt;:3001/sse</code> from inside the container).</li>
+</ul>
+<hr />
+<p>These instructions replace the Docker Desktop-specific steps with Docker CE equivalents, ensuring a smooth setup on Ubuntu 22.04 while maintaining full functionality with the MCP Client node.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

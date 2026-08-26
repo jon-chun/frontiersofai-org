@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Unified AI Dev Setup (macOS + WSL2) — VS Code + Roo Code, Gemini Code, Claude Code, OpenCode (Sept 2025) – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Unified AI Dev Setup (macOS + WSL2) — VS Code + Roo Code, Gemini Code, Claude Code, OpenCode (Sept 2025)</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="unified-ai-dev-setup-macos-wsl2-vs-code-roo-code-gemini-code-claude-code-opencode-sept-2025">Unified AI Dev Setup (macOS + WSL2) — VS Code + Roo Code, Gemini Code, Claude Code, OpenCode (Sept 2025)</h1>
+<blockquote>
+<p>This is a single, cross‑platform guide that merges three setup documents into one pragmatic workflow for <strong>remote API–first AI development</strong> with an <strong>upgrade path</strong> to local models and GPU acceleration. It targets:</p>
+<ul>
+<li><strong>Novices</strong> (simple, safe, remote‑only installs)</li>
+<li><strong>Advanced users</strong> (Docker, GPU, Ollama / LM Studio / vLLM, model routing via LiteLLM)</li>
+</ul>
+<p><strong>Focus</strong>: Visual IDE (<strong>VS Code with Roo Code</strong>) + Terminal assistants (<strong>Gemini Code, Claude Code, OpenCode/Crush</strong>), with <strong>direct APIs</strong> (Gemini, OpenAI, Claude) and <strong>aggregators</strong> (OpenRouter, Requesty). Demos included.</p>
+</blockquote>
+<hr />
+<h2 id="0-target-architecture-remotefirst-localoptional">0) Target Architecture (remote‑first, local‑optional)</h2>
+<p><strong>One interface (OpenAI‑compatible) for everything.</strong></p>
+<ul>
+<li><strong>Editor layer</strong>: VS Code (+ Roo Code) for planning + edits; Terminal assistants (Gemini Code, Claude Code, OpenCode/Crush) for repo‑wide tasks.</li>
+<li><strong>API layer</strong> (choose one):</li>
+<li><strong>Direct vendors</strong>: Gemini, OpenAI, Anthropic (Claude)</li>
+<li><strong>Aggregators</strong>: OpenRouter, Requesty (single key → many models)</li>
+<li><strong>Local router</strong>: LiteLLM Proxy (optional). Gives you one URL with <strong>fallbacks, budgets, logs</strong>; points to direct vendors/aggregators/local servers.</li>
+<li><strong>Local models (optional)</strong>: LM Studio (port <code>1234</code>), Ollama (port <code>11434</code>), vLLM (OpenAI‑compatible server).</li>
+</ul>
+<blockquote>
+<p>Start <strong>remote‑only</strong>. Add <strong>router</strong> later. Add <strong>local models</strong> when you need offline/privacy control.</p>
+</blockquote>
+<hr />
+<h2 id="1-prerequisites-macos-wsl2-ubuntu-2204">1) Prerequisites (macOS &amp; WSL2 Ubuntu 22.04)</h2>
+<h3 id="macos-apple-silicon">macOS (Apple Silicon)</h3>
+<ol>
+<li><strong>Homebrew</strong> → install from brew.sh.</li>
+<li><strong>Node 20+</strong>: <code>brew install fnm &amp;&amp; fnm install --lts &amp;&amp; fnm use --lts</code></li>
+<li><strong>Python tools</strong>: <code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></li>
+<li><strong>direnv</strong>: <code>brew install direnv</code> → add to <code>~/.zshrc</code>: <code>eval "$(direnv hook zsh)"</code></li>
+<li><strong>Docker Desktop</strong> (for containers). <em>(Optional now, required for vLLM containers later)</em></li>
+</ol>
+<h3 id="windows-11-wsl2-ubuntu-2204">Windows 11 (WSL2 + Ubuntu 22.04)</h3>
+<ol>
+<li><strong>WSL 2</strong>: in PowerShell (Admin) → <code>wsl --install</code> → choose <strong>Ubuntu 22.04</strong>.</li>
+<li>In Ubuntu: <code>sudo apt update &amp;&amp; sudo apt install -y direnv git curl</code>.</li>
+<li><strong>uv</strong> (Python): <code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></li>
+<li><strong>fnm</strong> (Node): <code>curl -fsSL https://fnm.vercel.app/install | bash</code> → <code>exec $SHELL</code> → <code>fnm install --lts &amp;&amp; fnm use --lts</code></li>
+<li><strong>Docker Desktop</strong> on Windows → Settings ▸ Resources ▸ <strong>Enable WSL integration</strong> for Ubuntu. <em>(For GPU: install NVIDIA drivers on Windows; verify <code>nvidia-smi</code> inside WSL.)</em></li>
+</ol>
+<blockquote>
+<p>Keep repos under <code>~/code</code> <strong>inside WSL</strong> for speed (avoid <code>/mnt/c</code>).</p>
+</blockquote>
+<hr />
+<h2 id="2-secrets-perproject-environment">2) Secrets &amp; per‑project environment</h2>
+<p>Use <code>direnv</code> for per‑repo secrets and to keep keys <strong>out of git</strong>.</p>
+<pre><code class="language-bash">cd ~/code/my-ai-project
+printf '%s\n' \
+  'export GEMINI_API_KEY=&quot;...&quot;' \
+  'export OPENAI_API_KEY=&quot;...&quot;' \
+  'export ANTHROPIC_API_KEY=&quot;...&quot;' \
+  'export OPENROUTER_API_KEY=&quot;...&quot;' \
+  'export REQUESTY_API_KEY=&quot;...&quot;' \
+  &gt; .envrc
+
+direnv allow
+</code></pre>
+<p>Add <code>.envrc</code> / <code>.env*</code> to <code>.gitignore</code>. Prefer 1Password/Bitwarden CLIs for injecting secrets when possible.</p>
+<hr />
+<h2 id="3-install-the-ide-extensions-visual">3) Install the IDE &amp; extensions (Visual)</h2>
+<h3 id="vs-code-host-os-use-remote-wsl-on-windows">VS Code (host OS; use <strong>Remote – WSL</strong> on Windows)</h3>
+<ul>
+<li><strong>Must‑have extensions</strong>:</li>
+<li><strong>Roo Code</strong> (agentic coding; OpenAI‑compatible providers)</li>
+<li><strong>Remote – WSL</strong> (Windows only)</li>
+<li><strong>GitLens</strong>, <strong>Docker</strong>, <strong>Dev Containers</strong>, <strong>Prettier/Black</strong>, <strong>Markdown All in One</strong></li>
+</ul>
+<h4 id="configure-roo-code-to-use-different-backends">Configure Roo Code to use different backends</h4>
+<p>You can point Roo Code at:
+- <strong>Direct</strong>: OpenAI / Gemini / Anthropic (if the extension supports)
+- <strong>OpenAI‑compatible</strong>: <strong>OpenRouter</strong>, <strong>Requesty</strong>, <strong>LiteLLM</strong>, <strong>LM Studio</strong> (<code>http://localhost:1234/v1</code>), <strong>Ollama</strong> (<code>http://localhost:11434/v1</code>)</p>
+<p>In Roo Code settings:
+- <strong>Provider</strong>: <em>OpenAI‑compatible / Custom</em>
+- <strong>Base URL</strong>: e.g., <code>https://openrouter.ai/api/v1</code> or <code>https://api.requesty.ai/v1</code> or <code>http://localhost:4000/v1</code> (LiteLLM)
+- <strong>API key</strong>: leave blank if the extension reads env vars; otherwise paste a <strong>throwaway workspace key</strong>.</p>
+<blockquote>
+<p>Create <strong>VS Code Profiles</strong> (e.g., <em>Roo@OpenRouter</em>, <em>Roo@LiteLLM</em>, <em>No‑AI</em>) to avoid conflicts.</p>
+</blockquote>
+<hr />
+<h2 id="4-install-terminal-assistants-cli">4) Install terminal assistants (CLI)</h2>
+<blockquote>
+<p>Use <strong>one</strong> terminal assistant at a time per repo to avoid stepping on each other’s edits.</p>
+</blockquote>
+<h3 id="41-gemini-code-gemini-cli">4.1 Gemini Code (Gemini CLI)</h3>
+<ul>
+<li><strong>Install</strong> (macOS/WSL):
+  <code>bash
+  # Node 20+ required
+  npm install -g @google/gemini-cli   # or: brew install gemini-cli (macOS/Linux)</code></li>
+<li><strong>Auth</strong>: either OAuth flow or API key
+  <code>bash
+  # OAuth mode (browser login)
+  gemini
+  # API key mode
+  export GEMINI_API_KEY=... &amp;&amp; gemini</code></li>
+<li><strong>Common uses</strong>:</li>
+<li><code>gemini -m gemini-2.5-flash</code> (pick model)</li>
+<li><code>gemini -p "Explain this repo’s architecture"</code></li>
+<li>Project context: run <code>gemini</code> in repo root, include dirs via <code>--include-directories</code>.</li>
+</ul>
+<h3 id="42-claude-code-cli">4.2 Claude Code (CLI)</h3>
+<ul>
+<li><strong>Install</strong> (requires Node):
+  <code>bash
+  npm i -g @anthropic-ai/claude-code</code></li>
+<li><strong>Auth</strong>:
+  <code>bash
+  export ANTHROPIC_API_KEY=...
+  claude code  # opens interactive assistant in current repo</code></li>
+<li><strong>Handy flags</strong>: <code>--diff</code> to review changes; <code>--apply</code> to write patches after preview.</li>
+</ul>
+<h3 id="43-opencode-status-alternative">4.3 OpenCode (status &amp; alternative)</h3>
+<ul>
+<li><strong>OpenCode</strong> is <strong>archived</strong> upstream and superseded by <strong>Crush</strong> (Charmbracelet). If you still need OpenCode, follow its archived README to install from the last release.</li>
+<li><strong>Recommended</strong>: use <strong>Crush</strong> (active successor) for a similar terminal coding experience.</li>
+<li><strong>Install</strong> (macOS/WSL): see Crush README for Homebrew/Linux install; then:
+    <code>bash
+    crush</code></li>
+<li><strong>Usage</strong>: open in repo root; ask for multi‑file refactors, tests, or docs. Keep <code>git</code> clean to review diffs.</li>
+</ul>
+<blockquote>
+<p>You can run these CLIs <strong>inside VS Code’s Terminal</strong> to pair with Roo Code without fighting the editor.</p>
+</blockquote>
+<hr />
+<h2 id="5-configure-providers-direct-aggregators">5) Configure providers — direct &amp; aggregators</h2>
+<h3 id="direct-vendors">Direct vendors</h3>
+<ul>
+<li><strong>Gemini</strong>: set <code>GEMINI_API_KEY</code> (personal or Vertex).</li>
+<li><strong>OpenAI</strong>: set <code>OPENAI_API_KEY</code>.</li>
+<li><strong>Anthropic (Claude)</strong>: set <code>ANTHROPIC_API_KEY</code>.</li>
+</ul>
+<p><strong>When the tool asks for an “OpenAI‑compatible” endpoint</strong> but you’re using a direct vendor SDK, point the tool at the vendor’s native setting (if supported). Otherwise, route via <strong>LiteLLM</strong> (below) or use an aggregator.</p>
+<h3 id="aggregators">Aggregators</h3>
+<ul>
+<li><strong>OpenRouter</strong></li>
+<li>Base URL: <code>https://openrouter.ai/api/v1</code></li>
+<li>Key: <code>OPENROUTER_API_KEY</code></li>
+<li>Notes: wide model catalog (GLM/Qwen/DeepSeek/etc.), simple model swapping.</li>
+<li><strong>Requesty</strong></li>
+<li>Base URL: <code>https://api.requesty.ai/v1</code></li>
+<li>Key: <code>REQUESTY_API_KEY</code></li>
+<li>Notes: open‑source router + platform; per‑key routing &amp; controls; OpenAI‑compatible.</li>
+</ul>
+<blockquote>
+<p><strong>Best practice</strong>: Start with an aggregator in early prototyping for fast model A/Bs; switch to direct vendor for production if needed for price/SLA.</p>
+</blockquote>
+<hr />
+<h2 id="6-optional-local-router-litellm-to-unify-everything">6) Optional: Local router (LiteLLM) to unify everything</h2>
+<p>Run a local <strong>LiteLLM Proxy</strong> so IDEs/CLIs talk to <strong>one</strong> URL while you route to direct vendors, aggregators, or local servers (LM Studio/Ollama/vLLM). You also get <strong>fallbacks</strong>, <strong>budgets</strong>, and <strong>metrics</strong>.</p>
+<pre><code class="language-bash">uv tool install litellm
+cat &gt; ~/litellm.yaml &lt;&lt;'YAML'
+model_list:
+  - model_name: chat-default
+    litellm_params:
+      model: google/gemini-2.5-pro
+      api_key: ${GEMINI_API_KEY}
+  - model_name: code-fast
+    litellm_params:
+      model: openrouter/deepseek/deepseek-coder
+      api_key: ${OPENROUTER_API_KEY}
+      api_base: https://openrouter.ai/api/v1
+  - model_name: local-llama
+    litellm_params:
+      model: openai/llama-3.1-8b-instruct
+      api_base: http://127.0.0.1:11434/v1
+      api_key: dummy
+router_settings:
+  fallback_strategy:
+    - primary: chat-default
+      fallbacks: [code-fast]
+  budget:
+    per_user_usd_monthly: 10
+YAML
+
+litellm --port 4000 --config ~/litellm.yaml --num_workers 2
+</code></pre>
+<ul>
+<li>Point Roo Code / CLIs at <code>http://localhost:4000/v1</code> with <code>OPENAI_API_KEY=local</code>.</li>
+<li>Swap routes centrally without changing your tools.</li>
+</ul>
+<hr />
+<h2 id="7-optional-local-models">7) Optional: Local models</h2>
+<h3 id="lm-studio-gui-openaicompatible-on-port-1234">LM Studio (GUI; OpenAI‑compatible on port <code>1234</code>)</h3>
+<ol>
+<li>Install the app; download a model.</li>
+<li>Enable <strong>Developer/Local Server</strong>; note the base URL <code>http://localhost:1234/v1</code>.</li>
+<li>In Roo Code/CLIs, set <strong>Base URL</strong> to that address; any string works as a dummy key.</li>
+</ol>
+<h3 id="ollama-daemon-openaicompatible-on-11434">Ollama (daemon; OpenAI‑compatible on <code>11434</code>)</h3>
+<pre><code class="language-bash"># macOS: brew install ollama ; Windows: winget install Ollama.Ollama
+ollama serve
+ollama pull llama3.1:8b
+# Use via OpenAI‑compatible endpoint: http://localhost:11434/v1
+</code></pre>
+<h3 id="vllm-openaicompatible-server-best-on-linuxnvidia">vLLM (OpenAI‑compatible server; best on Linux+NVIDIA)</h3>
+<ul>
+<li><strong>WSL2 GPU</strong>: install NVIDIA drivers on Windows; verify <code>nvidia-smi</code> in WSL; run with Docker:
+  <code>bash
+  docker run --gpus all -p 8000:8000 vllm/vllm-openai:latest \
+    --model meta-llama/Llama-3.1-8B-Instruct
+  # Base URL: http://localhost:8000/v1</code></li>
+<li>macOS: CPU‑only; prefer LM Studio/Ollama for Metal acceleration.</li>
+</ul>
+<blockquote>
+<p>You can also route LM Studio/Ollama/vLLM through <strong>LiteLLM</strong> for unified budgets, logs, and fallbacks.</p>
+</blockquote>
+<hr />
+<h2 id="8-demos-requested-flows">8) Demos (requested flows)</h2>
+<h3 id="demo-a-opencode-at-the-cli-with-stable-fallback">Demo A — <strong>OpenCode at the CLI</strong> (with stable fallback)</h3>
+<blockquote>
+<p>Because <strong>OpenCode is archived</strong>, we show the <strong>Crush</strong> successor flow; adapt to OpenCode if you must (commands may differ per archived README).</p>
+</blockquote>
+<pre><code class="language-bash"># In your repo root
+crush
+# Examples:
+# 1) Generate tests for a module
+#   &quot;Write unit tests for src/utils/date.ts with vitest; follow existing patterns.&quot;
+# 2) Multi-file refactor with preview
+#   &quot;Refactor config loading into /src/config/, add zod schema, keep API back-compat.&quot;
+# 3) Docs
+#   &quot;Create a CONTRIBUTING.md with setup, run, test, and release steps.&quot;
+# Review git diffs; commit selectively.
+</code></pre>
+<h3 id="demo-b-vs-code-with-roo-code-openaicompatible-backend">Demo B — <strong>VS Code with Roo Code</strong> (OpenAI‑compatible backend)</h3>
+<ol>
+<li>Install Roo Code; open project.</li>
+<li>Settings ▸ Provider: <strong>OpenAI‑compatible</strong>; Base URL = <strong>OpenRouter</strong> <code>https://openrouter.ai/api/v1</code> (or your <strong>LiteLLM</strong> <code>http://localhost:4000/v1</code>).</li>
+<li>Set key in env (<code>OPENROUTER_API_KEY=...</code>) so Roo reads it.</li>
+<li>Use Roo’s <em>Plan → Edit → Review</em> workflow for repo‑wide changes.</li>
+<li>For long tasks, run one agent (Roo) + one terminal assistant (e.g., Gemini Code) to avoid conflicts.</li>
+</ol>
+<h3 id="demo-c-gemini-code-as-a-complement-inside-vs-code">Demo C — <strong>Gemini Code as a complement inside VS Code</strong></h3>
+<p>Open <strong>VS Code Terminal</strong> in project root:</p>
+<pre><code class="language-bash"># Start Gemini Code with OAuth (browser pops up)
+GEMINI_API_KEY= gemini  # or just `gemini` and choose OAuth
+# Analyze repo, then ask for a patch plan
+#   &quot;Summarize architecture and propose a safe migration from requests to httpx.&quot;
+# Apply edits stepwise; review diffs in VS Code Source Control.
+</code></pre>
+<blockquote>
+<p>Tip: Keep Gemini Code for planning/explanations and Roo Code for surgical file edits, or vice‑versa. Avoid two agents editing the same files concurrently.</p>
+</blockquote>
+<hr />
+<h2 id="9-direct-vs-aggregator-practical-tradeoffs">9) Direct vs Aggregator — Practical Tradeoffs</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th><strong>Direct (Gemini / OpenAI / Claude)</strong></th>
+<th><strong>Aggregator (OpenRouter / Requesty)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup</td>
+<td>Multiple keys, vendor‑specific settings</td>
+<td>One key / endpoint for many models</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Often best at scale with committed spend</td>
+<td>Small markup common; cheap alt models available</td>
+</tr>
+<tr>
+<td>Features</td>
+<td>Latest vendor features fastest</td>
+<td>Feature parity varies by provider</td>
+</tr>
+<tr>
+<td>Latency/SLA</td>
+<td>Fewer hops, clearer support</td>
+<td>Extra hop; routing/quotas can vary</td>
+</tr>
+<tr>
+<td>Portability</td>
+<td>Medium (SDK ties)</td>
+<td>High (swap models with config)</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td>Vendor dashboards</td>
+<td>Centralized budgets/rate‑limits (or use <strong>LiteLLM</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation</strong>: Prototype with an <strong>aggregator</strong>; for production, either keep aggregator with <strong>LiteLLM</strong> controls, or switch critical paths to <strong>direct</strong> vendors for stability/SLA.</p>
+<hr />
+<h2 id="10-security-isolation">10) Security &amp; isolation</h2>
+<ul>
+<li><strong>Workspace Trust</strong>: Keep unknown repos in <strong>Restricted Mode</strong> until you review.</li>
+<li><strong>Secrets</strong>: <code>.envrc</code> + password‑manager CLI; never commit secrets; enable <strong>GitHub secret scanning / push protection</strong>.</li>
+<li><strong>Process isolation</strong>: use <strong>Dev Containers</strong> for risky repos; mount read‑only if needed.</li>
+<li><strong>Key hygiene</strong>: per‑project keys with minimal scopes; rotate regularly; disable keys in CI logs.</li>
+<li><strong>Agent permissions</strong>: grant terminal/file write access <strong>explicitly</strong> and review proposed diffs before applying.</li>
+</ul>
+<hr />
+<h2 id="11-troubleshooting">11) Troubleshooting</h2>
+<ul>
+<li><strong>Roo Code can’t auth</strong> → ensure base URL &amp; key match provider; some extensions need app restart after env changes.</li>
+<li><strong>Aggregator 401/429</strong> → check key; try another model; add <strong>LiteLLM</strong> fallbacks.</li>
+<li><strong>WSL2 GPU missing in Docker</strong> → update Windows NVIDIA driver; <code>wsl --update</code>; verify <code>nvidia-smi</code> in WSL; run test image with <code>--gpus all</code>.</li>
+<li><strong>Slow Windows I/O</strong> → keep repos under WSL’s ext4, not <code>/mnt/c</code>.</li>
+<li><strong>Port collisions</strong> → LM Studio (1234), Ollama (11434), LiteLLM (4000), vLLM (8000) are defaults; change if needed.</li>
+<li><strong>Two agents editing same files</strong> → serialize: use terminal assistant for planning, Roo for edits (or vice‑versa). Commit often.</li>
+</ul>
+<hr />
+<h2 id="12-scaling-maintenance">12) Scaling &amp; maintenance</h2>
+<ul>
+<li><strong>Router first</strong>: put <strong>LiteLLM</strong> in front early → one URL, budgets, logs, retries, fallbacks, rate limits.</li>
+<li><strong>Reproducible envs</strong>: <code>uv</code> (Python) + <code>fnm</code> (Node) + <strong>Dev Containers</strong> in repo.</li>
+<li><strong>Templates</strong>: a course/research skeleton with <code>.devcontainer/</code>, <code>pyproject.toml</code>, <code>.node-version</code>, <code>Makefile</code>, <code>.envrc.example</code>.</li>
+<li><strong>Local model path</strong>: LM Studio → Ollama → vLLM (remote Linux GPU) without changing client code (OpenAI‑compat endpoints).</li>
+<li><strong>Data &amp; models</strong>: use <strong>Hugging Face Hub</strong> for artifacts; pin versions/refs.</li>
+</ul>
+<hr />
+<h2 id="13-realworld-workflow-patterns">13) Real‑world workflow patterns</h2>
+<ul>
+<li><strong>Teaching lab</strong>: Instructor hosts a small <strong>LiteLLM</strong> router with per‑student budgets &amp; model allow‑lists; students point Roo Code + CLIs at the router URL; heavy tasks routed to a remote vLLM; light tasks hit Gemini/GLM via aggregator.</li>
+<li><strong>Research notebook → code</strong>: Prototype prompts locally with <strong>LM Studio</strong> (OpenAI‑compat @ <code>1234</code>) to avoid cloud costs; once ready, flip base URL to <strong>OpenRouter</strong> or direct vendor; keep tests deterministic by pinning model + temperature; record prompts in repo.</li>
+</ul>
+<hr />
+<h2 id="quick-reference-copypaste">Quick Reference (copy/paste)</h2>
+<p><strong>Env vars</strong></p>
+<pre><code class="language-bash">export GEMINI_API_KEY=...
+export OPENAI_API_KEY=...
+export ANTHROPIC_API_KEY=...
+export OPENROUTER_API_KEY=...
+export REQUESTY_API_KEY=...
+</code></pre>
+<p><strong>Local endpoints</strong></p>
+<pre><code>LM Studio:  http://127.0.0.1:1234/v1
+Ollama:     http://127.0.0.1:11434/v1
+LiteLLM:    http://127.0.0.1:4000/v1
+vLLM:       http://127.0.0.1:8000/v1
+</code></pre>
+<p><strong>CLI installs</strong></p>
+<pre><code class="language-bash"># Gemini Code (Gemini CLI)
+npm i -g @google/gemini-cli   # or: brew install gemini-cli
+# Claude Code (CLI)
+npm i -g @anthropic-ai/claude-code
+# Crush (successor to OpenCode)
+# See Crush README for brew/apt install, then: `crush`
+</code></pre>
+<p><strong>VS Code Roo Code → OpenAI‑compatible</strong></p>
+<pre><code>Base URL: (choose one)
+- OpenRouter: https://openrouter.ai/api/v1
+- Requesty:  https://api.requesty.ai/v1
+- LM Studio: http://localhost:1234/v1
+- Ollama:    http://localhost:11434/v1
+- LiteLLM:   http://localhost:4000/v1
+</code></pre>
+<hr />
+<p><strong>You now have a single, upgradable workflow</strong>: remote APIs for novices, with clean on‑ramps to routing (LiteLLM), local models (LM Studio/Ollama/vLLM), and reproducible MLOps. Pair <strong>Roo Code</strong> in VS Code with one <strong>terminal assistant</strong> (Gemini Code / Claude Code / Crush) for fast, auditable development.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

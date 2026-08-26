@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>RAG – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>RAG</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="rag">RAG</h1>
+<ul>
+<li><a href="https://mallahyari.github.io/rag-ebook/">A Practical Approach to Retrieval Augmented Generation Systems (21 Nov 2023)</a></li>
+<li>RAG Fact-Checking for Hallucinations</li>
+<li><a href="https://www.youtube.com/watch?v=tFuiQKUHcdY">How to use LLMs for Fact Checking (40:39) (7 Sep 2024)</a></li>
+<li><a href="https://github.com/567-labs/systematically-improving-rag">Systematically Improving RAG Applications (15 Aug 2025)</a></li>
+</ul>
+<h2 id="awesome-rag">Awesome RAG</h2>
+<ul>
+<li><a href="https://github.com/Danielskry/Awesome-RAG?tab=readme-ov-file#-approaches">Danielskry/Awesome-RAG?tab=readme-ov-file#-approaches</a></li>
+<li><a href="https://github.com/liunian-Jay/Awesome-RAG">liunian-Jay/Awesome-RAG</a></li>
+<li><a href="https://github.com/YHPeter/Awesome-RAG-Evaluation">YHPeter/Awesome-RAG-Evaluation</a></li>
+<li><a href="https://github.com/SJTU-DMTai/awesome-rag">SJTU-DMTai/awesome-rag</a></li>
+<li><a href="https://github.com/noworneverev/Awesome-RAG">noworneverev/Awesome-RAG</a></li>
+<li><a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></li>
+<li><a href="https://github.com/frutik/Awesome-RAG">frutik/Awesome-RAG</a></li>
+<li><a href="https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/resources/agentic_rag_101.md">aishwaryanr/awesome-generative-ai-guide</a></li>
+<li><a href="https://github.com/jxzhangjhu/Awesome-LLM-RAG">jxzhangjhu/Awesome-LLM-RAG</a></li>
+</ul>
+<h2 id="ranking-and-reranking">Ranking and Reranking</h2>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf">From RankNet to LambdaRank to LambdaMART: An Overview</a></li>
+</ul>
+<h2 id="rag-with-citations">RAG with Citations</h2>
+<p>Several GitHub repositories and code samples demonstrate how to create a RAG (Retrieval Augmented Generation) system with URL citations. Here are some notable examples:</p>
+<p>GitHub Repositories
+RAG Citation</p>
+<p>Repository: https://github.com/rahulanand1103/rag-citation
+This project enhances RAG pipelines by automatically generating relevant citations for AI-generated content[2].
+Verba: The Golden RAGtriever</p>
+<p>Repository: https://github.com/weaviate/Verba
+Verba is an open-source application that offers an end-to-end, streamlined interface for RAG, including citation capabilities[3].
+Kotaemon</p>
+<p>Repository: https://github.com/Cinnamon/kotaemon
+Kotaemon is an open-source RAG-based tool for chatting with documents, featuring advanced citations with document preview[8].
+RAG Techniques</p>
+<p>Repository: https://github.com/NirDiamant/RAG_Techniques
+This repository showcases various advanced techniques for RAG systems, including methods that could be adapted for URL citations[9].
+Code Samples and Tutorials
+LangChain RAG with Citations</p>
+<p>Tutorial: https://python.langchain.com/docs/how_to/qa_citations/
+This guide demonstrates methods to get a model to cite which parts of the source documents it referenced in generating its response[1].
+LlamaIndex RAG with In-line Citations</p>
+<p>Tutorial: https://docs.llamaindex.ai/en/stable/examples/workflow/citation_query_engine/
+This notebook walks through the implementation of RAG with in-line citations of source nodes using Workflows[4].
+Zilliz RAG with Citations Tutorial</p>
+<p>Blog post: https://zilliz.com/blog/retrieval-augmented-generation-with-citations
+This tutorial explains how to build a RAG system with citations using LlamaIndex and Milvus as the vector store[6].
+Additional Resources
+LangChain RAG Tutorial</p>
+<p>Tutorial: https://python.langchain.com/docs/tutorials/rag/
+While not specifically focused on citations, this tutorial provides a comprehensive overview of building a RAG application, which can be extended to include citation functionality[5].
+RAG for GitHub Repos</p>
+<p>Project: https://repodox.com
+This project, discussed on Reddit, implements RAG for GitHub repositories and could potentially be adapted to include URL citations[7].
+When implementing a RAG system with URL citations, consider using frameworks like LangChain or LlamaIndex, which provide built-in support for citation generation. Additionally, vector databases such as Milvus can be useful for storing and retrieving document chunks along with their source URLs.</p>
+<p>Citations: [1] https://python.langchain.com/docs/how_to/qa_citations/ [2] https://github.com/rahulanand1103/rag-citation [3] https://github.com/weaviate/Verba [4] https://docs.llamaindex.ai/en/stable/examples/workflow/citation_query_engine/ [5] https://python.langchain.com/docs/tutorials/rag/ [6] https://zilliz.com/blog/retrieval-augmented-generation-with-citations [7] https://www.reddit.com/r/LocalLLaMA/comments/1egjwnp/rag_for_github_repos_miniproject/ [8] https://github.com/Cinnamon/kotaemon [9] https://github.com/NirDiamant/RAG_Techniques [10] https://github.com/Praveen76/RAG-Retrieval-Augmented-Generation-using-Langchain/</p>
+<h2 id="rag-tutorials">RAG Tutorials</h2>
+<ul>
+<li><a href="https://blog.dailydoseofds.com/p/16-techniques-to-build-real-world?ref=dailydev">16 RAG Techniques (1 Feb 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=yzPQaNhuVGU">Advanced RAG with LlamaIndex - Metadata Extraction [2025] (52:23) (28 Feb 2025)</a></li>
+</ul>
+<h2 id="multimodal">Multimodal</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=fbbFrCfaF0w">Building a Multimodal RAG App for Medical Applications (48:54) (Feb 2024)</a></li>
+<li>Contextual RAG</li>
+<li><a href="https://www.youtube.com/watch?v=42Da0O9zkhc">Contextual RAG is stupidly brilliant! (15:02) (23 Sep 2024)</a></li>
+<li>RAG Multiformat Input</li>
+<li><a href="https://www.youtube.com/watch?v=DI9Q60T_054">Vision-Based RAG System For Complex Documents (15:55) (7 Sep 2024)</a></li>
+</ul>
+<h2 id="local-rag">Local RAG</h2>
+<ul>
+<li><a href="https://github.com/signerlabs/Klee">Klee (Mar 2025)</a></li>
+<li><a href="https://github.com/oramasearch/orama">orama</a></li>
+<li><a href="https://github.com/DonTizi/rlama/tree/main">rlama</a></li>
+<li><a href="https://github.com/pymupdf/RAG">PyMuPDF RAG</a></li>
+<li>Ollama</li>
+<li><a href="https://www.youtube.com/watch?v=2TJxpyO3ei4&amp;list=PLD7HrIBE_yqIXVd1bq-E-7Q49QaZheu9e">Python RAG Tutorial (with Local LLMs): AI For Your PDFs (21:32) (17 Apr 2024)</a></li>
+<li><a href="https://colab.research.google.com/drive/1cqLm7bxVAvh5HA5X38KG-gmofdGrEAwN?usp=sharing">Ollama Rag Colab</a></li>
+<li><a href="https://github.com/AkariAsai/self-rag">Self-RAG (Mar 2024)</a></li>
+</ul>
+<h2 id="memory">Memory</h2>
+<ul>
+<li><a href="https://github.com/qhjqhj00/MemoRAG">MemoRAG Colab</a></li>
+<li>Multimodal RAG Pipeline</li>
+<li><a href="https://github.com/katanaml/sparrow">Sparrow</a></li>
+<li>Memory Rag</li>
+<li><a href="https://github.com/qhjqhj00/MemoRAG">MemoRAG: Moving Towards Next-Gen RAG Via Memory-Inspired Knowledge Discovery (18 Sep 2024)</a></li>
+</ul>
+<h2 id="rag-llm-agents">RAG LLM Agents</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wAioL-E5SAQ">9 DeepSeek AGENTS Augment Knowledge Graph (KARMA) (18:42) (16 Feb 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2NQzCbPvUMs">How to Boost RAG Accuracy with SmolAgents &amp; BM25 (54:15) (Feb 2025)</a></li>
+</ul>
+<h2 id="graph-rag">Graph RAG</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=oetP9uksUwM">Graph RAG Evolved: PathRAG (Relational Reasoning Paths) (26:21) (26 Feb 2025)</a></li>
+<li><a href="https://learn.deeplearning.ai/courses/knowledge-graphs-rag/lesson/mltr8/introduction?courseName=knowledge-graphs-rag">Deeplearning.ai KG-RAG</a></li>
+<li><a href="https://neo4j.com/labs/genai-ecosystem/llm-graph-builder/">Neo4j LLM Knowledge Graph Builder - Extract Nodes and Relationships from Unstructured Text</a></li>
+</ul>
+<h2 id="graph-rag-repos">Graph RAG Repos</h2>
+<ul>
+<li><a href="https://github.com/ai-in-pm/PathRAG">PathRAG</a></li>
+<li><a href="https://github.com/microsoft/graphrag">MS GraphRAG</a></li>
+<li><a href="https://github.com/HKUDS/LightRAG">LightRAG</a></li>
+<li><a href="https://github.com/YuxingLu613/KARMA">DeepSeek Agents KARMA</a></li>
+<li><a href="https://github.com/rahulnyk/graph_maker/blob/main/graph_maker_example.ipynb">GraphMaker Repo and Colab</a></li>
+<li><a href="https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a/">How to Convert any Text into a Graph of Concepts (10 Nov 2023)</a></li>
+<li><a href="https://towardsdatascience.com/text-to-knowledge-graph-made-easy-with-graph-maker-f3f890c0dbe8/">Text to Knowledge Graph made easy with Graph_Maker (7 May 2024)</a></li>
+</ul>
+<h2 id="graph-rag-research-frameworks">Graph RAG Research Frameworks</h2>
+<ul>
+<li><a href="https://github.com/NIL-zhuang/EfficientRAG-official">EfficientRAG: Efficient Retriever for Multi-Hop Question Answering (26 Sep 2024)</a></li>
+<li><a href="https://github.com/ai-in-pm/PathRAG">PathRAG (28 Feb 2025)</a></li>
+<li><a href="https://github.com/HKUDS/LightRAG">LightRAG (1 Mar 2025)</a></li>
+<li><a href="https://github.com/microsoft/graphrag">MS GraphRAG</a></li>
+<li><a href="https://github.com/Azure-Samples/graphrag-accelerator">GraphRAG Accelerator</a></li>
+<li><a href="https://github.com/IntelLabs/fastRAG">FastRAG</a></li>
+<li><a href="https://github.com/YuxingLu613/KARMA">KARMA (6 Feb 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Fm68I-phaiY">Harvard Presents NEW Knowledge-Graph AGENT (MedAI) (38:35) (7 Oct 2024)</a></li>
+</ul>
+<h2 id="frameworks">Frameworks</h2>
+<ul>
+<li><a href="https://github.com/IntelLabs/RAG-FiT">RAG-FiT: Framework for enhancing LLMs for RAG tasks using fine-tuning.</a></li>
+</ul>
+<h2 id="research">Research</h2>
+<ul>
+<li><a href="https://arxiv.org/pdf/2407.01219">Searching for Best Practices in Retrieval-Augmented Generation by Wang et a. (1 Jul 2024)</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

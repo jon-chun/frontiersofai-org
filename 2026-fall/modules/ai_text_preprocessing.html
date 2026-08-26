@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Text Preprocessing – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Text Preprocessing</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="text-preprocessing">Text Preprocessing</h1>
+<h2 id="unstructured-text">Unstructured Text</h2>
+<ul>
+<li><a href="https://github.com/towhee-io/towhee">(Github) Towhee is a framework that is dedicated to making neural data processing pipelines simple and fast (3.4k)</a></li>
+<li><a href="https://github.com/iterative/datachain">(Github) ETL, Analytics, Versioning for Unstructured Data (2.7k)</a></li>
+<li><a href="https://github.com/google/langextract">LangExtract (Jul 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=t-53fouKqWI">LangExtract - Google's New Library for NLP Tasks (21:01) (4 Aug 2025)</a></li>
+<li><a href="https://github.com/guidance-ai/guidance">Guidance (Jul 2025)</a></li>
+<li><a href="https://github.com/yobix-ai/extractous">Extractous (Dec 2024)</a></li>
+<li><a href="">Pydantic</a></li>
+<li><a href="https://github.com/Zipstack/unstract">Unstruct</a></li>
+<li><a href="https://github.com/ucbepic/docetl">DocETL (Jul 2025)</a></li>
+<li><a href="https://github.com/JohannesKaufmann/html-to-markdown">JohannesKaufmann/html-to-markdown</a></li>
+<li><a href="https://github.com/Goldziher/html-to-markdown">Goldziher/html-to-markdown</a></li>
+<li><a href="https://github.com/mixmark-io/turndown">turndown</a></li>
+</ul>
+<h2 id="commercial-etl">Commercial ETL</h2>
+<ul>
+<li><a href="https://www.sensible.so/">sensible</a></li>
+</ul>
+<h2 id="structured-text">Structured Text</h2>
+<p>Several open-source Python libraries exist for decomposing and transforming full documents into semantically meaningful hierarchical structures. Here are some notable options:</p>
+<h2 id="pydoxtools">Pydoxtools</h2>
+<p>Pydoxtools is a recently developed open-source Python library specifically designed for document analysis and hierarchical structuring[1]. It offers the following key features:</p>
+<ul>
+<li>Processing pipeline management with AI integration</li>
+<li>Support for various document formats</li>
+<li>Document analysis and question answering capabilities</li>
+<li>PDF table extraction without deep neural networks</li>
+<li>Embedding generation for indexing information</li>
+</ul>
+<p>Pydoxtools can handle various document types, including PDFs, Word documents, and EPUB books. It allows for natural language querying to extract data and can generate sophisticated embeddings for use with AI models like ChatGPT[1].</p>
+<h2 id="hierarchy-builder">Hierarchy Builder</h2>
+<p>Hierarchy Builder is a Python package focused on organizing and visualizing large collections of related textual strings in a hierarchical Directed Acyclic Graph (DAG) structure[2]. While it's primarily designed for biomedical data, it can be adapted for other domains. Key features include:</p>
+<ul>
+<li>Generation of DAG structures from input sentences and spans</li>
+<li>Customizable number of top-level entries</li>
+<li>Option to ignore specific words</li>
+<li>Integration with UMLS (Unified Medical Language System) for biomedical applications</li>
+</ul>
+<p>The output is a JSON file representing the hierarchical structure, with each node representing a concept in the DAG[2].</p>
+<h2 id="hierarchical-document-transformer-hdt">Hierarchical Document Transformer (HDT)</h2>
+<p>Although not a library per se, the Hierarchical Document Transformer (HDT) is a novel sparse Transformer architecture designed for processing hierarchically structured documents[3]. Its key features include:</p>
+<ul>
+<li>Introduction of auxiliary anchor tokens for structural elements (sentences, sections, documents)</li>
+<li>Multi-level hierarchical attention pattern</li>
+<li>Efficient processing of long documents</li>
+<li>Hierarchical positional encoding to model different hierarchy levels</li>
+</ul>
+<p>While HDT is more of an architectural approach than a ready-to-use library, its concepts could be implemented or adapted using existing deep learning frameworks[3].</p>
+<h2 id="hdmf-hierarchical-data-modeling-framework">HDMF (Hierarchical Data Modeling Framework)</h2>
+<p>HDMF is a Python package for working with hierarchical data[4]. While not specifically designed for document processing, it provides tools that could be adapted for this purpose:</p>
+<ul>
+<li>APIs for specifying data models</li>
+<li>Reading and writing data to different storage backends</li>
+<li>Representing data with Python objects</li>
+</ul>
+<p>HDMF is particularly useful for scientific data standards and could potentially be adapted for document structuring tasks[4].</p>
+<p>When choosing a library for decomposing documents into hierarchical structures, consider factors such as the specific requirements of your project, the types of documents you'll be working with, and the level of customization you need. Pydoxtools and Hierarchy Builder offer more direct solutions for document analysis, while HDMF provides a flexible framework for hierarchical data modeling that could be adapted to document structuring tasks.</p>
+<p>Citations:
+[1] https://www.reddit.com/r/Python/comments/135e14f/say_hello_to_my_new_open_source_library_for/
+[2] https://pypi.org/project/hierarchybuilder/
+[3] https://arxiv.org/html/2407.08330v1
+[4] https://github.com/hdmf-dev/hdmf</p>
+<h2 id="etl-pipelines-complex-document-processing">ETL Pipelines / Complex Document Processing</h2>
+<ul>
+<li><a href="https://github.com/towhee-io/towhee">ToWhee</a></li>
+<li>DocETL</li>
+<li><a href="https://github.com/ucbepic/docetl">Github</a></li>
+<li><a href="https://ucbepic.github.io/docetl/installation/">DocETL Documentation</a></li>
+<li><a href="https://www.youtube.com/watch?v=IlgueVqtHGo">Analyzing common weaknesses in ICLR 2024 reviews with DocETL (31:11) (29 Oct 2024)</a></li>
+<li>
+<p><a href="https://chatgpt.com/share/672b25a2-2314-800d-8caf-a6b958aefa93">ChatGPT Setup</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=E3ELon1uh4A">New RAG for Multi-Modal DocVQA: M3DOCRAG (ColPali Qwen2-VL) (9:51) (9 Nov 2024)</a></p>
+</li>
+<li><a href="https://github.com/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">Github</a></li>
+<li><a href="https://colab.research.google.com/github/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">Colab</a></li>
+<li><a href="https://arxiv.org/pdf/2411.04952">Paper</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

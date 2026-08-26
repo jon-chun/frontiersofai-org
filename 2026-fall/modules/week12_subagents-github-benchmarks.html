@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 12: AI Subagents, GitHub Workflows and Benchmarks – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 12: AI Subagents, GitHub Workflows and Benchmarks</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-12-ai-subagents-github-workflows-and-benchmarks">Week 12: AI Subagents, GitHub Workflows and Benchmarks</h1>
+<p>This week we'll integrate both old and new views into Agents through the LangChain, LangGraph, and LangSmith framework abstractions. In additiona, we'll continue our dive into GitHub and see how it is evolving to become the center of AI-assisted software engineering. Finally, we'll close the loop and continue our analysis of various topics from AI-assisted coding to software development lifecycle to spec-driven development by integrating these concepts into a unified intellectual framework. </p>
+<h2 id="arxivorg-research-paper-5-min-presentation">===[ ArXiv.org Research Paper 5 min Presentation ]===</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11/19</td>
+<td>Anne-Duncan, Adrian</td>
+</tr>
+<tr>
+<td>12/3</td>
+<td>Murathan, Eli</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quiz-week-12">Quiz: Week 12</h2>
+<h2 id="presentation-anne-duncan">Presentation: Anne-Duncan</h2>
+<h2 id="mini-project-3-a-real-world-rag-recommendation">Mini-Project #3: A real-world RAG Recommendation</h2>
+<ul>
+<li>DUE by Sun, Nov 16th (midnight EST)</li>
+<li>Create a GitHub repo with your uploaded doc and profesional README.md overview</li>
+</ul>
+<h2 id="new-reading-assignments">===[ New Reading Assignments ]===</h2>
+<h2 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=COSAtGWh85Y&amp;t=252s">The AI Tech Layoff Lie Nobody's Thinks Of (16:19) (Oct 2025)</a></li>
+</ul>
+<h2 id="ai-newscurrent-events"><strong>[AI News/Current Events]</strong></h2>
+<p><img alt="The AI Money Ouroboros" src="../images/economics/fig_ai-cash-ouroboros_bloomberg.webp" />
+* <a href="https://www.ncsl.org/state-legislatures-news/details/as-ai-tools-become-commonplace-so-do-concerns">As AI Tools Become Commonplace, so Do Concerns by NCSL Staff (11 Nov 2025)</a></p>
+<h2 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h2>
+<h3 id="ai-models">AI Models</h3>
+<h3 id="claude-code">Claude Code</h3>
+<ul>
+<li><a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills">How to create custom Skills</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ffh9OeJ7yxw">800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model) (8:00) (Oct 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=mEt-i8FunG8">Master Claude Code Sub‑Agents in 10 Minutes (10:03) (Aug 2025)</a></li>
+</ul>
+<h3 id="github-work-flows">GitHub Work Flows</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=FjHtZnjNEBU&amp;t=182s">Claude Code + GitHub WORKFLOW for Complex Apps (18:40) (Jul 2025)</a></li>
+<li><a href="https://docs.github.com/en/actions/get-started/continuous-integration">Github Actions: Continuous integration</a></li>
+<li><a href="https://docs.github.com/en/get-started/using-github/github-flow">Github Flow</a></li>
+<li><a href="https://www.youtube.com/watch?v=upwbqZ67UBA">GitHub is the Future of AI Coding (Here's Why) (23:59) (13 Nov 2025)</a></li>
+</ul>
+<h2 id="coding">===[ Coding ]===</h2>
+<h3 id="langchain-langgraph">LangChain &amp; LangGraph</h3>
+<ul>
+<li><a href="https://academy.langchain.com/courses/deep-research-with-langgraph">LangChain Academy: Deep Research with LangGraph</a></li>
+</ul>
+<h1 id="in-class">=====[ In Class ]=====</h1>
+<h2 id="cli-utilities-usually-rust">CLI Utilities (usually Rust)</h2>
+<ul>
+<li>Programmer Utilities (Brew)</li>
+<li><a href="https://github.com/tlkh/asitop">asitop (4.4k)</a></li>
+<li><a href="https://github.com/sharkdp/bat">bat (55.8k)</a> (UNIX cat++)</li>
+<li><a href="https://dystroy.org/broot/">broot (12.1k)</a></li>
+<li><a href="https://github.com/eza-community/eza">eza (18.4k)</a>
+    "CLI&gt; eza -T -l --hyperlink"</li>
+<li><a href="https://github.com/sharkdp/fd">fd (40.5k)</a></li>
+<li><a href="https://github.com/ryanoasis/nerd-fonts">font-jetbrains-mono-nerd-font (60.5k)</a></li>
+<li><a href="https://fx.wtf/">fx</a></li>
+<li>fzf (75.1k)](https://github.com/junegunn/fzf)</li>
+<li><a href="https://cli.github.com/">gh</a></li>
+<li><strong>git-lfs</strong> "brew install git-lfs"</li>
+<li><a href="https://github.com/JetpackDuba/Gitnuro">Gitnuro (2.1)</a></li>
+<li><a href="https://github.com/dandavison/delta">git-delta (28.1k)</a></li>
+<li><a href="https://github.com/ghostty-org/ghostty">ghostty (38.2k)</a></li>
+<li><a href="">jq</a></li>
+<li><a href="https://github.com/marv1nnnnn/llm-min.txt">llm-min (664)</a>
+    SKF: Structured Knowledge Format</li>
+<li><a href="">macmon</a></li>
+<li><strong>ncdu</strong> "brew install ncdu"</li>
+<li><a href="">neovim</a></li>
+<li><a href="https://github.com/BurntSushi/ripgrep">ripgrep (57.4k)</a></li>
+<li><a href="https://github.com/jonas/tig?tab=readme-ov-file">tig (13k)</a></li>
+<li><a href="https://github.com/tldr-pages/tldr">tlrc (60.1k)</a></li>
+<li><a href="https://github.com/tmux/tmux/wiki">tmux</a></li>
+<li><a href="https://github.com/XAMPPRocky/tokei">tokei (13.4k)</a>
+    [tokei-pie]
+    "create uv venv, source, and uv pip install tokei-pie"
+    "CLI&gt; cd ~/code/test-tokei-pie; source .venv/bin/activate"
+    "CLI&gt; tokei -o json ~/code/sentimentarcs | tokei-pie"</li>
+<li><a href="">tree</a></li>
+<li><a href="">wget</a></li>
+<li><a href="https://github.com/ajeetdsouza/zoxide">zoxide (31.2k)</a></li>
+</ul>
+<h2 id="cost-trackingoptimization">Cost Tracking/Optimization</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HCko-NxCD_8">The Hidden Cost of Claude Code: Cost Optimization and Token Usage Monitoring (7:46) (26 Sep 2025)</a></li>
+<li><a href="https://console.anthropic.com/">https://console.anthropic.com/</a></li>
+<li><a href="https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor">(Github) Claude Code Usage Monitor (5.7k)</a></li>
+<li><a href="https://github.com/ryoppippi/ccusage">ccusage</a></li>
+<li>"CLI&gt; npx ccusage blocks --live"</li>
+<li><a href="https://github.com/smtg-ai/claude-squad">claude-squad</a>
+    "CLI&gt; brew install claude-squad"</li>
+</ul>
+<h2 id="context-engineering-formats">Context Engineering: Formats</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Alternative</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Context from Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>JSON</strong></td>
+<td style="text-align: left;">The widely accepted standard object notation.</td>
+<td style="text-align: left;">It is the <strong>mainstream</strong> format LLMs are tuned for, and many compression goals can be achieved within JSON by using array expressions instead of full objects for repetitive data.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>YAML</strong></td>
+<td style="text-align: left;">A human-readable data serialization format, often considered more compact than full JSON.</td>
+<td style="text-align: left;">It is suggested as an existing alternative, though a commenter notes that for repetitive objects, it still requires keys on each object, unlike TOON's CSV-like structure. The current YAML spec is <a href="https://yaml.org/spec/1.2.2/">YAML 1.2</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plain Text / Templating</strong></td>
+<td style="text-align: left;">Using well-structured, custom plaintext formats with clear headers.</td>
+<td style="text-align: left;">Some argue that "good ol' <strong>templating</strong>" gives the most flexibility, as LLMs are tuned to natural language, and different structures may work better as JSON, YAML, or an arbitrary custom format.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XML</strong></td>
+<td style="text-align: left;">Extensible Markup Language.</td>
+<td style="text-align: left;">Mentioned as a format that some models appear to handle better than JSON, possibly due to the names in the element tags.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TOML</strong></td>
+<td style="text-align: left;">Tom's Obvious, Minimal Language.</td>
+<td style="text-align: left;">Suggested as an alternative that has "some readability and compactness benefits over JSON while still being common enough for models to easily be able to process it relatively reliably."</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CUE</strong></td>
+<td style="text-align: left;">A data constraint language and configuration tool.</td>
+<td style="text-align: left;">Mentioned as a tool that can <strong>emit other formats</strong> and includes strong features like modules and imports for configuration languages: <a href="https://cuelang.org">https://cuelang.org</a> and <a href="https://cuetorials.com">https://cuetorials.com</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SICK</strong></td>
+<td style="text-align: left;">A binary deduplicating storage for JSON-like data structures.</td>
+<td style="text-align: left;">Offered as a highly efficient, non-manually editable alternative focused on space and access speed: <a href="https://github.com/7mind/sick">https://github.com/7mind/sick</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="context-engineering-tranformation-libraries">Context Engineering: Tranformation Libraries</h2>
+<ul>
+<li><a href="https://github.com/marv1nnnnn/llm-min.txt">llm-min.txt (664)</a>
+    Min.js Style Compression of Tech Docs for LLM Context</li>
+<li><a href="https://github.com/QuantaAlpha/RepoMaster">https://github.com/QuantaAlpha/RepoMaster (437)</a>
+    RepoMaster: The open-source AI agent that masters GitHub. It turns any code repository into a powerful tool, achieving a new level of autonomous task-solving. An open alternative to Claude-Code.</li>
+<li>(DEMO: Format Research/Eval)<a href="https://github.com/toon-format/toon">toon-format/toon (18.1k)</a></li>
+<li><a href="https://www.youtube.com/watch?v=nTMP_rLZOYM">(YT) TOON: “JSON for AI” (is it any good?) (14:20) (18 Nov 2025)</a></li>
+<li><a href="https://news.ycombinator.com/item?id=45715632">(YNes) TOON – Token Oriented Object Notation (28 Oct 2025)</a>
+      PROMPT: "summarize, esp the pros/cons and alternative solutions including URL/names/links"</li>
+<li><a href="https://github.com/7mind/sick">7mind/sick (161)</a></li>
+</ul>
+<h2 id="context-engineering-history">Context Engineering: History</h2>
+<ul>
+<li>(DEMO: History)<a href="https://github.com/jhlee0409/claude-code-history-viewer">https://github.com/jhlee0409/claude-code-history-viewer (200)</a>
+    git clone https://github.com/jhlee0409/claude-code-history-viewer.git
+    cd claude-code-history-viewer
+    # Run the setup script to install all dependencies
+    ./scripts/setup-build-env.sh
+    # Build the application (auto-detects your platform)
+    pnpm tauri:build:auto</li>
+</ul>
+<h2 id="context-engineering-distillation">Context Engineering Distillation</h2>
+<ul>
+<li>(DEMO: Distill)<a href="https://docs.specstory.com/integrations/vscode">SpecStory</a></li>
+<li><a href="https://docs.specstory.com/integrations/claude-code">Install SpecStory for Claude CLI</a></li>
+<li>"CLI&gt; "</li>
+<li>
+<p>VSCode Extension "</p>
+</li>
+<li>
+<p>(DEMO: Session Metrics)<a href="https://github.com/chiphuyen/sniffly">chiphuyen/sniffly (1k)</a></p>
+</li>
+<li>"CLI&gt; uvx sniffly@latest init"</li>
+</ul>
+<h2 id="learn-git">Learn Git</h2>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">The Git Book v2</a></li>
+</ul>
+<p><strong>top 10 most commonly used Git commands</strong> </p>
+<ol>
+<li>
+<p><strong>git status</strong><br />
+   Checks the current state of your working directory and staging area.<br />
+   - <code>git status</code> (basic short output)<br />
+   - <code>git status -s</code> (short format, compact view)<br />
+   - <code>git status --porcelain</code> (machine-readable output, often for scripts)</p>
+</li>
+<li>
+<p><strong>git add</strong><br />
+   Stages changes for the next commit.<br />
+   - <code>git add &lt;file&gt;</code> (stage a specific file)<br />
+   - <code>git add .</code> (stage all changes in current directory)<br />
+   - <code>git add -A</code> or <code>git add --all</code> (stage all changes, including new/untracked files)<br />
+   - <code>git add -p</code> (interactive staging, choose hunks)</p>
+</li>
+<li>
+<p><strong>git commit</strong><br />
+   Records staged changes to the repository.<br />
+   - <code>git commit -m "message"</code> (commit with inline message)<br />
+   - <code>git commit -a -m "message"</code> (skip staging for tracked files)<br />
+   - <code>git commit --amend</code> (modify the last commit)<br />
+   - <code>git commit -m "title" -m "description"</code> (multi-line message)</p>
+</li>
+<li>
+<p><strong>git clone</strong><br />
+   Creates a local copy of a remote repository.<br />
+   - <code>git clone &lt;url&gt;</code> (basic clone)<br />
+   - <code>git clone &lt;url&gt; &lt;directory&gt;</code> (clone into specific folder)<br />
+   - <code>git clone --depth 1 &lt;url&gt;</code> (shallow clone, only latest history)<br />
+   - <code>git clone -b &lt;branch&gt; &lt;url&gt;</code> (clone specific branch)</p>
+</li>
+<li>
+<p><strong>git pull</strong><br />
+   Fetches from remote and merges into current branch.<br />
+   - <code>git pull</code> (default: fast-forward or merge)<br />
+   - <code>git pull --rebase</code> (rebase instead of merge)<br />
+   - <code>git pull origin &lt;branch&gt;</code> (specify remote and branch)<br />
+   - <code>git pull --ff-only</code> (fast-forward only, fail otherwise)</p>
+</li>
+<li>
+<p><strong>git push</strong><br />
+   Uploads local commits to a remote repository.<br />
+   - <code>git push</code> (push current branch to its tracked remote)<br />
+   - <code>git push origin &lt;branch&gt;</code> (specify remote and branch)<br />
+   - <code>git push -u origin &lt;branch&gt;</code> (set upstream tracking)<br />
+   - <code>git push --force-with-lease</code> (safe force push)</p>
+</li>
+<li>
+<p><strong>git branch</strong><br />
+   Lists, creates, or deletes branches.<br />
+   - <code>git branch</code> (list local branches)<br />
+   - <code>git branch -a</code> (list all branches, including remote)<br />
+   - <code>git branch &lt;name&gt;</code> (create new branch)<br />
+   - <code>git branch -d &lt;name&gt;</code> (delete merged branch) / <code>-D</code> (force delete)</p>
+</li>
+<li>
+<p><strong>git checkout</strong><br />
+   Switches branches or restores files (note: largely replaced by <code>git switch</code>/<code>git restore</code> in modern Git).<br />
+   - <code>git checkout &lt;branch&gt;</code> (switch branch)<br />
+   - <code>git checkout -b &lt;new-branch&gt;</code> (create and switch)<br />
+   - <code>git checkout &lt;commit&gt; -- &lt;file&gt;</code> (restore file from commit)<br />
+   - <code>git checkout main</code> (common to return to main)</p>
+</li>
+<li>
+<p><strong>git log</strong><br />
+   Shows commit history.<br />
+   - <code>git log</code> (full history)<br />
+   - <code>git log --oneline</code> (one line per commit)<br />
+   - <code>git log --graph --oneline --all</code> (visual branch graph)<br />
+   - <code>git log -p</code> (show diffs for each commit)</p>
+</li>
+<li>
+<p><strong>git merge</strong><br />
+    Merges branches together.  </p>
+<ul>
+<li><code>git merge &lt;branch&gt;</code> (merge specified branch into current)  </li>
+<li><code>git merge --no-ff &lt;branch&gt;</code> (force a merge commit)  </li>
+<li><code>git merge --abort</code> (cancel a conflicted merge)  </li>
+<li><code>git merge --squash &lt;branch&gt;</code> (squash changes before committing)</li>
+</ul>
+</li>
+</ol>
+<p>These commands cover ~90% of everyday Git usage for most developers. For newer Git versions (2.23+), <code>git switch</code> (for branch switching) and <code>git restore</code> (for file restoration) are increasingly popular replacements for some <code>checkout</code> uses, and you might see them rising in future lists. If you spend a lot of time in terminals, aliases (e.g., <code>gs</code> for <code>git status</code>) make these even faster!</p>
+<h2 id="git-apps">Git Apps</h2>
+<ul>
+<li>VSCode 3 Extensions "Git Extension Pack"</li>
+<li>Commercial: GitKraken, GitLens, etc.</li>
+<li><a href="https://gitnuro.com/">(App) Gitnuro Download</a></li>
+<li><a href="https://github.com/JetpackDuba/Gitnuro">(Github) Gitnuro (2.1k)</a></li>
+<li><a href="https://github.com/sourcegit-scm/sourcegit">(App) SourceGit (3.3k)</a></li>
+<li><a href="https://github.com/relagit/relagit">(App) RelaGit (889)</a></li>
+<li><a href="https://github.com/kahole/edamagit">(CLI) edamagit (1.5k)</a></li>
+</ul>
+<h2 id="github-workflows">Github Workflows</h2>
+<ul>
+<li>(DEMO)<a href="https://www.youtube.com/watch?v=upwbqZ67UBA">GitHub is the Future of AI Coding (Here's Why) (23:59) (13 Nov 2025)</a></li>
+<li><a href="https://github.com/marketplace?type=actions&amp;category=ai-assisted">Git Marketplace Action/AI-Assisted</a></li>
+<li><a href="https://www.youtube.com/watch?v=FjHtZnjNEBU&amp;t=182s">Claude Code + GitHub WORKFLOW for Complex Apps (18:40) (Jul 2025)</a></li>
+<li><a href="https://docs.github.com/en/actions/get-started/continuous-integration">Github Actions: Continuous integration</a>
+    <strong>SLDC w/CC+Github</strong><ul>
+<li>PLAN:
+  1. Use 'gh issue view' to get the issue details
+  2. Understand the problem described in the issue
+  3. Ask clarifying questions if necessary
+  4. Understand the prior art for this issue</li>
+<li>Search the scratchpads for previous thoughts related to the issue</li>
+<li>Search PRs to see if you can find history on this issue</li>
+<li>Search the codebase for relevant files
+  1. Think harder about how to break the issue down into a series of small,
+  manageable tasks.
+  2. Document your plan in a new scratchpad</li>
+<li>include the issue name in the filename</li>
+<li>include a link to the issue in the scratchpad.  </li>
+<li>CREATE:</li>
+<li>Create a new branch for the issue</li>
+<li>Solve the issue in small, manageable steps, according to your plan.</li>
+<li>Commit your changes after each step.</li>
+<li>TEST:</li>
+<li>Use puppeteer via MCP to test the changes if you have made changes to the UI</li>
+<li>Write rspec tests to describe the expected behavior of your code</li>
+<li>Run the full test suite to ensure you haven't broken anything</li>
+<li>If the tests are failing, fix them</li>
+<li>Ensure that all tests are passing before moving on to the next step</li>
+<li>DEPLOY:</li>
+<li>Open a PR and request a code review</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=bcXxke-iBQY">Claude Code + Codex: The GitHub Flow That Saves Me Hours (18:42) (18 Oct 2025)</a></li>
+<li><a href="https://www.ceos3c.com/web-development/github-ai-workflow/">MERGE TO MAIN</a></li>
+<li>Instructions, append to CC&gt; init &gt; CLAUDE.md file</li>
+</ul>
+<h1 id="merge-to-main-workflow">"Merge to Main" Workflow</h1>
+<p>When the user says "merge to main", follow this complete workflow:</p>
+<h2 id="pre-merge-preparation">Pre-Merge Preparation</h2>
+<ol>
+<li><strong>Pull latest main</strong> - Fetch and merge the latest changes from remote main</li>
+<li><strong>Validate branch naming</strong> - Create a conventional commits conform branch using kebab-case:
+   - <code>feat/feature-name</code> for new features
+   - <code>fix/bug-name</code> for bug fixes
+   - <code>docs/update-name</code> for documentation
+   - <code>refactor/change-name</code> for code refactoring
+   - <code>test/test-name</code> for test additions
+   - <code>chore/task-name</code> for maintenance tasks</li>
+</ol>
+<h2 id="commit-and-push">Commit and Push</h2>
+<ol>
+<li><strong>Run pre-commit checks</strong> - Execute tests and linters if applicable; report any failures</li>
+<li><strong>Commit changes</strong> - Use detailed conventional commits messages:
+   - Format: <code>type(scope): description</code>
+   - Examples: <code>feat(auth): add user authentication</code>, <code>fix(dashboard): resolve memory leak</code>
+   - Include body with details if changes are complex</li>
+<li><strong>Check for conflicts</strong> - Ensure branch can merge cleanly with main</li>
+<li><strong>Push branch</strong> - Push the branch to remote</li>
+</ol>
+<h2 id="pull-request-creation">Pull Request Creation</h2>
+<ol>
+<li><strong>Create Pull Request</strong> - Generate PR to main with:
+   - Descriptive title matching commit message format
+   - Body containing: changes summary, testing done, breaking changes (if any)
+   - Link related issues if applicable</li>
+</ol>
+<h2 id="confirmation-and-merge">Confirmation and Merge</h2>
+<ol>
+<li><strong>Wait for CI/CD</strong> - Allow automated checks to complete; report status</li>
+<li><strong>Present summary</strong> - Show user:
+   - All commits to be merged
+   - Files changed
+   - CI/CD status
+   - Any warnings or conflicts</li>
+<li><strong>Request confirmation</strong> - Ask: "Ready to merge to main? (yes/no)"</li>
+<li><strong>Merge PR</strong> - After confirmation, merge using squash or merge commit (ask user preference)</li>
+<li><strong>Verify merge</strong> - Confirm merge was successful</li>
+</ol>
+<h2 id="cleanup">Cleanup</h2>
+<ol>
+<li><strong>Delete remote branch</strong> - Remove the feature branch from remote</li>
+<li><strong>Update local main</strong> - Pull the updated main branch locally</li>
+<li><strong>Confirm completion</strong> - Report successful merge with commit SHA</li>
+</ol>
+<h2 id="error-handling">Error Handling</h2>
+<ul>
+<li><strong>If tests fail</strong>: Report failures and ask whether to fix or abort</li>
+<li><strong>If merge conflicts exist</strong>: Report conflicts and ask user to resolve manually</li>
+<li><strong>If PR creation fails</strong>: Report error and suggest manual creation</li>
+<li><strong>If CI/CD fails</strong>: Report failures and ask whether to fix or abort</li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI GRAPHS – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI GRAPHS</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-graphs">AI GRAPHS</h1>
+<h2 id="llm-graphs">LLM Graphs</h2>
+<ul>
+<li><a href="https://github.com/neo4j-labs/llm-graph-builder">LLM-Graph-Builder</a></li>
+</ul>
+<h2 id="vendors">Vendors</h2>
+<ul>
+<li><a href="https://console-preview.neo4j.io/guides/software-development">neo4j</a></li>
+</ul>
+<h2 id="graphs-extracted-from-texts">Graphs Extracted from Texts</h2>
+<ul>
+<li><a href="https://neo4j.com/blog/nodes/unearthing-historical-networks-neo4j/">Neo4j: Exracting Graphs from Historical Docs (25 Feb 2021)</a></li>
+<li><a href="https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a/">How to Convert Any Text Into a Graph of Concepts: A method to convert any text corpus into a Knowledge Graph using Mistral 7B (10 Nov 2023)</a></li>
+<li><a href="https://towardsdatascience.com/text-to-knowledge-graph-made-easy-with-graph-maker-f3f890c0dbe8/">Text to Knowledge Graph Made Easy with Graph Maker: An open-source library for building knowledge graphs from text corpus using open-source LLMs like Llama 3 and Mixtral. (7 May 2024)</a></li>
+<li><a href="https://github.com/rahulnyk/graph_maker">GraphMaker Github (May 2025)</a></li>
+</ul>
+<h2 id="graph-rag-grag">Graph RAG (GRAG)</h2>
+<ul>
+<li><a href="https://github.com/gusye1234/nano-graphrag">nano-GraphRAG</a></li>
+<li><a href="https://github.com/YZ-Cai/SimGRAG">SimGRAG (Dec 2024)</a></li>
+<li><a href="https://github.com/HuieL/GRAG">GRAG (Nov 2024)</a></li>
+</ul>
+<h2 id="graph-db">Graph DB</h2>
+<ul>
+<li><a href="https://github.com/apache/age">Apahce AGE (Mar 2025)</a></li>
+</ul>
+<h1 id="deepresearch">DeepResearch</h1>
+<p>Acyclic graphs, particularly Directed Acyclic Graphs (DAGs), are foundational in many CS and AI applications that require a structured, non-repetitive progression of tasks, states, or decisions. Here are several prominent applications and structures where avoiding loops is crucial:</p>
+<h2 id="overview">OVERVIEW</h2>
+<h2 id="openai-chat"><a href="">OpenAI Chat</a></h2>
+<h3 id="1-ai-planning-and-agentic-thinking">1. <strong>AI Planning and Agentic Thinking</strong></h3>
+<ul>
+<li><strong>Hierarchical Task Networks (HTNs):</strong> AI planning methods, such as HTNs, often represent tasks in a hierarchy, where subtasks branch out without revisiting the parent task. This DAG structure supports agentic thinking by ensuring clear, sequential task execution.</li>
+<li><strong>Decision Trees:</strong> In agentic reasoning, decision trees are often acyclic to avoid redundant or circular reasoning, moving from root nodes (initial decisions) to terminal leaves (outcomes) without backtracking.</li>
+<li><strong>Markov Decision Processes (MDPs):</strong> Certain MDPs are constrained to be acyclic, particularly when modeling finite-time horizon scenarios in reinforcement learning, where an agent must progress linearly from start to end without returning to previous states.</li>
+</ul>
+<h3 id="2-asts-and-intermediate-compiler-trees">2. <strong>ASTs and Intermediate Compiler Trees</strong></h3>
+<ul>
+<li><strong>Abstract Syntax Trees (ASTs):</strong> ASTs are structured hierarchies used in parsing programming languages, with nodes representing syntactical constructs in source code. They are acyclic, ensuring that the parsing and compilation process has a definitive start and end point without looping back, which would otherwise lead to ambiguous or infinite interpretations of code.</li>
+<li><strong>Control Flow Graphs (CFGs) in Compiler Optimization:</strong> Although not strictly acyclic in general, certain analysis passes (e.g., dominator trees used in optimization) utilize acyclic subgraphs to ensure each node has a unique, non-repetitive path, helping the compiler optimize code execution by avoiding unnecessary redundancies.</li>
+</ul>
+<h3 id="3-knowledge-graphs-and-ontologies">3. <strong>Knowledge Graphs and Ontologies</strong></h3>
+<ul>
+<li><strong>Taxonomies:</strong> In representing taxonomies and hierarchies in knowledge graphs, acyclic structures are often preferred to avoid circular dependencies. This is common in classification systems where each entity is a subclass of a more general category without looping back, ensuring a one-way inheritance path.</li>
+<li><strong>Causal Graphs in Probabilistic Modeling:</strong> In Bayesian networks, which model probabilistic dependencies, acyclicity is a strict requirement to avoid recursive causation and to ensure a coherent probabilistic representation of causes leading to effects.</li>
+</ul>
+<h3 id="4-data-processing-pipelines-eg-dags-in-apache-airflow">4. <strong>Data Processing Pipelines (e.g., DAGs in Apache Airflow)</strong></h3>
+<ul>
+<li>Data pipelines frequently use DAGs to model data processing stages where each task depends on the output of the previous task without loops. This structure prevents recursive dependencies, ensuring that data flows linearly from ingestion through transformation to final output, which is essential for parallelism and efficient resource management.</li>
+<li>In systems like Apache Airflow and TensorFlow, workflows and computational graphs are DAGs to guarantee that the tasks or operations progress unidirectionally, preventing infinite loops and facilitating the scheduling of parallel, non-blocking operations.</li>
+</ul>
+<h3 id="5-neural-networks-certain-architectures">5. <strong>Neural Networks (Certain Architectures)</strong></h3>
+<ul>
+<li><strong>Feedforward Neural Networks (FNNs):</strong> These networks are acyclic, with information flowing from input to output without loops, which is essential to prevent recurrent dependencies and make training computationally feasible with backpropagation.</li>
+<li><strong>Transformer Architectures (Positional Encoding):</strong> While the architecture itself isn't strictly acyclic, transformer models impose an acyclic flow for token dependencies (especially in the attention mechanism), using positional encoding to avoid loops, especially important in generating coherent sequential outputs.</li>
+</ul>
+<h3 id="6-project-and-task-management-pert-and-cpm">6. <strong>Project and Task Management (PERT and CPM)</strong></h3>
+<ul>
+<li><strong>PERT and Critical Path Method (CPM) in Project Planning:</strong> Both are project management tools that model tasks as DAGs. Each task has dependencies and must be completed before subsequent tasks can begin, thus ensuring a clear, acyclic path from start to project completion. Loops would cause circular dependencies, making it impossible to determine a feasible project schedule.</li>
+</ul>
+<h3 id="7-database-schema-and-query-planning">7. <strong>Database Schema and Query Planning</strong></h3>
+<ul>
+<li><strong>Relational Schema Normalization:</strong> In relational databases, acyclic dependency graphs are essential for eliminating redundancy and preserving data integrity. Cyclic dependencies can cause anomalies in query execution and make it difficult to maintain consistent data states.</li>
+<li><strong>Query Execution Plans:</strong> Database systems often structure execution plans as DAGs, where nodes represent operations like joins or filters, and edges represent dependencies. This acyclic structure ensures a one-pass query execution without backtracking, optimizing response times.</li>
+</ul>
+<h3 id="8-event-sourcing-and-state-management-in-distributed-systems">8. <strong>Event Sourcing and State Management in Distributed Systems</strong></h3>
+<ul>
+<li><strong>Event Sourcing DAGs:</strong> In distributed systems, event sourcing often relies on DAGs to record state changes without looping back to previous states, which could create conflicting histories or "time travel" issues.</li>
+<li><strong>Dependency Management in Microservices:</strong> When managing service dependencies, DAGs are used to avoid circular service calls, which could lead to deadlocks or infinite loops in distributed environments.</li>
+</ul>
+<hr />
+<h3 id="summary">Summary</h3>
+<p>In many fields, acyclic structures like DAGs help streamline processes, ensure data integrity, avoid infinite loops, and optimize computational efficiency. Key applications include:
+- AI agent planning, ASTs in compilers, probabilistic modeling with Bayesian networks, feedforward neural networks, task management in PERT/CPM, and distributed system state management.</p>
+<p>Acyclicity is thus a fundamental design principle in many systems that require predictable, non-recursive progressions.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

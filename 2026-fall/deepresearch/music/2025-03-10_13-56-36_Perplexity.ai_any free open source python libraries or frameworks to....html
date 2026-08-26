@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Any free open source python libraries or frameworks to compile a sequence of music video mix tape... – 2026 Fall – Programming Humanity</title>
+<link href="../../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../../index.html">Course Home</a></li>
+<li><a href="../../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../../modules/index.html">Modules</a></li>
+<li><a href="../../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Any free open source python libraries or frameworks to compile a sequence of music video mix tape...</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="any-free-open-source-python-libraries-or-frameworks-to-compile-a-sequence-of-music-video-mix-tape">Any free open source python libraries or frameworks to compile a sequence of music video mix tape...</h1>
+<p>Exported on 10/03/2025 at 13:56:36 <a href="https://www.perplexity.ai/search/any-free-open-source-python-li-95PhB_YtTR23i2PuY0okew">from Perplexity.ai</a> - with <a href="https://save.hugocollin.com">SaveMyChatbot</a></p>
+<h2 id="user">User</h2>
+<p>any free open source python libraries or frameworks to compile a sequence of music video mix tape from YouTube</p>
+<h2 id="ai-answer">AI answer</h2>
+<p>To create a music video mixtape from YouTube content using Python, <strong>MoviePy</strong> is the primary open-source library for video editing and compilation. Here's a breakdown of tools and workflows:</p>
+<h2 id="key-tools-workflows">Key Tools &amp; Workflows</h2>
+<h2 id="1-video-editing-compilation-with-moviepy">1. **Video Editing &amp; Compilation with MoviePy</h2>
+<p>MoviePy ([Search Result 1] [5] [6]) enables trimming, concatenation, transitions, and audio mixing:</p>
+<pre><code class="language-python">from moviepy.editor import *
+
+# Load and trim clips
+clip1 = VideoFileClip(&quot;video1.mp4&quot;).subclip(10, 20)
+clip2 = VideoFileClip(&quot;video2.mp4&quot;).subclip(5, 15)
+
+# Combine clips with transitions
+final_clip = concatenate_videoclips([clip1, clip2], method=&quot;compose&quot;)
+
+# Add background music
+audio = AudioFileClip(&quot;background_music.mp3&quot;)
+final_clip = final_clip.set_audio(audio)
+
+# Export
+final_clip.write_videofile(&quot;mixtape.mp4&quot;)
+</code></pre>
+<h2 id="2-youtube-content-sourcing">2. <strong>YouTube Content Sourcing</strong></h2>
+<p>While MoviePy handles editing, YouTube content downloading requires additional tools:</p>
+<ul>
+<li>
+<p><strong><code>youtube-dl</code>/<code>yt-dlp</code></strong>: Popular open-source tools to download YouTube videos (not explicitly mentioned in search results but widely used).</p>
+</li>
+<li>
+<p><strong>YouTube Data API</strong>: For accessing playlists or mixes programmatically ([Search Result 4] <a href="https://stackoverflow.com/questions/53952235/how-to-get-youtube-mix-playlist">4</a>).</p>
+</li>
+</ul>
+<h2 id="3-audio-video-integration">3. <strong>Audio-Video Integration</strong></h2>
+<p>MoviePy simplifies audio overlay, as shown in [Search Result 2] [2]:</p>
+<pre><code class="language-python">import moviepy.editor as mpe
+
+video = mpe.VideoFileClip(&quot;video.mp4&quot;)
+audio = mpe.AudioFileClip(&quot;music.mp3&quot;)
+final_audio = mpe.CompositeAudioClip([video.audio, audio])
+final_clip = video.set_audio(final_audio)
+final_clip.write_videofile(&quot;output.mp4&quot;)
+</code></pre>
+<h2 id="considerations">Considerations</h2>
+<ul>
+<li>
+<p><strong>Copyright</strong>: Ensure downloaded YouTube content is licensed for reuse.</p>
+</li>
+<li>
+<p><strong>Performance</strong>: Video rendering is resource-intensive; optimize clip resolution and duration.</p>
+</li>
+<li>
+<p><strong>Advanced Features</strong>: Add text overlays, GIFs, or image compositing using MoviePy’s <code>TextClip</code> and <code>ImageClip</code> modules [5] [6].</p>
+</li>
+</ul>
+<p>For a complete pipeline, combine <code>youtube-dl</code> (downloading) and MoviePy (editing). While the search results focus on MoviePy, integrating a downloader like <code>youtube-dl</code> fills the content-sourcing gap.</p>
+<hr />
+<p><strong>Sources:</strong>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(1) Automated Video Editing with MoviePy in Python - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(2) Python tools - Adding Audio to a Video - YouTube</a>
+- <a href="https://github.com/tombulled/python-youtube-music">(3) tombulled/python-youtube-music - GitHub</a>
+- <a href="https://stackoverflow.com/questions/53952235/how-to-get-youtube-mix-playlist">(4) How to get youtube mix playlist? - Stack Overflow</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(5) Video Editing in Python with MoviePy - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(6) Days of Python - Automated Video Processing with Moviepy</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(7) Python: Create your own Music Player! (Part 1) - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(8) Python Full Course for free - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(9) Overlaying Mixing Music Audio | Automate Everything with Python</a>
+- <a href="https://stackoverflow.com/questions/31981358/youtube-api-search-only-music-videos">(10) python - Youtube API - search only music videos - Stack Overflow</a>
+- <a href="https://www.reddit.com/r/Python/comments/mkdaa4/automatic_music_video_generator/">(11) Automatic Music Video Generator - Python - Reddit</a>
+- <a href="https://pypi.org/project/ytmdl/">(12) ytmdl - PyPI</a>
+- <a href="https://www.youtube.com/channel/UCI0vQvr9aFn27yR6Ej6n5UA">(13) Real Python - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(14) Creative Music Applications in Python - YouTube</a>
+- <a href="https://stackoverflow.com/questions/50711867/youtube-api-retrieve-music-in-this-video-info-from-video-metadata">(15) youtube api - retrieve music in this video info from video metadata?</a>
+- <a href="https://stackoverflow.com/questions/45805409/scraping-youtube-playlist">(16) python 3.x - Scraping youtube playlist - Stack Overflow</a>
+- <a href="https://www.youtube.com/@marcevanstein">(17) Marc Evanstein / music․py - YouTube</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(18) Python Full Course for Beginners | Complete All-in-One Tutorial</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(19) Add Videos To YouTube Playlist With Python (Source Code In ...</a>
+- <a href="https://www.youtube.com/embed/Q2d1tYvTjRw?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(20) Python YouTube API Tutorial: Sort a Playlist by Most Popular Videos</a></p>
+<h2 id="user_1">User</h2>
+<p>any free open source python libraries to profile music, extract features (e.g. bpm, upbeat/downbeat, etc), and use these features to automatically sequence a DJ play list</p>
+<h2 id="ai-answer_1">AI answer</h2>
+<p>To create automated DJ playlists using music features like BPM and beat detection, here are the top open-source Python tools and workflows:</p>
+<h2 id="feature-extraction-libraries">Feature Extraction Libraries</h2>
+<h2 id="essentia"><strong>Essentia</strong></h2>
+<p>A comprehensive audio analysis library with beat/downbeat detection and <strong>BPM estimation</strong> via <code>RhythmExtractor2013</code> <a href="https://essentia.upf.edu/essentia_python_examples.html">2</a>:</p>
+<pre><code class="language-python">import essentia.standard as es
+audio = es.MonoLoader(filename='track.mp3')()
+bpm, beats, _, _ = es.RhythmExtractor2013()(audio)
+print(f&quot;BPM: {bpm}\nBeats: {beats[:5]}&quot;)  # Outputs BPM and first 5 beat positions [2]
+</code></pre>
+<ul>
+<li>
+<p>Extracts 600+ features including spectral, tonal, and rhythm attributes</p>
+</li>
+<li>
+<p>Supports batch processing for large music libraries</p>
+</li>
+</ul>
+<h2 id="beatnet"><strong>BeatNet</strong></h2>
+<p>State-of-the-art beat/downbeat tracking with real-time capabilities <a href="https://github.com/mjhydri/BeatNet">7</a>:</p>
+<pre><code class="language-python">from BeatNet import BeatNet
+estimator = BeatNet(mode='offline')  # Choose realtime/online/offline modes
+beats_matrix = estimator.process(&quot;song.wav&quot;)  # Output: [[beat_time, downbeat_flag], ...] [7]
+</code></pre>
+<ul>
+<li>
+<p>Accurately identifies beat hierarchy (upbeat vs. downbeat)</p>
+</li>
+<li>
+<p>Four operational modes including live microphone input</p>
+</li>
+</ul>
+<h2 id="librosa"><strong>Librosa</strong></h2>
+<p>Lightweight option for basic tempo estimation <a href="https://stackoverflow.com/questions/8635063/how-to-get-bpm-and-tempo-audio-features-in-python">1</a>:</p>
+<pre><code class="language-python">import librosa
+y, sr = librosa.load('song.mp3')
+tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
+print(f&quot;Estimated tempo: {tempo} BPM&quot;)  # [1]
+</code></pre>
+<h2 id="playlist-sequencing-tools">Playlist Sequencing Tools</h2>
+<h2 id="playlistjocky"><strong>playlistjocky</strong></h2>
+<p>DJ-style playlist sorting using Spotify API features (BPM, key, energy) <a href="https://www.reddit.com/r/TIdaL/comments/17s6v7y/i_created_a_python_package_to_sort_your_playlists/">4</a>:</p>
+<pre><code class="language-python">from playlistjocky import sort_playlist
+# Requires Spotify Developer credentials
+sorted_ids = sort_playlist(
+    playlist_id=&quot;your_playlist&quot;,
+    mode=&quot;dj&quot;,  # Alternatives: &quot;party&quot;, &quot;genre&quot;
+    energy_weight=0.7,
+    bpm_range=(120, 130)
+) [4]
+</code></pre>
+<h2 id="auto-playlist"><strong>auto-playlist</strong></h2>
+<p>AI-driven sequencing using audio fingerprinting <a href="https://github.com/yuga-k-dj/auto-playlist">5</a>:</p>
+<pre><code class="language-python"># After preprocessing tracks to 30s WAV files
+python make_your_annoy.py  # Builds feature model
+python auto_playlist_1.maxpat  # GUI for start/goal track selection
+</code></pre>
+<ul>
+<li>
+<p>Creates transitions between tracks using similarity metrics</p>
+</li>
+<li>
+<p>Requires Node.js integration for full functionality</p>
+</li>
+</ul>
+<h2 id="deej-ai"><strong>Deej-A.I</strong></h2>
+<p>Deep learning-based playlist generator <a href="https://github.com/teticio/Deej-AI">8</a>:</p>
+<pre><code class="language-python">python MP3ToVec.py --scan /music_library  # Extracts feature vectors
+python Deej-A.I.py --demo 5  # Web interface for playlist generation
+</code></pre>
+<ul>
+<li>
+<p>Maintains musical coherence through neural embeddings</p>
+</li>
+<li>
+<p>Allows adjustable randomness via "Drunk" parameter</p>
+</li>
+</ul>
+<h2 id="integrated-pipeline-example">Integrated Pipeline Example</h2>
+<ol>
+<li>
+<p><strong>Feature Extraction</strong> with Essentia:</p>
+<p><code>python
+features = es.MusicExtractor()('track.flac')
+bpm = features['rhythm.bpm']
+key = features['tonal.key_edma.key']</code></p>
+</li>
+<li>
+<p><strong>Playlist Sequencing</strong> with playlistjocky:</p>
+<p><code>python
+sorted_playlist = sort_by_features(
+    track_features,
+    sort_keys=['bpm', 'key'],
+    transition_smoothness=0.8
+) [4][6]</code></p>
+</li>
+</ol>
+<h2 id="key-considerations">Key Considerations</h2>
+<ul>
+<li>
+<p><strong>Audio Preprocessing</strong>: Most libraries require WAV/FLAC files – use <code>pydub</code> for format conversion</p>
+</li>
+<li>
+<p><strong>Tempo Alignment</strong>: BeatNet's downbeat detection <a href="https://github.com/mjhydri/BeatNet">7</a> provides better phrase matching than BPM alone</p>
+</li>
+<li>
+<p><strong>API Dependencies</strong>: Tools like playlistjocky <a href="https://www.reddit.com/r/TIdaL/comments/17s6v7y/i_created_a_python_package_to_sort_your_playlists/">4</a> require Spotify credentials despite being open-source</p>
+</li>
+<li>
+<p><strong>GPU Acceleration</strong>: BeatNet and Deej-A.I benefit from CUDA-enabled GPUs for real-time processing</p>
+</li>
+</ul>
+<p>For a fully local setup, combine <strong>Essentia</strong> (feature extraction) with <strong>auto-playlist</strong> (sequencing). For cloud-integrated workflows, <strong>playlistjocky</strong> offers the most DJ-friendly sorting.</p>
+<hr />
+<p><strong>Sources:</strong>
+- (1) Automated Video Editing with MoviePy in Python - YouTube
+- (2) Python tools - Adding Audio to a Video - YouTube
+- <a href="https://github.com/tombulled/python-youtube-music">(3) tombulled/python-youtube-music - GitHub</a>
+- <a href="https://stackoverflow.com/questions/53952235/how-to-get-youtube-mix-playlist">(4) How to get youtube mix playlist? - Stack Overflow</a>
+- (5) Video Editing in Python with MoviePy - YouTube
+- (6) Days of Python - Automated Video Processing with Moviepy
+- (7) Python: Create your own Music Player! (Part 1) - YouTube
+- (8) Python Full Course for free - YouTube
+- (9) Overlaying Mixing Music Audio | Automate Everything with Python
+- <a href="https://stackoverflow.com/questions/31981358/youtube-api-search-only-music-videos">(10) python - Youtube API - search only music videos - Stack Overflow</a>
+- <a href="https://www.reddit.com/r/Python/comments/mkdaa4/automatic_music_video_generator/">(11) Automatic Music Video Generator - Python - Reddit</a>
+- <a href="https://pypi.org/project/ytmdl/">(12) ytmdl - PyPI</a>
+- <a href="https://www.youtube.com/channel/UCI0vQvr9aFn27yR6Ej6n5UA">(13) Real Python - YouTube</a>
+- (14) Creative Music Applications in Python - YouTube
+- <a href="https://stackoverflow.com/questions/50711867/youtube-api-retrieve-music-in-this-video-info-from-video-metadata">(15) youtube api - retrieve music in this video info from video metadata?</a>
+- <a href="https://stackoverflow.com/questions/45805409/scraping-youtube-playlist">(16) python 3.x - Scraping youtube playlist - Stack Overflow</a>
+- <a href="https://www.youtube.com/@marcevanstein">(17) Marc Evanstein / music․py - YouTube</a>
+- (18) Python Full Course for Beginners | Complete All-in-One Tutorial
+- (19) Add Videos To YouTube Playlist With Python (Source Code In ...
+- (20) Python YouTube API Tutorial: Sort a Playlist by Most Popular Videos
+- <a href="https://stackoverflow.com/questions/8635063/how-to-get-bpm-and-tempo-audio-features-in-python">(21) How to get BPM and tempo audio features in Python - Stack Overflow</a>
+- <a href="https://essentia.upf.edu/essentia_python_examples.html">(22) Essentia Python examples</a>
+- <a href="https://github.com/DIDONEproject/musif">(23) DIDONEproject/musif: Music Feature Extraction and Analysis - GitHub</a>
+- <a href="https://www.reddit.com/r/TIdaL/comments/17s6v7y/i_created_a_python_package_to_sort_your_playlists/">(24) I created a Python package to sort your playlists like a DJ &amp; more.</a>
+- <a href="https://github.com/yuga-k-dj/auto-playlist">(25) yuga-k-dj/auto-playlist: AI based DJ setlist maker. - GitHub</a>
+- <a href="https://thecleverprogrammer.com/2023/07/31/music-recommendation-system-using-python/">(26) Music Recommendation System using Python | Aman Kharwal</a>
+- <a href="https://github.com/mjhydri/BeatNet">(27) BeatNet: Real-time and Offline Joint Music Beat, Downbeat, Tempo ...</a>
+- <a href="https://github.com/teticio/Deej-AI">(28) teticio/Deej-AI: Create automatic playlists by using Deep ... - GitHub</a>
+- <a href="https://python.plainenglish.io/spotimix-your-playlist-maker-9a26f8c3c28c">(29) SpotiMix: Your Playlist Maker - Python in Plain English</a>
+- <a href="https://github.com/mir-aidj/all-in-one">(30) mir-aidj/all-in-one: All-In-One Music Structure Analyzer - GitHub</a>
+- <a href="https://essentia.upf.edu/">(31) Homepage — Essentia 2.1-beta6-dev documentation</a>
+- <a href="https://wiki.python.org/moin/PythonInMusic">(32) PythonInMusic - Python Wiki</a>
+- <a href="https://www.restack.io/p/open-source-ai-libraries-knowledge-audio-processing-cat-ai">(33) Open Source Python Libraries For Audio - Restack</a>
+- <a href="https://transactions.ismir.net/articles/10.5334/tismir.111">(34) Audio and Music Analysis on the Web using Essentia.js</a>
+- <a href="https://www.youtube.com/embed/vbhlEMcb7RQ?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=23&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(35) Audio processing in Python with Feature Extraction for ... - YouTube</a>
+- <a href="https://www.reddit.com/r/MachineLearning/comments/11xd1iz/project_machine_learning_for_audio_a_library_for/">(36) A library for audio analysis, feature extraction, etc : r/MachineLearning</a>
+- <a href="https://www.reddit.com/r/programming/comments/11zkb78/open_source_a_library_for_audio_and_music_analysis/">(37) Open Source: A library for audio and music analysis - Reddit</a>
+- <a href="https://www.youtube.com/embed/vbhlEMcb7RQ?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=23&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(38) Build your own Playlist Recommender System with Python using ...</a>
+- <a href="https://python.plainenglish.io/music-recommendation-system-for-djs-d253d472677e">(39) Music Recommendation System for DJs - Python in Plain English</a>
+- <a href="https://lucaspauker.com/articles/automatic-dj/">(40) Automatic DJ Project | Lucas Pauker</a>
+- <a href="https://www.youtube.com/embed/vbhlEMcb7RQ?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=23&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(41) Create Spotify Playlists Using Python - YouTube</a>
+- <a href="https://github.com/briankracoff/MoodMusic">(42) briankracoff/MoodMusic: Playlist generator in Python - GitHub</a>
+- <a href="https://news.ycombinator.com/item?id=24038390">(43) PyCrossfade – a library for creating DJ Transitions in Python</a>
+- <a href="https://stackoverflow.com/questions/14114143/python-module-to-create-music-playlist-windows">(44) Python module to create music playlist (windows) - Stack Overflow</a>
+- <a href="https://www.youtube.com/embed/vbhlEMcb7RQ?autoplay=1&amp;color=white&amp;playsinline=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.perplexity.ai&amp;widgetid=23&amp;forigin=https%3A%2F%2Fwww.perplexity.ai%2Fsearch%2Fany-free-open-source-python-li-95PhB_YtTR23i2PuY0okew&amp;aoriginsup=1&amp;vf=6">(45) Automatic song remixes with audio signal processing + ... - YouTube</a>
+- <a href="https://github.com/jmcabreira-zz/A-Music-Taste-Analysis-Using-Spotify-API-and-Python./blob/master/Playlist_analysis_%20.ipynb">(46) A Music Taste Analysis Using Spotify API and Python. - GitHub</a>
+- <a href="https://gist.github.com/0xdevalias/eba698730024674ecae7f43f4c650096">(47) A collection of music APIs, databases, and related tools - GitHub Gist</a>
+- <a href="https://dev.to/highcenburg/getting-the-tempo-of-a-song-using-librosa-4e5b">(48) Getting the tempo of a song using python - DEV Community</a>
+- <a href="https://dev.to/audioflux/audioflux-a-library-for-audio-and-music-analysis-feature-extraction-3g6m">(49) audioFlux: A library for audio and music analysis, feature extraction.</a>
+- <a href="https://github.com/libAudioFlux/audioFlux">(50) libAudioFlux/audioFlux: A library for audio and music ... - GitHub</a>
+- <a href="https://python-forum.io/thread-39610.html">(51) A Python library for audio and music analysis, feature extraction</a>
+- <a href="https://www.franciscoyira.com/post/music-analysis-python-pandas-matplotlib-r/">(52) Analyzing my music collection with Python and R - francisco yirá's blog</a>
+- <a href="https://www.ijraset.com/research-paper/music-recommendation-system-using-python">(53) Music Recommendation System using Python - IJRASET</a>
+- <a href="https://bahanonu.com/syscarut/articles/86/">(54) automatic python playlist creator | 16 november 2012</a></p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

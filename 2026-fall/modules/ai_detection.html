@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI Detection – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI Detection</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-detection">AI Detection</h1>
+<h2 id="ai-detection_1">AI Detection</h2>
+<h2 id="ai-humanization">AI Humanization</h2>
+<ul>
+<li><a href="https://github.com/ICTMCG/Awesome-Machine-Generated-Text?tab=readme-ov-file#detector-attack">Awesome Machine Generated Text</a></li>
+</ul>
+<p>Below is a detailed, structured list of recent approaches and resources (as of February 2025) for “humanizing” AI‐generated text. In essence, researchers have been working on methods that adjust the raw output to mimic human writing’s variability, nuance, and even its “imperfections.” Here’s an overview:</p>
+<hr />
+<h3 id="1-methods">1. Methods</h3>
+<ul>
+<li>
+<p><strong>Dependency Graph &amp; Syntactic Reformatting</strong><br />
+  • <em>Approach:</em> Analyze AI text with syntactic parsers (e.g. dependency trees or constituency trees) to reorganize and vary sentence structures.<br />
+  • <em>How it works:</em> Raw output is tokenized and parsed; then, dependency graphs are used to identify natural grammatical relations, allowing the reordering or restructuring of phrases to produce a more “human” cadence.</p>
+</li>
+<li>
+<p><strong>Lexical Substitution &amp; Synonym Replacement</strong><br />
+  • <em>Approach:</em> Use word embeddings (e.g., from BERT or GloVe) to replace words with contextually appropriate synonyms that add variety and colloquial tone.<br />
+  • <em>How it works:</em> Part-of-speech tagging guides the substitution process while preserving semantic integrity.</p>
+</li>
+<li>
+<p><strong>Sentence Restructuring &amp; Paraphrasing (Style Transfer)</strong><br />
+  • <em>Approach:</em> Leverage sequence-to-sequence models (e.g., BART, T5) to paraphrase and rephrase AI text.<br />
+  • <em>How it works:</em> Models learn from pairs of AI-generated and human-written text to transform the former into a version with natural variability in sentence length, rhythm, and word choice.</p>
+</li>
+<li>
+<p><strong>Sentiment &amp; Tone Adjustment</strong><br />
+  • <em>Approach:</em> Apply sentiment analysis tools to detect emotional tone and then adjust the style (e.g., less formal, more empathetic) accordingly.<br />
+  • <em>How it works:</em> Conditional generation techniques are used to add appropriate emotion or subtle humor that is typically human.</p>
+</li>
+<li>
+<p><strong>Controlled Imperfections &amp; Error Injection</strong><br />
+  • <em>Approach:</em> Introduce slight “noise” (minor grammatical or punctuation inconsistencies) to avoid overly “perfect” machine output.<br />
+  • <em>How it works:</em> Regularization techniques (akin to dropout) are applied at the text level so that the output mimics human errors.</p>
+</li>
+<li>
+<p><strong>N-gram &amp; Statistical Smoothing Techniques</strong><br />
+  • <em>Approach:</em> Compare n-gram distributions of AI text with human corpora and then adjust outputs to match human statistical patterns.<br />
+  • <em>How it works:</em> Techniques such as Kneser–Ney smoothing help blend AI output into a more naturally varied word sequence.</p>
+</li>
+<li>
+<p><strong>Data Augmentation via Back-Translation</strong><br />
+  • <em>Approach:</em> Translate AI text into another language and back again, yielding varied phrasings that often read more naturally.<br />
+  • <em>How it works:</em> The round-trip translation forces rewording and subtle stylistic changes, making the text less “robotic.”</p>
+</li>
+<li>
+<p><strong>Human-in-the-Loop Refinement (Iterative Editing)</strong><br />
+  • <em>Approach:</em> Incorporate feedback loops where human editors provide corrections and style guidance to fine-tune the AI-generated text.<br />
+  • <em>How it works:</em> Reinforcement learning from human feedback (RLHF) or interactive post-editing sessions gradually align AI output with human writing conventions.</p>
+</li>
+</ul>
+<hr />
+<h3 id="2-associated-research-papers">2. Associated Research Papers</h3>
+<ul>
+<li>
+<p><strong>Humanizing AI-Generated Text: Techniques and Future Directions</strong><br />
+<em>Marwah et al., International Journal of Research in Engineering, Science and Management, November 2024</em><br />
+  Discusses methods such as dependency parsing, lexical substitution, sentence restructuring, tone adjustment, and controlled imperfections.<br />
+  citeturn0search3</p>
+</li>
+<li>
+<p><strong>A Deep Generative Framework for Paraphrase Generation</strong><br />
+<em>Gupta et al., AAAI Conference, 2018</em><br />
+  Covers approaches for paraphrasing that can be adapted for humanizing text by generating multiple sentence variants.  </p>
+</li>
+<li>
+<p><strong>Style Transfer for Text Generation: Approaches and Applications</strong><br />
+<em>Various authors (survey papers from 2023–2024)</em><br />
+  Summarizes methods for transferring writing style from human examples to AI-generated text.</p>
+</li>
+<li>
+<p><strong>Reinforcement Learning from Human Feedback in Text Generation</strong><br />
+<em>Papers on RLHF techniques (e.g., from OpenAI’s technical reports on ChatGPT/GPT-4)</em><br />
+  Detail how human feedback can shape text to be more aligned with human stylistic preferences.</p>
+</li>
+</ul>
+<hr />
+<h3 id="3-pros-and-cons">3. Pros and Cons</h3>
+<ul>
+<li>
+<p><strong>Dependency Graph Reformatting</strong><br />
+  • <em>Pros:</em> Captures syntactic structure; improves coherence by reflecting natural grammatical relations.<br />
+  • <em>Cons:</em> Requires robust parsing and can be computationally intensive; may miss subtle semantic nuances.</p>
+</li>
+<li>
+<p><strong>Lexical Substitution</strong><br />
+  • <em>Pros:</em> Enhances vocabulary variety and tone; can tailor content for specific audiences.<br />
+  • <em>Cons:</em> Risk of semantic drift if context isn’t perfectly maintained; may introduce inconsistencies.</p>
+</li>
+<li>
+<p><strong>Sentence Restructuring &amp; Paraphrasing</strong><br />
+  • <em>Pros:</em> Introduces natural variability in sentence length and structure; smooths over repetitive AI patterns.<br />
+  • <em>Cons:</em> Potential loss of original meaning; requires high-quality paired data for training.</p>
+</li>
+<li>
+<p><strong>Sentiment &amp; Tone Adjustment</strong><br />
+  • <em>Pros:</em> Adds emotional and stylistic depth; improves reader engagement.<br />
+  • <em>Cons:</em> Calibration can be challenging; may overcorrect or under-represent desired tone.</p>
+</li>
+<li>
+<p><strong>Controlled Imperfections</strong><br />
+  • <em>Pros:</em> Mimics the “flaws” of human writing, reducing detectability by AI detectors.<br />
+  • <em>Cons:</em> Must be carefully balanced to avoid reducing overall clarity and correctness.</p>
+</li>
+<li>
+<p><strong>Back-Translation Data Augmentation</strong><br />
+  • <em>Pros:</em> Generates diverse phrasings; leverages existing translation models.<br />
+  • <em>Cons:</em> Can introduce translation artifacts; additional computational overhead.</p>
+</li>
+<li>
+<p><strong>Human-in-the-Loop Refinement</strong><br />
+  • <em>Pros:</em> Leverages human judgment for quality and nuance; continuously improves output.<br />
+  • <em>Cons:</em> Labor-intensive and less scalable; introduces subjective variability.</p>
+</li>
+</ul>
+<hr />
+<h3 id="4-tutorialscookbooksblogsarticles">4. Tutorials/Cookbooks/Blogs/Articles</h3>
+<ul>
+<li>
+<p><strong>Ref-n-Write Blog – “How to Humanize AI Text Manually for Academic Writing?”</strong><br />
+  A practical guide discussing key factors (sentence length, repetitive phrases, clichés) and methods to edit AI-generated text for a more human tone.<br />
+  citeturn0search14</p>
+</li>
+<li>
+<p><strong>YouTube Tutorial – “5 Humanizing AI Text for Academic Papers (No Tools Needed!)”</strong><br />
+  A video walkthrough explaining techniques to revise AI text, focusing on aspects like sentence variation and tone adjustment.<br />
+  citeturn0search6</p>
+</li>
+<li>
+<p><strong>Medium Article – “Comprehensive and Step-by-Step Tutorial on Building an AI Text Humanizer”</strong><br />
+  Offers a practical, coding-focused tutorial outlining a pipeline for transforming raw AI outputs into more natural-sounding text.<br />
+  citeturn0search5</p>
+</li>
+<li>
+<p><strong>Ahrefs’ AI Text Humanizer Tool and Blog Post</strong><br />
+  Demonstrates an online tool that automatically rewrites AI-generated text to sound more human-like, with practical examples and use cases.<br />
+  citeturn0search16</p>
+</li>
+</ul>
+<hr />
+<h3 id="5-source-code-and-repositories">5. Source Code and Repositories</h3>
+<ul>
+<li>
+<p><strong>GitHub Repositories:</strong><br />
+  • <em>Awesome-Machine-Generated-Text</em> – A curated list of resources (including humanization methods) for managing AI-generated text.<br />
+    citeturn0search1<br />
+  • <em>Style Transfer and Paraphrase Generation</em> repositories – Many projects on GitHub and Hugging Face (search terms: “style transfer text generation,” “paraphrase generation”) offer open-source code and pretrained models that can be adapted for humanizing AI text.</p>
+</li>
+<li>
+<p><strong>Kaggle Notebooks:</strong><br />
+  • Look for notebooks on “text humanization,” “paraphrase generation,” and “style transfer” that provide step-by-step implementations using popular frameworks like TensorFlow or PyTorch.</p>
+</li>
+<li>
+<p><strong>Hugging Face Spaces and Models:</strong><br />
+  • Several demo spaces and model repositories (e.g., “paraphrase-mpnet-base-v2” or “style-transfer” models) allow you to experiment with text humanization techniques interactively.</p>
+</li>
+</ul>
+<hr />
+<h3 id="conclusion">Conclusion</h3>
+<p>The state of research as of February 2025 shows a multifaceted approach to humanizing AI-generated text. By combining syntactic reformatting, lexical diversity, style transfer, tone adjustment, controlled imperfections, and human feedback, researchers are bridging the gap between machine efficiency and human nuance. For academics and developers alike, these methods—supported by a growing body of research, tutorials, and open-source projects—offer a roadmap for transforming raw AI outputs into engaging, human-like text.</p>
+<p>Feel free to dive into the cited papers and online resources for a more hands-on exploration of these techniques!</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

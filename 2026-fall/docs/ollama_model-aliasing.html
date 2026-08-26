@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Option 1: Create custom models with Modelfiles – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Option 1: Create custom models with Modelfiles</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<p>Let me analyze the pros and cons of each approach for aliasing multiple Ollama models like <code>llama3.1:8b-instruct-q4_K_M</code> → <code>llama3.1:8b</code> and <code>qwen2.5-coder:1.5b-instruct-fp16</code> → <code>qwen2.5-coder:1.5b-base</code>.</p>
+<h2 id="option-1-create-custom-models-with-modelfiles">Option 1: Create custom models with Modelfiles</h2>
+<h3 id="implementation">Implementation:</h3>
+<pre><code class="language-bash"># For the first model
+echo &quot;FROM llama3.1:8b-instruct-q4_K_M&quot; &gt; llama3_modelfile
+ollama create llama3.1:8b -f ./llama3_modelfile
+
+# For the second model
+echo &quot;FROM qwen2.5-coder:1.5b-instruct-fp16&quot; &gt; qwen_modelfile
+ollama create qwen2.5-coder:1.5b-base -f ./qwen_modelfile
+</code></pre>
+<h3 id="pros">Pros:</h3>
+<ul>
+<li>Works directly with the Ollama API and CLI</li>
+<li>Compatible with all tools that use Ollama (WebUI, n8n Docker, etc.)</li>
+<li>The model aliases appear in <code>ollama list</code></li>
+<li>Persistent across reboots</li>
+<li>Works with any program that expects model names as inputs</li>
+</ul>
+<h3 id="cons">Cons:</h3>
+<ul>
+<li>Creates duplicate model metadata (though not duplicate weights)</li>
+<li>Requires disk space for additional metadata</li>
+<li>Models need to be rebuilt if the original is updated</li>
+<li>Slightly more complex initial setup</li>
+</ul>
+<h2 id="option-2-shell-aliases-or-scripts">Option 2: Shell aliases or scripts</h2>
+<h3 id="implementation_1">Implementation:</h3>
+<pre><code class="language-bash"># In your .bashrc or .zshrc
+alias ollama-llama3=&quot;ollama run llama3.1:8b-instruct-q4_K_M&quot;
+alias ollama-qwen=&quot;ollama run qwen2.5-coder:1.5b-instruct-fp16&quot;
+
+# Or create a more sophisticated script
+cat &gt; ollama-alias.sh &lt;&lt; 'EOF'
+#!/bin/bash
+MODEL_ALIASES=(
+  &quot;llama3.1:8b:llama3.1:8b-instruct-q4_K_M&quot;
+  &quot;qwen2.5-coder:1.5b-base:qwen2.5-coder:1.5b-instruct-fp16&quot;
+)
+
+for pair in &quot;${MODEL_ALIASES[@]}&quot;; do
+  alias_name=$(echo $pair | cut -d':' -f1-2)
+  original_name=$(echo $pair | cut -d':' -f3-)
+
+  if [ &quot;$1&quot; = &quot;$alias_name&quot; ]; then
+    shift
+    ollama &quot;$2&quot; &quot;$original_name&quot; &quot;${@:3}&quot;
+    exit 0
+  fi
+done
+
+# If no alias matched, pass through to regular ollama command
+ollama &quot;$@&quot;
+EOF
+chmod +x ollama-alias.sh
+</code></pre>
+<h3 id="pros_1">Pros:</h3>
+<ul>
+<li>No additional disk space needed for model metadata</li>
+<li>Easy to update and maintain in one place</li>
+<li>No risk of out-of-sync models</li>
+<li>Works well for command line usage</li>
+</ul>
+<h3 id="cons_1">Cons:</h3>
+<ul>
+<li>Only works on the command line, not with APIs or other tools</li>
+<li>Not compatible with WebUI, n8n Docker, or any external tools</li>
+<li>Limited to the environment where the aliases are defined</li>
+<li>Not persistent across different systems or users</li>
+<li>Would require significant modifications to work with API calls</li>
+</ul>
+<h2 id="option-3-environment-variables">Option 3: Environment variables</h2>
+<h3 id="implementation_2">Implementation:</h3>
+<pre><code class="language-bash"># In a script or .bashrc/.zshrc
+export LLAMA_3_8B=&quot;llama3.1:8b-instruct-q4_K_M&quot;
+export QWEN_CODER_1_5B=&quot;qwen2.5-coder:1.5b-instruct-fp16&quot;
+
+# Usage
+ollama run $LLAMA_3_8B
+ollama run $QWEN_CODER_1_5B
+</code></pre>
+<h3 id="pros_2">Pros:</h3>
+<ul>
+<li>Simple to implement</li>
+<li>No additional disk space usage</li>
+<li>Can be shared across scripts</li>
+<li>Easy to update</li>
+</ul>
+<h3 id="cons_2">Cons:</h3>
+<ul>
+<li>Only works in environments where variables are defined</li>
+<li>Not compatible with WebUI, n8n Docker, or other tools</li>
+<li>No persistent mapping visible to external applications</li>
+<li>Requires modifying scripts to use the variables instead of direct model names</li>
+</ul>
+<h2 id="option-4-wrapper-api-more-advanced">Option 4: Wrapper API (more advanced)</h2>
+<p>You could create a small API wrapper that intercepts requests to Ollama and translates model names:</p>
+<pre><code class="language-python">from flask import Flask, request, Response
+import requests
+import json
+
+app = Flask(__name__)
+
+MODEL_ALIASES = {
+    &quot;llama3.1:8b&quot;: &quot;llama3.1:8b-instruct-q4_K_M&quot;,
+    &quot;qwen2.5-coder:1.5b-base&quot;: &quot;qwen2.5-coder:1.5b-instruct-fp16&quot;
+}
+
+OLLAMA_URL = &quot;http://localhost:11434&quot;
+
+@app.route('/&lt;path:path&gt;', methods=['GET', 'POST'])
+def proxy(path):
+    if request.method == 'POST':
+        content = request.json
+        if 'model' in content and content['model'] in MODEL_ALIASES:
+            content['model'] = MODEL_ALIASES[content['model']]
+
+        resp = requests.post(f&quot;{OLLAMA_URL}/{path}&quot;, json=content)
+    else:
+        resp = requests.get(f&quot;{OLLAMA_URL}/{path}&quot;)
+
+    return Response(resp.content, resp.status_code)
+
+if __name__ == '__main__':
+    app.run(port=11435)
+</code></pre>
+<h3 id="pros_3">Pros:</h3>
+<ul>
+<li>Works with any tool that can be configured to use a different API endpoint</li>
+<li>Centralized alias management</li>
+<li>No changes needed to original models</li>
+<li>Can work with WebUI, n8n, etc. if you can configure their API endpoint</li>
+</ul>
+<h3 id="cons_3">Cons:</h3>
+<ul>
+<li>More complex to set up and maintain</li>
+<li>Requires running an additional service</li>
+<li>May introduce latency</li>
+<li>May require SSL configuration for some tools</li>
+<li>Not all clients can be configured to use a different API endpoint</li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<p>The most compatible and straightforward solution for most use cases is <strong>Option 1: Create custom models with Modelfiles</strong>. It works natively with all Ollama tools and integrations.</p>
+<p>If you're primarily using Ollama from the command line, <strong>Option 2: Shell aliases or scripts</strong> might be more efficient.</p>
+<p>If you're integrating with multiple tools that can't be easily reconfigured, <strong>Option 4: Wrapper API</strong> provides the most flexibility but with increased complexity.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

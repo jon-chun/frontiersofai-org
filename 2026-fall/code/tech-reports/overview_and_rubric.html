@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Instructor Overview: CAPB for Mini-Project #3 – 2026 Fall – Programming Humanity</title>
+<link href="../../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../../index.html">Course Home</a></li>
+<li><a href="../../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../../modules/index.html">Modules</a></li>
+<li><a href="../../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Instructor Overview: CAPB for Mini-Project #3</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="instructor-overview-capb-for-mini-project-3">Instructor Overview: CAPB for Mini-Project #3</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This mini-CAPB is a lightweight adaptation of the <strong>Composable AI Project Blueprint</strong> for undergraduates completing a one-week AI assignment on <strong>Retrieval-Augmented Generation (RAG)</strong>.</p>
+<p>It helps students produce a small, structured report blending <strong>business reasoning</strong>, <strong>technical design</strong>, and <strong>evaluation planning</strong>, grounded in real-world documentation standards.</p>
+<hr />
+<h2 id="1-document-structure">1. Document Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Project Context</td>
+<td>Define domain, users, and success metrics</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>2. Data &amp; Constraints</td>
+<td>Specify dataset and limitations</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>3. RAG Architecture</td>
+<td>Present minimal viable architecture</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>4. Component Bakeoff</td>
+<td>Compare tools and justify choices</td>
+<td>Annex</td>
+</tr>
+<tr>
+<td>5. Evaluation</td>
+<td>Describe test design and outcomes</td>
+<td>Annex</td>
+</tr>
+<tr>
+<td>6. Risks &amp; Future Work</td>
+<td>Reflect on lessons and improvements</td>
+<td>Annex</td>
+</tr>
+<tr>
+<td>7. References</td>
+<td>Cite learning resources</td>
+<td>Supporting</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-how-students-should-use-it">2. How Students Should Use It</h2>
+<ol>
+<li>Pick a <strong>realistic dataset</strong> you can access (e.g., course materials, internal docs).  </li>
+<li>Research simple <strong>RAG stacks</strong> using LangChain, LlamaIndex, or other open-source repos.  </li>
+<li>Document your <strong>design choices</strong> using the provided YAML snippets.  </li>
+<li>Run or simulate small-scale tests (even manual Q&amp;A is fine).  </li>
+<li>Submit the completed Markdown/PDF file.</li>
+</ol>
+<p>Students are evaluated on how well they <strong>analyze and justify</strong> their choices — not whether the RAG system is production-ready.</p>
+<hr />
+<h2 id="3-research-tips">3. Research Tips</h2>
+<ul>
+<li>Use “Awesome RAG” repositories to discover example architectures and evaluation frameworks.  </li>
+<li>For each component, look up at least one alternative and state why you did <em>not</em> choose it.  </li>
+<li>Optional: review academic RAG papers (GraphRAG, LightRAG, Trustworthy RAG).  </li>
+</ul>
+<hr />
+<h2 id="4-grading-rubric-100-pts">4. Grading Rubric (/100 pts)</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Criteria</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Problem &amp; Use Case</strong></td>
+<td>Clear domain, use case, success metrics</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>2. Data &amp; Constraints</strong></td>
+<td>Defined corpus, constraints, cost/privacy</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>3. Architecture</strong></td>
+<td>Realistic MVP design with rationale</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>4. Component Bakeoff</strong></td>
+<td>At least 2 alternatives, justified choice</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>5. Evaluation</strong></td>
+<td>Real test plan or credible simulation</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>6. Risks &amp; Future Work</strong></td>
+<td>Concrete edge cases and improvements</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>7. Presentation</strong></td>
+<td>Organization, valid YAML, clarity</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-instructor-notes">5. Instructor Notes</h2>
+<ul>
+<li>Accept concise Markdown or PDF submissions.  </li>
+<li>Encourage students to reuse content as starter material for future RAG projects.  </li>
+<li>Allow bonus credit (+5) for novel architectures or using automated evaluation tools (e.g., RAGAS).</li>
+</ul>
+<hr />
+<h2 id="6-industry-alignment">6. Industry Alignment</h2>
+<p>The CAPB mirrors professional documentation practices used in AI engineering:
+- <strong>Architecture Decision Records (ADR):</strong> for recording design rationales<br />
+- <strong>RFC Processes:</strong> for collaborative review<br />
+- <strong>Solution Architecture Docs:</strong> for combining technical and business aspects</p>
+<p>By completing this, students practice the same reasoning steps used in real-world AI product development.</p>
+<hr />
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

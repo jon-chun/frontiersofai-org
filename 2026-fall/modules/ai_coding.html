@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI Coding - Human-AI Collaboration Workflow – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI Coding - Human-AI Collaboration Workflow</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-coding-human-ai-collaboration-workflow">AI Coding - Human-AI Collaboration Workflow</h1>
+<h2 id="setup">Setup</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=zLQuBSuzu2w&amp;t=605s">VSCode + ClaudeDev + Aider + Supermaven : STOP PAYING for CURSOR with this ULTIMATE Alternative (12:32) (2 Oct 2024)</a></li>
+<li><a href="https://news.ycombinator.com/item?id=42831769">Qwen2.5-1M: Deploy your own Qwen with context length up to 1M tokens (28 Jan 2025)</a> HNews setup and strategies</li>
+</ul>
+<h2 id="vibe-coding">Vibe Coding</h2>
+<ul>
+<li><a href="https://github.com/filipecalegario/awesome-vibe-coding">Awesome Vibe Coding (filipecalegario)</a></li>
+</ul>
+<h2 id="terminal-ide">Terminal IDE</h2>
+<ul>
+<li><a href="https://github.com/charmbracelet/crush">Crush</a></li>
+<li><a href="">Claude Code</a></li>
+<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></li>
+</ul>
+<h2 id="context-coding">Context Coding</h2>
+<ul>
+<li><a href="https://github.com/coleam00/context-engineering-intro">Awesome Context Engineering</a></li>
+</ul>
+<h2 id="agentic-coding">Agentic Coding</h2>
+<ul>
+<li><a href="https://www.anthropic.com/engineering/claude-code-best-practices">Claude Code: Best practices for agentic coding (18 Apr 2025)</a></li>
+</ul>
+<h2 id="github-claude-code-cli-plan-create-test-deploy">Github + Claude Code CLI: Plan, Create, Test, Deploy</h2>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=6eBSHbLKuN0">Mastering Claude Code in 30 minutes (28:00) (Jun 2025)</a></p>
+</li>
+<li>
+<p><a href="https://docs.anthropic.com/en/docs/build-with-claude/">Anthropic Build with Claude</a></p>
+</li>
+<li>
+<p><a href="https://docs.anthropic.com/en/docs/claude-code/">Anthropic Claude Code Docs</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Cxd4b5JYqKE">Master Claude Code — Full Beginner's Guide to Every Command (35:47) (21 Jun 2025)</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=TiNpzxoBPz0">Claude Code - 47 PRO TIPS in 9 minutes (9:18) (22 May 2025)</a>
+  1. Use CC as a Bash CLI
+  2. Pass command line args to CC
+  3. <code>claude -p</code> for headless mode
+  4. Chain CC with other CLIs
+  5. Pipe data into CC
+  6. Run multiple instances in parallel
+  7. Ask CC to run subagents
+  8. Drag images into CC
+  9. Copy and paste images
+  10. Give CC mockups
+  11. Use screenshots as feedback
+  12. Automate feedback with Puppeteer
+  13. Use CC as an MCP <strong>server</strong>
+  14. Use CC as an MCP <strong>client</strong>
+  15. Connect your DB with MCP
+  16. Connect APIs with MCP
+  17. Import Docs with MCP
+  19. Import misc knowledge with URLs
+  20. use CLAUDE.md files (injected before each turn so keep clean/concise)
+  21. /init creates CLAUDE.md (after scanning dir and summarizing)
+  22. <code>#</code> adds to CLAUDE.md
+  23. ~/.claude/CLAUDE.md - Global
+  24. Use CLAUDE.md in subdirs (e.g. tests)
+  25. Refactor CLAUDE.md files often
+  26. Use <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver">Anthropic's prompt improver</a>
+  27. slash commands &gt; .claude/commands/<a href="https://www.anthropic.com/engineering/claude-code-best-practices">issue.md</a> 
+  28. use args with slash commands
+  29. tabs to autocomplete filenames
+  30. ESC early and often (if going off track)
+  31. ask CC to undo
+  32. have CC use version control
+  33. have CC commit often (to enable granular rollbacks)
+  34. have CC write your commit messages
+  35. revert more often
+  36. install the github CLI gh
+  37. or use Github via MCP
+  38. ask CC to file PR
+  39. ask CC to do code review of PR
+  40. be aware of upcoming auto compact (watch %context filled)
+  41. proactively compact at checkpoints
+  42. consider /clear vs /compact
+  43. plan work using (a) scratch pads 
+  44. plan work using (b) GH issues
+  45. smaller context &gt; lower costs (use ext memory as much as possible)
+  46. use <a href="https://docs.anthropic.com/en/docs/claude-code/monitoring-usage">open telemetry support</a> see <a href="https://ma.rtin.so/posts/monitoring-claude-code-with-datadog/">Martin Amps CC-OpenTele  Datadog Blog</a>
+  47. Upgrade to Claude Max</p>
+</li>
+<li><a href="https://www.youtube.com/watch?v=FjHtZnjNEBU">The Claude Code &amp; GitHub WORKFLOW to Build Complex Apps (18:40) (26 Jun 2025)</a></li>
+<li><a href="https://fly.io/blog/youre-all-nuts/">My AI Skeptic Friends Are All Nuts</a></li>
+<li><a href="https://news.ycombinator.com/item?id=44163063">hnews thread (3 Jun 2025)</a></li>
+<li><a href="https://docs.github.com/en/get-started/using-github/github-flow">Github Flow</a></li>
+<li><a href="https://www.anthropic.com/engineering/claude-code-best-practices">Claude Code: Best practices for agentic coding (18 Apr 2025)</a></li>
+<li><a href="https://cli.github.com/">Install Github gh (pref over Github API or MCP)</a></li>
+<li><a href="https://github.com/modelcontextprotocol/servers-archived/tree/main/src/puppeteer">Install Puppeteer for testing UI</a></li>
+<li><a href="">Custom Claude Code CMDs in ./.claude/commands</a></li>
+<li><a href="">/init to initialize new claude.md scratch pad memory</a></li>
+<li><a href="">/clear to start afresh</a></li>
+<li><a href="">Setup Testing Framework and CI Pipeline</a></li>
+<li><a href="https://docs.anthropic.com/en/docs/claude-code/github-actions">Claude Code + Github Actions, Beta+$$$ (June 2025)</a></li>
+<li><a href="">Github worktress for isolation/parallel Claude Code/feature checkout</a></li>
+<li><a href="https://render.com/">Deploy using Render sync'ed with Github</a></li>
+</ul>
+<p>Please analyze and fix the GitHub issue: $ARGUMENTS.</p>
+<p>Follow these steps:</p>
+<h1 id="plan">PLAN</h1>
+<ul>
+<li>Use 'gh issue view' to get the issue details</li>
+<li>Understand the problem described in the issue</li>
+<li>Ask clarifying questions if necessary</li>
+<li>Understand the prior art for this issue</li>
+<li>Search the scratchpads for previous thoughts related to the issue</li>
+<li>Search PRs to see if you can find history on this issue</li>
+<li>Search the codebase for relevant files</li>
+<li>Think harder about how to break the issue down into a series of small,
+manageable tasks.</li>
+<li>Document your plan in a new scratchpad</li>
+<li>include the issue name in the filename</li>
+<li>include a link to the issue in the scratchpad.</li>
+</ul>
+<h1 id="create">CREATE</h1>
+<ul>
+<li>Create a new branch for the issue</li>
+<li>Solve the issue in small, manageable steps, according to your plan</li>
+<li>Commit your changes after each step</li>
+</ul>
+<h1 id="test">TEST</h1>
+<ul>
+<li>Use puppeteer via MCP to test the changes if you have made changes to the UI</li>
+<li>Write rspec tests to describe the expected behavior of your code</li>
+<li>Run the full test suite to ensure you haven't broken anything</li>
+<li>If the tests are failing, fix them</li>
+<li>Ensure that all tests are passing before moving on to the next step</li>
+</ul>
+<h1 id="deploy">DEPLOY</h1>
+<ul>
+<li>Open a PR and request a review</li>
+</ul>
+<p>Remember to use the Github CLI (<code>gh</code>) for all Github-related tasks</p>
+<h2 id="google-gemini-cli-and-gemini-code-assist-agent">Google Gemini CLI and Gemini Code Assist (Agent)</h2>
+<ul>
+<li>
+<p><a href="https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/">Announcement Blog Post (25 June 2025)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></p>
+</li>
+<li><a href="https://codeassist.google/">Gemini Code Assist (Agent)</a></li>
+</ul>
+<h2 id="jupyter-colab-notebooks">Jupyter Colab Notebooks</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3N6lInzq5MI">An overview of marimo (6:23) (11 Mar 2024)</a></li>
+<li><a href="https://colab.research.google.com">Google colab.research.google.com</a></li>
+<li><a href="https://medium.com/google-colab">Medium Colab: Experiment, Iterate, Collaborate</a></li>
+</ul>
+<h2 id="replit">Replit</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vw727qcskUQ">Teaching Agents to Code: Bleeding-Edge AI at Replit (55:51) (28 Oct 2024)</a></li>
+</ul>
+<h2 id="cursor">Cursor</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=pw-XCRa-FOI">bolt (9:19) (5 Oct 2024)</a></li>
+<li><a href="https://www.youtube.com/watch?v=gqUQbjsYZLQ&amp;t=19s">Cursor AI tutorial for beginners (40:34) (13 Sep 2024)</a></li>
+<li><a href="https://v0.dev/chat">V0.dev</a></li>
+<li><a href="https://www.cursordirectory.com/">Cursor Directory of Prompts</a></li>
+</ul>
+<h2 id="bold-and-derivatives">Bold and Derivatives</h2>
+<ul>
+<li><a href="https://github.com/stackblitz-labs/bolt.diy">Bold.div</a></li>
+</ul>
+<h2 id="repos">Repos</h2>
+<ul>
+<li><a href="https://hub.continue.dev/explore/assistants">Continue.Dev</a></li>
+<li><a href="https://github.com/Doriandarko/o1-engineer/blob/main/o1-eng.py">o1-eng</a></li>
+<li><a href=""></a></li>
+</ul>
+<h2 id="claude-code">Claude Code</h2>
+<ul>
+<li><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code (Jul 2025)</a></li>
+<li><a href="https://github.com/davila7/claude-code-templates">Claude Code Templates (Jul 2025)</a></li>
+<li>Cursor with Claude Code <a href="https://www.youtube.com/watch?v=aHTXccrfXC8">The Case for Claude Code (26:46) (23 Jun 2025)</a></li>
+</ul>
+<h2 id="gemini-cli">Gemini CLI</h2>
+<h2 id="trae-agent">Trae-Agent</h2>
+<ul>
+<li><a href="https://github.com/bytedance/trae-agent">Bytedance Trae-CLI</a></li>
+</ul>
+<h2 id="coding-copilots">Coding Copilots</h2>
+<ul>
+<li><a href="https://jules.google/">Google Jules</a></li>
+<li><a href="https://www.youtube.com/watch?v=k0kBylMwlbA">Full Stack App Build Claude 3.7 &amp; Cursor AI (25:30) (25 Feb 2025)</a></li>
+<li><a href="https://github.com/block/goose">Goose</a></li>
+<li><a href="https://github.com/potpie-ai/potpie?ref=dailydev">Potpie</a></li>
+<li>Aider</li>
+<li><a href="https://www.youtube.com/watch?v=s0nzjuJeibQ">Aider (Upgraded) : This Coding Agent just got AMAZING with DeepSeek-V2.5 Support, Caching &amp; More! (8:50) (11 Sep 2024)</a></li>
+<li>Free: Google/Remote, Supermaven/Local autocomplete<ul>
+<li><a href="https://www.youtube.com/watch?v=XkDSQq0fwfU">VSCode + Aider + Supermaven : STOP PAYING for CURSOR with this 100% FREE &amp; Opensource Alternative (10:56) (9 Sep 2024)</a></li>
+</ul>
+</li>
+<li>SambaNova.ai<ul>
+<li><a href="https://cloud.sambanova.ai/">Website</a></li>
+<li><a href="https://www.youtube.com/watch?v=MNuRBOB2r38">SambaNova + Aider + ClaudeDev + Continue : FREE &amp; FAST AI Coding Setup with Llama-3.1 405B (8:25) (12 Sep 2024</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="coding-agents">Coding Agents</h2>
+<ul>
+<li>Replit</li>
+<li><a href="https://docs.replit.com/replitai/agent">Homepage</a></li>
+<li>GPT All Starts Collaborating Coding Agents (JS/React): MVP</li>
+<li><a href="https://github.com/kyaukyuai/gpt-all-star">Github</a></li>
+<li><a href="https://www.youtube.com/watch?v=CD6nhqOd79o">Video (11:40) (9 Sep 2024)</a></li>
+</ul>
+<h2 id="python">Python</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=pQt8yQuPOGo">Advanced NumPy Course - Vectorization, Masking, Broadcasting &amp; More (49:33) (10 Aug 2024)</a></li>
+</ul>
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=XWJGm3y207A&amp;t=360s">https://www.youtube.com/watch?v=XWJGm3y207A&amp;t=360s (24:59) (6 Jan 2025)</a></li>
+</ul>
+<h2 id="api">API</h2>
+<ul>
+<li><a href="https://dashboard.ngrok.com/api-keys">ngrok</a></li>
+<li><a href="https://www.semanticscholar.org/product/api?utm_campaign=API%20Newsletter&amp;utm_medium=email&amp;_hsenc=p2ANqtz-9a5h4UBgAuUX1V2CpJpbabUdl-tq8EtLy90esNnQM1y5rFYRML7xpnsQWKx57KBtpZFW-UKYRdqEoC3Z_HyZrLyHgIuQ&amp;_hsmi=324220994&amp;utm_source=hs_email">SemanticScholar.org</a></li>
+</ul>
+<h2 id="vm">VM</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=UFyXVC_nzZE">Build Streamlit Apps with AI and Deploy in Two Clicks on Replit (34:59) (8 Sep 2024)</a></li>
+</ul>
+<h2 id="python_1">Python</h2>
+<ul>
+<li><a href="https://www.youtube.com/@ArjanCodes/videos">ArjanCodes</a></li>
+<li><a href="https://www.youtube.com/@NeuralNine/videos">NeuralNine</a></li>
+</ul>
+<h2 id="test-driven-dev-tdd">Test-Driven Dev (TDD)</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wNPeTxf3xFw">testtrim: 90% Less Automated Software Testing w/ 100% of the Value (Short Version) (10:52) (16 Oct 2024)</a></li>
+</ul>
+<h2 id="demo-code">Demo Code</h2>
+<h2 id="foundational-papers">Foundational Papers</h2>
+<ul>
+<li>
+<p><a href="https://github.com/henrythe9th/AI-Crash-Course">henrythe9th/AI-Crash-Course</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/@LangChain">LangChain</a></p>
+</li>
+<li><a href="https://www.youtube.com/@LlamaIndex/videos">LlamaIndex</a></li>
+<li><a href="https://github.com/Florenz23/ai-agent-videos/tree/master/youtube_automation">Florenz23: AI Agent YT Videos</a></li>
+<li><a href="https://github.com/Farzad-R/LLM-Zero-to-Hundred">FarzadR: LLM Agent YT Videos</a></li>
+<li><a href="https://github.com/samwit/agent_tutorials">samwit: Agents</a></li>
+<li><a href="https://github.com/samwit/langchain-tutorials">samwit: LangChain</a></li>
+<li><a href="https://github.com/AllAboutAI-YT?tab=repositories">allaboutAI</a></li>
+</ul>
+<h2 id="roo-cline">Roo-Cline</h2>
+<ul>
+<li><a href="https://www.reddit.com/r/roocline/">Reddit: s/roocline</a></li>
+</ul>
+<h2 id="full-stack">Full-Stack</h2>
+<ul>
+<li><a href="https://chef.convex.dev/?utm_source=yt-&amp;utm_medium=video&amp;dub_id=7DcIOXKDwMjwgYhE">Convex Chef</a></li>
+<li><a href="https://github.com/get-convex/convex-backend">Github</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

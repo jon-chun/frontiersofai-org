@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Ollama Custom Storage Configuration Guide – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Ollama Custom Storage Configuration Guide</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ollama-custom-storage-configuration-guide">Ollama Custom Storage Configuration Guide</h1>
+<h2 id="overview">Overview</h2>
+<p>This document describes the customization made to configure Ollama to store model files on a larger external drive at <code>/data/wdblue8tb/ollama</code> instead of the default locations. This setup ensures models remain accessible after system updates and reboots, while maintaining compatibility with applications that use Ollama.</p>
+<h2 id="system-information">System Information</h2>
+<ul>
+<li><strong>OS</strong>: Ubuntu 22.05</li>
+<li><strong>Ollama Version</strong>: 0.6.5+</li>
+<li><strong>Storage Drive</strong>: 7.3TB drive mounted at <code>/data/wdblue8tb</code></li>
+<li><strong>Model Storage Path</strong>: <code>/data/wdblue8tb/ollama</code></li>
+<li><strong>Implementation Method</strong>: Environment variable (<code>OLLAMA_MODELS</code>)</li>
+</ul>
+<h2 id="file-locations">File Locations</h2>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Path</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main model storage</td>
+<td><code>/data/wdblue8tb/ollama/models</code></td>
+<td>Primary location for model files</td>
+</tr>
+<tr>
+<td>Model blobs</td>
+<td><code>/data/wdblue8tb/ollama/models/blobs</code></td>
+<td>Binary large objects that make up the models</td>
+</tr>
+<tr>
+<td>Model manifests</td>
+<td><code>/data/wdblue8tb/ollama/models/manifests</code></td>
+<td>Metadata files describing the models</td>
+</tr>
+<tr>
+<td>Systemd override</td>
+<td><code>/etc/systemd/system/ollama.service.d/override.conf</code></td>
+<td>Forces Ollama service to use custom model path</td>
+</tr>
+<tr>
+<td>Environment variable</td>
+<td><code>~/.bashrc</code></td>
+<td>Sets OLLAMA_MODELS for command line usage</td>
+</tr>
+<tr>
+<td>Startup script</td>
+<td><code>~/ollama-startup.sh</code></td>
+<td>Ensures proper setup after system reboots</td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-details">Configuration Details</h2>
+<h3 id="1-environment-variables">1. Environment Variables</h3>
+<p>The <code>OLLAMA_MODELS</code> environment variable is set in multiple locations:</p>
+<ol>
+<li>
+<p><strong>User shell environment</strong> (in <code>~/.bashrc</code>):
+   <code>bash
+   export OLLAMA_MODELS=/data/wdblue8tb/ollama</code></p>
+</li>
+<li>
+<p><strong>Systemd service</strong> (in <code>/etc/systemd/system/ollama.service.d/override.conf</code>):
+   <code>ini
+   [Service]
+   Environment="OLLAMA_MODELS=/data/wdblue8tb/ollama"</code></p>
+</li>
+<li>
+<p><strong>Startup script</strong> (in <code>~/ollama-startup.sh</code>):
+   <code>bash
+   export OLLAMA_MODELS=/data/wdblue8tb/ollama</code></p>
+</li>
+</ol>
+<h3 id="2-directory-structure">2. Directory Structure</h3>
+<pre><code>/data/wdblue8tb/ollama/
+├── models/
+│   ├── blobs/        # Contains model weights and parameters
+│   └── manifests/    # Contains model metadata
+</code></pre>
+<h3 id="3-default-directories">3. Default Directories</h3>
+<p>The standard directories are kept clean but empty to avoid conflicts:</p>
+<pre><code>/usr/share/ollama/.ollama/models/    # Empty directory
+/root/.ollama/models/                # Empty directory
+~/.ollama/models/                    # Empty directory
+</code></pre>
+<h2 id="implementation-steps">Implementation Steps</h2>
+<h3 id="initial-setup">Initial Setup</h3>
+<ol>
+<li>
+<p>Create the base directory structure:
+   <code>bash
+   mkdir -p /data/wdblue8tb/ollama/models/blobs
+   mkdir -p /data/wdblue8tb/ollama/models/manifests
+   sudo chown -R $(whoami):$(whoami) /data/wdblue8tb/ollama</code></p>
+</li>
+<li>
+<p>Configure the environment variable in <code>.bashrc</code>:
+   <code>bash
+   echo 'export OLLAMA_MODELS=/data/wdblue8tb/ollama' &gt;&gt; ~/.bashrc
+   source ~/.bashrc</code></p>
+</li>
+<li>
+<p>Create Systemd service override:
+   <code>bash
+   sudo mkdir -p /etc/systemd/system/ollama.service.d/
+   echo '[Service]
+   Environment="OLLAMA_MODELS=/data/wdblue8tb/ollama"' | sudo tee /etc/systemd/system/ollama.service.d/override.conf
+   sudo systemctl daemon-reload</code></p>
+</li>
+<li>
+<p>Clean up default directories and create fresh ones:
+   ```bash
+   # Stop Ollama service first
+   sudo systemctl stop ollama</p>
+</li>
+</ol>
+<p># Check if any directories are mount points and unmount if needed
+   mount | grep -E "ollama|models"
+   sudo umount /usr/share/ollama/.ollama/models 2&gt;/dev/null
+   sudo umount /root/.ollama/models 2&gt;/dev/null
+   sudo umount ~/.ollama/models 2&gt;/dev/null</p>
+<p># Remove and recreate directories
+   sudo rm -rf /usr/share/ollama/.ollama/models
+   sudo mkdir -p /usr/share/ollama/.ollama/models</p>
+<p>sudo rm -rf /root/.ollama/models
+   sudo mkdir -p /root/.ollama/models</p>
+<p>rm -rf ~/.ollama/models
+   mkdir -p ~/.ollama/models
+   ```</p>
+<ol start="5">
+<li>Create startup script to ensure configuration survives reboots:
+   ```bash
+   cat &lt;&lt; 'EOF' &gt; ~/ollama-startup.sh
+   #!/bin/bash</li>
+</ol>
+<p># Ensure Ollama models directory exists and has proper permissions
+   mkdir -p /data/wdblue8tb/ollama/models/blobs
+   mkdir -p /data/wdblue8tb/ollama/models/manifests
+   chown -R $(whoami):$(whoami) /data/wdblue8tb/ollama</p>
+<p># Export the environment variable
+   export OLLAMA_MODELS=/data/wdblue8tb/ollama</p>
+<p># Run Ollama command or other tasks if needed
+   echo "Ollama configured to use models at $OLLAMA_MODELS"
+   EOF</p>
+<p>chmod +x ~/ollama-startup.sh</p>
+<p># Add to crontab to run at reboot
+   (crontab -l 2&gt;/dev/null; echo "@reboot ~/ollama-startup.sh") | crontab -
+   ```</p>
+<ol start="6">
+<li>
+<p>Restart Ollama service:
+   <code>bash
+   sudo systemctl start ollama</code></p>
+</li>
+<li>
+<p>Verify the setup works:
+   <code>bash
+   ollama list</code></p>
+</li>
+</ol>
+<h3 id="cleaning-up-old-files">Cleaning Up Old Files</h3>
+<p>After confirming models work from the new location:</p>
+<pre><code class="language-bash">sudo rm -rf /usr/share/ollama/.ollama/models/* 2&gt;/dev/null
+rm -rf ~/.ollama/models/* 2&gt;/dev/null
+sudo rm -rf /root/.ollama/models/* 2&gt;/dev/null
+sudo rm -rf /var/lib/ollama/.ollama/models/* 2&gt;/dev/null
+</code></pre>
+<h2 id="model-management">Model Management</h2>
+<h3 id="pulling-new-models">Pulling New Models</h3>
+<p>Pull models normally. They will be stored in the custom location:</p>
+<pre><code class="language-bash">ollama pull llama3:8b
+</code></pre>
+<h3 id="creating-aliases-for-models">Creating Aliases for Models</h3>
+<p>To create an alias for a model:</p>
+<ol>
+<li>
+<p>Create a Modelfile:
+   <code>bash
+   echo "FROM llama3.1:8b-instruct-q4_K_M" &gt; ~/llama3_modelfile</code></p>
+</li>
+<li>
+<p>Create the alias:
+   <code>bash
+   ollama create llama3.1:8b -f ~/llama3_modelfile</code></p>
+</li>
+</ol>
+<h3 id="verifying-model-locations">Verifying Model Locations</h3>
+<pre><code class="language-bash"># Check model list
+ollama list
+
+# Verify models are in the correct location
+ls -la /data/wdblue8tb/ollama/models/manifests
+du -sh /data/wdblue8tb/ollama/models
+</code></pre>
+<h2 id="debugging-faq">Debugging FAQ</h2>
+<h3 id="q-ollama-says-error-mkdir-homeuserollama-file-exists">Q: Ollama says "Error: mkdir /home/user/.ollama: file exists"</h3>
+<p><strong>Solution:</strong></p>
+<pre><code class="language-bash"># Check if the environment variable is set correctly
+echo $OLLAMA_MODELS
+
+# Ensure the directories exist with proper permissions
+mkdir -p /data/wdblue8tb/ollama/models/blobs
+mkdir -p /data/wdblue8tb/ollama/models/manifests
+sudo chown -R $(whoami):$(whoami) /data/wdblue8tb/ollama
+
+# Clean up default directories
+sudo rm -rf /usr/share/ollama/.ollama/models
+sudo mkdir -p /usr/share/ollama/.ollama/models
+sudo rm -rf /root/.ollama/models
+sudo mkdir -p /root/.ollama/models
+rm -rf ~/.ollama/models
+mkdir -p ~/.ollama/models
+
+# Restart Ollama
+sudo systemctl restart ollama
+</code></pre>
+<h3 id="q-models-are-visible-in-ollama-list-but-wont-run">Q: Models are visible in 'ollama list' but won't run</h3>
+<p><strong>Solution:</strong>
+1. Check environment variables:
+   <code>bash
+   echo $OLLAMA_MODELS</code></p>
+<ol start="2">
+<li>
+<p>Make sure the systemd service uses the correct path:
+   <code>bash
+   cat /etc/systemd/system/ollama.service.d/override.conf</code></p>
+</li>
+<li>
+<p>Check permissions:
+   <code>bash
+   ls -la /data/wdblue8tb/ollama/
+   sudo chown -R $(whoami):$(whoami) /data/wdblue8tb/ollama</code></p>
+</li>
+<li>
+<p>Restart Ollama:
+   <code>bash
+   sudo systemctl restart ollama</code></p>
+</li>
+</ol>
+<h3 id="q-after-updating-ollama-models-are-missing">Q: After updating Ollama, models are missing</h3>
+<p><strong>Solution:</strong>
+1. Verify your custom location still contains the models:
+   <code>bash
+   ls -la /data/wdblue8tb/ollama/models/manifests</code></p>
+<ol start="2">
+<li>
+<p>Verify the environment variable is still being applied:
+   <code>bash
+   cat /etc/systemd/system/ollama.service.d/override.conf
+   echo $OLLAMA_MODELS</code></p>
+</li>
+<li>
+<p>Run your startup script:
+   <code>bash
+   ~/ollama-startup.sh</code></p>
+</li>
+<li>
+<p>Restart Ollama:
+   <code>bash
+   sudo systemctl restart ollama</code></p>
+</li>
+</ol>
+<h3 id="q-after-rebooting-ollama-cant-find-models">Q: After rebooting, Ollama can't find models</h3>
+<p><strong>Solution:</strong>
+1. Run the startup script manually:
+   <code>bash
+   ~/ollama-startup.sh</code></p>
+<ol start="2">
+<li>
+<p>Check if the drive is properly mounted:
+   <code>bash
+   df -h | grep wdblue8tb</code></p>
+</li>
+<li>
+<p>If not mounted, mount it:
+   <code>bash
+   sudo mount /dev/sda1 /data/wdblue8tb</code></p>
+</li>
+<li>
+<p>Check if the environment variable is set:
+   <code>bash
+   echo $OLLAMA_MODELS</code></p>
+</li>
+<li>
+<p>Restart Ollama:
+   <code>bash
+   sudo systemctl restart ollama</code></p>
+</li>
+</ol>
+<h3 id="q-dockerwebuin8n-cant-access-the-models">Q: Docker/WebUI/n8n can't access the models</h3>
+<p><strong>Solution:</strong>
+1. Ensure the Docker containers set the same environment variable:
+   <code>bash
+   # For Docker
+   docker run -e OLLAMA_MODELS=/data/wdblue8tb/ollama -v /data/wdblue8tb/ollama:/data/wdblue8tb/ollama ollama/ollama</code></p>
+<ol start="2">
+<li>Update Docker Compose files if used:
+   <code>yaml
+   services:
+     ollama:
+       image: ollama/ollama
+       environment:
+         - OLLAMA_MODELS=/data/wdblue8tb/ollama
+       volumes:
+         - /data/wdblue8tb/ollama:/data/wdblue8tb/ollama</code></li>
+</ol>
+<h3 id="q-device-or-resource-busy-when-trying-to-remove-directories">Q: "Device or resource busy" when trying to remove directories</h3>
+<p><strong>Solution:</strong>
+1. Check what's using the directories:
+   <code>bash
+   sudo lsof | grep ollama</code></p>
+<ol start="2">
+<li>
+<p>Stop Ollama service first:
+   <code>bash
+   sudo systemctl stop ollama</code></p>
+</li>
+<li>
+<p>Check if any directories are mount points:
+   <code>bash
+   mount | grep -E "ollama|models"</code></p>
+</li>
+<li>
+<p>Unmount if necessary:
+   <code>bash
+   sudo umount /usr/share/ollama/.ollama/models 2&gt;/dev/null
+   sudo umount /root/.ollama/models 2&gt;/dev/null
+   sudo umount ~/.ollama/models 2&gt;/dev/null</code></p>
+</li>
+</ol>
+<h2 id="monitoring-and-maintenance">Monitoring and Maintenance</h2>
+<h3 id="check-disk-usage">Check Disk Usage</h3>
+<pre><code class="language-bash">df -h /data/wdblue8tb
+du -sh /data/wdblue8tb/ollama/models
+</code></pre>
+<h3 id="list-all-models">List All Models</h3>
+<pre><code class="language-bash">ollama list
+</code></pre>
+<h3 id="remove-unused-models">Remove Unused Models</h3>
+<pre><code class="language-bash">ollama rm model_name
+</code></pre>
+<hr />
+<p>This configuration provides a robust setup for using Ollama with a custom storage location, ensuring your models remain accessible and properly managed across system changes and reboots.</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

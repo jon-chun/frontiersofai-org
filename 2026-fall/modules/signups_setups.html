@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Remote Cloud Sign-ups and Local Laptop Setups – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Remote Cloud Sign-ups and Local Laptop Setups</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="remote-cloud-sign-ups-and-local-laptop-setups">Remote Cloud Sign-ups and Local Laptop Setups</h1>
+<h2 id="iphs-391-frontiers-of-ai-autonomous-agents">IPHS 391: Frontiers of AI - Autonomous Agents</h2>
+<h3 id="jon-chun-fall-2024">Jon Chun, Fall 2024</h3>
+<h1 id="note">NOTE</h1>
+<ul>
+<li>Gmail account</li>
+<li>Use your personal gmail.com account</li>
+<li>Your Kenyon.edu Google account (it has restrictions)</li>
+<li>API Keys</li>
+<li>We will use a number of API Keys that you need to securely save somehwere (contacts, textfile, etc)</li>
+<li>NEVER hardcode your API keys into a notebook/python program file<ul>
+<li>Either set it as an unseen environment variable or read it dynamically, e.g.</li>
+<li>import getpass</li>
+<li>OPENAI_API_KEY = getpass.getpass("Enter your OpenAI API Key:)</li>
+</ul>
+</li>
+<li>OpenAI.com subscription</li>
+<li>First sign-up for $20/mo ChatGPT subscription</li>
+<li>Then setup API Access: https://platform.openai.com/settings/organization/billing/overview<ul>
+<li>Enter billing credit card infomation under "Payment Methods" (top horizontal menu)</li>
+<li>Select "Auto recharge is off" to limit maximum spend</li>
+<li>Add $10 credit to the "Pay as you go" amount</li>
+</ul>
+</li>
+<li>Get an secret OpenAI API Key at https://platform.openai.com/api-keys<ul>
+<li>click top right green button labeled "+ Create new secret key"</li>
+<li>name your key "iphs391" (with default settings)</li>
+<li>under "Save your key", click green "Copy" button and IMMEDIATELY save it somewhere for future reference (once this popup dialog box closes, you can never view this API Key again)</li>
+</ul>
+</li>
+<li>Debugging Steps</li>
+<li>Sometimes the OpenAI API Calls will return ERRORS with invalid model names even with valid model names<ul>
+<li>check the API credit limit is not $0: add $10 non-auto recharge if so and recreate key</li>
+<li>delete and recreate 'iphs391' API key</li>
+<li>restart program</li>
+</ul>
+</li>
+</ul>
+<h1 id="cloud-service">Cloud Service</h1>
+<ul>
+<li>
+<p>NOTE: You cannot use your @kenyon.edu Google gmail account due to enterprise restrictions.  Please use a personal Google account (create one if necessary).</p>
+</li>
+<li>
+<p><a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">Github.com (free)</a></p>
+</li>
+<li><a href="https://huggingface.co/join">Huggingface.co (free)</a></li>
+<li><a href="https://www.kaggle.com/account/login?phase=startRegisterTab&amp;returnUrl=%2F">Kaggle.com (free)</a></li>
+<li><a href="https://colab.research.google.com/signup">Google.com Colab ($10/mo plan)</a></li>
+<li><a href="https://chatgpt.com/">OpenAI.com API ($20/mo + API fees)</a></li>
+<li><a href="https://console.groq.com/">Groq.com</a></li>
+<li>
+<p><a href="https://ai.google.dev/pricing">Google Gemini Free Tier</a></p>
+</li>
+<li>
+<p>OpenAI API Setup</p>
+</li>
+<li>Use non-Kenyon gmail account</li>
+<li>Signup for $20/mo ChatGPT</li>
+<li>Allocate $10 NON-AUTORENEW API budget limit</li>
+<li>Create OpenAI API Key <a href="https://platform.openai.com/api-keys">"iphs391"</a></li>
+<li>Problems recognizing models like 'gpt4-o', may have to delete/recreate API Key</li>
+</ul>
+<h1 id="local-laptop-installationssetups">Local Laptop Installations/Setups</h1>
+<ul>
+<li>Laptop: Win11, MacOS or Linux</li>
+<li><a href="https://www.microsoft.com/en-us/edge/download?form=MA13FJ">MS Edge Browser with Copilot and free GPT4</a></li>
+<li>Linux Virtual Machine (VM) for Win 11: <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL2 for Win11</a> (Ubuntu 22.04.3 LTS)</li>
+<li>Recommended Terminal App: </li>
+<li><a href="https://apps.microsoft.com/detail/9n0dx20hk701?launch=true&amp;mode=full&amp;hl=en-us&amp;gl=us&amp;ocid=bingwebsearch">Win11 Terminal</a></li>
+<li><a href="https://iterm2.com/">MacOS iTerm</a></li>
+<li><a href="https://www.python.org/downloads/release/python-31014/">Python 3.10.14</a></li>
+<li>Python Libraries (Common, ML, and AI) - In class, over the semester</li>
+<li>Virtual Env: <a href="https://realpython.com/python-virtual-environments-a-primer/">venv</a> &gt; conda</li>
+<li>Github: <a href="https://git-scm.com/downloads">git</a> &gt; gh</li>
+<li><a href="https://code.visualstudio.com/Download">Microsoft VSCode</a></li>
+<li>VSCode:</li>
+<li><a href="https://code.visualstudio.com/">VSCode</a></li>
+<li><a href="https://www.youtube.com/watch?v=kwfNrWrnZyU">VSCode Extensions that I Use to INCREASE Productivity with AI (actually useful) (4:06) May 2024</a>: Codiumate and Mintlify</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vscode-extensions-farshid.vscode-extensions-farshid">Selections from Chun/Farshid</a><ul>
+<li>Python extensions (Microsoft)</li>
+<li>Jupyter extensions (Microsoft)</li>
+<li>Codiumate (GenAI Code - Free)</li>
+<li>ChatGPT Genie AI (GenAI Code - API Key)</li>
+<li>Mintlify Doc Writer (GenAI Comments/Documentation)</li>
+<li>Prettier (Color Code Formatter)</li>
+<li>Code Spell Checker (Spell Checker)</li>
+</ul>
+</li>
+<li><a href="https://ollama.com/download">Ollama.ai</a></li>
+</ul>
+<h1 id="github-ssh-setup">Github SSH Setup</h1>
+<p>To generate a Personal Access Token (PAT) for GitHub via the terminal, the process is mostly the same for both Windows and macOS. The difference lies in navigating the terminal environment to open the web browser and set up your SSH keys, if necessary.</p>
+<p>Here’s a detailed guide for each operating system.</p>
+<h3 id="for-both-windows-and-macos">For both Windows and macOS:</h3>
+<h4 id="step-1-set-up-ssh-keys-if-not-already-set">Step 1: Set up SSH keys (if not already set)</h4>
+<p>You might want to set up SSH keys for more secure authentication. You can skip this step if you've already set up SSH keys.</p>
+<ol>
+<li><strong>Generate a new SSH key</strong>:
+   Open your terminal (Command Prompt, PowerShell, or Git Bash on Windows, and Terminal on macOS):</li>
+</ol>
+<p><code>bash
+   ssh-keygen -t ed25519 -C "your_email@example.com"</code></p>
+<p>If you're using an older system that doesn’t support <code>ed25519</code>, you can use RSA instead:</p>
+<p><code>bash
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code></p>
+<ol start="2">
+<li><strong>Add the SSH key to the SSH agent</strong>:
+   Run the following commands to ensure the SSH agent is running and to add your key:</li>
+</ol>
+<p>```bash
+   # For macOS
+   eval "$(ssh-agent -s)"</p>
+<p># For Windows (Git Bash)
+   eval $(ssh-agent -s)</p>
+<p>ssh-add ~/.ssh/id_ed25519  # Adjust the file path if you're using a different key name
+   ```</p>
+<ol start="3">
+<li>
+<p><strong>Copy the SSH key to your clipboard</strong>:
+   - For <strong>macOS</strong>:
+     <code>bash
+     pbcopy &lt; ~/.ssh/id_ed25519.pub</code>
+   - For <strong>Windows (Git Bash)</strong>:
+     <code>bash
+     clip &lt; ~/.ssh/id_ed25519.pub</code></p>
+</li>
+<li>
+<p><strong>Add the SSH key to your GitHub account</strong>:
+   - Go to <a href="https://github.com/settings/keys">GitHub SSH Settings</a>.
+   - Click "New SSH Key", paste your key in the box, and give it a recognizable title.</p>
+</li>
+</ol>
+<h4 id="step-2-generate-github-personal-access-token-pat">Step 2: Generate GitHub Personal Access Token (PAT)</h4>
+<p>Since the process is web-based, it's the same across platforms:</p>
+<ol>
+<li>
+<p><strong>Go to your GitHub account</strong>:
+   - Open <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>.</p>
+</li>
+<li>
+<p><strong>Generate a new token</strong>:
+   - Click <strong>Generate new token</strong> or <strong>Generate new token (classic)</strong> if you are looking for legacy PATs.
+   - Add a <strong>note</strong> (e.g., "For terminal access") to remember the purpose of the token.
+   - Select <strong>scopes</strong> that define what the token can do. If you're using this for repository access, check <code>repo</code>. If you also need access to other features like Gists, select the appropriate scopes.</p>
+</li>
+<li>
+<p><strong>Generate and copy the token</strong>:
+   - Once generated, GitHub will display the token <strong>only once</strong>. Make sure to copy and store it securely (e.g., in a password manager).</p>
+</li>
+</ol>
+<h4 id="step-3-use-the-personal-access-token-pat-for-git-authentication">Step 3: Use the Personal Access Token (PAT) for Git Authentication</h4>
+<p>Once you have the token, you can replace your password with this token for Git operations that require authentication (like cloning a repo, pushing, or pulling).</p>
+<ol>
+<li><strong>Clone a GitHub repository</strong>:
+   Replace <code>YOUR_PAT</code> with the token you generated:</li>
+</ol>
+<p><code>bash
+   git clone https://&lt;YOUR_GITHUB_USERNAME&gt;:YOUR_PAT@github.com/&lt;YOUR_GITHUB_USERNAME&gt;/&lt;REPO&gt;.git</code></p>
+<p>Alternatively, Git should prompt for your username and password when you try to <code>git clone</code> or <code>git push</code>. Instead of using your password, paste the PAT.</p>
+<h4 id="step-4-store-your-credentials-securely-optional">Step 4: Store your credentials securely (Optional)</h4>
+<p>You can configure Git to store your credentials securely so that you don’t have to enter your PAT each time:</p>
+<ul>
+<li>
+<p>On <strong>macOS</strong>, Git supports the macOS Keychain:
+  <code>bash
+  git config --global credential.helper osxkeychain</code></p>
+</li>
+<li>
+<p>On <strong>Windows</strong>, Git supports the Windows Credential Manager:
+  <code>bash
+  git config --global credential.helper wincred</code></p>
+</li>
+</ul>
+<hr />
+<h3 id="summary">Summary:</h3>
+<ol>
+<li><strong>Windows</strong> and <strong>macOS</strong> both involve generating SSH keys and using the GitHub web interface to create a Personal Access Token (PAT).</li>
+<li>SSH keys are for key-based authentication, while PATs can replace passwords in Git operations.</li>
+<li>Always ensure the PAT is stored securely, as it grants access to your GitHub account based on the scopes you select.</li>
+</ol>
+<p>Let me know if you'd like further help with any part of the setup process!</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

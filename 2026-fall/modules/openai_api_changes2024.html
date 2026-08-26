@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>OpenAI API 2024 Changes: From .chat to .complete – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>OpenAI API 2024 Changes: From .chat to .complete</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="openai-api-2024-changes-from-chat-to-complete">OpenAI API 2024 Changes: From <code>.chat</code> to <code>.complete</code></h1>
+<h2 id="1-introduction">1. Introduction</h2>
+<ul>
+<li>Brief overview of the change from <code>.chat</code> to <code>.complete</code></li>
+<li>Timeframe of the change</li>
+</ul>
+<h3 id="11-summary-of-key-changes">1.1 Summary of Key Changes</h3>
+<ul>
+<li>Unified endpoint for chat and completion tasks</li>
+<li>Enhanced flexibility and broader capabilities</li>
+<li>Simplified input format</li>
+<li>Improved response control</li>
+</ul>
+<h2 id="2-timeline-and-enforcement">2. Timeline and Enforcement</h2>
+<ul>
+<li>Announcement and introduction (late 2023 - early 2024)</li>
+<li>Grace period for transition</li>
+<li>Enforcement date (mid-to-late 2024)</li>
+</ul>
+<h2 id="3-key-differences">3. Key Differences</h2>
+<h3 id="31-unified-endpoint">3.1 Unified Endpoint</h3>
+<ul>
+<li>Transition from separate <code>.chat</code> and <code>.completion</code> to single <code>.complete</code> endpoint</li>
+</ul>
+<h3 id="32-task-flexibility">3.2 Task Flexibility</h3>
+<ul>
+<li>Expanded capabilities beyond conversational tasks</li>
+</ul>
+<h3 id="33-simplified-input-format">3.3 Simplified Input Format</h3>
+<ul>
+<li>Comparison of old vs new input structures</li>
+</ul>
+<h3 id="34-improved-response-control">3.4 Improved Response Control</h3>
+<ul>
+<li>New options for controlling output format and structure</li>
+</ul>
+<h3 id="35-advanced-use-cases">3.5 Advanced Use Cases</h3>
+<ul>
+<li>Code generation and debugging</li>
+<li>Creative writing and story generation</li>
+<li>Summarization</li>
+<li>Custom instruction following</li>
+</ul>
+<h3 id="36-broader-model-access">3.6 Broader Model Access</h3>
+<ul>
+<li>Access to a wider range of specialized models</li>
+</ul>
+<h3 id="37-backward-compatibility">3.7 Backward Compatibility</h3>
+<ul>
+<li>Support for existing chat-based workflows</li>
+</ul>
+<h2 id="4-example-comparisons">4. Example Comparisons</h2>
+<h3 id="41-basic-chat-vs-complete-example">4.1 Basic <code>.chat</code> vs <code>.complete</code> Example</h3>
+<pre><code class="language-json">// Old .chat format
+{
+  &quot;model&quot;: &quot;gpt-4&quot;,
+  &quot;messages&quot;: [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Tell me a joke.&quot;}
+  ]
+}
+
+// New .complete format
+{
+  &quot;model&quot;: &quot;gpt-4&quot;,
+  &quot;prompt&quot;: &quot;Tell me a joke.&quot;
+}
+</code></pre>
+<h3 id="42-advanced-complete-examples">4.2 Advanced <code>.complete</code> Examples</h3>
+<ul>
+<li>Code generation example</li>
+<li>Creative writing example</li>
+<li>Summarization example</li>
+</ul>
+<h2 id="5-migration-guide">5. Migration Guide</h2>
+<h3 id="51-steps-for-transitioning">5.1 Steps for Transitioning</h3>
+<ol>
+<li>Update API endpoint calls</li>
+<li>Modify input formatting</li>
+<li>Adjust response handling</li>
+</ol>
+<h3 id="52-common-pitfalls-and-solutions">5.2 Common Pitfalls and Solutions</h3>
+<ul>
+<li>Handling multi-turn conversations</li>
+<li>Adapting to new response formats</li>
+</ul>
+<h2 id="6-future-implications">6. Future Implications</h2>
+<ul>
+<li>Impact on AI development practices</li>
+<li>Potential new use cases and opportunities</li>
+<li>Integration with other AI technologies</li>
+</ul>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<ul>
+<li>Recap of benefits of the new <code>.complete</code> endpoint</li>
+<li>Encouragement for adoption and exploration of new capabilities</li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

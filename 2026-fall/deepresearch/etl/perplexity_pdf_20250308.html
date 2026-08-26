@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Key Points – 2026 Fall – Programming Humanity</title>
+<link href="../../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../../index.html">Course Home</a></li>
+<li><a href="../../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../../modules/index.html">Modules</a></li>
+<li><a href="../../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Key Points</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>Research suggests PDF table extraction tools like <a href="https://github.com/tabulapdf/tabula">tabula</a> and <a href="https://github.com/camelot-dev/camelot">camelot</a> are effective for structured data, while OCR tools like <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> and <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> excel at text from images.</li>
+<li>It seems likely that libraries like <a href="https://github.com/pymupdf/PyMuPDF">PyMuPDF</a> and <a href="https://github.com/pypdf/pypdf">pypdf</a> are popular for general PDF text extraction, with newer models like <a href="https://huggingface.co/allenai/olmOCR-7B-0225">OlmOCR 7B</a> showing promise for advanced OCR.</li>
+<li>The evidence leans toward <a href="https://github.com/ucbepic/docetl">DocETL</a> and <a href="https://github.com/towhee-io/towhee">ToWhee</a> for complex document ETL pipelines, especially for RAG applications.</li>
+</ul>
+<h3 id="pdf-table-extraction-and-ocr-tools">PDF Table Extraction and OCR Tools</h3>
+<p>Document processing involves extracting and analyzing data from PDFs and images, often requiring specialized tools. For PDF table extraction, tools like <a href="https://github.com/tabulapdf/tabula">tabula</a> and <a href="https://github.com/camelot-dev/camelot">camelot</a> are widely used for their accuracy with structured data. For OCR, <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> and <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> are reliable for converting image text, with emerging models like <a href="https://huggingface.co/allenai/olmOCR-7B-0225">OlmOCR 7B</a> offering advanced capabilities.</p>
+<h3 id="etl-and-data-pipelines">ETL and Data Pipelines</h3>
+<p>For integrating document processing into larger workflows, <a href="https://github.com/ucbepic/docetl">DocETL</a> and <a href="https://github.com/towhee-io/towhee">ToWhee</a> are notable for their ETL capabilities, particularly in retrieval-augmented generation (RAG) contexts. These tools help manage complex document data pipelines efficiently.</p>
+<h3 id="unexpected-detail-emerging-trends">Unexpected Detail: Emerging Trends</h3>
+<p>An unexpected trend is the rise of multimodal RAG approaches, like <a href="https://github.com/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">M3DOCRAG</a>, which combine vision and language models for enhanced document understanding, potentially transforming how we process multi-modal documents.</p>
+<hr />
+<h3 id="comprehensive-survey-on-document-processing-tools-and-libraries">Comprehensive Survey on Document Processing Tools and Libraries</h3>
+<p>Document processing encompasses a wide range of tasks, from extracting text and tables from PDFs to performing optical character recognition (OCR) on images, and integrating these processes into extract, transform, load (ETL) pipelines. This survey organizes the landscape of tools and libraries, ensuring a logical and comprehensive overview, and augments each category with leading, state-of-the-art (SOTA), and trending solutions as of March 8, 2025.</p>
+<h4 id="introduction-to-document-processing">Introduction to Document Processing</h4>
+<p>Document processing involves extracting, analyzing, and transforming information from various document types, such as PDFs, Word documents, and images. It is crucial for fields like data science, information retrieval, and automated workflows, enabling tasks like text extraction, OCR, and data integration into larger systems. This survey categorizes tools by function, ensuring clarity for both technical and non-technical audiences.</p>
+<h4 id="text-extraction-from-documents">Text Extraction from Documents</h4>
+<p>This section covers tools for extracting text from different document formats, with subcategories for PDFs, tables, Word documents, and OCR-specific tools.</p>
+<h5 id="pdf-text-extraction-libraries">PDF Text Extraction Libraries</h5>
+<p>PDF text extraction libraries are essential for pulling text from PDF files, which may contain embedded text or images requiring OCR. The following table lists key libraries, their primary functions, and GitHub URLs:</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Primary Function</th>
+<th>GitHub URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/pypdf/pypdf">pypdf</a></td>
+<td>Reading and writing PDF files, text extraction</td>
+<td>https://github.com/pypdf/pypdf</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pdfminer/pdfminer.six">pdfminer</a></td>
+<td>Extracting text and layout from PDFs</td>
+<td>https://github.com/pdfminer/pdfminer.six</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrismattmann/tika-python">tika-python</a></td>
+<td>Extracting text from various formats, including PDFs</td>
+<td>https://github.com/chrismattmann/tika-python</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pymupdf/PyMuPDF">PyMuPDF</a></td>
+<td>High-performance PDF text extraction and manipulation</td>
+<td>https://github.com/pymupdf/PyMuPDF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/deanmalmgren/textract">textract</a></td>
+<td>Universal text extraction from multiple formats</td>
+<td>https://github.com/deanmalmgren/textract</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jsvine/pdfplumber">pdfplumber</a></td>
+<td>Extracting text, tables, and images from PDFs</td>
+<td>https://github.com/jsvine/pdfplumber</td>
+</tr>
+</tbody>
+</table>
+<p>These libraries are popular due to their robustness, with <a href="https://github.com/pymupdf/PyMuPDF">PyMuPDF</a> noted for its speed and <a href="https://github.com/chrismattmann/tika-python">tika-python</a> for handling multiple formats. Emerging trends include integration with LLMs for enhanced parsing, as seen in tools like <a href="https://github.com/h2oai/h2ogpt">H2OGPT</a>, which, while primarily an AI framework, supports document processing.</p>
+<h5 id="pdf-table-extraction-tools">PDF Table Extraction Tools</h5>
+<p>Extracting tables from PDFs is a specialized task, often challenging due to formatting. The following tools are designed for this purpose:</p>
+<ul>
+<li><a href="https://github.com/tabulapdf/tabula">tabula</a>: A Java-based tool with Python bindings (<a href="https://github.com/chezou/tabula-py">tabula-py</a>), effective for structured tables.</li>
+<li><a href="https://github.com/camelot-dev/camelot">camelot</a>: A Python library with lattice and stream parsing modes, suitable for complex layouts.</li>
+<li><a href="https://github.com/axsauze/pdf-table-extractor">pdf-table-extractor</a>: Focuses on extracting tables with high accuracy.</li>
+<li><a href="https://github.com/VikParuchuri/marker">VikParuchuri/marker</a>: A tool for table extraction, noted in the notes for its capabilities.</li>
+<li><a href="https://github.com/getomni-ai/zerox">getomni-ai/zerox</a>: Highlighted as best for PDF to Markdown conversion, potentially including tables.</li>
+<li><a href="https://github.com.facebookresearch/nougat">facebookresearch/nougat</a>: A model for document understanding, useful for table extraction.</li>
+<li><a href="https://github.com/Zipstack/llmwhisperer-table-extraction">Zipstack/llmwhisperer-table-extraction</a>: Leverages LLMs for table extraction.</li>
+<li><a href="https://www.npmjs.com/package/pdfreader">adrienjoly/pdfreader</a>: A Node.js package, less relevant for Python users but noted for completeness.</li>
+</ul>
+<p>SOTA solutions include <a href="https://github.com/tabulapdf/tabula">tabula</a> and <a href="https://github.com/camelot-dev/camelot">camelot</a>, with trending developments in LLM-powered extraction, such as <a href="https://github.com/yigitkonur/swift-ocr-llm-powered-pdf-to-markdown">yigitkonur/swift-ocr-llm-powered pdf-to-markdown</a> (corrected URL), which combines OCR and LLMs for enhanced table extraction.</p>
+<h5 id="text-extraction-from-word-documents">Text Extraction from Word Documents</h5>
+<p>For Microsoft Word documents, the following libraries are effective for text extraction:</p>
+<ul>
+<li><a href="https://github.com/python-openxml/python-docx">python-docx</a>: A standard library for reading and writing .docx files, widely used for text extraction.</li>
+<li><a href="https://github.com/ankushsingh/docx2txt">docx2txt</a>: A simple tool for converting .docx to plain text.</li>
+<li><a href="https://github.com/deanmalmgren/textract">textract</a>: Supports Word documents alongside other formats, using multiple backends.</li>
+</ul>
+<p>These tools are essential for workflows involving Word documents, with <a href="https://github.com/python-openxml/python-docx">python-docx</a> being the most popular due to its comprehensive features.</p>
+<h5 id="ocr-libraries-and-tools">OCR Libraries and Tools</h5>
+<p>OCR is crucial for converting image-based text into machine-readable format, especially for scanned documents. The following libraries are leading in this space:</p>
+<ul>
+<li><a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a>: An open-source OCR engine, widely used and mature.</li>
+<li><a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a>: A Python library for easy OCR, supporting multiple languages.</li>
+<li><a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR</a>: A SOTA OCR system with high accuracy, part of the PaddlePaddle ecosystem.</li>
+<li><a href="https://github.com/faustomorales/keras-ocr">keras-ocr</a>: Uses deep learning for OCR, suitable for custom models.</li>
+<li><a href="https://opencv.org/">OpenCV</a>: Offers basic OCR capabilities, often used in conjunction with other tools.</li>
+<li><a href="https://github.com/Ucas-HaoranWei/GOT-OCR2.0">GOT-OCR2.0</a>: A recent model with improved performance, detailed in <a href="https://arxiv.org/html/2409.01704v1">ArXiv paper on GOT-OCR2.0</a>.</li>
+<li><a href="https://huggingface.co/allenai/olmOCR-7B-0225">OlmOCR 7B</a>: A large language model for OCR, with Docker support at <a href="https://hub.docker.com/r/caldedaniele/olmocr-app">OlmOCR Docker</a>.</li>
+</ul>
+<p>Trending developments include multimodal OCR models like <a href="https://huggingface.co/allenai/olmOCR-7B-0225">OlmOCR 7B</a>, which integrate with LLMs for enhanced text recognition.</p>
+<h5 id="tools-for-adding-ocr-to-pdfs">Tools for Adding OCR to PDFs</h5>
+<p>For PDFs with text as images, adding OCR creates searchable text layers. The primary tool is:</p>
+<ul>
+<li><a href="https://github.com/ocrmypdf/OCRmyPDF">OCRMyPDF</a>: Adds OCR text layers to PDFs, widely used for digitizing scanned documents.</li>
+</ul>
+<p>This is the standard for PDF OCR, with no significant competitors noted in recent trends as of March 2025.</p>
+<h4 id="text-processing-and-analysis">Text Processing and Analysis</h4>
+<p>After extraction, text often requires further processing for analysis or integration.</p>
+<h5 id="spell-checking-and-grammar-correction">Spell Checking and Grammar Correction</h5>
+<p>Tools for ensuring text quality include:</p>
+<ul>
+<li><a href="https://github.com/languagetool-org/languagetool">LanguageTool</a>: An open-source grammar and style checker, supporting multiple languages.</li>
+<li><a href="https://github.com/oriontvv/pyaspeller">PyASpeller</a>: A Python wrapper for spell checking.</li>
+<li><a href="https://github.com/PrithivirajDamodaran/Gramformer">Grammarformer</a>: Uses deep learning for grammar correction.</li>
+<li><a href="https://github.com/barrust/pyspellchecker">pyspellchecker</a>: A simple spell checker for Python.</li>
+<li><a href="https://github.com/gingerit/gingerit">gingerit</a>: An API-based grammar and spell checker.</li>
+</ul>
+<p>These tools are essential for cleaning extracted text, with <a href="https://github.com/languagetool-org/languagetool">LanguageTool</a> being a leading open-source option.</p>
+<h5 id="general-text-processing-libraries">General Text Processing Libraries</h5>
+<p>For broader text analysis, the following libraries are notable:</p>
+<ul>
+<li><a href="https://spacy.io/">SpaCy</a>: An industrial-strength NLP library for tokenization, NER, and more.</li>
+<li><a href="https://www.nltk.org/">NLTK</a>: A comprehensive toolkit for NLP tasks, suitable for educational and research purposes.</li>
+<li><a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a>: A simple library for processing textual data, ideal for beginners.</li>
+<li><a href="https://github.com/Unstructured-IO/unstructured">Unstructured</a>: A library for handling unstructured data, including text processing.</li>
+<li><a href="https://github.com/dleemiller/WordLlama">WordLlama</a>: Focuses on extracting embeddings, useful for LLM integration.</li>
+<li><a href="https://github.com/run-llama/llama_parse">LlamaParse</a>: A tool for parsing documents with LLMs, noted for RAG applications.</li>
+<li><a href="https://www.firecrawl.dev/">FireCrawl</a>: A tool for web scraping and text processing, increasingly used in document workflows.</li>
+</ul>
+<p>Trending in this space are LLM-based tools like <a href="https://github.com/run-llama/llama_parse">LlamaParse</a>, which leverage models like Llama3 for enhanced text analysis, as seen in videos like <a href="https://www.youtube.com/watch?v=u5Vcrwpzoz8">"I want Llama3 to perform 10x with my private knowledge" - Local Agentic RAG w/ llama3 (24:10) (30 Apr 2024)</a>.</p>
+<h4 id="handling-unstructured-and-structured-text">Handling Unstructured and Structured Text</h4>
+<p>This section differentiates tools for unstructured text and those creating hierarchical structures.</p>
+<h5 id="handling-unstructured-text">Handling Unstructured Text</h5>
+<p>Tools for processing unstructured text, often extracted from documents, include:</p>
+<ul>
+<li><a href="https://github.com/yobix-ai/extractous">Extractous</a>: A recent tool (Dec 2024) for extracting information from unstructured text.</li>
+<li><a href="https://github.com/Zipstack/unstract">Unstruct</a>: Focuses on unstructured data processing, including OCR capabilities.</li>
+<li><a href="https://spacy.io/">spaCy</a>: Useful for NER and other tasks to structure unstructured text.</li>
+</ul>
+<p>These tools are vital for workflows requiring text classification or entity extraction, with <a href="https://spacy.io/">spaCy</a> being a SOTA choice.</p>
+<h5 id="structured-text-and-document-hierarchy">Structured Text and Document Hierarchy</h5>
+<p>For creating hierarchical structures from text, the following libraries are notable:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/Python/comments/135e14f/say_hello_to_my_new_open_source_library_for/">Pydoxtools</a>: Designed for document analysis and hierarchical structuring, with AI integration.</li>
+<li><a href="https://pypi.org/project/hierarchybuilder/">Hierarchy Builder</a>: Focuses on organizing text into DAG structures, adaptable for documents.</li>
+<li><a href="https://arxiv.org/html/2407.08330v1">Hierarchical Document Transformer (HDT)</a>: A sparse Transformer architecture for hierarchical document processing.</li>
+<li><a href="https://github.com/hdmf-dev/hdmf">HDMF</a>: A framework for hierarchical data modeling, potentially adaptable for documents.</li>
+</ul>
+<p>These tools are emerging, with <a href="https://www.reddit.com/r/Python/comments/135e14f/say_hello_to_my_new_open_source_library_for/">Pydoxtools</a> noted for its recent development and AI capabilities.</p>
+<h4 id="document-transformation-and-conversion">Document Transformation and Conversion</h4>
+<p>Tools for converting between document formats or transforming content include:</p>
+<ul>
+<li><a href="https://github.com/JessicaTegner/pypandoc">PyPanDoc</a>: A Python interface to Pandoc, for converting between document formats.</li>
+<li><a href="https://github.com/vinayak-mehta/pdftopng">PDFtoPNG</a>: Converts PDFs to PNG images, useful for OCR preprocessing.</li>
+<li><a href="https://github.com/dagwieers/unoconv">unoconv</a>: Uses LibreOffice for document conversion, supporting multiple formats.</li>
+<li><a href="https://github.com/dothinking/docx2pdf">docx2pdf</a>: Converts Word documents to PDFs.</li>
+<li><a href="https://github.com/JazzCore/python-pdfkit">pdfkit</a>: Converts HTML to PDF, useful for web-based document processing.</li>
+</ul>
+<p>These tools are essential for workflows requiring format changes, with <a href="https://github.com/JessicaTegner/pypandoc">PyPanDoc</a> being a versatile option.</p>
+<h4 id="document-versioning-and-comparison">Document Versioning and Comparison</h4>
+<p>For comparing different versions of documents, the following tools are relevant:</p>
+<ul>
+<li>For Word documents:</li>
+<li><a href="https://github.com/Ignema/docx-compare">docx-compare</a>: Compares .docx files, highlighting differences.</li>
+<li><a href="https://houfu.github.io/redlines/redlines.html">redlines</a>: A tool for comparing Word documents with revision marks.</li>
+<li>For general text:</li>
+<li><a href="https://docs.python.org/3/library/difflib.html">difflib</a>: Python's standard library for comparing sequences, including text.</li>
+<li><a href="https://github.com/seperman/deepdiff">deepdiff</a>: Compares Python objects, including text, with detailed diffs.</li>
+<li><a href="https://github.com/google/diff-match-patch">diff-match-patch</a>: A library for text comparison and patching, widely used.</li>
+</ul>
+<p>These tools are crucial for version control, with <a href="https://docs.python.org/3/library/difflib.html">difflib</a> being a standard for text comparison.</p>
+<h4 id="etl-and-data-pipelines-for-document-processing">ETL and Data Pipelines for Document Processing</h4>
+<p>For integrating document processing into ETL pipelines, especially for RAG and complex workflows, the following tools are notable:</p>
+<ul>
+<li><a href="https://github.com/towhee-io/towhee">ToWhee</a>: A machine learning framework for building data pipelines, including document processing.</li>
+<li><a href="https://github.com/ucbepic/docetl">DocETL</a>: A tool for document ETL, with documentation at <a href="https://ucbepic.github.io/docetl/installation/">DocETL Documentation</a>, and examples like <a href="https://www.youtube.com/watch?v=IlgueVqtHGo">Analyzing common weaknesses in ICLR 2024 reviews with DocETL (31:11) (29 Oct 2024)</a>.</li>
+<li><a href="https://github.com/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">M3DOCRAG</a>: A multimodal RAG approach, detailed in <a href="https://arxiv.org/pdf/2411.04952">Paper on M3DOCRAG</a>, with Colab at <a href="https://colab.research.google.com/github/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">Colab for M3DOCRAG</a>.</li>
+</ul>
+<p>Trending in this space are multimodal RAG tools like <a href="https://github.com/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">M3DOCRAG</a>, which combine vision and language models for document understanding.</p>
+<h4 id="commercial-document-processing-tools">Commercial Document Processing Tools</h4>
+<p>For paid solutions, the following are notable:</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/textract/latest/dg/what-is.html">Amazon Textract</a>: A commercial service for document text extraction and analysis, including tables and forms.</li>
+<li><a href="https://www.sensible.so/">sensible</a>: A platform for document processing and data extraction, aimed at enterprises.</li>
+<li><a href="https://console.aryn.ai/">aryn.ai</a>: A commercial tool for document analysis and automation.</li>
+</ul>
+<p>These tools offer advanced features, often with API access, suitable for large-scale applications.</p>
+<h4 id="conclusion">Conclusion</h4>
+<p>This survey provides a comprehensive overview of document processing tools, from text extraction and OCR to ETL pipelines and commercial solutions. It highlights both open-source and paid options, ensuring users can choose based on their needs, with a focus on SOTA and trending developments as of March 8, 2025.</p>
+<h3 id="key-citations">Key Citations</h3>
+<ul>
+<li><a href="https://github.com/pypdf/pypdf">pypdf GitHub repository for reading and writing PDF files</a></li>
+<li><a href="https://github.com/pdfminer/pdfminer.six">pdfminer GitHub repository for extracting text from PDFs</a></li>
+<li><a href="https://github.com/chrismattmann/tika-python">tika-python GitHub repository for text extraction from various formats</a></li>
+<li><a href="https://github.com/pymupdf/PyMuPDF">PyMuPDF GitHub repository for high-performance PDF handling</a></li>
+<li><a href="https://github.com/deanmalmgren/textract">textract GitHub repository for universal text extraction</a></li>
+<li><a href="https://github.com/jsvine/pdfplumber">pdfplumber GitHub repository for extracting PDF information</a></li>
+<li><a href="https://github.com/tabulapdf/tabula">tabula GitHub repository for PDF table extraction</a></li>
+<li><a href="https://github.com/camelot-dev/camelot">camelot GitHub repository for PDF table extraction</a></li>
+<li><a href="https://github.com/chezou/tabula-py">tabula-py GitHub repository for Python wrapper of tabula</a></li>
+<li><a href="https://github.com/axsauze/pdf-table-extractor">pdf-table-extractor GitHub repository for table extraction from PDFs</a></li>
+<li><a href="https://github.com/VikParuchuri/marker">VikParuchuri/marker GitHub repository for PDF table extraction</a></li>
+<li><a href="https://github.com/getomni-ai/zerox">getomni-ai/zerox GitHub repository for PDF to Markdown conversion</a></li>
+<li><a href="https://github.com.facebookresearch/nougat">facebookresearch/nougat GitHub repository for document understanding</a></li>
+<li><a href="https://github.com/Zipstack/llmwhisperer-table-extraction">Zipstack/llmwhisperer-table-extraction GitHub repository for LLM-based table extraction</a></li>
+<li><a href="https://www.npmjs.com/package/pdfreader">adrienjoly/pdfreader npm package for PDF reading</a></li>
+<li><a href="https://github.com/yigitkonur/swift-ocr-llm-powered-pdf-to-markdown">yigitkonur/swift-ocr-llm-powered pdf-to-markdown GitHub repository for OCR and LLM integration</a></li>
+<li><a href="https://github.com/python-openxml/python-docx">python-docx GitHub repository for reading and writing Word files</a></li>
+<li><a href="https://github.com/ankushsingh/docx2txt">docx2txt GitHub repository for converting Word to text</a></li>
+<li><a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR GitHub repository for open-source OCR</a></li>
+<li><a href="https://github.com/JaidedAI/EasyOCR">EasyOCR GitHub repository for easy OCR in Python</a></li>
+<li><a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR GitHub repository for state-of-the-art OCR</a></li>
+<li><a href="https://github.com/faustomorales/keras-ocr">keras-ocr GitHub repository for deep learning-based OCR</a></li>
+<li><a href="https://opencv.org/">OpenCV official website for computer vision, including OCR</a></li>
+<li><a href="https://github.com/Ucas-HaoranWei/GOT-OCR2.0">GOT-OCR2.0 GitHub repository for advanced OCR model</a></li>
+<li><a href="https://huggingface.co/allenai/olmOCR-7B-0225">OlmOCR 7B Hugging Face repository for large language model OCR</a></li>
+<li><a href="https://github.com/ocrmypdf/OCRmyPDF">OCRMyPDF GitHub repository for adding OCR to PDFs</a></li>
+<li><a href="https://github.com/languagetool-org/languagetool">LanguageTool GitHub repository for grammar and style checking</a></li>
+<li><a href="https://github.com/oriontvv/pyaspeller">PyASpeller GitHub repository for spell checking in Python</a></li>
+<li><a href="https://github.com/PrithivirajDamodaran/Gramformer">Grammarformer GitHub repository for grammar correction using deep learning</a></li>
+<li><a href="https://github.com/barrust/pyspellchecker">pyspellchecker GitHub repository for spell checking</a></li>
+<li><a href="https://github.com/gingerit/gingerit">gingerit GitHub repository for grammar and spell checking via API</a></li>
+<li><a href="https://spacy.io/">SpaCy official website for industrial-strength NLP</a></li>
+<li><a href="https://www.nltk.org/">NLTK official website for natural language processing toolkit</a></li>
+<li><a href="https://textblob.readthedocs.io/en/dev/">TextBlob documentation for text processing library</a></li>
+<li><a href="https://github.com/Unstructured-IO/unstructured">Unstructured GitHub repository for handling unstructured data</a></li>
+<li><a href="https://github.com/dleemiller/WordLlama">WordLlama GitHub repository for extracting text embeddings</a></li>
+<li><a href="https://github.com/run-llama/llama_parse">LlamaParse GitHub repository for document parsing with LLMs</a></li>
+<li><a href="https://www.firecrawl.dev/">FireCrawl official website for web scraping and text processing</a></li>
+<li><a href="https://github.com/yobix-ai/extractous">Extractous GitHub repository for extracting information from unstructured text</a></li>
+<li><a href="https://github.com/Zipstack/unstract">Unstruct GitHub repository for unstructured data processing</a></li>
+<li><a href="https://www.reddit.com/r/Python/comments/135e14f/say_hello_to_my_new_open_source_library_for/">Pydoxtools Reddit post introducing document analysis library</a></li>
+<li><a href="https://pypi.org/project/hierarchybuilder/">Hierarchy Builder PyPI page for organizing text into hierarchies</a></li>
+<li><a href="https://arxiv.org/html/2407.08330v1">Hierarchical Document Transformer ArXiv paper on sparse Transformer architecture</a></li>
+<li><a href="https://github.com/hdmf-dev/hdmf">HDMF GitHub repository for hierarchical data modeling</a></li>
+<li><a href="https://github.com/JessicaTegner/pypandoc">PyPanDoc GitHub repository for document conversion using Pandoc</a></li>
+<li><a href="https://github.com/vinayak-mehta/pdftopng">PDFtoPNG GitHub repository for converting PDFs to PNG</a></li>
+<li><a href="https://github.com/dagwieers/unoconv">unoconv GitHub repository for document conversion using LibreOffice</a></li>
+<li><a href="https://github.com/dothinking/docx2pdf">docx2pdf GitHub repository for converting Word to PDF</a></li>
+<li><a href="https://github.com/JazzCore/python-pdfkit">pdfkit GitHub repository for HTML to PDF conversion</a></li>
+<li><a href="https://github.com/Ignema/docx-compare">docx-compare GitHub repository for comparing Word documents</a></li>
+<li><a href="https://houfu.github.io/redlines/redlines.html">redlines official website for comparing Word documents</a></li>
+<li><a href="https://docs.python.org/3/library/difflib.html">difflib Python documentation for sequence comparison</a></li>
+<li><a href="https://github.com/seperman/deepdiff">deepdiff GitHub repository for comparing Python objects</a></li>
+<li><a href="https://github.com/google/diff-match-patch">diff-match-patch GitHub repository for text comparison</a></li>
+<li><a href="https://github.com/towhee-io/towhee">ToWhee GitHub repository for machine learning data pipelines</a></li>
+<li><a href="https://github.com/ucbepic/docetl">DocETL GitHub repository for document ETL</a></li>
+<li><a href="https://ucbepic.github.io/docetl/installation/">DocETL Documentation official website for installation and usage</a></li>
+<li><a href="https://www.youtube.com/watch?v=IlgueVqtHGo">Analyzing common weaknesses in ICLR 2024 reviews with DocETL YouTube video (31:11) (29 Oct 2024)</a></li>
+<li><a href="https://github.com/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">M3DOCRAG GitHub repository for multimodal RAG</a></li>
+<li><a href="https://colab.research.google.com/github/merveenoyan/smol-vision/blob/main/ColPali_%2B_Qwen2_VL.ipynb">M3DOCRAG Colab notebook for implementation</a></li>
+<li><a href="https://arxiv.org/pdf/2411.04952">M3DOCRAG ArXiv paper on multimodal document question answering</a></li>
+<li><a href="https://docs.aws.amazon.com/textract/latest/dg/what-is.html">Amazon Textract AWS documentation for document text extraction</a></li>
+<li><a href="https://www.sensible.so/">sensible official website for document processing platform</a></li>
+<li><a href="https://console.aryn.ai/">aryn.ai console for document analysis and automation</a></li>
+<li><a href="https://arxiv.org/html/2409.01704v1">ArXiv paper on GOT-OCR2.0 for advanced OCR model</a></li>
+<li><a href="https://hub.docker.com/r/caldedaniele/olmocr-app">OlmOCR Docker Hub repository for OCR model deployment</a></li>
+<li><a href="https://chatgpt.com/share/66eed096-4110-800d-9d79-d131fab8b221">ChatGPT share link for OCR discussion</a></li>
+<li><a href="https://www.perplexity.ai/search/open-source-or-python-librarie-Myts_hs4QjaG.pBkUsSNjw">Perplexity search result for open-source OCR libraries</a></li>
+<li><a href="https://tesseract-ocr.github.io/tessdoc/Installation.html">TesseractOCR official installation documentation</a></li>
+<li><a href="https://github.com/getomni-ai/zerox">Xerox OCR GitHub repository for OCR tool</a></li>
+<li><a href="https://github.com/Zipstack/unstract">Unstruct OCR Model GitHub repository for unstructured data OCR</a></li>
+<li><a href="https://github.com/trancethehuman/ai-workshop-code/tree/main/projects/ocr-battle">OCR-Battle GitHub repository for OCR comparison project</a></li>
+<li><a href="https://www.youtube.com/watch?v=yT-7i5npRBQ">YouTube video on 10 LMM for OCR (34:06) (19 Dec 2024)</a></li>
+<li><a href="https://www.youtube.com/watch?v=u5Vcrwpzoz8">YouTube video on Local Agentic RAG with Llama3 (24:10) (30 Apr 2024)</a></li>
+<li>[New RAG for Multi-Modal DocVQA YouTube video (9:51) (</li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 6: Miniproject #2, Claude Code and Microsoft AI Toolkit – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 6: Miniproject #2, Claude Code and Microsoft AI Toolkit</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-6-miniproject-2-claude-code-and-microsoft-ai-toolkit">Week 6: Miniproject #2, Claude Code and Microsoft AI Toolkit</h1>
+<p>This week we explore Anthropic's new releases of model Sonnet 4.5 and Claude Code 2.0 as well as dig into the details of Microsofts VSCode extension AI Toolkit. Both of these are complimentary and will help us execute on Mini-Project #2: Embeddings Benchmark. Now that you've built a critical mass of knowledge, we'll start using these tools (and possibly more) to live code the main aspects of our class research project.</p>
+<h1 id="arxivorg-research-paper-5-min-presentation">==========[ ArXiv.org Research Paper 5 min Presentation ]==========</h1>
+<h2 id="schedule">Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/8</td>
+<td>Gwen</td>
+</tr>
+<tr>
+<td>10/15</td>
+<td>Peter</td>
+</tr>
+<tr>
+<td>10/22</td>
+<td>Tiffanie</td>
+</tr>
+<tr>
+<td>10/29</td>
+<td>Anna</td>
+</tr>
+<tr>
+<td>11/5</td>
+<td>Kirill</td>
+</tr>
+<tr>
+<td>11/12</td>
+<td>Wisdom, Godwin</td>
+</tr>
+<tr>
+<td>11/19</td>
+<td>Ann-Duncan, Adrian</td>
+</tr>
+</tbody>
+</table>
+<h1 id="quiz-week-6">Quiz: Week 6</h1>
+<h1 id="class-social-media-ranking-hack-and-free-sub-hack">Class Social Media Ranking Hack and Free Sub Hack</h1>
+<h1 id="mini-projects">Mini-Projects:</h1>
+<h2 id="mini-project-2-embedding-research-upcoming">Mini-Project #2: Embedding Research (Upcoming)</h2>
+<p>(New updates and details coming this week...)</p>
+<p>Miniproject #2 will have you create a 3 novel dataset of 100 test sets each (2-3 sentences for similarity classification/ranking along with accompanying explanatory reasoning) across diverse domains. Do not proceed beyond the brainstorming and identification of the top 5 possible domains you could serve as a domain expert as defined below. </p>
+<p>In our next class on Oct 1st, we will coordinate among everyone's lists to optimize the final individual and collective assignments. For now, just read the following descriptions and brainstorm (with AI) at least 5 domain-specific areas where you can contribute special expertise/insights.</p>
+<h2 id="1-pick-5-candidate-domains-now-well-choose-your-best-3">1) Pick 5 candidate domains now; we’ll choose your best 3</h2>
+<p>Bring <strong>five</strong> domain ideas to class; we will select <strong>three</strong> for you to actually build.<br />
+<strong>Functional definition of domain expertise (flexible, human-centric):</strong> you can reliably spot <strong>edge cases</strong> and <strong>rank similarity</strong> of domain texts <strong>better than most people</strong> because of your background (major, language/culture, work, clubs, lived experience, community ties, etc.). You don’t need formal credentials.</p>
+<p><strong>Examples to spark ideas (non-exhaustive)</strong></p>
+<ul>
+<li>Academic genres (methods sections, critique notes, problem-set solutions)</li>
+<li>Bureaucratic language (visa instructions, campus policy, financial-aid emails)</li>
+<li>Niche hobbies/subcultures (climbing trip reports, K-pop fan posts, tabletop RPG rules clarifications)</li>
+<li>Technical writing (lab safety notes, API docs snippets, commit messages)</li>
+<li>Creative forms (poetry lines, workshop feedback, indie music reviews)</li>
+<li>Health/fitness (training logs, diet tips, PT exercise instructions)</li>
+<li>Multilingual/dialectal (code-switching chat, regional idioms, transliterated content)</li>
+<li>Journalism/register shifts (wire headlines vs. feature ledes)</li>
+<li>Civic/legal plain-language explanations (de-identified)</li>
+</ul>
+<p>We’ll coordinate across the class to avoid redundancy and to maximize coverage.</p>
+<h2 id="2-what-similar-vs-different-means-use-these-axes-creatively">2) What “similar” vs. “different” means (use these axes creatively)</h2>
+<p>You’ll <strong>label pairs</strong> and <strong>label triplet sentences relative to an anchor</strong>. Drop the fuzzy <em>neutral</em> category.</p>
+<p>Think in <strong>dimensions</strong>; use them to invent <strong>edge cases</strong>:</p>
+<ul>
+<li><strong>Semantic</strong>: same meaning despite wording changes (true paraphrase) vs. opposite/irrelevant meanings.<ul>
+<li><em>Trick:</em> negation (“must” vs. “must not”), quantifiers (“some” vs. “all”).</li>
+</ul>
+</li>
+<li><strong>Topical</strong>: same subject but different <strong>claim</strong> or <strong>stance</strong> is often <strong>different</strong> semantically (topic ≠ meaning).</li>
+<li><strong>Lexical</strong>: shared keywords but divergent meaning (false friends, polysemy) vs. low overlap but same meaning (deep paraphrase).</li>
+<li><strong>Stylistic/Register</strong>: formal vs. informal; academic vs. chatty; sarcasm/irony. Style can mask or mimic semantics.</li>
+<li><strong>Pragmatic/Contextual</strong>: implied intents, politeness strategies, presuppositions.</li>
+<li><strong>World knowledge</strong>: allusions, culture-specific references, inside jokes.</li>
+<li><strong>Temporal/Numerical/Logical</strong>: tense shifts, date/price/unit changes; conditionals versus factual statements.</li>
+</ul>
+<p><strong>Goal:</strong> at least half of your hard items should hinge on <strong>subtle distinctions</strong> that confuse non-experts and today’s AIs.</p>
+<h1 id="new-reading-assignments">==========[ New Reading Assignments ]==========</h1>
+<h2 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=QU4uplCseRQ">Anthropic’s CEO Predicted AI Would Write 90% of Code by Today. Here’s What Actually Happened (9:55) (28 Aug 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iNiBtKHbKKg&amp;list=RDNSiNiBtKHbKKg&amp;start_radio=1">Filmmaker Justine Bateman on the A.I. "Actress" Controversy and the Future of Hollywood (8:57) (1 Oct 2025)</a></li>
+</ul>
+<h2 id="ai-newscurrent-events">AI News/Current Events</h2>
+<ul>
+<li><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Introducing Claude Sonnet 4.5 (29 Sep 2025)</a></li>
+<li><a href="https://tech.co/news/accenture-layoffs-ai-pivot">Accenture Makes Room for AI With Thousands of Layoffs by Mallett (29 Sep 2025)</a></li>
+</ul>
+<h2 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h2>
+<h3 id="vector">Vector</h3>
+<ul>
+<li><a href="https://www.datastax.com/blog/best-embedding-models-information-retrieval-2025">The Best Embedding Models for Information Retrieval in 2025 by Datastax (20 Aug 2025)</a></li>
+<li><a href="https://www.ibm.com/think/topics/vector-embedding">What is vector embedding? by Bergmann et al./IBM</a> (Focus on the sentence embedding SB)</li>
+</ul>
+<h3 id="ai-coding-environments">AI Coding Environments</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NGXXosA9CRo&amp;t=59s">Claude Code vs Windsurf vs OpenAI Codex vs Warp Code vs Cursor vs Trae (15:34) (1 Oct 2025)</a></li>
+</ul>
+<h3 id="model-context-protocol-mcp">Model Context Protocol (MCP)</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HyzlYwjoXOQ&amp;t=91s">Claude's Model Context Protocol is here... Let's test it (8:07) (Mar 2025)</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)?</a></li>
+</ul>
+<h3 id="vscode-extension-ai-toolkit">VSCode Extension: AI Toolkit</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=G4ZsoLx5bEU">Microsoft's FREE AI Toolkit Changes Coding Forever (7:06) (19 Sep 2025)</a></li>
+<li><a href="https://code.visualstudio.com/docs/intelligentapps/overview">AI Toolkit for Visual Studio Code</a></li>
+</ul>
+<h3 id="claude-updates">Claude Updates</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4-c9bArife4">...there's more to Sonnet 4.5 (15:09) (30 Sep 2025)</a></li>
+<li><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Introducing Claude Sonnet 4.5 (29 Sep 2025)</a></li>
+<li><a href="https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges">Rebuilding Devin for Claude Sonnet 4.5: Lessons and Challenges (29 Sep 2025)</a></li>
+<li><a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude_Sonnet-4.5_Sep-29-2025.txt">Claude Sonnet 4.5 Leaked Prompt</a></li>
+</ul>
+<h2 id="coding-exercises-design"><strong>[ Coding Exercises / Design ]</strong></h2>
+<h3 id="agent-design">Agent Design</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NV4uUknDt5g">Claude Code 2.0 | On The Edge #3 (7:05) (2 Oct 2025)</a></li>
+<li><a href="https://www.anthropic.com/engineering/claude-code-best-practices">Claude Code: Best practices for agentic coding (18 Apr 2025)</a></li>
+</ul>
+<h3 id="sdd">SDD</h3>
+<ul>
+<li>
+<p><a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude_Sonnet-4.5_Sep-29-2025.txt">Claude Code Prompt</a></p>
+<h3 id="instructions">INSTRUCTIONS:</h3>
+<p>carefully analyze this ###PROMPT and pick out the top 10 interesting, surprising, or otherwise noteworthy aspects of this new leaked system prompt for Claude Sonnet 4.5</p>
+</li>
+<li>
+<p><a href="https://blog.thepete.net/blog/2025/04/14/chain-of-vibes/?ref=dailydev">Chain of Vibes by Hodgson (14 Apr 2025)</a></p>
+</li>
+<li>
+<p><a href="https://dev.to/duske/agentic-engineering-lessons-learned-vol-1-jbj">Agentic Engineering: Lessons Learned Vol. 1 by Dustin (30 Sep 2025)</a></p>
+</li>
+</ul>
+<h3 id="deeplearningai">DeepLearning.ai</h3>
+<ul>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/embedding-models-from-architecture-to-implementation/lesson/n0bcw/introduction-to-embedding-models">DeepLearning.ai: Embedding Models: from Architecture to Implementation</a></p>
+</li>
+<li>
+<p>(Moved to Week 8)<a href="https://learn.deeplearning.ai/courses/advanced-retrieval-for-ai/lesson/kb5oj/introduction">DeepLearning.ai: Advanced Retrieval for AI with Chroma</a></p>
+</li>
+<li>
+<p>(Moved to Week 8)<a href="https://learn.deeplearning.ai/courses/claude-code-a-highly-agentic-coding-assistant/lesson/66b35/introduction">DeepLearning.ai: Claude Code: A Highly Agentic Coding Assistant</a></p>
+</li>
+</ul>
+<h1 id="in-class">==========[ In-Class ]==========</h1>
+<h2 id="follow-ups">Follow-ups</h2>
+<h3 id="corrections">CORRECTIONS:</h3>
+<ul>
+<li>Claude Sonnet 4.5: 30hr of continous coding for 11k line </li>
+</ul>
+<p>Email me a link to your github with all your project materials. If you have a private repo/folder, share it with jon-chun (github) and/or jonchun2000@gmail.com (Google).</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

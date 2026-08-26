@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI Agents Fall 2026 Readings – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI Agents Fall 2026 Readings</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-agents-fall-2026-reaings">AI Agents Fall 2026 Readings</h1>
+<h2 id="course-prerequisites">Course Prerequisites</h2>
+<h2 id="course-goals">Course Goals</h2>
+<ul>
+<li>Interdisciplinary AI: Trad Academic Scholarship + SOTA AI Research + SOP/BP AI Startups/Industry </li>
+<li>Domain of Expertise</li>
+<li>CS/ML/AI Theory</li>
+<li>AI Industry Best Practices: SWE, SDLC, PRD/PTS, etc.</li>
+<li>State of the Art (SOTA) AI Research</li>
+<li>Human-Centered AI</li>
+<li>Social Context</li>
+<li>Creativity, Communication, Collaboration, and Entreprenuership</li>
+<li>Real-World, Big-Ideas, and High-Impact Applications</li>
+<li>AI and the Future of Work, Society, and Self</li>
+<li>Ethical AI </li>
+<li>Human Thriving</li>
+</ul>
+<h2 id="course-outline">Course Outline</h2>
+<ul>
+<li>Setup</li>
+<li>VMs: NotebookLM, Colab, to RunPod.io </li>
+<li>IDE: CLI and VSCode</li>
+<li>AI Coding: Prompt Engineering, Context Engineering </li>
+<li>Github</li>
+<li>APIs: Google, OpenAI, Claude, OpenRouter, Requesty</li>
+<li>Low-Code/No-Code: Google Flow</li>
+<li>From Philosophy to Math to Coding to Linguistics</li>
+<li>Python, Libraries, PyTorch</li>
+<li>LLMs: Architecture, Models, Hyperparameters, and Modalities</li>
+<li>Metrics and Benchmarks: Stats, Metrics, LLM-as-Judges</li>
+<li>DevOps/MLOps: Chat Web Sandboxes to Ollama to vLLM/SPY</li>
+<li>Prompt Engineering and Context Engineering</li>
+<li>Structured Output</li>
+<li>Tool Use</li>
+<li>MCP/ACA</li>
+<li>Low-Code/No-Code: n8nb, Google Flow</li>
+<li>Synthetic Data</li>
+<li>Fine-Tune</li>
+<li>Reasoning</li>
+<li>Custom AI Apps </li>
+</ul>
+<h2 id="paid-and-free-ai-services">Paid and Free AI Services</h2>
+<ul>
+<li>Paid</li>
+<li><a href="">OpenAI</a></li>
+<li><a href="">Anthropic</a></li>
+<li>Free</li>
+<li><a href="https://gemini.google/students/">Google Gemini</a></li>
+<li><a href="https://www.perplexity.ai/help-center/en/articles/11385821-partner-promotions-and-referral-programs">Perplexity</a><ul>
+<li><a href="https://shop.sheerid.com/product/free-perplexity-pro-for-students/">Sheerid.com</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/ShreyamMaity/student-offers">Awesome: ShreyamMaity/student-offers</a></li>
+</ul>
+<h2 id="ai-tools">AI Tools</h2>
+<ul>
+<li><a href="https://github.com/best-of-ai/ai-directories">github/ai-directories</a></li>
+<li><a href="https://ai-search.io/">ai-search.io</a></li>
+<li><a href="https://www.producthunt.com/">ProductHunt.com</a></li>
+<li><a href="https://alternativeto.net/">AlternativeTo.net</a></li>
+<li><a href="https://openalternative.co/alternatives">OpenAlternative.co</a></li>
+<li><a href="https://www.ebool.com/">ebool</a></li>
+<li><a href="https://github.com/sfermigier/awesome-foss-alternatives">Awesome FOSS Alternatives</a></li>
+</ul>
+<h2 id="textbooks-free">Textbooks: Free</h2>
+<ul>
+<li><a href="https://www.deeplearningbook.org/">Deep Learning by Goodfellow et al. (2016) MIT</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf">Pattern Recognition and Deep Learning by Bishop et al. (2006) Springer</a></li>
+<li><a href="https://d2l.ai/">Dive in to Deep Learning</a></li>
+<li>
+<p><a href="https://github.com/d2l-ai/d2l-en">Github</a></p>
+</li>
+<li>
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-64832-8">Unlocking Artificial Intelligence From Theory to Applications by Mutschler et al. (2024) Springer</a></p>
+</li>
+<li><a href="https://drive.google.com/drive/folders/1jIJMyBOeWiVxLCUUtLvEFEFCnWxbh6cs">ML Books for Masters (upto Jan 2025)</a></li>
+<li><a href="http://repo.darmajaya.ac.id/5094/1/Lecture-AI.pdf">Introduction to AI by Toussaint (4 Feb 2019)</a></li>
+</ul>
+<h3 id="agent-textbooks">Agent Textbooks</h3>
+<ul>
+<li><a href="https://direct.mit.edu/books/oa-monograph/5833/Agents-in-the-Long-Game-of-AIComputational">Agents in the Long Game of AI: Computational Cognitive Modeling for Trustworthy, Hybrid AIOpen by McShane et al. (2024) MIT Press</a></li>
+</ul>
+<h2 id="textbooks-paid">Textbooks: Paid</h2>
+<ul>
+<li><a href="https://github.com/PacktPublishing/Building-Agentic-AI-Systems">Building Agentic AI Systems by Biswas et al. (21 Apr 2025)</a></li>
+<li><a href="https://github.com/PacktPublishing/Building-Agentic-AI-Systems">Github</a></li>
+<li><a href="https://github.com/chiphuyen/aie-book">AI Engineering: Building Applications with Foundation Models by Huyen (7 Jan 2025)</a></li>
+<li><a href="https://github.com/chiphuyen/aie-book">Github</a></li>
+<li><a href="">The AI Engineering Bible: The Complete and Up-to-Date Guide to Build, Develop and Scale Production Ready AI Systems by Caldwell (23 Apr 2025)</a></li>
+</ul>
+<h2 id="courses-and-certificates">Courses and Certificates</h2>
+<ul>
+<li><a href="https://www.reddit.com/answers/623c2bba-97de-49ce-b881-35cfb874b213/?q=Andrew+Ng+Deep+Learning+specialization&amp;source=SERP">Andrew Ng's Deep Learning Specialization on Coursera (20hr/wk for 4mo)</a></li>
+</ul>
+<h2 id="assigned-articlesblogs">Assigned Articles/Blogs</h2>
+<ul>
+<li><a href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective Agents by Antrhopic (19 Dec 2024)</a></li>
+</ul>
+<h2 id="assigned-papers">Assigned Papers</h2>
+<ul>
+<li>(Survey) <a href="https://arxiv.org/abs/2501.09223">Foundations of Large Language Models by Xiao et al. - ver2 (15 Jun 2025)</a></li>
+<li>(AGI) <a href="https://arxiv.org/abs/2311.02462">Levels of AGI for Operationalizing Progress on the Path to AGI by Morris (5 Jun 2024)</a></li>
+</ul>
+<h2 id="news-and-updates">News and Updates</h2>
+<h3 id="news">News</h3>
+<ul>
+<li><a href=""></a></li>
+</ul>
+<h3 id="research">Research</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=-eFvwZx9U0Q">Harvard, MIT: AI's Potemkin Understanding (21:48) (28 Jun 2025)</a></li>
+</ul>
+<h3 id="models-libraries-and-frameworks">Models, Libraries, and Frameworks</h3>
+<ul>
+<li><a href=""></a></li>
+<li><a href="">Github</a></li>
+<li><a href="">Huggingface</a></li>
+</ul>
+<h3 id="society">Society</h3>
+<h3 id="ai-subscriptions">AI Subscriptions</h3>
+<h4 id="free">Free</h4>
+<h4 id="paid">Paid</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eJ0FczURNNI">These 7 Perplexity Features Make ChatGPT, Claude, and Gemini Look Trash (12:07) (27 June 2025)</a></li>
+</ul>
+<h2 id="agent-course-outlines">Agent Course Outlines</h2>
+<ul>
+<li><a href="https://substack.com/@paoloap/note/c-122559085?r=1p31h&amp;utm_medium=ios&amp;utm_source=notes-share-action">AI Agents Are the Hottest Skill of 202 (3 Core)</a></li>
+<li>Fundamentals: LLMs, prompts, RAG</li>
+<li>Architecture: workflows, memory, tools</li>
+<li>
+<p>Scaling: deployment, evaluation, reliability</p>
+</li>
+<li>
+<p><a href="https://www.anthropic.com/learn/claude-for-you">Anthropic: AI Fluency</a></p>
+</li>
+</ul>
+<h2 id="agentic-coding">Agentic Coding</h2>
+<h3 id="config">Config</h3>
+<h4 id="local">Local</h4>
+<ul>
+<li><a href="">Ollama</a></li>
+<li><a href="https://github.com/open-webui/open-webui">Open-WebUI</a></li>
+</ul>
+<h4 id="cloud">Cloud</h4>
+<h3 id="github">Github</h3>
+<h3 id="vscode">VSCode</h3>
+<h3 id="plugins">Plugins</h3>
+<ul>
+<li><a href="https://docs.roocode.com/">Roo code</a></li>
+</ul>
+<h2 id="foundational">Foundational</h2>
+<ul>
+<li>
+<p><a href="https://hai.stanford.edu/news/ai-index-2025-state-of-ai-in-10-charts">AI Index 2025: State of AI in 10 Charts by Stanford HAI</a></p>
+</li>
+<li>
+<p><a href="https://cran.r-project.org/web/packages/AgePopDenom/AgePopDenom.pdf">18th Edition: 2025 Tech Trends Report by FTSG</a></p>
+</li>
+<li>
+<p><a href="https://www.iconiqcapital.com/growth/reports/2025-state-of-ai">2025 State of AI Report: The Builder’s Playbook A Practical Roadmap for AI Innovation by IconIQ</a></p>
+</li>
+<li>
+<p><a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">The Bitter Lesson by Rich Sutton (13 Mar 2019)</a></p>
+</li>
+<li>
+<p><a href="https://blog.jxmo.io/p/there-are-no-new-ideas-in-ai-only?subscribe_prompt=free">There Are No New Ideas in AI… Only New Datasets by Jack Morris (9 Apr 2025)</a></p>
+</li>
+<li>
+<p><a href="https://www.philschmid.de/context-engineering">The New Skill in AI is Not Prompting, It's Context Engineering by Phil Schmid (30 Jun 2025)</a></p>
+</li>
+</ul>
+<h2 id="real-world-analysis">Real-World Analysis</h2>
+<ul>
+<li>
+<p><a href="https://www.managementsolutions.com/sites/default/files/minisite/static/72b0015f-39c9-4a52-ba63-872c115bfbd0/llm/pdf/rise-of-llm.pdf">The rise of Large Language Models: from fundamentals to application by Management Solutions (2024)</a></p>
+</li>
+<li>
+<p><a href="https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/seizing%20the%20agentic%20ai%20advantage/seizing-the-agentic-ai-advantage-june-2025.pdf">Seizing the agentic AI advantage: A CEO playbook to solve the gen AI paradox and unlock scalable impact with AI agents</a></p>
+</li>
+</ul>
+<h2 id="mcp">MCP</h2>
+<ul>
+<li><a href="https://modelcontextprotocol.io/introduction">MCP Guide</a></li>
+<li><a href="https://github.com/cyanheads/model-context-protocol-resources/blob/main/guides/mcp-client-development-guide.md#1-introduction-to-mcp-clients">MCP Client Dev Guide</a></li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk">MCP Python SDK</a></li>
+<li><a href="https://github.com/mcp-use/mcp-use">mcp-use/mcp-use</a></li>
+</ul>
+<h2 id="llm-apps">LLM Apps</h2>
+<ul>
+<li><a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Awesome LLM Apps (48.2k)</a></li>
+</ul>
+<h2 id="no-low-code-workflows">No-Low Code Workflows</h2>
+<ul>
+<li><a href="https://toothfairyai.com/pricing">ToothfairyAI ($5 Credit as of Jul 2025)</a></li>
+<li><a href="https://n8n.io/workflows/">n8n workflows</a></li>
+<li><a href="https://www.youtube.com/watch?v=KKFfpxzsF54">Stop Building n8n Workflows Manually... This MCP Does It INSTANTLY (No-Code) (23:36) (6 Jul 2025)</a></li>
+<li><a href="https://github.com/upstash/context7">MCP context7</a></li>
+<li><a href="https://github.com/Zie619/n8n-workflows/blob/main/README.md">MCP n8n Workflow</a></li>
+<li><a href="https://github.com/promptadvisers/n8n-mcp?tab=readme-ov-file">MCP n8n-MCP</a></li>
+</ul>
+<h2 id="multi-agent-frameworks">Multi-Agent Frameworks</h2>
+<h2 id="vibe-coding">Vibe Coding</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=n991Yxo1aOI">Vibe Coding with Confidence — Itamar Friedman, Qodo (20:54) (6 Aug 2025)</a>
+<strong>Outline: The Future of AI in Software Development – Vibe Coding with Confidence via CLI and Multi-Agent Workflows</strong></li>
+</ul>
+<p><em>Presented by Itar Friedman, CEO &amp; Co-Founder of Kodto</em></p>
+<hr />
+<h3 id="i-introduction">I. Introduction</h3>
+<ul>
+<li><strong>Speaker</strong>: Itar Friedman, CEO and Co-Founder of Kodto</li>
+<li><strong>Topic</strong>: The evolution of AI in software development, focusing on "vibe coding with confidence," the role of the Command Line Interface (CLI), and multi-agent workflows.</li>
+<li><strong>Audience Check</strong>:</li>
+<li>Asked audience if they’ve tried:<ul>
+<li>Cloud Code</li>
+<li>Codci</li>
+<li>Aides</li>
+</ul>
+</li>
+<li>Implies familiarity with AI coding tools among attendees.</li>
+<li><strong>Product Announcement</strong>:</li>
+<li>Kodto’s <strong>CLI tool</strong> was soft-launched <strong>5 minutes before the talk</strong>.</li>
+<li>Available for installation and testing.</li>
+<li>Feedback encouraged.</li>
+<li>Limited capacity initially.</li>
+</ul>
+<hr />
+<h3 id="ii-generations-of-ai-for-developers">II. Generations of AI for Developers</h3>
+<h4 id="a-gen-10-autocomplete">A. Gen 1.0: Autocomplete</h4>
+<ul>
+<li>Tools: IDE plugins (e.g., GitHub Copilot)</li>
+<li>Function: Code completion, generating a few lines ahead.</li>
+<li>Limitation: Requires existing developer skills; not accessible to non-developers.</li>
+<li>Impact: Useful, but <strong>not a game changer</strong>.</li>
+</ul>
+<h4 id="b-gen-20-chat-diagenetic-interfaces">B. Gen 2.0: Chat &amp; Diagenetic Interfaces</h4>
+<ul>
+<li>Tools: Chat-based AI (e.g., ChatGPT)</li>
+<li>Function: Enables junior developers to generate more code.</li>
+<li>Challenges:</li>
+<li>Seniors/enterprise developers face increased code review burden.</li>
+<li>Output often lacks quality and maintainability.</li>
+<li>Requires heavy human oversight.</li>
+</ul>
+<h4 id="c-gen-30-multi-agent-workflows-the-game-changer">C. Gen 3.0: Multi-Agent Workflows (The Game Changer)</h4>
+<ul>
+<li><strong>Core Idea</strong>: Shift from chat-based interaction to <strong>command-line-driven, end-to-end agent workflows</strong>.</li>
+<li>Goal: Enable <strong>vibe coding with confidence</strong> — not just fast coding, but high-quality, maintainable, and reliable output.</li>
+<li>Key Enabler: <strong>CLI as the new interface leader</strong>.</li>
+</ul>
+<hr />
+<h3 id="iii-ai-across-the-software-development-life-cycle-sdlc">III. AI Across the Software Development Life Cycle (SDLC)</h3>
+<h4 id="a-beyond-the-ide">A. Beyond the IDE</h4>
+<ul>
+<li>Current tools focus on coding <em>inside</em> IDEs.</li>
+<li>Future: AI must operate <strong>across the entire SDLC</strong>:
+  1. Planning
+  2. Code Generation
+  3. Testing
+  4. Code Review</li>
+<li>Need for <strong>end-to-end, agentic workflows</strong> that span these phases.</li>
+</ul>
+<h4 id="b-the-v-shape-of-development">B. The "V" Shape of Development</h4>
+<ul>
+<li>Typical workflow:
+  1. <strong>Planning</strong> (non-executable)
+  2. <strong>Code Writing</strong> (executable)
+  3. <strong>Testing</strong> (executable, but not app code)
+  4. <strong>Review</strong> (non-executable)</li>
+<li><strong>Game Changer</strong>: Compress this "V" into a <strong>holistic, automated flow</strong> using AI agents.</li>
+</ul>
+<hr />
+<h3 id="iv-the-problem-with-vibe-coding">IV. The Problem with "Vibe Coding"</h3>
+<h4 id="a-origin-and-backlash">A. Origin and Backlash</h4>
+<ul>
+<li>Term popularized by Karpathy (Andrej Karpathy).</li>
+<li>Initially celebrated as a fast, intuitive way to code with AI.</li>
+<li><strong>Quick backlash</strong> within weeks/months:</li>
+<li>Karpathy himself retracted, stating:<br />
+    &gt; “I actually and professionally care about code. Contrast: vibe code.”</li>
+<li>Criticisms:</li>
+<li>Lacks quality, maintainability, and context.</li>
+<li>Unsuitable for <strong>large, existing codebases</strong>.</li>
+<li>Works well only for <strong>greenfield projects</strong>.</li>
+</ul>
+<h4 id="b-requirements-for-vibe-coding-with-confidence">B. Requirements for "Vibe Coding with Confidence"</h4>
+<ol>
+<li><strong>Context Awareness</strong>:
+   - Must include project-specific context, best practices, architecture.</li>
+<li><strong>Workflows</strong>:
+   - Structured, repeatable processes.
+   - Integration with SDLC stages.</li>
+<li><strong>Trust &amp; Quality</strong>:
+   - Reliable code review, testing, and refactoring.
+   - Enterprise-grade maintainability.</li>
+</ol>
+<hr />
+<h3 id="v-kodtos-approach-multi-agent-architecture">V. Kodto’s Approach: Multi-Agent Architecture</h3>
+<h4 id="a-holistic-ai-solution">A. Holistic AI Solution</h4>
+<ul>
+<li>Focus on <strong>end-to-end workflows</strong>, not isolated tools.</li>
+<li>Designed for <strong>enterprise-grade software</strong>.</li>
+</ul>
+<h4 id="b-key-agents-tools">B. Key Agents &amp; Tools</h4>
+<ol>
+<li>
+<p><strong>Deep Research / Deep Ask Agent</strong>:
+   - Understands complex codebases.
+   - Retrieves relevant context for accurate AI output.</p>
+</li>
+<li>
+<p><strong>Code Review Agent (Flagship: "Code Merge")</strong>:
+   - Named: <strong>Code Merge</strong> (codto merge).
+   - Collects and applies <strong>organizational best practices</strong> over time.
+   - Ensures code quality and adherence to standards.</p>
+</li>
+<li>
+<p><strong>Shift-Left Tool (IDE Integration)</strong>:
+   - Brings review and best practices <strong>into the development phase</strong>.
+   - Prevents issues before code is pushed.</p>
+</li>
+<li>
+<p><strong>Cover Agent (Open Source)</strong>:
+   - Automatically <strong>increases test coverage</strong>.
+   - Integrated into CLI; no need to download separately.
+   - GitHub: <code>github.com/kodto/cover</code> <em>(implied open-source)</em></p>
+</li>
+</ol>
+<hr />
+<h3 id="vi-why-cli-is-the-future">VI. Why CLI is the Future</h3>
+<h4 id="a-advantages-of-cli-over-ide-plugins">A. Advantages of CLI over IDE Plugins</h4>
+<ul>
+<li><strong>Automation &amp; Scripting</strong>:</li>
+<li>Can be integrated into CI/CD, pre-commit, post-commit hooks.</li>
+<li><strong>Pipelines &amp; Composability</strong>:</li>
+<li>Supports <strong>piping</strong> agents together (e.g., generate → test → review).</li>
+<li>Enables <strong>workflow orchestration</strong>.</li>
+<li><strong>Background Execution</strong>:</li>
+<li>Agents can run asynchronously.</li>
+<li><strong>Developer-Centric</strong>:</li>
+<li>Familiar to developers; supports complex, repeatable tasks.</li>
+</ul>
+<h4 id="b-real-world-example-simons-talk">B. Real-World Example: Simon’s Talk</h4>
+<ul>
+<li>Speaker Simon demonstrated AI tools <strong>entirely via CLI</strong>.</li>
+<li>Proves CLI is powerful, flexible, and sufficient for advanced workflows.</li>
+</ul>
+<h4 id="c-kodto-cli-tool">C. Kodto CLI Tool</h4>
+<ul>
+<li><strong>Just launched</strong> (soft launch during talk).</li>
+<li>Features:</li>
+<li>Chat interface with agents.</li>
+<li>Ability to <strong>create new agents on demand</strong>.</li>
+<li>Example: <code>create agent --goal="review code"</code></li>
+<li>Uses <strong>MCP (Machine-Callable Protocols)</strong> to discover capabilities.</li>
+<li>Generates agents with:<ul>
+<li>Tools</li>
+<li>Instructions</li>
+<li>Output schema</li>
+</ul>
+</li>
+<li>Can be extended and customized.</li>
+</ul>
+<h4 id="d-agent-to-agent-a2a-communication">D. Agent-to-Agent (A2A) Communication</h4>
+<ul>
+<li>Vision: <strong>Swarm of agents</strong> working in parallel.</li>
+<li>Features:</li>
+<li>Discoverability between agents.</li>
+<li>Handshakes and shared context.</li>
+<li>Parallel execution with coordination.</li>
+<li><strong>Current State</strong>: Very few using A2A (only 1 person raised hand in audience).</li>
+<li><strong>Future Roadmap</strong>: CLI-based A2A command system in development.</li>
+</ul>
+<hr />
+<h3 id="vii-demo-workflow-example">VII. Demo &amp; Workflow Example</h3>
+<h4 id="a-creating-a-review-agent">A. Creating a Review Agent</h4>
+<ul>
+<li>Command: <code>kodto create agent --goal="code review"</code></li>
+<li>Process:</li>
+<li>Initializes MCP.</li>
+<li>Searches available tools and capabilities.</li>
+<li>Generates agent definition (e.g., "merge review agent").</li>
+<li>Agent is ready to use in seconds (vs. hours manually).</li>
+</ul>
+<h4 id="b-using-the-agent">B. Using the Agent</h4>
+<ul>
+<li>Command: <code>kodto merge review [target]</code></li>
+<li>Features:</li>
+<li>Applies <strong>organizational best practices</strong>.</li>
+<li>Can include <strong>success/failure criteria</strong> (e.g., test coverage threshold).</li>
+<li>Flexible input and output.</li>
+</ul>
+<h4 id="c-pipeline-example">C. Pipeline Example</h4>
+<pre><code class="language-bash"># Generate code → Increase test coverage → Review
+kodto generate &quot;new feature&quot; | kodto cover | kodto merge review
+</code></pre>
+<ul>
+<li>Demonstrates <strong>composable, CLI-driven workflows</strong>.</li>
+</ul>
+<hr />
+<h3 id="viii-the-future-swarm-of-agents">VIII. The Future: Swarm of Agents</h3>
+<ul>
+<li><strong>Vision</strong>: A <strong>swarm of specialized agents</strong>, each with:</li>
+<li>Unique credentials</li>
+<li>Domain-specific knowledge</li>
+<li>Best practices</li>
+<li><strong>Timeline</strong>: Rapid development expected in <strong>2025–2026</strong>.</li>
+<li><strong>Interfaces</strong>:</li>
+<li>CLI as primary control plane.</li>
+<li><strong>Dynamic UI generation</strong> from CLI for specific tasks (e.g., code review interface).</li>
+<li>May <strong>reduce reliance on traditional IDEs</strong>.</li>
+</ul>
+<hr />
+<h3 id="ix-conclusion">IX. Conclusion</h3>
+<ul>
+<li><strong>Current State</strong>: AI tools are helpful but not game-changing.</li>
+<li><strong>Game Changer</strong>: <strong>Confident, end-to-end AI workflows</strong> via CLI and multi-agent systems.</li>
+<li><strong>Kodto’s Role</strong>:</li>
+<li>Building a <strong>holistic, agentic platform</strong>.</li>
+<li>Focusing on <strong>quality, trust, and enterprise needs</strong>.</li>
+<li><strong>Call to Action</strong>:</li>
+<li>Try the <strong>new Kodto CLI tool</strong> (soft-launched).</li>
+<li>Follow Kodto for upcoming announcements (2-month roadmap).</li>
+<li>Join the movement toward <strong>AI-powered, CLI-driven development</strong>.</li>
+</ul>
+<hr />
+<h3 id="x-supporting-details-references">X. Supporting Details &amp; References</h3>
+<ul>
+<li><strong>Kodto CLI</strong>: Available now (soft launch).</li>
+<li><strong>Kodto Cover (Open Source)</strong>: <code>github.com/kodto/cover</code> <em>(implied)</em></li>
+<li><strong>Key Concepts</strong>:</li>
+<li>MCP (Machine-Callable Protocols)</li>
+<li>A2A (Agent-to-Agent Communication)</li>
+<li>Shift-left testing &amp; review</li>
+<li>Vibe coding → Confident coding</li>
+<li><strong>Influencers Cited</strong>:</li>
+<li><strong>Andrej Karpathy</strong> – On the evolution of "vibe coding".</li>
+<li><strong>Simon</strong> – Demonstrated CLI-first AI development (talk referenced but not named).</li>
+</ul>
+<hr />
+<h3 id="xi-final-message">XI. Final Message</h3>
+<blockquote>
+<p>“We’re going into a future where we’re going to have a <strong>swarm of agents</strong>... and it’s coming really fast — 2025, 2026.”<br />
+— Itar Friedman, Kodto</p>
+</blockquote>
+<h2 id="context-engineering">Context Engineering</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4GiqzUHD5AA">Context Engineering for Agents (22:05) (2 Jul 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=8kMaTybvDUw">12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer (17:05) (3 Jul 2025)</a></li>
+<li><a href="https://github.com/humanlayer/12-factor-agents">12 Factor Agents</a></li>
+<li><a href="https://news.ycombinator.com/item?id=43699271">HN 12 Factor Agents</a>
+  How We Got Here: A Brief History of Software
+  Factor 1: Natural Language to Tool Calls
+  Factor 2: Own your prompts
+  Factor 3: Own your context window
+  Factor 4: Tools are just structured outputs
+  Factor 5: Unify execution state and business state
+  Factor 6: Launch/Pause/Resume with simple APIs
+  Factor 7: Contact humans with tool calls
+  Factor 8: Own your control flow
+  Factor 9: Compact Errors into Context Window
+  Factor 10: Small, Focused Agents
+  Factor 11: Trigger from anywhere, meet users where they are
+  Factor 12: Make your agent a stateless reducer</li>
+</ul>
+<h2 id="project-documentation">Project Documentation</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=MZjW7mlRgdw">Build Better Apps with AI Using This One Simple Document (PRD Guide) (21:00) (29 Jun 2025)</a></li>
+</ul>
+<h2 id="agent-metrics-and-benchmarks">Agent Metrics and Benchmarks</h2>
+<h2 id="single-super-agent-vs-multi-agent-systems">Single Super Agent vs Multi-Agent Systems</h2>
+<h2 id="rl-for-agents-and-marl">RL for Agents and MARL</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=9aYJZysrQ9k">Will Brown: Abstractions for Agentic RL (31:07) (23 Jun 2025)</a></li>
+</ul>
+<h2 id="agent-protocols">Agent Protocols</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2504.16736">A Survey of AI Agent Protocols by Yang et. al. (21 Jun 2025)</a></li>
+<li><a href="https://github.com/zoe-yyx/Awesome-AIAgent-Protocol">Github</a></li>
+</ul>
+<h2 id="licensing-and-open-science">Licensing and Open Science</h2>
+<ul>
+<li><a href="https://lfaidata.foundation/wp-content/uploads/sites/3/2025/01/05_White_paper_MOF_Specification.pdf">The Model Openness Framework (MOF) Specification LF AI &amp; Data - Generative AI Commons (Dec 2024)</a></li>
+<li><a href="https://github.com/lfai/model_openness_tool">Github</a></li>
+</ul>
+<h2 id="embodied-ai-robotics">Embodied AI : Robotics</h2>
+<ul>
+<li><a href="">Tech</a></li>
+<li><a href="">Forecasts</a></li>
+<li><a href="">China Dark Factories</a></li>
+<li><a href="https://www.youtube.com/watch?v=J2k_z-B1-aw">$1,000 USD now buys you a humanoid robot that's OPEN SOURCE and owned by you. (31:39) (May 2025)</a></li>
+</ul>
+<h2 id="agiasi">AGI/ASI</h2>
+<ul>
+<li><a href="">Apple Paper</a></li>
+<li><a href="">Critique of Apple Paper</a></li>
+<li><a href="https://www.youtube.com/watch?v=-eFvwZx9U0Q">Harvard, MIT: AI's Potemkin Understanding (21:48) (28 Jun 2025)</a></li>
+</ul>
+<h2 id="agent-tutorials">Agent Tutorials</h2>
+<ul>
+<li><a href="https://github.com/google-deepmind/educational">Google DeepMind Educational Colabs (2022)</a></li>
+<li><a href="https://github.com/IBM/ibmdotcom-tutorials/tree/main">IBM Tutorials Github (25 Jun 2025)</a></li>
+<li><a href="https://github.com/sunnysavita10/LangGraph-End-to-End-Course">LangGraph End-to-End (Oct 2025)</a></li>
+</ul>
+<h2 id="project-human-thriving">Project: Human Thriving</h2>
+<ul>
+<li>AI Usage Now</li>
+<li><a href="">HBR</a></li>
+<li><a href="https://www.anthropic.com/research/clio">Anthropic CLIO</a><ul>
+<li><a href="https://arxiv.org/abs/2412.13678">Paper</a></li>
+</ul>
+</li>
+<li>Big Questions: Immediate</li>
+<li><a href="">AAAI and US Chamber of Commerce: Future of Work</a></li>
+<li>Big Questions: Long-Term</li>
+<li><a href="">Future of Life Institute</a></li>
+<li><a href="">Less Wrong</a></li>
+<li>Helix Roundtables (18-19 Apr, 2026):
+  1. (Sat)
+  2. (Sat)
+  3.</li>
+</ul>
+<h2 id="project-lowno-code-ai-automation-demosintros">PROJECT: Low/No-Code AI Automation Demos/Intros</h2>
+<ul>
+<li><a href="">Google LMNotebook</a></li>
+<li><a href="">Google Opal</a></li>
+<li><a href="">Suno</a></li>
+<li><a href="">Veo3</a></li>
+</ul>
+<h2 id="project-language-vs-multi-modal-and-ai-generated-content-aigc">Project: Language (vs Multi-Modal) and AI Generated Content (AIGC)</h2>
+<ul>
+<li>AI Generated Content Detection (What does human-AI diff tell us about ourselves)</li>
+<li>VibeCode: QuillBot Features and Paraphrasing</li>
+<li><a href="https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing">AIGC Signs/Features</a></li>
+<li><a href="https://github.com/ai-detected/ai-detectors">ai-detected/ai-detectors (2024)</a></li>
+<li><a href="https://github.com/Xianjun-Yang/Awesome_papers_on_LLMs_detection">Xianjun-Yang/Awesome_papers_on_LLMs_detection (Jun 2025)</a></li>
+<li><a href="https://github.com/Daisy-Zhang/Awesome-AIGC-Detection">Daisy-Zhang/Awesome-AIGC-Detection (Oct 2024)</a></li>
+<li><a href="https://github.com/chenhaoxing/Awesome-AI-Generated-Video-Detection">chenhaoxing/Awesome-AI-Generated-Video-Detection (Jul 2025)</a></li>
+<li>VibeCode: Writing Tools https://www.alwrity.com/ai-writing-tools</li>
+<li>Cognition/Emotion/Self vs Linguistic Encapsulation (non-narrative internal monologues)</li>
+</ul>
+<h2 id="project-data">Project: Data</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jryZvCuA0Uc">How to look at your data — Jeff Huber (Choma) + Jason Liu (567) (19:22) (9 Aug 2025)</a></li>
+</ul>
+<h2 id="project-prompt-engineering-and-llm-apis-talking-to-ai-llms">Project: Prompt Engineering and LLM APIs (Talking to AI LLMs)</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/dspy-build-optimize-agentic-apps/lesson/nj890/introduction">Deeplearning.ai: DSPy: Build and Optimize Agentic Apps</a></li>
+<li><a href="https://aistudio.google.com/prompts/new_chat">Google AI Studio</a></li>
+<li><a href="https://python.useinstructor.com/prompting/">Instructor: Advanced Prompting Techniques</a></li>
+<li><a href="https://maven.com/applied-llms/rag-playbook?promoCode=EBOOK">Systematically Improving RAG Applications by Jason Liu (Sep 16-Oct 23 $1,440USD)</a></li>
+<li><a href="https://github.com/567-labs/ai-engineering-summit">Github</a></li>
+</ul>
+<h2 id="project-vibe-coding-context-engineering-and-mcp-contextconnection-to-real-world">Project: Vibe Coding, Context Engineering, and MCP (Context/Connection to Real-World)</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/claude-code-a-highly-agentic-coding-assistant/">Deeplearning.ai: Claude Code: A Highly Agentic Coding Assistant</a></li>
+<li><a href="https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/lesson/fkbhh/introduction">Deeplearning.ai: MCP: Build Rich-Context AI Apps with Anthropic</a></li>
+<li>REST, LSP, MCP (Why MCP? Video 1:00)</li>
+<li>Invokes TOOLS/Functions, Queries RESOURCES/Data, Interpolates PROMPTS/Templates (MCP Architecture Video 1:37)</li>
+<li>Naive vs Complex Prompt Template (MCP Architecture Video 10:00)</li>
+<li><a href="https://render.com/">Create a Website and host at Render.com</a></li>
+</ul>
+<h2 id="project-anthropic-api-image-prompting-streaming-caching">Project: Anthropic API Image Prompting, Streaming, Caching</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/building-toward-computer-use-with-anthropic/">Deeplearning.ai: Building toward Computer Use with Anthropic</a></li>
+<li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview">Anthropic Prompt Enginering Doc</a></li>
+</ul>
+<h2 id="project-llm">Project: LLM</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/open-source-models-hugging-face/lesson/ci5d5/introduction">Deeplearning.ai: Open Source Models with Hugging Face</a></li>
+<li><a href="https://huggingface.co/">Huggingface.co</a></li>
+</ul>
+<h2 id="project-fine-tuning-sft-rl-etc">Project: Fine-Tuning, SFT, RL, etc.</h2>
+<ul>
+<li><a href="">Unsloth</a> </li>
+<li><a href="https://www.microsoft.com/en-us/research/blog/introducing-kblam-bringing-plug-and-play-external-knowledge-to-llms/">KBLaM</a></li>
+<li><a href="https://github.com/microsoft/kblam">Github</a></li>
+</ul>
+<h2 id="project-benchmarking">Project: Benchmarking</h2>
+<ul>
+<li><a href="https://openai.com/index/healthbench/">HealthBench</a></li>
+</ul>
+<h2 id="project-function-calling-and-structured-data">Project: Function Calling and Structured Data</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/functions-tools-agents-langchain/lesson/rtwb1/introduction">Deeplearning.ai Functions, Tools and Agents with LangChain</a></li>
+<li><a href="">Model Selection</a></li>
+<li><a href="">Unstruct</a></li>
+<li><a href="">Pydantic</a></li>
+<li><a href="https://python.useinstructor.com/">Instructor Manual</a></li>
+<li><a href="https://github.com/567-labs/instructor">Github</a></li>
+<li><a href="https://github.com/567-labs/instructor/tree/main/examples">Github Examples</a></li>
+<li><a href="https://www.youtube.com/watch?v=VllkW63LWbY">LLMs + Instructor: Generate Structured Output in Python Easily (29:30) (23 Mar 2025)</a></li>
+<li><a href="">LangExtract</a></li>
+<li><a href="https://arxiv.org/html/2505.23628v3">AutoSchemaKG</a></li>
+<li><a href="https://github.com/HKUST-KnowComp/AutoSchemaKG">Github</a></li>
+<li><a href="">Neo4j LLM Graph Builder</a></li>
+<li><a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0327186">Three-Stage Triplet Extractor</a></li>
+</ul>
+<h2 id="project-embeddings-and-vectordbs">Project: Embeddings and VectorDBs</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jryZvCuA0Uc">How to look at your data — Jeff Huber (Choma) + Jason Liu (567) (19:22) (6 Aug 2025)</a></li>
+<li><a href="https://chatgpt.com/c/689e0bfe-f704-8330-866b-727d17fb2f8a">GPT5 Summary</a></li>
+</ul>
+<h2 id="project-chatbot">Project: Chatbot</h2>
+<ul>
+<li><a href="https://github.com/AlbertoB12/Biblical-Companion-AI/tree/main">Biblical Companion</a></li>
+<li><a href="">PhiloAgent</a></li>
+</ul>
+<h2 id="project-guardrails">Project: Guardrails</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/safe-and-reliable-ai-via-guardrails/">Deeplearning.ai: Safe and reliable AI via guardrails</a> (after RAG)</li>
+</ul>
+<h2 id="project-security">Project: Security</h2>
+<ul>
+<li><a href="https://github.com/ottosulin/awesome-ai-security">ottosulin/awesome-ai-security (Jul 2025)</a></li>
+<li><a href="">Prompt Injection, Adversarial Attacks, Data Poisoning, etc.</a> </li>
+<li><a href="">MCP Security</a></li>
+</ul>
+<h2 id="project-crawling-scraping">Project: Crawling, Scraping</h2>
+<ul>
+<li><a href="https://docs.firecrawl.dev/introduction">FireCrawl: web to data</a></li>
+</ul>
+<h2 id="project-synthesizing-datasets-and-augmentation">Project: Synthesizing Datasets and Augmentation</h2>
+<ul>
+<li><a href=""></a>  </li>
+</ul>
+<h2 id="project-graphdb-neo4j">Project: GraphDB Neo4j</h2>
+<ul>
+<li><a href="https://ai.gopubby.com/building-an-extract-transform-and-load-pipeline-etl-for-neo4j-graphrag-application-part-2-123be950946e">Building An Extract Transform And Load Pipeline (ETL) For Neo4j GraphRAG Application | Part 2 (3 Sep 2024)</a></li>
+</ul>
+<h2 id="project-low-code-n8n">Project: Low-Code n8n</h2>
+<ul>
+<li><a href="https://developers.googleblog.com/en/introducing-opal/">Google Opal</a></li>
+<li><a href="https://firebase.google.com/docs/studio">Google Firebase Studio</a></li>
+<li><a href="">n8n</a></li>
+</ul>
+<h2 id="project-agentic-deep-research">Project: Agentic Deep Research</h2>
+<ul>
+<li><a href="https://www.ii.inc/web/blog/post/ii-researcher">II-Researcher Intelligent Internet (28 Mar 2025)</a></li>
+<li><a href="https://github.com/Intelligent-Internet/ii-researcher">Github (Jun 2025)</a></li>
+</ul>
+<h2 id="project-agentic-rag">Project: Agentic RAG</h2>
+<ul>
+<li><a href="https://www.perplexity.ai/search/give-a-list-of-new-ai-models-p-qjImAZI_TvKIy89.T.Gc_A">Perplexity</a></li>
+<li><a href="https://www.youtube.com/watch?v=RPpGIxmdZYs">LangExtract + RAG: Smarter Retrieval with Metadata Filtering (w/LangExtract) (12:23) (12 Aug 2025)</a></li>
+<li><a href="https://github.com/PromtEngineer/LangExtract-RAG/blob/main/langextract_rag.py">Github</a></li>
+<li><a href="https://github.com/567-labs/systematically-improving-rag">Systematically Improving RAG ($2k paid course)</a></li>
+<li><a href="https://maven.com/applied-llms/rag-playbook?promoCode=EBOOK">Chroma Workshop: Topic Modeling for RAG Systems</a></li>
+<li><a href="https://github.com/567-labs/how-to-look-at-data/tree/main">Github</a></li>
+</ul>
+<h2 id="project-llm-as-judge">Project: LLM-as-Judge</h2>
+<ul>
+<li><a href="https://huggingface.co/learn/cookbook/en/llm_judge">Using LLM-as-a-judge 🧑‍⚖️ for an automated and versatile evaluation</a></li>
+<li><a href="https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/llm_judge.ipynb">Colab</a></li>
+</ul>
+<h2 id="multi-agent-frameworks_1">Multi-Agent Frameworks</h2>
+<ul>
+<li>
+<p><a href="https://campus.datacamp.com/courses/multi-agent-systems-with-langgraph/">Datacamp.com: Multi-Agent Systems with LangGraph</a></p>
+</li>
+<li>
+<p><a href="https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai/lesson/wwou5/introduction">Deeplearning.ai: Multi AI Agent Systems with crewAI</a></p>
+</li>
+<li><a href="https://learn.deeplearning.ai/courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/lesson/agfnp/introduction">Deeplearning.ai: Practical Multi-AI Agents and Advanced Use Cases with crewAI</a></li>
+<li><a href="https://github.com/crewAIInc/crewAI#quick-tutorial">crewAI Tutorial</a></li>
+<li><a href="https://github.com/crewAIInc/crewAI-examples/tree/main">crewAI Examples</a></li>
+<li><a href="https://github.com/crewAIInc/crewAI#q-where-can-i-find-real-world-crewai-examples">crewAI RealWorld Examples</a></li>
+<li><a href="https://github.com/strnad/CrewAI-Studio/">Streamlit: strnad/CrewAI-Studio/</a></li>
+</ul>
+<h2 id="project-browser-automation">Project: Browser Automation</h2>
+<ul>
+<li><a href="https://magnitude.run/">Magnitude: The AI browser automation framework</a></li>
+<li><a href="https://github.com/magnitudedev/magnitude">Github</a></li>
+</ul>
+<h2 id="project-tools-and-mcp">Project: Tools and MCP</h2>
+<ul>
+<li><a href="https://platform.composio.dev/"></a></li>
+<li><a href="https://e2b.dev/">e2b: Code Sandbox</a></li>
+</ul>
+<h2 id="project-prompt-optimization">Project: Prompt Optimization</h2>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/dspy-build-optimize-agentic-apps/lesson/nj890/introduction">Deeplearning.ai: DSPy: Build and Optimize Agentic Apps (with MLFlow Observability)</a></li>
+<li><a href="https://dspy.ai/community/use-cases/">DSPy Use Cases (scroll down to Projects using DSPy too)</a></li>
+<li><a href="https://dspy.ai/api/modules/Module/">DSPy API</a></li>
+<li><a href="https://arxiv.org/abs/2406.11695">DSPy Paper by opsahl-Ong et al. (6 Oct 2024)</a></li>
+</ul>
+<h2 id="project-agent-observability">Project: Agent Observability</h2>
+<ul>
+<li><a href="https://wandb.ai/site">Weights and Biases (WandB)</a></li>
+<li><a href="">LangSmit</a></li>
+<li><a href="">Optica?</a></li>
+<li><a href="https://learn.deeplearning.ai/courses/evaluating-ai-agents/">Arize Pheonix</a></li>
+<li><a href="https://github.com/Arize-ai/phoenix">Github</a></li>
+<li>
+<p><a href="https://github.com/AgentOps-AI/agentops">AgentOps</a></p>
+</li>
+<li>
+<p><a href="">Arize Phoenix Resources</a></p>
+</li>
+</ul>
+<h2 id="project-extracting-behavior">Project: Extracting Behavior</h2>
+<ul>
+<li><a href="https://github.com/567-labs/kura">Kura implement CLIO</a>
+Kura is a simple reproduction of the CLIO paper which uses language models to label user behaviour before clustering them based on embeddings recursively. This helps us understand user behaviour on a higher level without sacrificing PII</li>
+</ul>
+<h2 id="resources">📚 &nbsp; Resources</h2>
+<ul>
+<li>In addition to assessing the convergence of your agent's path, you can also analyze the failure probabilities of each step of your agent. Here's a <a href="https://blog.langchain.dev/scipe-systematic-chain-improvement-and-problem-evaluation/">reference example</a> on how this can be done.</li>
+<li><a href="https://arize.com/resource/llamaindex-workflows-everything-you-need-to-get-started-and-trace-and-evaluate-your-agent/">Tracing and Evaluating AI Agents built with LlamaIndex's Workflows</a></li>
+<li>Evaluating a LangChain tool-calling agent: <a href="https://github.com/Arize-ai/phoenix/blob/b107d9bc848efd38f030a8c72954e89616c43723/tutorials/evals/evaluate_tool_calling.ipynb">Link to notebook</a>, <a href="https://www.youtube.com/watch?v=EfhylWtNb1s&amp;t=254s">Link to Video</a></li>
+<li><a href="https://arize.com/blog/langgraph/">Tracing and Evaluating LangGraph Agents</a></li>
+<li><a href="https://github.com/Arize-ai/phoenix/blob/main/tutorials/experiments/summarization.ipynb">Prompt template iteration for a summarization Service</a></li>
+<li>Comparing Agent Frameworks: <a href="https://arize.com/blog-course/llm-agent-how-to-set-up/comparing-agent-frameworks/">Link to reading</a>, <a href="https://github.com/Arize-ai/phoenix/tree/main/examples/agent_framework_comparison">Link to repo</a></li>
+<li><a href="https://www.youtube.com/watch?v=fuvcV8o5wb0&amp;list=PL86ARIu_ElO7HOm7cVgzfEs_NwSdfhHFA&amp;index=6&amp;ab_channel=ArizeAI">Discussion of multi-agent framework with AutoGen</a></li>
+<li><a href="https://docs.arize.com/phoenix">Arize Phoenix Documentation</a></li>
+</ul>
+<h2 id="agentic-frameworks">Agentic Frameworks</h2>
+<h2 id="agent-libraries">Agent Libraries</h2>
+<ul>
+<li><a href="https://docs.mem0.ai/introduction">mem0</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

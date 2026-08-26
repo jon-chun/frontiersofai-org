@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 7: RAG and Mini-Project #3: A Real Customer Service Chatbot – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 7: RAG and Mini-Project #3: A Real Customer Service Chatbot</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-7-rag-and-mini-project-3-a-real-customer-service-chatbot">Week 7: RAG and Mini-Project #3: A Real Customer Service Chatbot</h1>
+<p>As this class studies the "Frontiers of AI" which is a rapidly moving target, the past week has presented two new related opportunities for us to pivot towards. First, OpenAI Dev Day this week introduced a major new platform for building agentic systems that ties together many best practices from industry including guardrails, security, prompt optimization, and other key features. Secondly, we may have the opportunity through one of our IPHS human-centered AI alumni to apply this framework for a real-world greenfield deployment for customer support in a multi-billion dollar parts distributor.</p>
+<p>We will morph Mini-Project #3 from a simple RAG system to a state-of-the-art commercial customer support pipeline that mirrors the real-world concerns of typical retail, warehouse, and distribution logistics concerns. In parallel, we'll continue to carefully explore the benchmark dataset options for Mini-Project #2 with the goal of planning Thanksgiving break for everyone to produce their 300 data samples.</p>
+<p>Although increasingly a turnkey solution, it's important that you have familiarity with RAG systems. Retrieval Augmented Generation (RAG) and chatbots are two of the most prominent applications that highlight the unique value LLM models bring to traditional software engineering. A deeper understanding of RAG is not only a practical skill, but it operationalizes and illustrates multiple real-world tradeoffs between (a) performance vs cost, safety, bias, etc., (b) model/tool selection, and (c) various software architectures. RAG systems incorporate and extend last weeks' study of embeddings and vector databases and introduce a few new advanced concepts like hybrid search and reranking.  </p>
+<h1 id="arxivorg-research-paper-5-min-presentation">==========[ ArXiv.org Research Paper 5 min Presentation ]==========</h1>
+<h2 id="schedule">Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/15</td>
+<td>Peter</td>
+</tr>
+<tr>
+<td>10/22</td>
+<td>Tiffanie</td>
+</tr>
+<tr>
+<td>10/29</td>
+<td>Anna</td>
+</tr>
+<tr>
+<td>11/5</td>
+<td>Kirill</td>
+</tr>
+<tr>
+<td>11/12</td>
+<td>Wisdom, Godwin</td>
+</tr>
+<tr>
+<td>11/19</td>
+<td>Ann-Duncan, Adrian</td>
+</tr>
+</tbody>
+</table>
+<h1 id="quiz-week-7">Quiz: Week 7</h1>
+<h1 id="presentation-peter">Presentation: Peter</h1>
+<h1 id="mini-projects">Mini-Projects:</h1>
+<h2 id="mini-project-2-embedding-research">Mini-Project #2: Embedding Research</h2>
+<p>(Coming... more details upcoming based upon our class discussion Oct 8, 2025)</p>
+<h2 id="mini-project-3-a-real-customer-service-chatbot">Mini-Project #3: A Real Customer Service Chatbot</h2>
+<p>Stage 1: Prompt Cookbook: Customized, Optimized, and Well-Structured Prompt
+Stage 2: Rules-based Customer Service Agent Pipeline
+Stage 3: Personalized Customer Service Agentic Pipeline</p>
+<h1 id="new-reading-assignments">==========[ New Reading Assignments ]==========</h1>
+<h2 id="humanistic-readings"><strong>[ Humanistic Readings ]</strong></h2>
+<ul>
+<li><a href="https://theoatmeal.com/comics/ai_art">Let's Talk about AI Art by Oatmeal</a></li>
+</ul>
+<h2 id="ai-newscurrent-events"><strong>[AI News/Current Events]</strong></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ECyHWe7eDLY">CEOs Think AI ROI Is Coming Faster (6:39) (8 Oct 2025)</a></li>
+<li><a href="https://tech.co/news/accenture-layoffs-ai-pivot">Accenture Makes Room for AI With Thousands of Layoffs by Mallett (29 Sep 2025)</a></li>
+<li><a href="../docs-reports/2025_state_of_ai_assisted_software_development.pdf">(Use AI) Google DORA 2025 State of AI Assisted Software Development</a></li>
+</ul>
+<h2 id="new-technical-assignments"><strong>[ New Technical Assignments ]</strong></h2>
+<h3 id="openai-dev-day-videos">OpenAI Dev Day Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=44eFf-tRiSg">(Brief) Intro to Agent Builder (5:29) (7 Oct 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=0uNot5guN8s&amp;t=3s">(Intermediate) I Made OpenAI's Agent Builder 10x More Powerful (Connected 500+ Apps) (21:02) (8 Oct 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=kLd7nSkDxig">(Full) Master the NEW OpenAI Agent Builder In 1 Hour (Complete Course) (1:02:02) (7 Oct 2025)</a></li>
+<li><a href="https://platform.openai.com/agent-builder">OpenAI Agent Builder</a></li>
+<li><a href="https://chatkit.studio/playground">OpenAI Playground</a></li>
+<li><a href="https://widgets.chatkit.studio/">OpenAI Widget Builder</a></li>
+</ul>
+<h3 id="chat-guardrails">Chat Guardrails</h3>
+<ul>
+<li><a href="https://openai.github.io/openai-guardrails-python/">OpenAI Guardrails Python</a></li>
+<li>Unintended Behavior</li>
+<li>Malicious Behavior</li>
+<li>Mask/Flag PII</li>
+<li>Detect Jailbreaks (Security)</li>
+<li>Other Safeguards</li>
+</ul>
+<h3 id="benchmark-datasets-prompt-optimization-and-observability">Benchmark Datasets, Prompt Optimization and Observability</h3>
+<ul>
+<li><a href="https://platform.openai.com/docs/guides/evals?api-mode=responses">OpenAI Working with Evals</a></li>
+<li>Datasets</li>
+<li>Trace Grading</li>
+<li>Automated Prompt Optimization</li>
+<li>Third-party Model Support</li>
+</ul>
+<h3 id="reinforcement-fine-tuning">Reinforcement Fine-Tuning</h3>
+<ul>
+<li><a href="https://platform.openai.com/docs/guides/reinforcement-fine-tuning">Reinforcement fine-tuning</a></li>
+<li>Custom Tool Calling</li>
+<li>Custom Graders</li>
+</ul>
+<h2 id="coding-exercises-design"><strong>[ Coding Exercises / Design ]</strong></h2>
+<ul>
+<li>NOTE: These are the core sections in the OpenAI documentation that we may need to implement for Mini-Project #3. Please closely study these linked sections along with studying the provided code.</li>
+</ul>
+<h3 id="openai">OpenAI</h3>
+<ul>
+<li><a href="https://openai.com/index/introducing-agentkit/">Introducing AgentKit (6 Oct 2025)</a></li>
+<li><a href="https://platform.openai.com/docs/guides/agents/agent-builder">Agent Builder</a></li>
+<li>Connector Registry</li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/chatkit">OpenAI ChatKit</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Core Concepts</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides">Structured Model Outputs</a></li>
+<li><a href="https://platform.openai.com/docs/guides/function-calling">Function Calling</a></li>
+<li><a href="https://platform.openai.com/docs/guides/latest-model">Using GPT5</a></li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/migrate-to-responses">Migrate to the Responses API</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Agents</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides/agent-builder">Agent Builder</a></li>
+<li><a href="https://platform.openai.com/docs/guides/node-reference">Node Reference</a></li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/agent-builder-safety">Safety in Building Agents</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Optimize</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides/agent-evals">Agent Evals</a></li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/trace-grading">Trace Grading</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Tools</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides/tools">Using Tools</a></li>
+<li><a href="https://platform.openai.com/docs/guides/tools-connectors-mcp">Connectors and MCP</a></li>
+<li><a href="https://platform.openai.com/docs/guides/tools-web-search?api-mode=responses">Web Search</a></li>
+<li><a href="https://platform.openai.com/docs/guides/tools-code-interpreter">Code Interpreter</a></li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/tools-code-interpreter">File Search and Retrieval</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Run and Scale</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides/conversation-state?api-mode=responses">Conversation State</a></li>
+<li><a href="https://platform.openai.com/docs/guides/pdf-files">File Inputs</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompting">Prompting</a></li>
+<li>
+<p><a href="https://platform.openai.com/docs/guides/reasoning">Reasoning</a></p>
+</li>
+<li>
+<p><strong>API Key Sections: Evaluation</strong></p>
+</li>
+<li><a href="https://platform.openai.com/docs/guides/evaluation-getting-started?api-mode=responses">ALL sections EXCEPT External Models</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

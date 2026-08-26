@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Week 2: Prompt Engineering, Vibe Coding, Context Engineering, and Spec Driven Development – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Week 2: Prompt Engineering, Vibe Coding, Context Engineering, and Spec Driven Development</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="week-2-prompt-engineering-vibe-coding-context-engineering-and-spec-driven-development">Week 2: Prompt Engineering, Vibe Coding, Context Engineering, and Spec Driven Development</h1>
+<p>"Nothing in the world can take the place of persistence. Talent will not; nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb" - Calvin Coolidge</p>
+<h2 id="humanistic-big-ideas"><strong>Humanistic Big Ideas</strong></h2>
+<h3 id="readings">Readings</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CRraHg4Ks_g">Demis Hassabis On The Future of Work in the Age of AI (20:10) (Jul 2025)</a></li>
+</ul>
+<h3 id="reflection">Reflection:</h3>
+<p>The Future of Work in the Age of AI</p>
+<ul>
+<li>Impact on Human Roles: Based on Demis Hassabis’s insights, how might AI reshape traditional job roles, and what new opportunities or challenges could emerge for workers in fields like education, healthcare, or the arts? How should society prepare for these shifts?</li>
+<li>Human-AI Collaboration: Hassabis likely discusses AI as a tool for augmenting human work. What are the ethical implications of humans and AI systems collaborating closely in professional settings? How can we ensure that human agency and creativity remain central?</li>
+<li>Economic Inequality: How might AI-driven automation exacerbate or mitigate economic inequality? Discuss potential strategies to ensure equitable access to AI-driven opportunities, especially in rural or underserved communities like those near Kenyon College.</li>
+<li>Education and Skill Development: What changes should educational institutions, like Kenyon College, make to prepare students for an AI-driven workforce? Should liberal arts education adapt to emphasize skills that complement AI, such as critical thinking or emotional intelligence?</li>
+<li>Work-Life Balance: How might AI’s influence on productivity and efficiency, as discussed by Hassabis, affect work-life balance? Could AI lead to shorter workweeks or, conversely, increased pressure to be “always on”?</li>
+</ul>
+<h2 id="coding"><strong>Coding</strong></h2>
+<h3 id="goals">Goals:</h3>
+<ul>
+<li>Drink from the AI Firehose (news, research, product launches, etc)</li>
+<li>Deterministic Traditional Programming vs Stochastic AI Programming</li>
+<li>Web vs API Access</li>
+<li>Mini-Project #1: Chatbot Review (see week 3)</li>
+<li>Configure thin-client laptops for AI Development</li>
+<li>Signup for Dev and AI Cloud Services</li>
+<li>AI models, modalities, and money/rate limits (AIStudio)</li>
+<li>Cloud Dev: Jupyter Notebook</li>
+<li>unning local LLM (ollama.ai)</li>
+<li>making API calls to LLMs<ul>
+<li>rate limits</li>
+<li>error handing</li>
+<li>token/cost accounting</li>
+<li>multimodal content</li>
+</ul>
+</li>
+<li>ExtractLang to extract structured text from unstructured text</li>
+<li>Local Dev: Crash course</li>
+<li>Visual (VSCode) (API Calls to Gemini)</li>
+<li>Understand Software Engineering, from waterfalls to agile</li>
+<li>Aspects:<ul>
+<li>PRD</li>
+<li>Decomposition</li>
+<li>TDD</li>
+<li>Benchmarks</li>
+<li>Observability</li>
+<li>MLOps</li>
+</ul>
+</li>
+<li>Prompt Engineering</li>
+<li>Content Engineering</li>
+<li>Spec Driven Development</li>
+<li>BMAD: Agentic Agile SWE</li>
+</ul>
+<h3 id="ai-newscurrent-events">AI News/Current Events</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lxLz5xqVR9A">Workers Don't Trust Their Companies on AI (14:10) (31 Aug 2025)</a></li>
+</ul>
+<h3 id="to-do-signup-and-installs">To Do: Signup and Installs</h3>
+<ul>
+<li>
+<p><strong>Sign Up</strong></p>
+</li>
+<li>
+<p>AI Cloud Providers</p>
+<ul>
+<li>(DO NOT SIGN-UP EARLY) Perplexity<ul>
+<li>We will use a simple algorithm to optimize free months using their referral system in class (more free months if you can get friends/family outside class to join trail)</li>
+</ul>
+</li>
+<li>(Required: FREE) <a href="https://huggingface.co/">Huggingface.co</a></li>
+<li>(Required: FREE) <a href="https://gemini.google/students/">Google Pro for Students</a></li>
+<li>(Required: $20/mo) OpenAI ChatGPT<ul>
+<li>IF not blocked by @kenyon.edu domain</li>
+<li>2mo free? (may be blocked by Kenyon) <a href="https://gemini.google/students/">OpenAI ChatGPT Pro</a></li>
+<li>ELSE</li>
+<li>$20/mo <a href="https://chatgpt.com/pricing">OpenAI ChatGPT Pro</a></li>
+</ul>
+</li>
+<li>OPTIONAL <a href="">Anthropic/Claude Code</a><ul>
+<li>Latency, Costs, and Rug Pulls (degraded for profit margins/scale)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DevOps</p>
+<ul>
+<li><a href="https://github.com/">(FREE) Github.com</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Install on Your Laptops</strong></p>
+</li>
+<li><a href="">(latest) Google Chrome Browser</a><ul>
+<li>Sider (vs built-in Gemini with Google Pro Sub)</li>
+<li>Chat GPT Exporter (Similar extensions for Claude, Gemini, Grok, Deepseek)</li>
+<li>GoFullPage</li>
+<li>Enhancer for YouTube (2-3x speed)</li>
+<li>Zotero</li>
+</ul>
+</li>
+<li><a href="">(latest) Microsoft Edge Browser</a><ul>
+<li>Sider (vs built-in Copilot free)</li>
+<li>Chat GPT Exporter (Similar extensions for Claude, Gemini, Grok, Deepseek)</li>
+<li>GoFullPage</li>
+<li>Enhancer for YouTube (2-3x speed)</li>
+<li>Zotero</li>
+</ul>
+</li>
+<li><a href="https://code.visualstudio.com/download">VSCode</a></li>
+<li><a href="https://www.zotero.org/download/">Zotero App and Connector</a></li>
+</ul>
+<h3 id="prompt-engineering">Prompt Engineering</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NiQ_9xwS4v8">Complete OpenAI's API ChatGPT Tutorial - [Become A Prompt Engineer in 15 Minutes] (14:21) Mar 2024</a></li>
+<li><a href="https://www.promptingguide.ai/applications/finetuning-gpt4o">Prompt Engineering Guide Manual: Read "Introduction" and "Techniques" (up to/including Meta Prompting)</a></li>
+<li><a href="https://www.youtube.com/watch?v=FvTPcfSKsVs">How to use the new OpenAI GPT5 Prompt Optimizer: Step by step tutorial (3:42) (10 Aug 2025)</a></li>
+</ul>
+<h3 id="coding-prompt-engineering-and-openai-api">Coding: Prompt Engineering and OpenAI API</h3>
+<ul>
+<li><a href="https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/lesson/2/guidelines">Deeplearning.ai: Prompt Engineering with OpenAI</a></li>
+<li><a href="https://platform.openai.com/docs/overview">OpenAI Developer Platform: Read "Getting Started" and "Core Concepts/Text Generation"</a></li>
+</ul>
+<h3 id="coding-vibe-coding-and-context-engineering">Coding: Vibe Coding and Context Engineering</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=8rABwKRsec4">The New Code — Sean Grove, OpenAI (21:35) (Aug 2025)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1jIo7bvIpIo">Augment Code: Specs Driven Development For AI Coding Agents (9:25) (Aug 2025)</a></li>
+<li>The BMAD Method (Read ONE, preferably IMPROVED added late)</li>
+<li>IMPROVED: <a href="https://www.youtube.com/watch?v=Sosf8Z0T_M8">BMAD Vibe Coding Workflow Is a Massive Level Up (24:57) (25 Jul 2025)</a></li>
+<li>ORIGINAL: <a href="https://www.youtube.com/watch?v=fD8NLPU0WYU">The BMAD Method: The Ultimate AI Coding System (13:08) (Aug 2025)</a></li>
+</ul>
+<h3 id="ai-research">AI Research</h3>
+<p>This will be an exercise in skimming and using AI to analyze and quickly grasp the fundamentals of an AI research paper. Do not worry if many terms or concepts appear alien to you now. In fact, this is unfamiliarity is key to demonstrating how to leverage AI to personalize and accelerate your learning. Over the next 14 weeks you will master the core concepts in this paper, but for now this opacity is a precondition to demonstrate the efficacy of AI-assisted learning. </p>
+<ul>
+<li>Read "Abstract" on page 1</li>
+<li>Read from section 1 (middle page 4) to section 3.1 (bottom page 7)</li>
+<li>Read from section 4 (bottom page 12) to 4.1 with Fig 3 (top of page 13), but stop before 4.1.1</li>
+<li>Read from section 4.3 (bottom page 23 to middle page 24), but stop before 4.3.2</li>
+<li>Read section 8 Conclusion on page 58.</li>
+</ul>
+<p>From these 8 pages as reference points, I'll dissect this paper for you in class. More importantly, we'll learn a methodology to use AI to query, explain, and enter into dialog with contents and concepts of this paper. This is an invaluable skill that generalizes far beyond this particular AI research paper.  </p>
+<ul>
+<li><a href="https://arxiv.org/pdf/2507.13334">A Survey of Context Engineering for Large Language Models by Mei et al. (21 Jul 2025)</a></li>
+<li><a href="https://chatgpt.com/share/68c1deb7-8cc0-800c-8f92-2140368bea94">GPT5 Summary</a></li>
+<li>13% – Decline in employment among early-career workers in AI-exposed fields.</li>
+<li>5.3% vs. 4% – Unemployment rate for new grads compared to overall labor force.</li>
+<li>12% – Salary growth for entry-level AI specialists in a single year.</li>
+<li>41% – Gen Z employees sabotaging their company’s AI strategy.</li>
+<li>42% – Consulting workers not trained in AI despite being in a high-risk industry.</li>
+<li>Questions:</li>
+<li>What does “trust” in the workplace actually mean? Is it about transparency, fairness, security, or something else?</li>
+<li>How should responsibility for technological change be shared between employers, employees, and policymakers?</li>
+<li>Can AI truly “create” new jobs, or does it only shift human labor into new forms?</li>
+<li>If workers feel they are training their replacements, what ethical obligations do employers have to prevent that dynamic?</li>
+<li>How do we distinguish between fears that are rational (job loss, reduced creativity) and fears that might be exaggerated?</li>
+<li>What makes certain industries (like healthcare) more trusted by workers when it comes to AI adoption, compared to others (like real estate)?</li>
+<li>Does a lack of training in AI reflect negligence by employers, or is it simply a lag in adapting to rapid change?</li>
+<li>How might generational differences (Gen Z vs. older workers) shape attitudes toward AI at work?</li>
+<li>If AI could solve global problems like water scarcity or disease, should societies accept short-term disruptions to jobs? Why or why not?</li>
+<li>What role should democratic participation play in decisions about AI adoption—should workers have a voice equal to executives in shaping policies?</li>
+<li>Why do young workers feel more threatened by AI compared to experienced employees? (Enter E1 to ask)</li>
+<li>How could companies build trust and involve workers in AI integration? (Enter E2 to ask)</li>
+<li>What are the long-term risks if mistrust between workers and leadership continues? (Enter E3 to ask)</li>
+</ul>
+<h2 id="in-class">In Class</h2>
+<h3 id="quiz-week-2">Quiz: Week 2</h3>
+<h3 id="webui-vs-api">WebUI vs API</h3>
+<ul>
+<li><a href="https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-pro">AIStudio</a></li>
+<li><a href="https://platform.openai.com/docs/quickstart">OpenAI API QuickStart</a></li>
+</ul>
+<h3 id="sign-ups">Sign Ups</h3>
+<ul>
+<li>LLMs and Cloud Providers</li>
+<li>OPTIONAL (cost)<ul>
+<li><a href="https://qwenlm.github.io/blog/qwen3-coder/">Qwen3 Code</a></li>
+<li><a href="https://open.bigmodel.cn/dev/api/normal-model/glm-4">GLM</a></li>
+</ul>
+</li>
+<li>OPTIONAL (speed/scale)<ul>
+<li><a href="https://groq.com/">groq.com</a></li>
+<li><a href="https://www.cerebras.ai/">cerebras.ai</a></li>
+</ul>
+</li>
+<li>OPTIONAL (flex)<ul>
+<li><a href="https://openrouter.ai/">OpenRouter</a></li>
+<li><a href="https://www.requesty.ai/">Requesty</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="install">Install</h3>
+<ul>
+<li><a href="https://www.perplexity.ai/search/instructions-to-setup-thin-cli-BY57yvh6T.OjAEH24AFd.w">Perplexity: Min MacOS/Win11(WSL2) Setup Instr</a></li>
+<li><a href="../docs-config/gpt5_20250910_unified_ai_dev_setup_mac_os_wsl_2_vs_code_roo_gemini_code_claude_code_open_code_sept_2025.pdf">GPT5 Unified Install Instructions</a></li>
+<li><a href="../docs-config/gpt5_20250910_unified_ai_dev_setup_mac_os_wsl_2_vs_code_roo_gemini_code_claude_code_open_code_sept_2025.pdf">Unified Setup Config</a></li>
+<li>MacOS</li>
+<li>Brew Package Manager</li>
+<li>iTerm2</li>
+<li>Windows11 (From Win11 Microsoft Store)</li>
+<li>WSL2 &amp; sudo apt update/upgrade</li>
+<li>Windows Terminal</li>
+<li>Common</li>
+<li>git and SSH tokens</li>
+<li>Python<ul>
+<li>uv</li>
+<li>python 3.10, 3.11, 3.12</li>
+</ul>
+</li>
+<li>JavaScript<ul>
+<li>nvm</li>
+<li>node</li>
+</ul>
+</li>
+</ul>
+<h3 id="ai-resources">AI Resources</h3>
+<ul>
+<li>News</li>
+<li><a href="https://daily.dev/">daily.dev</a></li>
+<li>FOSS Repos</li>
+<li><a href="https://github.com/explore">Github Explore</a></li>
+<li><a href="https://trendshift.io/">Trendshift</a></li>
+<li>Leaderboards</li>
+<li><a href="https://aider.chat/docs/leaderboards/">Aider</a></li>
+<li>Deep Research</li>
+<li>Prompt<ul>
+<li><a href="https://console.cloud.google.com/vertex-ai/studio/prompt-gallery?project=gen-lang-client-0588482685">Vertex Prompt Gallery</a></li>
+</ul>
+</li>
+<li>Preliminary Research<ul>
+<li><a href="https://www.perplexity.ai/">Perplexity.ai</a></li>
+</ul>
+</li>
+<li>Metaprompt<ul>
+<li><a href="https://aistudio.google.com/prompts/10BFaVPfHheyXH6g-dr5cy9nFJ_BwAmqq">AIStudio</a></li>
+</ul>
+</li>
+<li>Deep Research<ul>
+<li><a href="https://aistudio.google.com/prompts/10BFaVPfHheyXH6g-dr5cy9nFJ_BwAmqq">AIStudio</a></li>
+<li><a href="https://chatgpt.com/c/68bac78a-47d8-8322-89db-e69d590dcb3f">GPT5</a></li>
+<li><a href="https://claude.ai/chat/85a6913d-d0bf-4249-88cc-0bee03a1bb55">Claude4.1</a></li>
+<li><a href="https://gemini.google.com/app/ef4ddc22e8b277cd">Gemini 2.5 Pro</a></li>
+<li><a href="https://grok.com/c/d6fb8037-a042-4530-b07c-f6288921d427">Grok 3/4</a></li>
+<li><a href="https://www.perplexity.ai/search/role-persona-you-are-alex-chen-MQgM.TNMRSaIijtB0WABDA">Perplexity</a></li>
+<li><a href="https://chat.deepseek.com/a/chat/s/b328a5f7-c5c7-4ac0-a878-69788786c799">Deepseek.ai</a></li>
+<li><a href="https://chat.qwen.ai/c/73ae8124-20ad-4ca1-a4ca-3fba441509a8">chat.Qwen.ai</a></li>
+<li><a href="https://www.kimi.com/chat/d2tci22mvdm7u9bsav50">Kimi.com</a></li>
+<li><a href="https://asta.allen.ai/chat">ScholarQA.ai</a></li>
+<li><a href="https://consensus.app/">Consensus</a></li>
+<li><a href="https://getliner.com/">GetLiner.com</a></li>
+</ul>
+</li>
+<li>Synthesis<ul>
+<li><a href="https://notebooklm.google.com/notebook/a04b6736-9546-4fa5-9ee1-32bb912a575c">NotebookLM</a></li>
+</ul>
+</li>
+<li>Human-in-the-Loop (HIL) Supervision</li>
+<li>Iterate</li>
+<li>Brainstorm</li>
+<li>
+<p><a href="https://claude.ai/chat/51aec5db-3dc0-4fc9-9f69-d771bdfb3f24">BMAD (1) Prompt (2) *brainstorm </a></p>
+</li>
+<li>
+<p>"https://chatgpt.com/canvas/shared/68bccfb2b4f08191b96729e907b28c04" </p>
+</li>
+</ul>
+<p>### Sign ups and Checklist</p>
+<ul>
+<li><a href="">(FREE) Google Pro Gemini for Students (Oct 2025)</a></li>
+<li><a href="">(PAID) OpenAI</a></li>
+<li><a href="https://www.perplexity.ai/help-center/en/articles/10964633-student-referrals">Perplexity.ai Referral Program</a></li>
+<li><a href="https://chatgpt.com/share/68b90e66-abb0-800d-a0ba-1e7a1f94b761">Optimized Perplexity.ai Referrals for Free Month</a></li>
+<li><a href="https://github.com/langfuse/langfuse">(FREE) LangFuse</a></li>
+</ul>
+<h3 id="setup-checklist">Setup Checklist</h3>
+<ul>
+<li>WSL2 (Win) and Brew (MacOS)</li>
+<li>Terminal Apps</li>
+<li>Git and SSH Auth</li>
+<li>Python</li>
+<li>JavaScript</li>
+<li>CLI IDE:</li>
+<li><a href="https://www.anthropic.com/claude-code">Claude Code</a></li>
+<li><a href="https://codeassist.google/">Gemini Code</a><ul>
+<li><a href="https://github.com/google-gemini/gemini-cli">Github and Docs</a></li>
+</ul>
+</li>
+<li><a href="https://www.warp.dev/">Warp</a></li>
+<li><a href="https://github.com/sst/opencode">Opencode</a><ul>
+<li>Install Bun and Golang first</li>
+</ul>
+</li>
+<li>VSCode + Extensions</li>
+</ul>
+<h3 id="from-persona-prompts-for-chatbots">From Persona Prompts for Chatbots</h3>
+<h4 id="no-code-examples">No-Code Examples</h4>
+<ul>
+<li><a href="https://help.openai.com/en/articles/8554397-creating-a-gpt">OpenAI GPTs</a></li>
+<li><a href="https://www.lingoblocks.com/gpt-store">OpenAI GPT Directory</a>
+  Make a chatbot with the persona of a psychologically passive agressive group conselor who makes intellectual digs and jabs while exploring peoples' psyche to exploit weakness and vunerabilities</li>
+<li>
+<p><a href="https://gemini.google/overview/gems/">Google GEMs</a></p>
+</li>
+<li>
+<p><a href="https://chatgpt.com/use-cases/students">(Weak Prompts) ChatGPT Use Cases</a></p>
+</li>
+</ul>
+<h3 id="a-brief-tech-executive-education-related-to-ai">A Brief Tech Executive Education Related to AI</h3>
+<ul>
+<li>Universal Skill/Fluency Applicable to Medicine, Law, Academic Research, etc</li>
+<li>Economics of Software</li>
+<li>Software: Punchcards, GOFAI, ML and AI</li>
+<li>Entrepreneurship/Business Plans/Venture Capital</li>
+<li>SLDC</li>
+<li>Methodologies: OOP, TDD, CI/CD, Observability, Telemetry, etc.</li>
+<li>Management: Waterfall, Kanban, Agile, etc.</li>
+<li><a href="https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/user-guide.md">BMAD</a></li>
+</ul>
+<h3 id="vibe-coding-prdsddtdd-context-engineering-and-spec-engineering">Vibe Coding, PRD/SDD/TDD, Context Engineering, and Spec Engineering</h3>
+<ul>
+<li>Autocomplete to Agents</li>
+<li><a href="https://github.com/jon-chun/test-opencode-snake">Snake Game: VSCode + Roo Code</a></li>
+<li><a href="https://opencode.ai/s/JmS3uFHa">Resume Opt: Opencode Chat History</a></li>
+</ul>
+<h4 id="prd-or-spec-driven-development">PRD or Spec Driven Development</h4>
+<ul>
+<li><a href="https://www.perplexity.ai/search/what-are-the-best-foss-resourc-FheGBGbeQPKjejyNu60FeQ">Perplexity: Best FOSS PRD Resources (9 Sep 2025)</a></li>
+<li><a href="https://github.com/coleam00/context-engineering-intro">(Claude) Context Engineering Template (9.7k)</a></li>
+<li><a href="https://www.youtube.com/watch?v=jVGsm9kW97U">The "Spec Engineering" Hype is Here. BMAD Users Are Already Winning (10:21) (Aug 2025)</a></li>
+</ul>
+<h5 id="prd-resources">PRD Resources</h5>
+<ul>
+<li><a href="https://github.com/coleam00/context-engineering-intro">coleam00/context-engineering-intro (9.7k)</a></li>
+<li><a href="https://github.com/TechNomadCode/AI-Product-Development-Toolkit/tree/main">TechNomadCode/AI-Product-Development-Toolkit (554)</a></li>
+<li><a href="https://github.com/rohitg00/CreateMVP">rohitg00/CreateMVP (601)</a></li>
+</ul>
+<h5 id="kiss">KISS</h5>
+<ul>
+<li><a href="https://aistudio.google.com/prompts/1lp0diyor8ubutwP6XrBofdERjuRjt_S3?save=true">AIStudio: Chat-Based Alternative</a></li>
+<li><a href="https://drive.google.com/file/d/1rnL8bGZJvmqJ_73BUmbUguj0mZrAOBtS/view?usp=sharing">PDF</a></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

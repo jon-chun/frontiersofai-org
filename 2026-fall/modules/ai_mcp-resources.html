@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Lesson 4: Creating an MCP Server – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Lesson 4: Creating an MCP Server</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="lesson-4-creating-an-mcp-server">Lesson 4: Creating an MCP Server</h1>
+<p>In this lesson, you will wrap the tools of the chatbot of the previous lesson, to build an MCP server that exposes 2 tools. You will use here the <code>stdio</code> transport and run the server in the provided local environment. You will learn more about remote servers in another lesson.</p>
+<h2 id="how-can-you-create-an-mcp-server-additional-note">How can you create an MCP Server? - <em>Additional Note</em></h2>
+<p>Let's take the example of a server that exposes tools. This server needs to handle two main requests from the client:
+- listing all the tools</p>
+<!-- image not included in repo: <img src="images/server_list_tools.png" width="400"> -->
+
+<ul>
+<li>executing a particular tool</li>
+</ul>
+<!-- image not included in repo: <img src="images/server_call_tool.png" width="400"> -->
+
+<p>There are two ways for creating an MCP server:
+- <strong>low-level implementation</strong>: in this approach, you directly define and handle the various types of requests (<code>ListToolsRequest</code> and <code>CallToolRequest</code>). This approach allows you to customize every aspect of your server.
+- <strong>high-level implementation using <code>FastMCP</code></strong>: <code>FastMCP</code> is a high-level interface that makes building MCP servers faster and simpler. In this approach, you just focus on defining the tools as functions, and<code>FastMCP</code> handles all the protocol details.</p>
+<p>You will use in this lesson <code>FastMCP</code>. If you'd like to learn more about the low-level approach, you can check out the resources at the end of this notebook.</p>
+<h2 id="building-your-mcp-server-using-fastmcp">Building your MCP Server using <code>FastMCP</code></h2>
+<p>You will build the files needed for your MCP server in the folder <code>mcp_project</code>. You will incrementally add or update more files to this project folder in the upcoming lessons. The <code>mcp_project</code> folder is provided to you. You will first create the python file of the server <code>research_server.py</code> and save it in  <code>mcp_project</code> folder, then you'll prepare the environment to run the server.</p>
+<div style="background-color:#fff6ff; padding:13px; border-width:3px; border-color:#efe6ef; border-style:solid; border-radius:6px">
+<p> 💻 &nbsp; <b> To Access the  <code>mcp_project</code> folder :</b> 1) click on the <em>"File"</em> option on the top menu of the notebook and then 2) click on <em>"Open"</em> and finally 3) click on <em>L4</em>.
+</div>
+
+<p>To create your MCP server using <code>FastMCP</code>, you will initialize a <code>FastMCP</code> server labeled as <code>mcp</code> and decorating the functions with <code>@mcp.tool()</code>. <code>FastMCP</code> automatically generates the necessary MCP schema based on type hints and docstrings.</p>
+<p><strong>Note</strong>: The magic function <code>%%writefile mcp_project/research_server.py</code> will not execute the code but it will save the content of the cell to the server file <code>research_server.py</code> in the directory: <code>mcp_project</code>. If you remove the magic function and run the cell, the code won't run in Jupyter notebook. You will run the server from the terminal in the next section.</p>
+<pre><code class="language-python">%%writefile mcp_project/research_server.py
+
+import arxiv
+import json
+import os
+from typing import List
+from mcp.server.fastmcp import FastMCP
+
+
+PAPER_DIR = &quot;papers&quot;
+
+# Initialize FastMCP server
+mcp = FastMCP(&quot;research&quot;)
+
+@mcp.tool()
+def search_papers(topic: str, max_results: int = 5) -&gt; List[str]:
+    &quot;&quot;&quot;
+    Search for papers on arXiv based on a topic and store their information.
+
+    Args:
+        topic: The topic to search for
+        max_results: Maximum number of results to retrieve (default: 5)
+
+    Returns:
+        List of paper IDs found in the search
+    &quot;&quot;&quot;
+
+    # Use arxiv to find the papers 
+    client = arxiv.Client()
+
+    # Search for the most relevant articles matching the queried topic
+    search = arxiv.Search(
+        query = topic,
+        max_results = max_results,
+        sort_by = arxiv.SortCriterion.Relevance
+    )
+
+    papers = client.results(search)
+
+    # Create directory for this topic
+    path = os.path.join(PAPER_DIR, topic.lower().replace(&quot; &quot;, &quot;_&quot;))
+    os.makedirs(path, exist_ok=True)
+
+    file_path = os.path.join(path, &quot;papers_info.json&quot;)
+
+    # Try to load existing papers info
+    try:
+        with open(file_path, &quot;r&quot;) as json_file:
+            papers_info = json.load(json_file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        papers_info = {}
+
+    # Process each paper and add to papers_info  
+    paper_ids = []
+    for paper in papers:
+        paper_ids.append(paper.get_short_id())
+        paper_info = {
+            'title': paper.title,
+            'authors': [author.name for author in paper.authors],
+            'summary': paper.summary,
+            'pdf_url': paper.pdf_url,
+            'published': str(paper.published.date())
+        }
+        papers_info[paper.get_short_id()] = paper_info
+
+    # Save updated papers_info to json file
+    with open(file_path, &quot;w&quot;) as json_file:
+        json.dump(papers_info, json_file, indent=2)
+
+    print(f&quot;Results are saved in: {file_path}&quot;)
+
+    return paper_ids
+
+@mcp.tool()
+def extract_info(paper_id: str) -&gt; str:
+    &quot;&quot;&quot;
+    Search for information about a specific paper across all topic directories.
+
+    Args:
+        paper_id: The ID of the paper to look for
+
+    Returns:
+        JSON string with paper information if found, error message if not found
+    &quot;&quot;&quot;
+
+    for item in os.listdir(PAPER_DIR):
+        item_path = os.path.join(PAPER_DIR, item)
+        if os.path.isdir(item_path):
+            file_path = os.path.join(item_path, &quot;papers_info.json&quot;)
+            if os.path.isfile(file_path):
+                try:
+                    with open(file_path, &quot;r&quot;) as json_file:
+                        papers_info = json.load(json_file)
+                        if paper_id in papers_info:
+                            return json.dumps(papers_info[paper_id], indent=2)
+                except (FileNotFoundError, json.JSONDecodeError) as e:
+                    print(f&quot;Error reading {file_path}: {str(e)}&quot;)
+                    continue
+
+    return f&quot;There's no saved information related to paper {paper_id}.&quot;
+
+
+
+if __name__ == &quot;__main__&quot;:
+    # Initialize and run the server
+    mcp.run(transport='stdio')
+</code></pre>
+<h2 id="setting-up-your-environment-testing-your-server">Setting up your Environment &amp; Testing your Server</h2>
+<p>You'll now set up the environment that you will use to run and test the server. For that, you will use the <code>uv</code> tool, which helps you manage your Python environment: it automatically sets up the project files and manages the package dependencies.</p>
+<p><strong>Terminal Instructions</strong></p>
+<ul>
+<li>To open the terminal, run the cell below.</li>
+<li>Navigate to the project directory and initiate it with <code>uv</code>:<ul>
+<li><code>cd L4/mcp_project</code></li>
+<li><code>uv init</code></li>
+</ul>
+</li>
+<li>Create virtual environment and activate it:<ul>
+<li><code>uv venv</code></li>
+<li><code>source .venv/bin/activate</code></li>
+</ul>
+</li>
+<li>Install dependencies:<ul>
+<li><code>uv add mcp arxiv</code></li>
+</ul>
+</li>
+<li>Launch the inspector:<ul>
+<li><code>npx @modelcontextprotocol/inspector uv run research_server.py</code></li>
+<li>If you get a message asking "need to install the following packages", type: <code>y</code></li>
+</ul>
+</li>
+<li>You will get a message saying that the inspector is up and running at a specific address. To open the inspector, click on that given address. The inspector will open in another tab.</li>
+<li>In the inspector UI, make sure to follow the video. You would need to specify under configuration the <code>Inspector Proxy Address</code>. Please check the "Inspector UI Instructions" below and run the last cell (after the terminal) to get the <code>Inspector Proxy Address</code> for your configurations. </li>
+<li>If you tested the tool and would like to access the <code>papers</code> folder: 1) click on the <code>File</code> option on the top menu of the notebook and 2) click on <code>Open</code> and then 3) click on <code>L4</code> -&gt; <code>mcp_project</code>.</li>
+<li>Once you're done with the inspector UI, make sure to close the inspector by typing <code>Ctrl+C</code> in the terminal below.</li>
+</ul>
+<pre><code class="language-python"># start a new terminal
+import os
+from IPython.display import IFrame
+
+IFrame(f&quot;{os.environ.get('DLAI_LOCAL_URL').format(port=8888)}terminals/1&quot;, 
+       width=600, height=768)
+</code></pre>
+<h3 id="inspector-ui-instructions">Inspector UI Instructions</h3>
+<p>In the inspector UI, make sure you have:</p>
+<!-- image not included in repo: <img src="images/inspector2.png" height="300"> -->
+
+<ol>
+<li><code>uv</code> under command</li>
+<li><code>run research_server.py</code> under arguments</li>
+<li>Under configuration, you have to specify the "Inspector Proxy Address":<ul>
+<li>Run the following cell and copy the output address and paste it under "Inspector Proxy Address" in the inspector UI. <strong>Note</strong>: if you're running the inspector locally on your machine, you don't need to worry about this step.</li>
+</ul>
+</li>
+</ol>
+<pre><code class="language-python"># Print the inspector proxy address
+print(&quot;Inspector Proxy Address that you need to specify under configuration in the inspector UI:&quot;)
+print(os.environ.get('DLAI_LOCAL_URL').format(port=6277)[:-1])
+</code></pre>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/servers/simple-tool/mcp_simple_tool/server.py">Example of low-level server</a></li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md#advanced-usage">Advanced usage low-level server</a></li>
+<li><a href="https://github.com/modelcontextprotocol/inspector">MCP inspector</a></li>
+<li><a href="https://github.com/jlowin/fastmcp">FastMCP</a></li>
+<li><a href="https://modelcontextprotocol.io/quickstart/server">Quickstart for server developpers</a></li>
+</ul>
+<h3 id="how-to-replicate-the-work-locally">How to replicate the work locally?</h3>
+<ul>
+<li>First make sure you have <code>uv</code> installed. You can check the installation methods <a href="https://docs.astral.sh/uv/getting-started/installation/#pypi">here</a>.</li>
+<li>Second you need to make sure you have <code>Node.js</code> installed on your machine. This is needed to run packages written in  <code>Typescript</code> (like the MCP inspector and maybe other MCP servers that you may download to use in your app). For instructions, check <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a></li>
+</ul>
+<p>After you have these two installed, then you can create the <code>mcp_project</code> folder and follow the same steps. If you're using a <code>Windows</code> machine, the only step you need to modify is how to activate your virtual environment. Instead of <code>source .venv/bin/activate</code>, you would need to type: <code>.venv\Scripts\activate</code> without <code>source</code>.</p>
+<div style="background-color:#fff6ff; padding:13px; border-width:3px; border-color:#efe6ef; border-style:solid; border-radius:6px">
+<p> 💻 &nbsp; <b> To Access the  <code>mcp_project</code> folder :</b> 1) click on the <em>"File"</em> option on the top menu of the notebook and then 2) click on <em>"Open"</em>.
+<p> ⬇ &nbsp; <b>To Download Notebooks:</b> 1) click on the <em>"File"</em> option on the top menu of the notebook and then 2) click on <em>"Download as"</em> and select <em>"Notebook (.ipynb)"</em>.</p>
+
+<p> 📒 &nbsp; For more help, please see the <em>"Appendix – Tips, Help, and Download"</em> Lesson.</p>
+
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

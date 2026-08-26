@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Mini-Project #3: Real-World RAG Implementation – 2026 Fall – Programming Humanity</title>
+<link href="../../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../../index.html">Course Home</a></li>
+<li><a href="../../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../../modules/index.html">Modules</a></li>
+<li><a href="../../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>Mini-Project #3: Real-World RAG Implementation</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="mini-project-3-real-world-rag-implementation">Mini-Project #3: Real-World RAG Implementation</h1>
+<p><strong>Course:</strong> AI Mini-Project Series<br />
+<strong>Due Date:</strong> Nov 12
+<strong>Deliverable:</strong> Completed CAPB Report</p>
+<hr />
+<h2 id="1-project-context-use-case">1. Project Context &amp; Use Case</h2>
+<p><strong>Goal:</strong> Identify a realistic RAG use case and clearly describe its purpose.</p>
+<h3 id="11-problem-context">1.1 Problem / Context</h3>
+<ul>
+<li>What domain or dataset did you select?  </li>
+<li>What problem or information gap does your RAG system address?</li>
+</ul>
+<h3 id="12-primary-use-case">1.2 Primary Use Case</h3>
+<p>Select one:
+- [ ] Q&amp;A over policies/manuals<br />
+- [ ] Troubleshooting / runbook lookup<br />
+- [ ] Research assistant / document summarization<br />
+- [ ] Other: <strong><em>_</em></strong>____</p>
+<h3 id="13-users-audience">1.3 Users / Audience</h3>
+<p>Who benefits from your RAG system (students, staff, customers, etc.)?</p>
+<h3 id="14-success-criteria">1.4 Success Criteria</h3>
+<p>List measurable goals (e.g., accuracy ≥ 80%, latency &lt; 5s, citation quality).</p>
+<pre><code class="language-yaml">context:
+  domain: &quot;example domain&quot;
+  use_case: &quot;example use case&quot;
+  users: [&quot;target users&quot;]
+  success:
+    - &quot;≥80% correct answers&quot;
+    - &quot;≤5s latency&quot;
+    - &quot;must include source citations&quot;
+</code></pre>
+<hr />
+<h2 id="2-data-constraints">2. Data &amp; Constraints</h2>
+<p><strong>Goal:</strong> Define the dataset, data format, and project limitations.</p>
+<h3 id="21-corpus-details">2.1 Corpus Details</h3>
+<ul>
+<li>Sources: links or repositories  </li>
+<li>Size: number of docs/pages  </li>
+<li>Formats: PDF, HTML, TXT, MD, etc.</li>
+</ul>
+<h3 id="22-constraints">2.2 Constraints</h3>
+<ul>
+<li>[ ] local-only processing  </li>
+<li>[ ] limited budget  </li>
+<li>[ ] must support non-technical users  </li>
+<li>[ ] must protect private data  </li>
+</ul>
+<pre><code class="language-yaml">data_constraints:
+  sources: [&quot;source1&quot;, &quot;source2&quot;]
+  formats: [&quot;pdf&quot;]
+  size: &quot;50-100 docs&quot;
+  local_only: true
+  cost_limit: &quot;free/OSS&quot;
+  latency_target: 5
+  security: &quot;basic login&quot;
+</code></pre>
+<hr />
+<h2 id="3-rag-architecture-mvp">3. RAG Architecture (MVP)</h2>
+<p><strong>Goal:</strong> Outline your RAG pipeline and design decisions.</p>
+<h3 id="31-pipeline">3.1 Pipeline</h3>
+<p>Ingestion → Chunking → Embedding → Vector DB → Retrieval → LLM → Answer</p>
+<h3 id="32-core-design-choices">3.2 Core Design Choices</h3>
+<ul>
+<li>Chunking: fixed-size / semantic / heading-based  </li>
+<li>Embeddings: OpenAI / Local / Other  </li>
+<li>Vector DB: FAISS / Chroma / Weaviate / Other  </li>
+<li>Retrieval: vector-only / hybrid  </li>
+<li>LLM: hosted / local / fine-tuned  </li>
+<li>Citations: required?</li>
+</ul>
+<pre><code class="language-yaml">architecture_mvp:
+  steps: [&quot;ingest&quot;, &quot;chunk&quot;, &quot;embed&quot;, &quot;retrieve&quot;, &quot;generate&quot;]
+  chunking: &quot;fixed&quot;
+  embeddings: &quot;local&quot;
+  vector_db: &quot;chroma&quot;
+  retrieval: &quot;vector-only&quot;
+  llm: &quot;local&quot;
+  citations: true
+  rationale: &quot;simple and efficient for small datasets&quot;
+</code></pre>
+<hr />
+<h2 id="4-component-alternatives-mini-bakeoff">4. Component Alternatives (Mini-Bakeoff)</h2>
+<p><strong>Goal:</strong> Compare two or more tools per component and justify your choice.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Option A</th>
+<th>Option B</th>
+<th>Criteria</th>
+<th>Selected</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector DB</td>
+<td>FAISS</td>
+<td>Chroma</td>
+<td>local, easy setup</td>
+<td>Chroma</td>
+<td>easier Python API</td>
+</tr>
+<tr>
+<td>Reranker</td>
+<td>None</td>
+<td>Cohere</td>
+<td>quality vs. cost</td>
+<td>None</td>
+<td>time limits</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-yaml">component_selection:
+  vector_db:
+    options: [&quot;FAISS&quot;, &quot;Chroma&quot;]
+    selected: &quot;Chroma&quot;
+    reason: &quot;easy setup&quot;
+  reranker:
+    selected: &quot;None&quot;
+    reason: &quot;project time constraints&quot;
+</code></pre>
+<hr />
+<h2 id="5-evaluation-plan-results">5. Evaluation Plan &amp; Results</h2>
+<p><strong>Goal:</strong> Design and report simple test outcomes.</p>
+<h3 id="51-test-set">5.1 Test Set</h3>
+<p>10–20 questions derived from your domain.</p>
+<h3 id="52-metrics">5.2 Metrics</h3>
+<ul>
+<li>% Correct Answers  </li>
+<li>% Cited Answers  </li>
+<li>Average Latency</li>
+</ul>
+<pre><code class="language-yaml">evaluation:
+  questions: 15
+  baseline:
+    approach: &quot;vector-only&quot;
+    correct: 11
+    with_citations: 10
+    avg_latency: 3.1
+  notes: &quot;works well except long documents&quot;
+</code></pre>
+<hr />
+<h2 id="6-risks-edge-cases-future-work">6. Risks, Edge Cases &amp; Future Work</h2>
+<p><strong>Goal:</strong> Reflect on real-world concerns.</p>
+<ul>
+<li>Edge Cases: large PDFs, duplicates, acronyms  </li>
+<li>Risks: hallucinations, outdated data  </li>
+<li>Future Work: hybrid search, reranking, better monitoring</li>
+</ul>
+<pre><code class="language-yaml">improvements:
+  - &quot;add hybrid retrieval&quot;
+  - &quot;add reranker&quot;
+  - &quot;enable incremental reindexing&quot;
+</code></pre>
+<hr />
+<h2 id="7-references">7. References</h2>
+<p>List 3–5 resources you used (GitHub repos, papers, blogs).</p>
+<hr />
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

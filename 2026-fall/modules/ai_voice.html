@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI Voice – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI Voice</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-voice">AI Voice</h1>
+<h2 id="benchmarks">Benchmarks</h2>
+<ul>
+<li><a href="https://github.com/boson-ai/emergenttts-eval-public">EmergenTTS-Eval</a></li>
+</ul>
+<h2 id="stt">STT</h2>
+<ul>
+<li><a href=""></a></li>
+</ul>
+<h2 id="tts">TTS</h2>
+<h2 id="emotion">Emotion</h2>
+<ul>
+<li><a href="https://github.com/boson-ai/higgs-audio">Higgs Audio</a></li>
+</ul>
+<h2 id="voice-clone">Voice Clone</h2>
+<ul>
+<li><a href="https://github.com/FunAudioLLM/CosyVoice">CosyVoice</a></li>
+<li><a href="https://www.youtube.com/watch?v=1K5ULwMOM2o"></a></li>
+</ul>
+<p>Recent advancements in vocal sentiment analysis combine acoustic feature extraction with NLP to detect emotions, stress, and psychological states in speech. Below is an overview of cutting-edge commercial and open-source tools, along with key technical innovations:</p>
+<hr />
+<h2 id="commercial-solutions"><strong>Commercial Solutions</strong></h2>
+<h3 id="1-amazon-chime-sdk-voice-tone-analysis">1. Amazon Chime SDK Voice Tone Analysis</h3>
+<ul>
+<li><strong>Hybrid Model</strong>: Combines ASR transcript analysis with acoustic features (pitch, intonation) using a DNN architecture[5]  </li>
+<li><strong>Real-Time Detection</strong>: Analyzes 5-second voice segments every 2.5 seconds for live sentiment tracking[5]  </li>
+<li><strong>Use Case</strong>: Integrated into AWS contact centers for agent coaching and customer experience optimization[5][2]  </li>
+</ul>
+<h3 id="2-wizr-ai">2. Wizr AI</h3>
+<ul>
+<li><strong>Nuanced Emotion Detection</strong>: Identifies sarcasm and mixed sentiments using advanced NLP[3]  </li>
+<li><strong>Predictive Analytics</strong>: Forecasts customer behavior shifts through omni-channel data integration[3]  </li>
+</ul>
+<h3 id="3-cloudtalk">3. CloudTalk</h3>
+<ul>
+<li><strong>Live Call Sentiment</strong>: Flags negative emotions during customer calls using tonal analysis[6]  </li>
+<li><strong>Multilingual Support</strong>: Analyzes sentiment across 50+ languages for global contact centers[6]  </li>
+</ul>
+<h3 id="4-nice-incontact">4. NICE inContact</h3>
+<ul>
+<li><strong>Real-Time Coaching</strong>: Alerts supervisors when call sentiment dips below thresholds[6]  </li>
+<li><strong>Cross-Channel Consistency</strong>: Unified sentiment scoring for voice, chat, and email[2][6]  </li>
+</ul>
+<hr />
+<h2 id="open-source-methods-libraries"><strong>Open-Source Methods &amp; Libraries</strong></h2>
+<h3 id="1-librosa-tensorflowpytorch">1. Librosa + TensorFlow/PyTorch</h3>
+<ul>
+<li><strong>Feature Extraction</strong>: Compute MFCCs, chroma, and spectral contrast from raw audio[4][7]  </li>
+<li><strong>Custom Models</strong>: Build LSTM/CNN networks for emotion classification[4]  </li>
+</ul>
+<h3 id="2-wavenet-implementations">2. WaveNet Implementations</h3>
+<ul>
+<li><strong>Raw Waveform Analysis</strong>: Detect micro-emotions through probabilistic deep learning[7]  </li>
+<li><strong>Multimodal Training</strong>: Combine text transcripts with acoustic data[7]  </li>
+</ul>
+<h3 id="3-ravdesscrema-d-datasets">3. RAVDESS/CREMA-D Datasets</h3>
+<ul>
+<li><strong>Benchmark Audio</strong>: 7,356 speech samples with annotated emotions (calm, happy, fearful, etc.)[4]  </li>
+<li><strong>Preprocessing Tools</strong>: Python scripts for noise reduction and feature normalization[4]  </li>
+</ul>
+<hr />
+<h2 id="key-technical-innovations"><strong>Key Technical Innovations</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Innovation</strong></th>
+<th><strong>Impact</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid ASR-Acoustic Models</td>
+<td>15% accuracy boost vs text-only methods[5]</td>
+</tr>
+<tr>
+<td>Real-Time Spectral Analysis</td>
+<td>&lt;2.5 sec latency for live call interventions[5][6]</td>
+</tr>
+<tr>
+<td>Contextual Tone Tracking</td>
+<td>Detects sentiment shifts mid-conversation[2]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="top-applications"><strong>Top Applications</strong></h2>
+<ol>
+<li><strong>Customer Service</strong>: Real-time agent guidance during tense calls (CloudTalk, Amazon Chime)[5][6]  </li>
+<li><strong>Mental Health</strong>: Stress detection through vocal biomarkers (pitch variability, speech rate)[1][4]  </li>
+<li><strong>Market Research</strong>: Emotion mapping in focus group recordings via Wizr AI’s predictive models[3]  </li>
+</ol>
+<p>Leading solutions prioritize multimodal analysis, with commercial APIs offering plug-and-play deployment while open-source tools enable customization for niche emotional states like anxiety or enthusiasm.</p>
+<p>Citations:
+[1] https://www.aimtechnologies.co/sentiment-analysis-in-voice-unlocking-emotions-beyond-words/
+[2] https://www.speechtechmag.com/Articles/Editorial/Features/Sentiment-Analysis-Moves-into-Voice-Interactions-168336.aspx
+[3] https://wizr.ai/blog/best-customer-sentiment-analysis-tools/
+[4] https://geeksprogramming.com/building-a-sentiment-analysis-model-with-audio-data/
+[5] https://www.amazon.science/blog/how-amazon-chime-sdks-voice-tone-analysis-works
+[6] https://www.cloudtalk.io/blog/ai-sentiment-analysis-tool/
+[7] https://research.aimultiple.com/audio-sentiment-analysis/
+[8] https://insight7.io/audio-sentiment-analysis-key-techniques/
+[9] https://stackoverflow.com/questions/76916457/how-can-i-implement-real-time-sentiment-analysis-on-live-audio-streams-using-pyt
+[10] https://www.mentionlytics.com/blog/best-sentiment-analysis-tools/
+[11] https://www.reddit.com/r/MLQuestions/comments/16dx8uq/how_do_i_do_sentiment_analysis_of_live_voices_any/
+[12] https://brand24.com/blog/best-sentiment-analysis-tools/
+[13] https://www.sentisum.com/library/voice-call-sentiment-analysis
+[14] https://cdn.prod.website-files.com/5ec6a20095cdf182f108f666/66068d0c4a525d155ea91243_Voice%20Call%20Sentiment%20Analysis.png?sa=X&amp;ved=2ahUKEwjNlpmEsP2LAxWFLtAFHTcoL5MQ_B16BAgBEAI
+[15] https://www.kapiche.com/blog/best-sentiment-analysis-tools
+[16] https://contentsquare.com/guides/sentiment-analysis/tools/
+[17] https://enthu.ai/blog/best-speech-analytics-software/
+[18] https://sproutsocial.com/insights/sentiment-analysis-tools/
+[19] https://www.ecosmob.com/voice-call-sentiment-analysis/
+[20] https://getthematic.com/sentiment-analysis</p>
+<hr />
+<p>Answer from Perplexity: pplx.ai/share</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>

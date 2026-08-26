@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>AI Videos – 2026 Fall – Programming Humanity</title>
+<link href="../../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header no-featured-image">
+<div class="header-inner">
+<div class="site-branding"><p class="site-title"><a href="../../index.html">Programming Humanity</a></p><span class="site-sep">—</span><p class="site-description">IPHS 391: Frontiers in Generative AI — Fall 2026</p></div>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Course Home</a></li>
+<li><a href="../syllabus_iphs391_frontiers_in_genai_2026fall_chunj.pdf">Syllabus</a></li>
+<li><a href="../modules/ai_fall2026_readings.html">Readings</a></li>
+<li><a href="../modules/index.html">Modules</a></li>
+<li><a href="../sitemap.html">Sitemap</a></li>
+</ul></nav>
+<div class="social-nav"><a href="https://twitter.com/ai4dhumanities" rel="noopener" target="_blank">Twitter</a></div>
+</div>
+<section class="hero"><h1>AI Videos</h1></section></header>
+
+<main class="content-wrapper">
+<div class="page-content">
+<h1 id="ai-videos">AI Videos</h1>
+<h2 id="video-workflows">Video Workflows</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=a4DndjvDSmE">Zap Automated Video Pipeline (15:50) (19 Mar 2025)</a></li>
+<li><a href="https://github.com/modelscope/DiffSynth-Studio">DiffSynth-Studio</a></li>
+</ul>
+<h2 id="commercial">Commercial</h2>
+<ul>
+<li><a href="https://www.heyeddie.ai/?ref=manuagi#Use-Cases-section">HeyEddie.ai</a></li>
+</ul>
+<h2 id="lmm">LMM</h2>
+<ul>
+<li><a href="https://github.com/QwenLM/Qwen2.5-VL">Qwen2.5 VL</a> w/Colabs</li>
+<li><a href="https://github.com/QwenLM/Qwen2.5-VL/blob/main/cookbooks/video_understanding.ipynb">Qwen2.5 VL Cookbook</a></li>
+<li><a href="https://www.youtube.com/watch?v=1m8QXAHj5Sw">Qwen2.5-VL: Can It Really Understand 1 Hour of Video? 🤯 AI Video Analysis Test (9:34) (22 Feb 2025) - REQUIRED A6000 48GB VRAM    </a></li>
+</ul>
+<h2 id="text-to-video">Text-to-Video</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Y4cWwllPcdg">FREE &amp; Open-Source AI Video Generator | AI Video Generator FREE (13:34) (2 Jan 2025)</a></li>
+<li><a href="https://huggingface.co/tencent/HunyuanVideo">Hunyuan Video</a></li>
+</ul>
+<h2 id="ai-video-tutorials">AI Video Tutorials</h2>
+<ul>
+<li><a href="https://blog.gopenai.com/the-future-of-rag-will-be-with-vision-end-to-end-example-with-colpali-and-a-vision-language-model-fe133667d2f9">The Future of RAG will be with Vision: End to End Example with ColPali and a Vision Language Model (17 Aug 2024)</a></li>
+</ul>
+<h2 id="video-analysis">Video Analysis</h2>
+<ul>
+<li><a href="https://github.com/ALucek/NeedleInAVidStack">https://www.youtube.com/watch?v=kPTKlg-RDVs (37:59) (5 Mar 2025)</a>'</li>
+<li><a href="https://github.com/ALucek/NeedleInAVidStack">NeedleInAVidStack</a></li>
+<li><a href="https://github.com/ALucek/ppt2desc">ppt2desc</a></li>
+<li><a href="https://github.com/ALucek/ppt2desc/blob/main/docker-compose.yml">LibraOffice Docker</a></li>
+</ul>
+<h2 id="body-language-and-poise-estimation">Body Language and Poise Estimation</h2>
+<ul>
+<li><a href="https://github.com/SignLLM/Prompt2Sign">Prompt2Sign (Jul 2025)</a></li>
+</ul>
+<h2 id="video-dubbing-subtitles-segmentation">Video Dubbing, Subtitles, Segmentation</h2>
+<ul>
+<li><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></li>
+</ul>
+<h2 id="video-libraries">Video Libraries</h2>
+<ul>
+<li><a href="https://github.com/PsyChip/machina?ref=dailydev">PsyChip: OpenCV+YOLO+LLAVA powered video surveillance system</a></li>
+</ul>
+<h1 id="extract-clips">Extract Clips</h1>
+<p>There are several open-source and Python libraries available for extracting engaging clips from long videos, similar to tools like Opus, Klap, and Veed.io. Here are some options you can consider:</p>
+<h2 id="clipsai">ClipsAI</h2>
+<p>ClipsAI is an open-source Python library specifically designed for automatically converting long videos into clips[6]. It's particularly well-suited for audio-centric, narrative-based videos like podcasts, interviews, speeches, and sermons.</p>
+<p>Key features:
+- Uses video transcripts to identify and create clips
+- Dynamically reframes and focuses on the current speaker
+- Can convert videos into various aspect ratios</p>
+<p>Example usage:</p>
+<pre><code class="language-python">from clipsai import ClipFinder, Transcriber
+
+transcriber = Transcriber()
+transcription = transcriber.transcribe(audio_file_path=&quot;/path/to/video.mp4&quot;)
+
+clipfinder = ClipFinder()
+clips = clipfinder.find_clips(transcription=transcription)
+
+print(&quot;StartTime: &quot;, clips.start_time)
+print(&quot;EndTime: &quot;, clips.end_time)
+</code></pre>
+<h2 id="moviepy">MoviePy</h2>
+<p>MoviePy is a powerful Python library for video editing that can be used to extract clips from longer videos[1][2]. While it doesn't automatically detect engaging segments, it provides a flexible framework for implementing custom clip extraction logic.</p>
+<p>Example of extracting a clip:</p>
+<pre><code class="language-python">from moviepy.editor import VideoFileClip
+
+clip = VideoFileClip(&quot;video.mp4&quot;).subclip(start_time, end_time)
+clip.write_videofile(&quot;extracted_clip.mp4&quot;)
+</code></pre>
+<h2 id="opencv">OpenCV</h2>
+<p>OpenCV is a comprehensive computer vision library that can be used for video processing tasks, including frame extraction[1][2]. It can be combined with other analysis tools to identify and extract engaging clips.</p>
+<p>Example of reading frames:</p>
+<pre><code class="language-python">import cv2
+
+video = cv2.VideoCapture(&quot;video.mp4&quot;)
+while True:
+    ret, frame = video.read()
+    if not ret:
+        break
+    # Process frame here
+video.release()
+</code></pre>
+<h2 id="pyav">PyAV</h2>
+<p>PyAV is a Pythonic binding for FFmpeg libraries, offering direct access to many media processing capabilities[2]. It's suitable for projects requiring detailed control over video processing.</p>
+<h2 id="yt-highlight-extractor">YT Highlight Extractor</h2>
+<p>While not a library, YT Highlight Extractor is an open-source Python tool that extracts highlights from YouTube videos[9]. It uses an API to fetch the most replayed sections of a video and extracts them. This project could serve as a starting point or inspiration for building your own clip extraction tool.</p>
+<p>To implement a system similar to Opus, Klap, or Veed.io, you would likely need to combine these libraries with additional analysis techniques:</p>
+<ol>
+<li>Use speech recognition (e.g., CMU Sphinx or Google's Speech-to-Text API) to transcribe the video[9].</li>
+<li>Implement sentiment analysis or keyword detection on the transcript to identify potentially engaging segments.</li>
+<li>Analyze visual features using OpenCV to detect scene changes, facial expressions, or other relevant visual cues.</li>
+<li>Combine these signals to score different segments of the video and extract the highest-scoring clips.</li>
+</ol>
+<p>Remember that creating a fully automated system for extracting engaging clips is a complex task that often requires machine learning models trained on large datasets of human-labeled engaging content. The open-source tools mentioned here provide a foundation, but significant additional development would be needed to create a system comparable to commercial offerings.</p>
+<p>Citations:
+[1] https://www.youtube.com/watch?v=DoINTi88EU4
+[2] https://cloudinary.com/guides/front-end-development/python-video-processing-6-useful-libraries-and-a-quick-tutorial
+[3] https://www.geeksforgeeks.org/best-opus-clip-alternatives/
+[4] https://github.com/antoine77340/video_feature_extractor
+[5] https://stackoverflow.com/questions/37317140/how-can-i-efficiently-cut-out-part-of-a-video/37323543
+[6] https://github.com/ClipsAI/clipsai
+[7] https://github.com/surajiitd/Automate_Video_Highlights_generation
+[8] https://www.stackbuilders.com/insights/python-video-generation/
+[9] https://devpost.com/software/yt-highlight-extractor</p>
+</div>
+</main>
+<footer class="site-footer">
+<p>Programming Humanity — IPHS 391 Fall 2026</p>
+</footer>
+</body>
+</html>
