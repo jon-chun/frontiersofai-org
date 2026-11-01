@@ -210,3 +210,8 @@ __marimo__/
 # Raw WP export contains post passwords - never commit
 dev/data/site-export_raw_*.xml
 dev/data/pages-inventory-full.csv
+
+# >>> env files (ai-swe-setup env-ignore): never commit .env*, except .env.example
+.env*
+!.env.example
+# <<< env files
